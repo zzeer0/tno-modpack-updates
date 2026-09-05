@@ -5863,6 +5863,11 @@
                       "size":  732
                   },
                   {
+                      "path":  "config/openloader/packs/TNO-OreVeinMiner-ModOres.zip",
+                      "sha256":  "8059419d1ca44c329d3f08952fc14cfd479fb76a9197a6951ed0aa6ef4430e6f",
+                      "size":  478
+                  },
+                  {
                       "path":  "config/openloader/packs/TNO-PTBR.zip",
                       "sha256":  "46cdc4c9f462b473f8f17646e0aeff043e010ff7003889e47fb0ac2adf915b86",
                       "size":  272384
@@ -7099,7 +7104,7 @@
                   },
                   {
                       "path":  "config/tr_UniqueMonsters/base_config.toml",
-                      "sha256":  "6fb396db62bd92ed28aa5b81e39b747e5c4a9f7f55df6de3ef930f5407586497",
+                      "sha256":  "ed8566658cc611130ccf9502672b6d67f3115c40a64a2f1e23b22d35716763a4",
                       "size":  939
                   },
                   {
@@ -15199,7 +15204,7 @@
                   },
                   {
                       "path":  "mods/tensuramagicfilter-1.2.0.jar",
-                      "sha256":  "fa93449a8fa1105898fe4d111b57eb7577565deafe163d9f8b9e00e700c21b57",
+                      "sha256":  "15296bd6faeec401c35f6de640e7819fc6d20f47e3030cb669478843e22a50a6",
                       "size":  34206
                   },
                   {
