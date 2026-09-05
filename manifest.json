@@ -5863,6 +5863,11 @@
                       "size":  732
                   },
                   {
+                      "path":  "config/openloader/packs/TNO-ItemCleaner.zip",
+                      "sha256":  "1f7fc05ff9f174291308467c64ccfdf70afd7fd81f678b0118b4f515256e9a8b",
+                      "size":  1324
+                  },
+                  {
                       "path":  "config/openloader/packs/TNO-OreVeinMiner-ModOres.zip",
                       "sha256":  "8059419d1ca44c329d3f08952fc14cfd479fb76a9197a6951ed0aa6ef4430e6f",
                       "size":  478
