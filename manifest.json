@@ -154,8 +154,8 @@
                   },
                   {
                       "path":  "config/block_factorys_bosses-server.toml",
-                      "sha256":  "2e6624ed2974729727702aa11e9064c2b72a12e3e65488e09e2f44191354b403",
-                      "size":  843
+                      "sha256":  "e86f95f8042c80428e05174a91946fa8d74adf88eb230b9dddf11a86f93cde2e",
+                      "size":  844
                   },
                   {
                       "path":  "config/bosses_of_mass_destruction.json5",
