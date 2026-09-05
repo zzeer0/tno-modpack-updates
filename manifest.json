@@ -15173,6 +15173,11 @@
                       "size":  1407250
                   },
                   {
+                      "path":  "mods/mysticism-neoforge-2.1.2.jar",
+                      "sha256":  "e1d4959dfb932b92f9bfa6c66ed718f12184c5ef43f06a3c3e36f665b8ec2ce2",
+                      "size":  3321836
+                  },
+                  {
                       "path":  "mods/playernbtftb-1.0.1.1.jar",
                       "sha256":  "4e125c86d7d8b200871f87a792cee5c7e0b73957134c4bcb111d94b1d2bae1e0",
                       "size":  14429
@@ -15224,8 +15229,13 @@
                   },
                   {
                       "path":  "mods/tensuramagicfilter-1.2.0.jar",
-                      "sha256":  "15296bd6faeec401c35f6de640e7819fc6d20f47e3030cb669478843e22a50a6",
-                      "size":  34206
+                      "sha256":  "50b51c41b8185012e11559c8f5f45de88b300f0d5a3829814642bd9a95eae8d9",
+                      "size":  34361
+                  },
+                  {
+                      "path":  "mods/tensuramoreskills-0.0.4.7.jar",
+                      "sha256":  "0b6a77c6aa25cec8143998f6600acc0996fd0d0ef5c6a05e977531a940950c2d",
+                      "size":  6747335
                   },
                   {
                       "path":  "mods/tensura_better_subs-neoforge-1.2.4.jar",
