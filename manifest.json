@@ -15228,6 +15228,21 @@
                       "size":  117477
                   },
                   {
+                      "path":  "mods/tensura_boss_structure-1.0.3.3.jar",
+                      "sha256":  "c5c8f4c9791c28eb51f74fc3137eb8da6cccc32e5f43bab40bbf8448d66325f6",
+                      "size":  906653
+                  },
+                  {
+                      "path":  "mods/tensura_minecolonies-0.2.3.jar",
+                      "sha256":  "997e67e9ea38787ceae89720ea50ee26370823fadb59a9dd3eda652f46592465",
+                      "size":  1464036
+                  },
+                  {
+                      "path":  "mods/tensura_skill_books-neoforge-2.2.1.jar",
+                      "sha256":  "67eb649721f62e65430ef2b6896b50a7170a71896dc07df3b60778f8fe4f8f8e",
+                      "size":  1267691
+                  },
+                  {
                       "path":  "mods/tensura_skill_disabled-1.0.0.0.jar",
                       "sha256":  "cf2eec6495aa94df7c632cad080f9c1afe3b87252b1d71a585b9c26b40bdd5b4",
                       "size":  21492
