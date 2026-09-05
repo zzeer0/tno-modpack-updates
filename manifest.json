@@ -15133,6 +15133,11 @@
                       "size":  17661182
                   },
                   {
+                      "path":  "mods/block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+                      "sha256":  "99c70d4dbd92f0adcfbd49a4b4a9b44af81a865be3d01df2f109be7bb306bb58",
+                      "size":  23981964
+                  },
+                  {
                       "path":  "mods/codxlib-1.5.1-neoforge+1.21.1.jar",
                       "sha256":  "36431429a0bb58ffba4eec3aac87f28b158b2ca4dae11f1520c7ea9e4d680985",
                       "size":  191680
