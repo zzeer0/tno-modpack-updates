@@ -15153,6 +15153,11 @@
                       "size":  1585287
                   },
                   {
+                      "path":  "mods/gearevolution-1.2.5.jar",
+                      "sha256":  "f00b94e2d1d784cbdb69777021412630f2d01249a651c70a3bb43cc1f0830d8e",
+                      "size":  1440517
+                  },
+                  {
                       "path":  "mods/GeophilicBackported-v1.3.2 1.21.1.jar",
                       "sha256":  "9a19917119cfb3501aa49ddfb9319b0e625cdaad1c8fc471f5ce7b43802015d8",
                       "size":  87564
@@ -15188,14 +15193,24 @@
                       "size":  1391731
                   },
                   {
+                      "path":  "mods/SimplyBows-neoforge-0.1.4.jar",
+                      "sha256":  "d3ba2bbf470fd65371bc6167db6916fb8ef7292a323dedcb1be7405ddbf792fc",
+                      "size":  4058689
+                  },
+                  {
+                      "path":  "mods/simplyswords-neoforge-1.63.0-1.21.1.jar",
+                      "sha256":  "4619dcf1501fc82c1a52acd4c88a466436f5c1d7d2bccc0932912a12b0bc5198",
+                      "size":  12617777
+                  },
+                  {
                       "path":  "mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar",
                       "sha256":  "de05b15c04d04c95a3dc500b42737ea06e702d7e502868b21403ba724f582e34",
                       "size":  87823
                   },
                   {
                       "path":  "mods/tensura-neoforge-2.0.1.3.jar",
-                      "sha256":  "8ca8e01138e7c50af2cddbc15199c6f5d74e136736ed47204ab7d57c1a2b542a",
-                      "size":  36215487
+                      "sha256":  "e6d53ab01cdf82cd2e9590c33f9841144bd6cae595498e2617ad4f9037ac98b7",
+                      "size":  36215454
                   },
                   {
                       "path":  "mods/tensuraenigmatic-1.0.1.jar",
