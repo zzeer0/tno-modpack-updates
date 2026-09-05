@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:ignitium_boots",
+  "epGain": 0.005,
+  "maxEP": 2000,
+  "minEP": 2000
+}

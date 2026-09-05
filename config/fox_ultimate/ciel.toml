@@ -1,0 +1,133 @@
+[Ciel]
+	#Require a permanent mastered Raphael before Ciel can awaken.
+	requireMasteredRaphael = true
+	#Require the player to be a True Demon Lord or True Hero before Ciel can awaken. The legacy field name is retained for existing configs.
+	requireTrueDemonLord = true
+	#Charybdis Cores that Raphael must successfully integrate before Ciel can awaken.
+	requiredCharybdisCores = 5
+	#Total item count that Raphael must successfully produce with Refine before Ciel can awaken.
+	requiredRefinedItemCount = 64
+	#Health percentage below which combat unlocks Manas naming.
+	awakeningHealthPercent = 25.0
+	#Ticks between server-side awakening and soul-bound restoration checks.
+	acquisitionCheckIntervalTicks = 10
+	#Ticks after dealing or receiving damage that still count as combat for awakening.
+	combatTimeoutTicks = 200
+	#Additional chant-speed attribute supplied by Ciel's Manas Core passive.
+	chantSpeedBonus = 10.0
+	#Additional analytical-appraisal attribute supplied by Ciel's Manas Core passive.
+	analysisLevelBonus = 10.0
+	#Additional skill-learning gain supplied by Ciel's Manas Core passive.
+	learningBonus = 30.0
+	#Additional skill-mastery gain supplied by Ciel's Manas Core passive.
+	masteryBonus = 30.0
+	#Future Vision attack-prediction success chance in percent.
+	futureVisionChance = 90.0
+	#Multiplier applied to skill cooldowns while Ciel is owned. Default 0.70 means 30% less.
+	cooldownMultiplier = 0.7
+	#Multiplier applied to skill magicule costs while Ciel is owned. Default 0.70 means 30% less.
+	magiculeCostMultiplier = 0.7
+	#Maximum-magicule percentage drained each second during Emergency Takeover.
+	takeoverDrainPercentPerSecond = 1.0
+	#Maximum hostile-target search range during Emergency Takeover.
+	takeoverTargetRange = 32.0
+	#Radius of the Emergency Takeover killing aura.
+	killAuraRadius = 4.5
+	#Ticks between killing-aura attacks.
+	killAuraIntervalTicks = 10
+	#Maximum targets struck by each killing-aura pulse.
+	killAuraMaxTargets = 4
+	#Ticks between attempts to use skills from the active Tensura preset.
+	autoCastIntervalTicks = 20
+	#Held duration supplied to automatically activated held skills.
+	autoCastHoldTicks = 10
+	#Maximum preset skills activated in one Emergency Takeover cycle.
+	autoCastMaxSkillsPerCycle = 1
+	#Require line of sight for Emergency Takeover targets.
+	autoCastRequireLineOfSight = true
+	#Allow Emergency Takeover to target hostile players.
+	autoCastTargetsPlayers = false
+	#Distance at which Emergency Takeover stops advancing and fights in place.
+	takeoverMeleeStopDistance = 2.75
+	#Distance at which Emergency Takeover starts sprinting toward its target.
+	takeoverSprintDistance = 8.0
+	#Ticks between target searches when no valid target is currently locked.
+	takeoverTargetRefreshTicks = 5
+	#Maximum horizontal aim change in degrees per tick during Emergency Takeover.
+	takeoverAimYawDegreesPerTick = 12.0
+	#Maximum vertical aim change in degrees per tick during Emergency Takeover.
+	takeoverAimPitchDegreesPerTick = 8.0
+	#Enable bounded local obstacle avoidance during Emergency Takeover.
+	takeoverObstacleAvoidance = true
+	#Maximum distance in blocks checked by Emergency Takeover obstacle avoidance.
+	takeoverAvoidanceLookAhead = 4.0
+	#Preferred horizontal clearance around obstacles. Exact-width routes remain usable as a fallback.
+	takeoverAvoidanceClearance = 0.05
+	#Number of collision samples used for each obstacle-avoidance direction. Internally capped at 12.
+	takeoverAvoidanceProbeSamples = 5
+	#Ticks between full obstacle-avoidance direction recalculations.
+	takeoverAvoidanceRepathTicks = 4
+	#Minimum ticks to keep a selected detour direction before returning to a direct route.
+	takeoverAvoidanceHoldTicks = 12
+	#First lateral angle in degrees tested while avoiding an obstacle.
+	takeoverAvoidanceNarrowAngleDegrees = 35.0
+	#Second lateral angle in degrees tested while avoiding an obstacle.
+	takeoverAvoidanceWideAngleDegrees = 65.0
+	#Widest escape angle in degrees. Values above 90 allow backing away from a blocking entity.
+	takeoverAvoidanceEscapeAngleDegrees = 100.0
+	#Ticks without sufficient progress before Emergency Takeover reverses its detour side.
+	takeoverAvoidanceStuckCheckTicks = 10
+	#Minimum horizontal distance that counts as progress during a detour.
+	takeoverAvoidanceStuckMinimumDistance = 0.25
+	#Maximum height in blocks that Emergency Takeover may deliberately jump over.
+	takeoverMaximumAutoJumpHeight = 1.25
+	#Allow Emergency Takeover to place or mine blocks when trapped in a closed pit.
+	takeoverTerrainEscape = true
+	#Ticks without meaningful pursuit progress before terrain escape takes priority.
+	takeoverEscapeDetectionTicks = 30
+	#Horizontal route progress that resets Emergency Takeover's stuck detector.
+	takeoverEscapeMinimumProgress = 0.3
+	#Horizontal flood-search radius used to distinguish a closed pit from a local obstacle.
+	takeoverEscapeSearchRadius = 3
+	#Allow Emergency Takeover to consume tagged basic blocks and pillar upward.
+	takeoverEscapePlaceBlocks = true
+	#Allow Emergency Takeover to mine a staircase when no usable pillar block is available.
+	takeoverEscapeBreakBlocks = true
+	#Minimum ticks between automatic pillar block placement attempts.
+	takeoverEscapeActionIntervalTicks = 4
+	#Ticks spent moving and jumping onto each automatically mined staircase step.
+	takeoverEscapeStepTicks = 12
+	#Maximum ticks spent in one terrain-escape attempt.
+	takeoverEscapeMaximumTicks = 240
+	#Ticks before terrain escape may retry after an unsuccessful attempt.
+	takeoverEscapeRetryCooldownTicks = 100
+	#Hardest block that terrain escape may mine. Obsidian is 50 and is excluded by default.
+	takeoverEscapeMaximumBreakHardness = 10.0
+	#Multiplier applied to normal player/tool mining progress during terrain escape.
+	takeoverEscapeBreakSpeedMultiplier = 1.0
+	#Horizontal radius used to search for nearby stairs or other rising walkable paths.
+	takeoverEscapeRouteSearchRadius = 8
+	#Maximum ticks spent following one discovered escape route before falling back to pillaring.
+	takeoverEscapeRouteTimeoutTicks = 80
+	#Maximum horizontal distance from the pillar center before Emergency Takeover may jump.
+	takeoverEscapePillarCenterTolerance = 0.17
+	#Maximum horizontal motion allowed before Emergency Takeover may begin a pillar jump.
+	takeoverEscapePillarMotionTolerance = 0.05
+	#Make Emergency Takeover equip the highest-damage weapon found in the inventory before melee attacks.
+	takeoverUseStrongestWeapon = true
+	#Ticks between highest-damage weapon reevaluations while Emergency Takeover has a target.
+	takeoverWeaponRefreshTicks = 10
+	#Vertical blocks copied above and below the player for client-side takeover pathfinding.
+	takeoverClientPathVerticalRange = 6
+	#Maximum world cells copied per client tick while building an immutable pathfinding snapshot.
+	takeoverClientSnapshotBudget = 2048
+	#Maximum nodes expanded by one client-side takeover path calculation.
+	takeoverClientPathMaxVisitedNodes = 4096
+	#Maximum milliseconds spent in one background takeover path calculation.
+	takeoverClientPathTimeBudgetMillis = 10
+	#Normal ticks between client-side takeover route recalculations.
+	takeoverClientPathReplanTicks = 10
+	#Ticks between trapped-area probes while Emergency Takeover has no target.
+	takeoverClientIdleProbeTicks = 20
+	#Maximum downward drop included in an automatically followed route.
+	takeoverClientMaximumDropHeight = 3.0

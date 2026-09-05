@@ -1,0 +1,6 @@
+{
+  "type": "elementalmaces:resonating_mace",
+  "epGain": 0.0025,
+  "maxEP": 10000,
+  "minEP": 10000
+}

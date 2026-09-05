@@ -1,0 +1,11 @@
+{
+  "item.sellingbin.error": "物品错误",
+  "block.sellingbin.error": "方块错误",
+  "block.sellingbin.selling_bin": "售卖箱",
+  "block.sellingbin.selling_bin.wood": "木制售卖箱",
+  "block.sellingbin.selling_bin.redstone": "红石售卖箱",
+  "block.sellingbin.selling_bin.iron": "铁制售卖箱",
+  "block.sellingbin.selling_bin.diamond": "钻石售卖箱",
+  "block.sellingbin.selling_bin.netherite": "下界合金售卖箱",
+  "container.selling_bin": "售卖箱"
+}

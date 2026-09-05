@@ -1,0 +1,186 @@
+{
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "top": 230
+            },
+            "SETTINGS": {
+                "top": 232
+            }
+        }
+    },
+    "net.minecraft.client.gui.screens.inventory.ContainerScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 1
+            }
+        }
+    },
+    "io.github.manasmods.tensura.client.screen.HumanoidMainScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.HumanoidMainMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.HumanoidInventoryScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 1
+            },
+            "MOVE_TO_PLAYER": {
+                "top": -9
+            },
+            "SORT": {
+                "horizontalOffset": -1,
+                "top": -9
+            },
+            "SORT_COLUMNS": {
+                "top": -9
+            },
+            "SORT_ROWS": {
+                "top": -9
+            }
+        }
+    },
+    "com.iafenvoy.iceandfire.screen.gui.DragonScreen": {
+        "ignore": true
+    },
+    "com.iafenvoy.iceandfire.screen.handler.DragonScreenHandler": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.SmithingBenchScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.SmithingBenchMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.KilnScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.KilnMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.SpatialStorageScreen": {
+        "ignore": true,
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 74,
+                "bottom": 1
+            },
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 29,
+                "top": 7
+            },
+            "SORT": {
+                "horizontalOffset": 29,
+                "top": 7
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 29,
+                "top": 7
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 29,
+                "top": 7
+            }
+        }
+    },
+    "io.github.manasmods.tensura.menu.SpatialStorageMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.RepeatCraftingScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.RepeatCraftingMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.RefiningScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.RefiningMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.ResearcherStorageScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.ResearcherStorageMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.ResearcherEnchantingScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.ResearcherEnchantingMenu": {
+        "ignore": true
+    },
+    "bigchadguys.sellingbin.screen.SellingBinScreen": {
+        "ignore": true
+    },
+    "bigchadguys.sellingbin.screen.handler.SellingBinScreenHandler": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.SpellbindingScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "horizontalOffset": 11,
+                "top": 28
+            }
+        }
+    },
+    "io.github.manasmods.tensura.menu.SpellbindingMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.WoodcutterScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.menu.WoodcutterMenu": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.MountScreen": {
+        "ignore": true
+    },
+    "fuzs.illagerinvasion.client.gui.screens.inventory.ImbuingScreen": {
+        "ignore": true
+    },
+    "com.iafenvoy.iceandfire.screen.gui.LecternScreen": {
+        "ignore": true
+    },
+    "com.bobmowzie.mowziesmobs.client.gui.GuiSculptorTrade": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.screen.AlchemyFurnaceScreen": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.screen.TalismanMakingScreen": {
+        "ignore": true
+    },
+    "com.foxablazeultimate.client.screen.BeelzebubStorageScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.UncraftingScreen": {
+        "ignore": true
+    },
+    "io.github.manasmods.tensura.client.screen.SynthesisSeparationScreen": {
+        "ignore": true
+    },
+    "xyz.yfrostyf.toxony.client.gui.block.AlembicScreen": {
+        "ignore": true
+    },
+    "xyz.yfrostyf.toxony.client.gui.block.CopperCrucibleScreen": {
+        "ignore": true
+    },
+    "xyz.yfrostyf.toxony.client.gui.block.MortarPestleScreen": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.screen.AncientScholarTableScreen": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.menu.AncientScholarTableMenu": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.screen.RuneTableScreen": {
+        "ignore": true
+    },
+    "com.mortal_cultivation.gui.menu.RuneTableMenu": {
+        "ignore": true
+    }
+}

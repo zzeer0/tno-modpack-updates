@@ -1,0 +1,876 @@
+{
+	autofocus_id: "6AAB6D0E51DB699C"
+	default_hide_dependency_lines: false
+	default_quest_shape: "none"
+	filename: "f"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/battlewill/maximum_magic_bullet.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "354AEEAF0EC057C7"
+	images: [
+		{
+			alpha: 50
+			color: 16715525
+			height: 2.0d
+			image: "ablazeaqzlcz:textures/ftb/re_zero.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 2.424489795918369d
+			y: 12.047363945578233d
+		}
+		{
+			alpha: 50
+			height: 1.5d
+			image: "ablazeaqzlcz:textures/ftb/tenxxx.png"
+			rotation: 0.0d
+			width: 3.4d
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			alpha: 200
+			color: 0
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/ultimate_skill.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "foxablazeultimate:textures/skill/raphael.png"
+			order: -1
+			rotation: 15.0d
+			width: 1.0d
+			x: 2.435714285714262d
+			y: 4.720833333333331d
+		}
+		{
+			height: 1.0d
+			image: "foxablazeultimate:textures/skill/beelzebub.png"
+			order: -1
+			rotation: -15.0d
+			width: 1.0d
+			x: -0.46904761904765024d
+			y: 4.768452380952382d
+		}
+		{
+			alpha: 50
+			height: 3.0d
+			image: "ablazeaqzlcz:textures/ftb/jk.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -5.5d
+			y: 12.0d
+		}
+		{
+			alpha: 50
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/wws.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.4663265306122568d
+			y: 11.957142857142848d
+		}
+		{
+			alpha: 50
+			height: 3.0d
+			image: "ablazeaqzlcz:textures/ftb/genshin.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.472108843537349d
+			y: 12.177551020408139d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "27B051980987A3F2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2240D457940CDA34"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				ability: "tensura:thought_acceleration"
+				id: "086CA34EBDE8E20F"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 0.0d
+			y: 0.9107142857142847d
+		}
+		{
+			id: "2B64F0E323A0A8EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19A88F8D8B7BAF62"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				ability: "tensura:all_seeing_eye"
+				id: "605BB8CE7E9D8DAC"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -1.5d
+			y: 0.9107142857142847d
+		}
+		{
+			id: "6AAB6D0E51DB699C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "230F26C025BCC1A8"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				ability: "tensura:magic_sense"
+				id: "0BD1E8126EA35446"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.0d
+			y: 0.9107142857142847d
+		}
+		{
+			id: "4EBF53A4AA4745EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62877D797C9EF6F0"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "tensura:strengthen_body"
+				id: "267421BA96958249"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 1.5d
+			y: 0.9107142857142847d
+		}
+		{
+			id: "7E1113BE834689B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61CC668DF06CB619"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "tensura:water_current_control"
+				id: "2AFBFA8618F45B16"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 3.0d
+			y: 0.9107142857142847d
+		}
+		{
+			id: "5C9134F3F3AA5C2F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "734855FB6FA90A4C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "tensura:gravity_flight"
+				id: "164F8A8F1602D8E2"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 4.5d
+			y: 0.9107142857142847d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbfiltersystem:textures/gui/sprites/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 1.7d
+			id: "56E588F1D2BA7A06"
+			shape: "circle"
+			tasks: [{
+				id: "3E8526AA7A0D5260"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "2F5EA5DA32178D88"
+			tasks: [{
+				ability: "tensura:great_sage"
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/skill/unique/great_sage.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "67FCFC0039B6E85E"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			id: "6190955DF040A782"
+			tasks: [{
+				ability: "tensura:degenerate"
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/skill/unique/degenerate.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "267AC349E4957A83"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2F5EA5DA32178D88"
+				"6190955DF040A782"
+			]
+			id: "7A20976135887AD4"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/mob_effect/soul_drain.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "126C133A62DDB9B6"
+				type: "tensura_tno:soul_grade"
+				value: 40
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:raphael"
+				id: "5EDB506C3978415E"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			id: "6DDAA9E2E512CA5C"
+			tasks: [{
+				ability: "tensura:merciless"
+				id: "0366407DAEA52AB1"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			id: "6FDBD38851854574"
+			tasks: [{
+				ability: "tensura:gluttony"
+				id: "428601AC02A9097F"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"6DDAA9E2E512CA5C"
+				"6FDBD38851854574"
+			]
+			id: "17D5656DDF929E02"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/mob_effect/soul_drain.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "167579DAA44C175E"
+				type: "tensura_tno:soul_grade"
+				value: 20
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:beelzebub"
+				id: "4E933ACF537DDBA2"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7A20976135887AD4"]
+			id: "611D3F3AB58223FA"
+			tasks: [{
+				ability: "tensura:infinity_prison"
+				id: "6ACC98FE9A246616"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["611D3F3AB58223FA"]
+			id: "413526DA9AF92A22"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/mob_effect/soul_drain.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1C59D6BACB5BD11D"
+				type: "tensura_tno:soul_grade"
+				value: 20
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:uriel"
+				id: "1029432E17D0205D"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			id: "52618536396B39A0"
+			tasks: [{
+				ability: "tensura_tno:human_form"
+				id: "515C2D137A37C2BB"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -2.5d
+			y: 2.9107142857142847d
+		}
+		{
+			dependencies: ["7A20976135887AD4"]
+			id: "05966C3C01F23D2A"
+			shape: "diamond"
+			tasks: [{
+				id: "32BC70419875366D"
+				item: { count: 1, id: "foxablazeultimate:wisdom_crystal" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["17D5656DDF929E02"]
+			id: "15009A4C69307199"
+			shape: "diamond"
+			tasks: [{
+				id: "6909C8C7E6817EA4"
+				item: { count: 1, id: "foxablazeultimate:gluttony_crystal" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["413526DA9AF92A22"]
+			id: "2515FE33D75FECAB"
+			shape: "diamond"
+			tasks: [{
+				id: "77F2D904A55EB031"
+				item: { count: 1, id: "foxablazeultimate:covenant_crystal" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			id: "01A2A02A26E4E44E"
+			tasks: [{
+				ability: "tensura:wind_domination"
+				id: "6BAF95111082866A"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			id: "182068714BF79ADB"
+			tasks: [{
+				ability: "tensura:wind_manipulation"
+				id: "7C561D6C9B473D39"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"01A2A02A26E4E44E"
+				"182068714BF79ADB"
+			]
+			dependency_requirement: "one_completed"
+			id: "7C0112271677EE1D"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "morerelics:textures/particle/glitched_soul9.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7C07CD9296A9029F"
+				type: "tensura_tno:soul_energy"
+				value: 70000
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:veldora"
+				id: "7907BAE99911B66D"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6AAB6D0E51DB699C"
+				"033E7759B64F002C"
+				"58020190DBD3261D"
+			]
+			id: "4D66FADBC0A3FB2E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37DB876C78362F80"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "tensura:universal_perception"
+				id: "4DE2ACDAAF86D825"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.0d
+			y: 2.9107142857142847d
+		}
+		{
+			id: "033E7759B64F002C"
+			tasks: [{
+				ability: "tensura:sense_heat_source"
+				id: "4A593364851DC032"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -5.0d
+			y: 0.9107142857142847d
+		}
+		{
+			dependencies: [
+				"6AAB6D0E51DB699C"
+				"7072291CC468F0EA"
+			]
+			id: "58020190DBD3261D"
+			tasks: [{
+				ability: "tensura:sense_soundwave"
+				id: "637D1EC5D4C28F74"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -3.5d
+			y: 1.9107142857142847d
+		}
+		{
+			id: "7072291CC468F0EA"
+			tasks: [{
+				ability: "tensura:danger_sense"
+				id: "19855E27A9B692B6"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -3.0d
+			y: 0.9107142857142847d
+		}
+		{
+			dependencies: ["4D66FADBC0A3FB2E"]
+			id: "4EDB9D7AEC78646C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FCCBF8669277455"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "tensura_tno:magic_ore_sense"
+				id: "1A62330762A463DD"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -4.0d
+			y: 3.9107142857142847d
+		}
+		{
+			id: "0F4B54C71BF36F07"
+			tasks: [{
+				ability: "tensura:wrath"
+				id: "38E4F53C1518E199"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0F4B54C71BF36F07"]
+			id: "0112B2610FEAE051"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/mob_effect/soul_drain.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "427221C95CCBAD74"
+				type: "tensura_tno:soul_grade"
+				value: 20
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:satanael"
+				id: "3620FEC676CE28C6"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0112B2610FEAE051"]
+			id: "0500D8F45231086A"
+			shape: "diamond"
+			tasks: [{
+				id: "1DB157F29677B7DA"
+				item: { count: 1, id: "foxablazeultimate:wrath_crystal" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			id: "1185C19C5EE08F61"
+			tasks: [{
+				ability: "tensura:tuner"
+				id: "4967453742FA6756"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1185C19C5EE08F61"]
+			id: "39A1084D05A08CDF"
+			tasks: [{
+				ability: "tensuramoreskills:witch_of_vainglory"
+				id: "1F29D9B29F17F263"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 1.0d
+			y: 13.0d
+		}
+		{
+			id: "5F50A81B2A49655D"
+			tasks: [{
+				ability: "tensuramoreskills:authority_of_greed"
+				id: "57D8A4D41686E204"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5F50A81B2A49655D"]
+			id: "4DE5FDABB2C034D7"
+			tasks: [{
+				ability: "tensuramoreskills:true_authority_of_greed"
+				id: "66BA56D7FCB3DB0F"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1E58DB775CD0CE1E"]
+			id: "03794AB92667475D"
+			tasks: [{
+				ability: "tensuramoreskills:divine_general_mahoraga"
+				id: "6BD04BE6662F872F"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -5.5d
+			y: 13.0d
+		}
+		{
+			id: "1E58DB775CD0CE1E"
+			tasks: [{
+				ability: "tensuramoreskills:adaptability"
+				id: "578F44064EACC97B"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			id: "043E80CA9C59B5FB"
+			tasks: [{
+				ability: "tensuramoreskills:albis_vina"
+				id: "52AF5480E847BE57"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["043E80CA9C59B5FB"]
+			id: "057552A8551732B6"
+			tasks: [{
+				ability: "tensuramoreskills:elfaria_the_hallowed_icemaiden"
+				id: "3D760C7186864300"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -1.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3D905AACA9BE52EC"]
+			id: "2ACC936488DB77EF"
+			tasks: [{
+				ability: "tensuramoreskills:ronova"
+				id: "68613E0DC441CCF0"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3D905AACA9BE52EC"]
+			id: "2407E305A960BE43"
+			tasks: [{
+				ability: "tensuramoreskills:asmoday"
+				id: "7E5E0A0CC80C8342"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3D905AACA9BE52EC"]
+			id: "55F3BC7CA2C07E54"
+			tasks: [{
+				ability: "tensuramoreskills:naberius"
+				id: "66562E24C0FD39DE"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3D905AACA9BE52EC"]
+			id: "5EC736A858C09533"
+			tasks: [{
+				ability: "tensuramoreskills:istaroth"
+				id: "6CC4D085D607F4CA"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 9.0d
+			y: 13.0d
+		}
+		{
+			id: "14AC04DF8CDFD067"
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "netherman:grand_door"
+				}
+				id: "16C7E5BC50AEC6A9"
+				structure: "tensuramoreskills:paths_gate"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["14AC04DF8CDFD067"]
+			id: "3D905AACA9BE52EC"
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 9L
+					id: "3656117035BADC66"
+					item: { count: 1, id: "tensura:pure_magisteel_block" }
+					type: "item"
+				}
+				{
+					id: "065AB7EEA21697DC"
+					item: { count: 1, id: "tensura:mithril_block" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0A032BF14B496525"]
+			id: "669B57F2D05B7884"
+			tasks: [{
+				ability: "tensuramoreskills:witch_of_envy_satella"
+				id: "28E4033960B4B44C"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 4.0d
+			y: 13.0d
+		}
+		{
+			id: "0A032BF14B496525"
+			tasks: [{
+				ability: "tensuramoreskills:satella"
+				id: "4F0AB92CD7B1D45F"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			id: "321ECD9F13D78465"
+			tasks: [{
+				ability: "tensura:infinity_prison"
+				id: "587323B8FC309E4D"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["321ECD9F13D78465"]
+			id: "7B060096CAC00AFF"
+			tasks: [{
+				ability: "tensuramoreskills:kronairos_lord_of_the_endless"
+				id: "4B4AC3DDC0442838"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			id: "1AECBCFE5C2CD2C7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D247B721151613C"
+					table_id: 5836709222417088324L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33504002FB919D32"
+					table_id: 3195869884087400432L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				ability: "foxablazeultimate:shub_niggurath"
+				id: "59F878047CE9A983"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1AECBCFE5C2CD2C7"]
+			id: "395C303A0B300171"
+			shape: "diamond"
+			tasks: [{
+				id: "7E7635A31BF6082D"
+				item: { count: 1, id: "foxablazeultimate:harvest_crystal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7A20976135887AD4"]
+			id: "60C0471AB7032E82"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E10C22F6E3F310B"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				ability: "foxablazeultimate:ciel"
+				id: "33F56FFFC4E8599C"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			id: "139C40496643C9CC"
+			tasks: [{
+				ability: "foxablazeultimate:fortuna"
+				id: "257E5FE8321ABBDA"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["139C40496643C9CC"]
+			id: "04AB969794B55A42"
+			shape: "diamond"
+			tasks: [{
+				id: "7721D4B930180FD8"
+				item: { count: 1, id: "foxablazeultimate:wisdom_crystal" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.5d
+		}
+	]
+}

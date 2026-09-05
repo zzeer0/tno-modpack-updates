@@ -1,0 +1,9 @@
+{
+  "type": "friendsandfoes:iceologer",
+  "abilities": [
+    "tensura:magic_resistance"
+  ],
+  "max_magicule": 2800,
+  "min_magicule": 2000,
+  "spiritualHealth": 60
+}

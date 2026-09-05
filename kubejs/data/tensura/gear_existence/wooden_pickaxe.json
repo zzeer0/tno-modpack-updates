@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_pickaxe",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_pickaxe",
+  "maxEP": 750,
+  "minEP": 0
+}

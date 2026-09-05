@@ -1,0 +1,16 @@
+{
+	"bokoblinHealth": 18,
+	"bokoblinAttackDamage": 3,
+	"bokoblinSpawnWeight": 5,
+	"BokoblinMovementSpeed": 0.3,
+	"chuchuHealth": 10,
+	"chuchuAttackDamage": 2,
+	"chuchuSpawnWeight": 5,
+	"keeseHealth": 10,
+	"keeseAttackDamage": 2,
+	"keeseSpawnWeight": 5,
+	"lizalfosHealth": 20,
+	"lizalfosAttackDamage": 4,
+	"lizalfosSpawnWeight": 5,
+	"lizalfosMovementSpeed": 0.3
+}

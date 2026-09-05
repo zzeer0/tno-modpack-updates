@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:diamond_boots",
+  "epGain": 0.003,
+  "evolution": "minecraft:netherite_boots",
+  "maxEP": 5000,
+  "minEP": 4000
+}

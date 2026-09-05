@@ -1,0 +1,74 @@
+[
+  {
+    "mob": "tensura:hell_moth",
+    "persecond": 10.00,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 24,
+      "maxdist": 96,
+      "maxthis": 5,
+      "validspawn": true,
+      "and": {
+        "biome": [
+          "minecraft:pale_garden",
+          "minecraft:dark_forest"
+        ]
+      }
+    }
+  },
+  {
+    "mob": "tensura:unicorn",
+    "persecond": 8.00,
+    "attempts": 12,
+    "amount": {
+      "minimum": 1,
+      "maximum": 4
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 24,
+      "maxdist": 96,
+      "maxthis": 10,
+      "validspawn": true,
+      "and": {
+        "biome": [
+          "minecraft:flower_forest"
+        ]
+      }
+    }
+  },
+  {
+    "mob": "tensura:unicorn",
+    "persecond": 2.00,
+    "attempts": 8,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 24,
+      "maxdist": 96,
+      "maxthis": 5,
+      "validspawn": true,
+      "and": {
+        "biome": [
+          "minecraft:windswept_hills",
+          "minecraft:windswept_forest",
+          "minecraft:windswept_gravelly_hills",
+          "minecraft:meadow",
+          "minecraft:stony_peaks",
+          "minecraft:jagged_peaks",
+          "minecraft:frozen_peaks",
+          "minecraft:snowy_slopes",
+          "minecraft:grove"
+        ]
+      }
+    }
+  }
+]

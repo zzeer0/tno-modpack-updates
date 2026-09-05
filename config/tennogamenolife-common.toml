@@ -1,0 +1,49 @@
+#Skill Configuration
+[skills]
+	#Enable skill specialization feature
+	enableSkillSpecialization = true
+	#Multiplier for skill experience gain
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	skillExperienceMultiplier = 1.0
+	#Maximum level for skills
+	# Default: 100
+	# Range: 1 ~ 1000
+	maxSkillLevel = 100
+
+	#Enable or disable individual mod skills. Disabled skills cannot be obtained.
+	[skills.availability]
+		#Enable the Barrier skill
+		barrier = true
+		#Enable the Magic Beads skill
+		magic_beads = true
+		#Enable the Tengeki skill
+		tengeki = true
+		#Enable the Reisen skill
+		reisen = true
+		#Enable the Far Cry skill
+		far_cry = true
+		#Enable the Black Arrow skill
+		black_arrow = true
+		#Enable the Godly Smite skill
+		godly_smite = true
+
+#Starting equipment granted when a player first becomes one of the mod races.
+[startingEquipment]
+	#Whether Ex Machina players receive an Ex Machina Cannon when starting as the race.
+	#是否让机铠种玩家在开局时自动获得机铠炮。
+	giveExMachinaWeapon = true
+	#Whether Flugel players receive a Flugel Sickle when starting as the race.
+	#是否让天翼种玩家在开局时自动获得天翼之镰。
+	giveFlugelSickle = true
+
+#Server Safety Rules for destructive ultimate skills (Tengeki / Godly Smite / Reisen / Far Cry).
+[safety]
+	#If true, all destructive ultimate skills (Tengeki, Godly Smite, Reisen, Far Cry) are completely disabled.
+	#Activations will be blocked and a chat message will inform the player.
+	#Default: false (skills enabled).
+	destructiveSkillsDisabled = false
+	#Safety fallback: if true, destructive ultimate skills will NOT damage blocks or modify terrain,
+	#even when the skills themselves are allowed to be cast (entity damage / VFX still apply).
+	#Recommended for hardcore PvP / survival servers that don't want griefing. Default: false (skills behave as designed).
+	preventTerrainDamage = false

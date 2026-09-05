@@ -1,0 +1,12 @@
+{
+  "manascore.attribute.critical_damage_multiplier": "暴击伤害倍率",
+  "manascore.attribute.critical_attack_chance": "暴击几率",
+  "manascore.attribute.glide_speed_multiplier": "滑翔速度倍率",
+  "manascore.attribute.lava_speed_multiplier": "岩浆移动速度倍率",
+  "manascore.attribute.swim_speed_multiplier": "游泳速度倍率",
+  "manascore.race.difficulty.easy": "简单",
+  "manascore.race.difficulty.intermediate": "中等",
+  "manascore.race.difficulty.hard": "困难",
+  "manascore.race.difficulty.extreme": "极难",
+  "manascore.skill.learn_skill": "已获得 %s。"
+}

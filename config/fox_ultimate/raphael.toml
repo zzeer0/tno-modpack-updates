@@ -1,0 +1,73 @@
+[Raphael]
+	#Require player to be a Hero seed (HeroEgg / TrueHero) OR Demon Lord seed (DemonLordSeed / TrueDemonLord) before fusion. Default true.
+	fusionRequireSpecialRace = true
+	#Mastery value to assign on fusion (0-100). Note: 'learning' and 'mastering' are TWO DIFFERENT stages in Tensura. mastery<0 = learning phase (cannot use); mastery>=0 = LEARNED, fully usable at base power; mastery>=100 = MASTERED, additionally unlocks isMastered() bonuses (halved magicule / halved cooldowns / increased copy chance). Default 0 grants only the LEARNED stage so the skill is usable immediately but the player must still grind it for mastery bonuses. Set 100 to also skip the grind.
+	fusionGrantMastery = 0
+	#Ticks to wait between the declaration line and the fusion_message. 20 ticks = 1 second. Default 40 (2s).
+	fusionDeclarationDelayTicks = 40
+	#Ticks to wait between the fusion_message and the actual skill grant / forget of source skills. Default 30 (1.5s).
+	fusionGrantDelayTicks = 30
+	#Cooldown in seconds after a SUCCESSFUL activation of mode 1/4/5 (unmastered).
+	activationCooldownSuccess = 8
+	#Cooldown in seconds after a FAILED activation of mode 1/4/5 (unmastered).
+	activationCooldownFail = 3
+	#Cooldown in seconds after a SUCCESSFUL activation of mode 1/4/5 (mastered).
+	activationCooldownSuccessMastered = 3
+	#Cooldown in seconds after a FAILED activation of mode 1/4/5 (mastered).
+	activationCooldownFailMastered = 1
+	#Cooldown in seconds after a SUCCESSFUL activation of Separate mode (mode 5, unmastered).
+	activationCooldownSeparateSuccess = 4
+	#Cooldown in seconds after a SUCCESSFUL activation of Separate mode (mode 5, mastered).
+	activationCooldownSeparateSuccessMastered = 2
+	#Magicule cost for Analysis (mode 1).
+	magiculeCostAnalysis = 500.0
+	#Magicule cost for Analysis when mastered.
+	magiculeCostAnalysisMastered = 250.0
+	#Magicule cost for Synthesise (mode 4).
+	magiculeCostSynthesise = 300.0
+	#Magicule cost for Synthesise when mastered.
+	magiculeCostSynthesiseMastered = 150.0
+	#Magicule cost for Separate (mode 5).
+	magiculeCostSeparate = 200.0
+	#Magicule cost for Separate when mastered.
+	magiculeCostSeparateMastered = 100.0
+	#Movement speed bonus (multiplied base) when toggled on.
+	movementBonus = 0.2
+	#Attack speed bonus (additive) when toggled on.
+	attackSpeedBonus = 1.0
+	#Chant speed bonus (additive) when toggled on.
+	chantSpeedBonus = 5.0
+	#Auto melee/projectile dodge chance bonus (%) when toggled on.
+	dodgeChanceBonus = 80.0
+	#Learning point bonus when toggled on (unmastered).
+	learningBonus = 12.0
+	#Learning point bonus when toggled on (mastered).
+	learningBonusMastered = 18.0
+	#Mastery point bonus when toggled on (unmastered).
+	masteryBonus = 12.0
+	#Mastery point bonus when toggled on (mastered).
+	masteryBonusMastered = 18.0
+	#Presence Sense level bonus when toggled on (unmastered). 3+ levels can detect invisibility.
+	presenceSenseBonus = 5.0
+	#Presence Sense level bonus when toggled on (mastered).
+	presenceSenseBonusMastered = 8.0
+	#Aura/Magicule gain bonus (% per kill) when toggled on (unmastered).
+	epGainBonus = 5.0
+	#Aura/Magicule gain bonus (% per kill) when toggled on (mastered).
+	epGainBonusMastered = 8.0
+	#Block range to scan for projectiles when copying magic via Analysis.
+	analysisProjectileRange = 30.0
+	#Block range to scan for entities when copying skills via Analysis.
+	analysisEntityRange = 10.0
+	#Base success chance (%) to copy a skill from target via Analysis (unmastered).
+	analysisCopyChance = 50.0
+	#Success chance (%) to copy a skill from target via Analysis (mastered).
+	analysisCopyChanceMastered = 100.0
+	#Allowed namespaces for skill copy. Default ['tensura']. Add modid to whitelist other mods.
+	analysisAllowedNamespaces = ["tensura"]
+	#Allowed skill type tags for Analysis copy. Valid: intrinsic, common, extra, unique, resistance, ultimate.
+	analysisAllowedTypes = ["intrinsic", "common", "extra", "unique"]
+	#Blacklist of skill IDs (e.g. 'tensura:great_sage') that can NEVER be copied.
+	analysisBlacklist = []
+	#Whitelist of UNIQUE skill IDs that can be copied. EMPTY = all unique skills are allowed. When non-empty, ONLY listed unique skills are copiable; non-unique skills are unaffected. Default omits over-tuned / story-critical uniques on purpose; tweak as needed.
+	analysisUniqueWhitelist = ["tensura:analyst", "tensura:berserker", "tensura:bewilder", "tensura:chef", "tensura:commander", "tensura:cook", "tensura:creator", "tensura:degenerate", "tensura:engorger", "tensura:envy", "tensura:falsifier", "tensura:fighter", "tensura:fusionist", "tensura:gourmand", "tensura:guardian", "tensura:healer", "tensura:infinity_prison", "tensura:lust", "tensura:martial_master", "tensura:mathematician", "tensura:merciless", "tensura:murderer", "tensura:musician", "tensura:predator", "tensura:seeker", "tensura:shadow_striker", "tensura:sniper", "tensura:spearhead", "tensura:suppressor", "tensura:survivor", "tensura:traveler", "tensura:thrower", "tensura:tuner", "tensura:usurper", "tensura:villain"]

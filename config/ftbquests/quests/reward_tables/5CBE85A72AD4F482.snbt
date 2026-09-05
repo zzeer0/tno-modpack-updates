@@ -1,0 +1,88 @@
+{
+	icon: {
+		id: "ironchest:trapped_gold_chest"
+	}
+	id: "5CBE85A72AD4F482"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			existence: "MAX_EP"
+			id: "204B2A10256B69B1"
+			type: "tensura_ftb:existence_value"
+			value: 150
+			weight: 1.8f
+		}
+		{
+			existence: "MAX_EP"
+			id: "4ECD4FDC994E9784"
+			type: "tensura_ftb:existence_value"
+			value: 500
+		}
+		{
+			count: 2
+			id: "745B4320CE65FD09"
+			item: {
+				count: 1
+				id: "tensura:bronze_coin"
+			}
+			weight: 3.0f
+		}
+		{ id: "6B3FE21EE3A5EEC0", item: { count: 1, id: "tensura:silver_coin" } }
+		{
+			id: "6AA5791A8FD62B0F"
+			item: {
+				count: 1
+				id: "tensura:battlewill_manual"
+			}
+			weight: 1.1f
+		}
+		{
+			id: "34506454FED36A45"
+			item: {
+				count: 1
+				id: "tensura:magic_ore_shard"
+			}
+			weight: 0.5f
+		}
+		{
+			count: 3
+			id: "761D12EC2B687821"
+			item: {
+				count: 1
+				id: "tensura:low_quality_magic_crystal"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 2
+			id: "48D15D4285FB2D90"
+			item: {
+				count: 1
+				id: "tensura:medium_quality_magic_crystal"
+			}
+			weight: 1.5f
+		}
+		{ id: "311E1E82A47F16C5", item: { count: 1, id: "tensura:high_quality_magic_crystal" } }
+		{
+			icon: {
+				id: "bosses_of_mass_destruction:ancient_anima"
+			}
+			id: "1853B8FFA2240802"
+			type: "tensura_tno:re_value"
+			value: 25
+		}
+		{ id: "10626B9F9A35A628", item: { count: 1, id: "tensura:zane_blood" } }
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "morerelics:textures/particle/glitched_soul2.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0E7BC5EC2C1CA558"
+			type: "tensura_tno:soul_energy"
+			value: 10000
+		}
+	]
+}

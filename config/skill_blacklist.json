@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "description": "Global Tensura skill blacklist. Use namespace:path ids, for example tensura:gluttony.",
+  "disabledSkills": [
+    "tensuramoreskills:gene_editor",
+    "tensuramoreskills:mammon_casino",
+    "tensuramoreskills:mitama_faith",
+    "tensuramoreskills:schwi_ex_machina",
+    "tensuramoreskills:phainon",
+    "tensuramoreskills:exploiter",
+    "tensuramoreskills:nirvana",
+    "tensuramoreskills:caedros_god_of_conquest",
+    "tensuramoreskills:black_communion",
+    "tensuramoreskills:void_archive",
+    "tensuramoreskills:abhoth_lord_of_pestilence"
+  ]
+}

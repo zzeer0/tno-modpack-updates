@@ -1,0 +1,4 @@
+# Tensura TNO browser element removal rules
+# One CSS selector per line. Lines starting with # are comments.
+#workbench-titlebar
+#transition-space

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:netherite_boots",
+  "epGain": 0.0025,
+  "maxEP": 6000,
+  "minEP": 5000
+}

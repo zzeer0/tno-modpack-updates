@@ -1,0 +1,37 @@
+[physics]
+	#Vehicle gravity in blocks per tick squared. VVE 3.0 uses 0.03.
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	gravity = 0.03
+	#Forward acceleration while a vehicle has surface contact.
+	# Default: 0.018
+	# Range: 0.0 ~ 0.2
+	forwardAcceleration = 0.018
+	#Reverse acceleration while a vehicle has surface contact.
+	# Default: 0.0125
+	# Range: 0.0 ~ 0.2
+	reverseAcceleration = 0.0125
+	#Maximum forward speed in blocks per tick. VVE green car uses 0.35.
+	# Default: 0.35
+	# Range: 0.05 ~ 2.0
+	maxForwardSpeed = 0.35
+	#Maximum reverse speed in blocks per tick.
+	# Default: 0.22
+	# Range: 0.05 ~ 2.0
+	maxReverseSpeed = 0.22
+	#Nominal turning radius in blocks. VVE green car uses 5.
+	# Default: 5.0
+	# Range: 1.0 ~ 64.0
+	turnRadius = 5.0
+	#Longitudinal surface retention. VVE solid friction baseline is 0.95.
+	# Default: 0.95
+	# Range: 0.0 ~ 1.0
+	surfaceFriction = 0.95
+	#Fraction of sideways velocity removed per grounded tick.
+	# Default: 0.72
+	# Range: 0.0 ~ 1.0
+	lateralGrip = 0.72
+
+[effects]
+	#Play vanilla fallback engine and steering sounds. Original custom audio is not present in the VVE repository.
+	engineSounds = true

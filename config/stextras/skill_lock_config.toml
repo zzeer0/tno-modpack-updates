@@ -1,0 +1,12 @@
+#The amount of EP needed to unlock a skill.
+getNeededEPToUnlockSkill = 1.0E7
+#List of valid skills to lock.
+validSkillsTOLock = ["tensura:absolute_severance", "tensura:analyst", "tensura:berserk", "tensura:berserker", "tensura:bewilder", "tensura:chef", "tensura:chosen_one", "tensura:commander", "tensura:cook", "tensura:creator", "tensura:degenerate", "tensura:engorger", "tensura:envy", "tensura:falsifier", "tensura:fighter", "tensura:fusionist", "tensura:gourmand", "tensura:gourmet", "tensura:great_sage", "tensura:greed", "tensura:guardian", "tensura:healer", "tensura:infinity_prison", "tensura:lust", "tensura:martial_master", "tensura:mathematician", "tensura:merciless", "tensura:murderer", "tensura:musician", "tensura:observer", "tensura:oppressor", "tensura:predator", "tensura:pride", "tensura:reflector", "tensura:researcher", "tensura:royal_beast", "tensura:reaper", "tensura:reverser", "tensura:seeker", "tensura:seer", "tensura:severer", "tensura:shadow_striker", "tensura:sloth", "tensura:sniper", "tensura:spearhead", "tensura:suppressor", "tensura:survivor", "tensura:traveler", "tensura:thrower", "tensura:tuner", "tensura:unyielding", "tensura:usurper", "tensura:villain", "tensura:wrath", "stextras:imitator", "traddon:total_reflection", "traddon:devastator", "mysticism:butcher", "mysticism:captivator", "mysticism:coalescence", "mysticism:constant", "mysticism:corroder", "mysticism:crasher", "mysticism:cultivator", "mysticism:dreamer", "mysticism:gardener", "mysticism:hidden_ruler", "mysticism:kyurem", "mysticism:malleable", "mysticism:phaser", "mysticism:provider", "mysticism:reducer", "mysticism:repeater", "mysticism:reshiram", "mysticism:scholar", "mysticism:spiritualist", "mysticism:stagnator", "mysticism:subjugator", "mysticism:victorious_harbinger", "mysticism:zekrom"]
+#The Soul Grades Cost to unlock a skill.
+getSoulGradeCostToUnlockSkill = 3
+#Max skills a player can lock based on their Soul Grade Level. 
+# Format: The value at each index represents the max locks for that level.
+# Index 0 = Level 0, Index 1 = Level 1, etc.
+maxLocksPerLevel = [0, 1, 1, 2, 2, 2, 3]
+#If the data in locked skill should be reset
+RestSkillData = false

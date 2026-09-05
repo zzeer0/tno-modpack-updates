@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:cursed_bow",
+  "epGain": 0.001,
+  "maxEP": 100000,
+  "minEP": 1000
+}

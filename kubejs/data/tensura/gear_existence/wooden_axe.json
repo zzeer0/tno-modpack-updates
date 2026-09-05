@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_axe",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_axe",
+  "maxEP": 750,
+  "minEP": 0
+}

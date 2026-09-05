@@ -1,0 +1,77 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "712F61A43FE01479"
+	group: "5B307D448551FC61"
+	id: "712F61A43FE01479"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "51043843B138DDBE"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "246B94E70E1975C0"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:giant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51043843B138DDBE"]
+			id: "0DD33E70B7364DD7"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "126F5517EF87F6CD"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:ancient_giant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0DD33E70B7364DD7"]
+			id: "6448C9B8C49F8EE2"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "0701862D7E8037B9"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_giant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+}

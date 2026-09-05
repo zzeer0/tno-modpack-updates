@@ -1,0 +1,12 @@
+{
+  "type": "bosses_of_mass_destruction:void_blossom",
+  "abilities": [
+      "tensura:flame_attack_nullification",
+      "tensura:strengthen_body",
+      "tensura:steel_strength",
+      "tensura:ultraspeed_regeneration"
+  ],
+  "max_magicule": 150000,
+  "min_magicule": 50000,
+  "spiritualHealth": 700
+}

@@ -1,0 +1,156 @@
+{
+  "settings": {
+    "WOOD": {
+      "updateDelayTicks": 600,
+      "inventoryRows": 1
+    },
+    "REDSTONE": {
+      "updateDelayTicks": 600,
+      "inventoryRows": 2
+    },
+    "IRON": {
+      "updateDelayTicks": 600,
+      "inventoryRows": 2
+    },
+    "DIAMOND": {
+      "updateDelayTicks": 600,
+      "inventoryRows": 3
+    },
+    "NETHERITE": {
+      "updateDelayTicks": 600,
+      "inventoryRows": 6
+    }
+  },
+  "trades": [
+    {
+      "input": {
+        "filter": "tensura:medium_quality_magic_crystal",
+        "count": 64
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 3
+      }
+    },
+    {
+      "input": {
+        "filter": "block_factorys_bosses:dragon_bone",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 1
+      }
+    },
+    {
+      "input": {
+        "filter": "cataclysm:lacrima",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 12
+      }
+    },
+    {
+      "input": {
+        "filter": "eternal_starlight:thermal_springstone_ingot",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 1
+      }
+    },
+    {
+      "input": {
+        "filter": "eternal_starlight:starlit_diamond",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 3
+      }
+    },
+    {
+      "input": {
+        "filter": "eternal_starlight:deepsilver_ingot",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 3
+      }
+    },
+    {
+      "input": {
+        "filter": "eternal_starlight:unrealium_ingot",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 16
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:magic_beans",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 12
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:steeleaf_ingot",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 2
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:naga_scale",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 3
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:knightmetal_ingot",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 5
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:fiery_blood",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 6
+      }
+    },
+    {
+      "input": {
+        "filter": "twilightforest:fiery_tears",
+        "count": 1
+      },
+      "output": {
+        "item": "tensura:silver_coin",
+        "count": 6
+      }
+    }
+  ]
+}

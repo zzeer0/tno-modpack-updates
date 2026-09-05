@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:diamond_hoe",
+  "epGain": 0.003,
+  "evolution": "minecraft:netherite_hoe",
+  "maxEP": 5500,
+  "minEP": 4500
+}

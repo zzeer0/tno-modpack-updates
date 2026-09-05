@@ -1,0 +1,6 @@
+{
+  "itemGroup.afterdark": "夜幕之后",
+  "item.the_afterdark.teleport_catalyst": "传送催化剂",
+  "block.the_afterdark.teleport_block": "传送方块",
+  "chat.the_afterdark.teleport_missing_catalyst": "§3这个神殿拒绝了你的祭品..."
+}

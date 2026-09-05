@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:golden_hoe",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_hoe",
+  "maxEP": 4500,
+  "minEP": 3000
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:shield",
+  "epGain": 0.003,
+  "evolution": "tensura:armoursaurus_shield",
+  "maxEP": 6000,
+  "minEP": 0
+}

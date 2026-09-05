@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:diamond_helmet",
+  "epGain": 0.003,
+  "evolution": "minecraft:netherite_helmet",
+  "maxEP": 5000,
+  "minEP": 4000
+}

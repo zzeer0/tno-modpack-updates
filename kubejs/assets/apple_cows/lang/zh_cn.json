@@ -1,0 +1,10 @@
+{
+  "entity.apple_cows.apple_cow": "苹果牛",
+  "entity.apple_cows.golden_apple_cow": "金苹果牛",
+  "entity.apple_cows.enchanted_golden_apple_cow": "附魔金苹果牛",
+  "entity.apple_cows.honeyed_apple_cow": "蜜渍苹果牛",
+  "item.apple_cows.apple_cow_spawn_egg": "苹果牛刷怪蛋",
+  "item.apple_cows.golden_apple_cow_spawn_egg": "金苹果牛刷怪蛋",
+  "item.apple_cows.enchanted_golden_apple_cow_spawn_egg": "附魔金苹果牛刷怪蛋",
+  "item.apple_cows.honeyed_apple_cow_spawn_egg": "蜜渍苹果牛刷怪蛋"
+}

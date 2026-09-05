@@ -1,0 +1,25 @@
+[random_books]
+	#Adds the random all skill study book to Misc, JEI, and EMI.
+	enable_all = true
+	#Adds the random combat skill study book to Misc, JEI, and EMI.
+	enable_combat = true
+	#Adds the random common skill study book to Misc, JEI, and EMI.
+	enable_common = true
+	#Adds the random resistance skill study book to Misc, JEI, and EMI.
+	enable_resistance = true
+	#Adds the random intrinsic skill study book to Misc, JEI, and EMI.
+	enable_intrinsic = true
+	#Adds the random extra skill study book to Misc, JEI, and EMI.
+	enable_extra = true
+	#Adds the random unique skill study book to Misc, JEI, and EMI.
+	enable_unique = true
+	#Adds the random ultimate skill study book to Misc, JEI, and EMI.
+	enable_ultimate = true
+	#Adds the random magic_aspectual skill study book to Misc, JEI, and EMI.
+	enable_magic_aspectual = true
+	#Adds the random magic_spiritual skill study book to Misc, JEI, and EMI.
+	enable_magic_spiritual = true
+	#Adds the random magic_summoning skill study book to Misc, JEI, and EMI.
+	enable_magic_summoning = true
+	#Adds the random magic_misc skill study book to Misc, JEI, and EMI.
+	enable_magic_misc = true

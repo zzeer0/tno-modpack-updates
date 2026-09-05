@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:shears",
+  "epGain": 0.003,
+  "maxEP": 500,
+  "minEP": 0
+}

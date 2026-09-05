@@ -1,0 +1,147 @@
+{
+  "id": "ponderer:kiln_usage",
+  "items": [
+    "tensura:kiln"
+  ],
+  "title": {
+    "en_us": "Kiln Usage Tutorial",
+    "zh_cn": "窑炉使用教程"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "s_90d04",
+      "title": {
+        "zh_cn": "GUI介绍",
+        "en_us": "GUI usage tutorial"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.06909120214641007,
+            1.0,
+            0.7573096703217743
+          ],
+          "direction": "up",
+          "block": "tensura:kiln",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "This is where the fuel goes", "zh_cn": "这里是放入燃料的地方"
+          },
+          "point": [
+            0.953,
+            -0.282,
+            0.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Put the ore you want to smelt here", "zh_cn": "这里放入你要烧制的矿石"
+          },
+          "point": [
+            0.939,
+            0.272,
+            0.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 20,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "en_us": "Left smelting slot", "zh_cn": "左边熔炼槽位"
+          },
+          "point": [
+            -0.994,
+            0.788,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Right smelting slot", "zh_cn": "右边熔炼槽位"
+          },
+          "point": [
+            0.43,
+            0.836,
+            0.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "The middle holds the output slot and the button that picks which result to produce", "zh_cn": "中间的是输出槽位与选择要输出的结果按钮"
+          },
+          "point": [
+            -0.325,
+            0.473,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 0,
+              "slotX": 203,
+              "slotY": 52,
+              "ingredientId": "minecraft:iron_ingot",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 1,
+              "slotX": 203,
+              "slotY": 98,
+              "ingredientId": "minecraft:coal_block",
+              "ingredientKind": "item"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

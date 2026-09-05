@@ -1,0 +1,121 @@
+[Veldora]
+	#Passive wind damage boost multiplier. 0.5 means +50% wind damage.
+	windDamageBoost = 0.5
+	#Passive lightning damage boost multiplier. 0.6 means +60% lightning damage.
+	thunderDamageBoost = 0.6
+	#Passive reduction for incoming wind damage. 0.35 means 35% less damage.
+	windDamageReduction = 0.35
+	#Passive reduction for incoming lightning damage. 0.35 means 35% less damage.
+	thunderDamageReduction = 0.35
+	#Chance for Storm Guard to knock back a nearby melee attacker. 0.2 means 20%.
+	counterAttackChance = 0.2
+	#Knockback strength applied by Storm Guard.
+	counterKnockback = 1.5
+	#Magicule cost per second while holding Storm Breath.
+	magiculeCostBreath = 350.0
+	#Magicule cost per second while holding Storm Breath when mastered.
+	magiculeCostBreathMastered = 200.0
+	#Damage dealt by Storm Breath.
+	breathDamage = 18.0
+	#Damage dealt by Storm Breath when mastered.
+	breathDamageMastered = 28.0
+	#Storm Breath range in blocks.
+	breathRange = 15.0
+	#Reserved breath duration value in ticks. 20 ticks = 1 second.
+	breathDuration = 100.0
+	#Cooldown after releasing Storm Breath, in seconds.
+	breathCooldown = 3
+	#Magicule cost for Storm Lightning.
+	magiculeCostLightning = 2000.0
+	#Magicule cost for Storm Lightning when mastered.
+	magiculeCostLightningMastered = 1000.0
+	#Storm Lightning target/raycast range in blocks.
+	lightningRange = 30.0
+	#Primary damage dealt by Storm Lightning.
+	lightningDamage = 45.0
+	#Primary damage dealt by Storm Lightning when mastered.
+	lightningDamageMastered = 70.0
+	#Black lightning impact radius in blocks.
+	lightningRadius = 4.0
+	#Additional black lightning visual bolts spawned around the impact.
+	lightningAdditionalVisual = 12
+	#Storm Lightning cooldown in seconds.
+	lightningCooldown = 6
+	#Storm Lightning cooldown in seconds when mastered.
+	lightningCooldownMastered = 4
+	#Magicule cost for Storm Domain.
+	magiculeCostDomain = 10000.0
+	#Magicule cost for Storm Domain when mastered.
+	magiculeCostDomainMastered = 6000.0
+	#Storm Domain radius in blocks.
+	domainRadius = 16.0
+	#Storm Domain radius in blocks when mastered.
+	domainRadiusMastered = 32.0
+	#Wind blade damage dealt by each Storm Domain pulse.
+	domainDamage = 12.0
+	#Storm Domain lightning target radius in blocks. Used by the opening black lightning and periodic vanilla lightning.
+	domainLightningTargetRadius = 32.0
+	#Tensura black lightning damage dealt to hostile enemies when Storm Domain is pressed.
+	domainOpeningBlackLightningDamage = 55.0
+	#Secondary magic damage dealt by the Storm Domain opening black lightning.
+	domainOpeningBlackLightningSecondaryDamage = 18.0
+	#Impact radius of each Storm Domain opening black lightning bolt.
+	domainOpeningBlackLightningImpactRadius = 2.0
+	#Additional visual bolts for each Storm Domain opening black lightning strike.
+	domainOpeningBlackLightningAdditionalVisual = 4
+	#Storm Domain active duration in seconds.
+	domainDurationSeconds = 35
+	#Storm Domain active duration in seconds when mastered.
+	domainDurationMasteredSeconds = 45
+	#Ticks between Storm Domain pulses. 10 ticks = 0.5 seconds.
+	domainTickInterval = 10
+	#Ticks between Storm Domain wind blade volleys. 40 ticks = 2 seconds. Set to 0 to disable wind blades.
+	domainWindBladeIntervalTicks = 40
+	#Knockback strength applied by Storm Domain pulses.
+	domainKnockback = 0.75
+	#Movement Interference effect amplifier applied by Storm Domain pulses.
+	domainMovementInterferenceLevel = 1
+	#Storm Domain cooldown in seconds.
+	domainCooldown = 240
+	#Storm Domain cooldown in seconds when mastered.
+	domainCooldownMastered = 240
+	#Ticks between Storm Domain barrier shell visual refreshes.
+	domainBarrierVisualInterval = 5
+	#Particle point count used for the Storm Domain barrier shell visual.
+	domainBarrierShellPoints = 72
+	#If true, Storm Domain temporarily forces thunderstorm weather while active.
+	domainThunderstormWeather = true
+	#Chance per interval while Storm Domain is active to drop one vanilla lightning bolt inside the domain. 0.3 means 30%.
+	domainVanillaLightningChance = 0.3
+	#Ticks between vanilla lightning checks while Storm Domain is active. 20 ticks = 1 second.
+	domainVanillaLightningIntervalTicks = 20
+	#Magicule cost for Storm Black Magic Slash.
+	magiculeCostSlash = 2300.0
+	#Magicule cost for Storm Black Magic Slash when mastered.
+	magiculeCostSlashMastered = 1200.0
+	#Primary damage dealt by Storm Black Magic Slash.
+	slashDamage = 65.0
+	#Primary damage dealt by Storm Black Magic Slash when mastered.
+	slashDamageMastered = 95.0
+	#Storm Black Magic Slash range in blocks.
+	slashRange = 20.0
+	#Maximum hold time for Storm Black Magic Slash in ticks. 200 ticks = 10 seconds.
+	slashMaxHoldTicks = 200
+	#Mist beam length for Storm Black Magic Slash in blocks. Higher values make the gluttony-mist-like visual longer.
+	slashMistRange = 36.0
+	#Life of each Storm Black Magic Slash mist beam entity in ticks. It is refreshed while the key is held.
+	slashMistLifeTicks = 35
+	#Ticks between Storm Black Magic Slash mist beam damage applications. 10 ticks = 0.5 seconds.
+	slashMistDamageIntervalTicks = 10
+	#Secondary lightning elemental damage multiplier for Storm Black Magic Slash mist hits.
+	slashMistSecondaryDamageMultiplier = 0.25
+	#Knockback strength applied by Storm Black Magic Slash mist hits.
+	slashMistKnockback = 1.2
+	#Storm Black Magic Slash cooldown in seconds before mastery multiplier.
+	slashCooldown = 4
+	#Generic cooldown multiplier used by modes that do not have a dedicated mastered cooldown.
+	masteredCooldownMultiplier = 0.6
+	#Ticks spent raising the sword overhead before Storm Black Magic Slash swings.
+	slashRaiseTicks = 12
+	#Ticks spent swinging the sword down. The slash effect activates only after this completes.
+	slashSwingTicks = 6

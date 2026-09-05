@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:khopesh",
+  "epGain": 0.003,
+  "maxEP": 2000,
+  "minEP": 100
+}

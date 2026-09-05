@@ -1,0 +1,6 @@
+{
+  "type": "twilightforest:steeleaf_shovel",
+  "epGain": 0.003,
+  "maxEP": 3500,
+  "minEP": 100
+}

@@ -1,0 +1,9 @@
+{
+  "type": "friendsandfoes:wildfire",
+  "abilities": [
+    "tensura:flame_attack_nullification"
+  ],
+  "max_magicule": 13000,
+  "min_magicule": 9000,
+  "spiritualHealth": 120
+}

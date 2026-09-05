@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:laser_gatling",
+  "epGain": 0.002,
+  "maxEP": 10000,
+  "minEP": 0
+}

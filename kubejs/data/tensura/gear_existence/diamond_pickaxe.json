@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:diamond_pickaxe",
+  "epGain": 0.003,
+  "evolution": "minecraft:netherite_pickaxe",
+  "maxEP": 5500,
+  "minEP": 4500
+}

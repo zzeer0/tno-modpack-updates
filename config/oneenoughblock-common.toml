@@ -1,0 +1,2 @@
+#已存在、已放置的方块是否受影响
+replaceExistedBlock = false

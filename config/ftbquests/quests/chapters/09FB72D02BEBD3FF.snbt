@@ -1,0 +1,140 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "09FB72D02BEBD3FF"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "tensura:adamantite_pickaxe"
+	}
+	id: "09FB72D02BEBD3FF"
+	images: [
+		{
+			height: 7.0d
+			image: "ablazeaqzlcz:textures/ftb/afterdark.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			height: 1.0d
+			image: "lootr:block/old_opened_barrel_bottom"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.022108843537396d
+			y: 0.011904761904780514d
+		}
+		{
+			height: 1.5d
+			image: "minecraft:item/iron_pickaxe"
+			rotation: 0.0d
+			width: 1.5d
+			x: 2.0161564625850303d
+			y: 2.0136054421768677d
+		}
+	]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4D396C80A4183219"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "minecraft:sculk_shrieker"
+				}
+				id: "24125133967A752D"
+				structure: "the_afterdark:teleport_altar"
+				type: "structure"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D396C80A4183219"]
+			id: "725ACB877249552A"
+			shape: "diamond"
+			tasks: [{
+				id: "10B6422F4D89F858"
+				item: { count: 1, id: "the_afterdark:teleport_catalyst" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["725ACB877249552A"]
+			id: "2744BCD6400E9AFB"
+			tasks: [{
+				dimension: "the_afterdark:afterdark"
+				icon: {
+					id: "tensura:sissie_tooth_pickaxe"
+				}
+				id: "0B14EBBFADFB74CC"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2744BCD6400E9AFB"]
+			icon: {
+				id: "tensura:magic_ore_shard"
+			}
+			id: "551FE8D1E67DD299"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EC53A1C7E8EA5BF"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				count: 320L
+				id: "1915D312D333334B"
+				item: { count: 1, id: "tensura:magic_ore_shard" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2744BCD6400E9AFB"]
+			id: "64CFB0D7AF7E85A5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5843BCBC9FDD65C1"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 320L
+				id: "37F2FA7C924F5846"
+				item: { count: 1, id: "tensura:silver_ore" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2744BCD6400E9AFB"]
+			id: "03339785C2F33E9D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "174F6E381C6593E7"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 320L
+				id: "2D88367C3D83F3BC"
+				item: { count: 1, id: "minecraft:iron_ore" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+	]
+}

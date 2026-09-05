@@ -1,0 +1,113 @@
+[Satanael]
+	#Soul points required to evolve mastered Wrath into Satanael.
+	requiredSoulPoints = 25000
+	#Ticks between automatic Satanael acquisition checks.
+	acquisitionCheckIntervalTicks = 20
+	#Mastery granted when Satanael is acquired.
+	acquisitionGrantMastery = 0
+	#Chance for a Wrath Crystal to drop when the victim or killer has a Rampage effect.
+	wrathCrystalDropChance = 0.05
+	#Ticks between Magicule Breeder Reactor pulses. 50 ticks = 2.5 seconds.
+	breederPulseTicks = 50
+	#Fraction of maximum magicule restored by each reactor pulse.
+	breederMagiculeFraction = 0.02
+	#Chance to gain one Rampage level at or below natural maximum magicule.
+	breederRampageChance = 0.06
+	#Chance to gain one Rampage level above natural maximum magicule.
+	breederAboveMaxRampageChance = 0.1
+	#Extra reactor output multiplier contributed by each dominated enemy.
+	breederEfficiencyPerDominatedEnemy = 0.1
+	#Base Satanael Rampage duration in ticks. 900 ticks = 45 seconds.
+	rampageDurationTicks = 900
+	#Maximum Rampage duration after combat extensions. 1200 ticks = 60 seconds.
+	rampageMaximumDurationTicks = 1200
+	#Maximum Satanael Rampage level.
+	rampageMaximumLevel = 10
+	#Rampage duration added when attacking or being attacked.
+	rampageCombatExtensionTicks = 100
+	#Health ratio below which Rampage gain chance is multiplied by the low-health multiplier.
+	lowHealthThreshold = 0.5
+	#Health ratio below which Rampage gain chance is multiplied by the critical-health multiplier.
+	criticalHealthThreshold = 0.25
+	#Rampage gain chance multiplier below the low-health threshold.
+	lowHealthChanceMultiplier = 1.5
+	#Rampage gain chance multiplier below the critical-health threshold.
+	criticalHealthChanceMultiplier = 2.0
+	#Ticks without attacking or being attacked before combat ends. 200 ticks = 10 seconds.
+	combatTimeoutTicks = 200
+	#Ticks between losing Rampage levels after leaving combat.
+	rampageDecayIntervalTicks = 100
+	#Armor added per Satanael Rampage level.
+	rampageArmorPerLevel = 20.0
+	#Attack damage added per Satanael Rampage level.
+	rampageAttackPerLevel = 100.0
+	#Attack speed added per Satanael Rampage level.
+	rampageAttackSpeedPerLevel = 0.6
+	#Movement speed added per Satanael Rampage level.
+	rampageMovementSpeedPerLevel = 0.2
+	#Swimming speed multiplier added per Satanael Rampage level.
+	rampageSwimSpeedPerLevel = 2.0
+	#Knockback resistance added per Satanael Rampage level.
+	rampageKnockbackResistancePerLevel = 0.5
+	#Magicule consumed once per second while holding Wrath Domination.
+	dominationMagiculeCost = 100.0
+	#Wrath Domination radius in blocks.
+	dominationRadius = 30.0
+	#Rampage and domination duration. 800 ticks = 40 seconds.
+	dominationDurationTicks = 800
+	#Hold ticks required for Wrath Domination to add one more Rampage level.
+	dominationLevelIntervalTicks = 200
+	#Ticks between Wrath Domination area scans and effect refreshes.
+	dominationApplyIntervalTicks = 10
+	#Ticks between domination AI target refreshes.
+	dominationRetargetIntervalTicks = 10
+	#Ticks between forced melee attacks when a mob's own AI rejects its dominated target.
+	dominationForcedAttackIntervalTicks = 20
+	#Navigation speed used to force dominated mobs toward each other.
+	dominationForcedMovementSpeed = 1.3
+	#Ticks between Wrath Domination sounds while holding the mode.
+	dominationSoundIntervalTicks = 20
+	#Volume of the Wrath Domination sound.
+	dominationSoundVolume = 10.0
+	#Pitch of the Wrath Domination sound.
+	dominationSoundPitch = 1.0
+	#Wrath percentage absorbed per dominated enemy each second.
+	wrathGainPerDominatedEnemyPerSecond = 0.1
+	#Wrath percentage lost each second while outside combat with no dominated enemies.
+	wrathDecayPerSecond = 1.0
+	#Wrath percentage required to activate Stampede.
+	stampedeRequiredWrath = 100.0
+	#Stampede duration. 600 ticks = 30 seconds.
+	stampedeDurationTicks = 600
+	#Stampede cooldown in Tensura skill-system seconds. Do not convert this value to ticks.
+	stampedeCooldownSeconds = 360
+	#Ticks between full-power reactor pulses during Stampede.
+	stampedeBreederPulseTicks = 10
+	#Base reactor output multiplier during Stampede.
+	stampedeBreederBaseMultiplier = 5.0
+	#Additional reactor output multiplier gained each second during Stampede.
+	stampedeBreederGrowthPerSecond = 0.1
+	#Attack damage gained each second during Stampede.
+	stampedeAttackPerSecond = 20.0
+	#Armor gained each second during Stampede.
+	stampedeArmorPerSecond = 5.0
+	#Movement speed multiplier gained each second during Stampede.
+	stampedeSpeedPerSecond = 0.02
+	#Magicule gain attribute added each second during Stampede.
+	stampedeMagiculeOutputPerSecond = 0.05
+	#Ticks between Stampede aura particle emissions.
+	stampedeParticleIntervalTicks = 2
+	#Particle count emitted during Stampede.
+	stampedeParticleCount = 5
+	#Stampede activation sound volume.
+	stampedeSoundVolume = 3.0
+	#Stampede activation sound pitch.
+	stampedeSoundPitch = 0.65
+	#Forced Weakness duration after Stampede. 2400 ticks = 2 minutes.
+	stampedeWeaknessDurationTicks = 2400
+	#Zero-based Satanael Weakness amplifier. 1 means Weakness II.
+	stampedeWeaknessAmplifier = 1
+	#Attack damage penalty enforced during post-Stampede weakness.
+	stampedeWeaknessAttackPenalty = -8.0
+	#Ticks between mastery point gains while holding Wrath Domination.
+	masteryPointIntervalTicks = 100

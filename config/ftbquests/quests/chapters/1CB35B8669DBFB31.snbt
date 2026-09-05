@@ -1,0 +1,160 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1CB35B8669DBFB31"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/magic/summoning/summon_daemon.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "1CB35B8669DBFB31"
+	images: [
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/greater_daemon.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.7628627716496084d
+			y: -0.06444645031123031d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/lesser_daemon.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -5.165708656921822d
+			y: 2.906821385091824d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/arch_daemon.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -3.808565799778968d
+			y: -3.378892900622457d
+		}
+		{
+			height: 4.5d
+			image: "ablazeaqzlcz:textures/ftb/arch_daemon_2.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 1.540639710253103d
+			y: -2.891557725136259d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/arch_daemon_3.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -1.0d
+			y: -5.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7758E6431EFDF6A6"
+			rewards: [{
+				id: "5F801D47D9D3E9DB"
+				item: {
+					count: 1
+					id: "tensura:hell_portal"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				dimension: "tensura:hell"
+				icon: {
+					id: "tensura:daemon_core"
+				}
+				id: "309750DBD6ACB05A"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7758E6431EFDF6A6"]
+			icon_scale: 1.2d
+			id: "10D95100E998BED6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51EFCCD0F01714CF"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				entity: "tensura:lesser_daemon"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/lesser_daemon.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "407742F94DDA8394"
+				type: "kill"
+				value: 10L
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7758E6431EFDF6A6"]
+			icon_scale: 1.3d
+			id: "78B7C0A0CB97647C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61C51EEB59DA808B"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				entity: "tensura:arch_daemon"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/arch_daemon.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "20103C04BDC0760C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7758E6431EFDF6A6"]
+			icon_scale: 1.35d
+			id: "7F1321FC2910A27D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EA296DFFA3D775A"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				entity: "tensura:greater_daemon"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/greater_daemon.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1F6D31A8D23F5741"
+				type: "kill"
+				value: 5L
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "sophisticatedbackpacks:diamond_backpack",
+  "epGain": 0.0025,
+  "evolution": "sophisticatedbackpacks:netherite_backpack",
+  "maxEP": 9000,
+  "minEP": 6000
+}

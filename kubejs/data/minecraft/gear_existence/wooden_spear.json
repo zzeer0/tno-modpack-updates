@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_spear",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_spear",
+  "maxEP": 750,
+  "minEP": 0
+}

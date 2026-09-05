@@ -1,0 +1,16 @@
+{
+  "type": "rpg_style_more_bosses:the_exoframe",
+  "abilities": [
+    "tensura:physical_attack_resistance",
+    "tensura:pierce_resistance",
+    "tensura:electricity_nullification",
+    "tensura:magic_resistance",
+    "tensura:spiritual_attack_resistance",
+    "tensura:abnormal_condition_resistance"
+  ],
+  "max_aura": 140000,
+  "min_aura": 80000,
+  "max_magicule": 150000,
+  "min_magicule": 70000,
+  "spiritualHealth": 800
+}

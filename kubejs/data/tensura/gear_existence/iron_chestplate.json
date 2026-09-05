@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:iron_chestplate",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_chestplate",
+  "maxEP": 4000,
+  "minEP": 3000
+}

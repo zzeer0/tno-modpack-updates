@@ -1,0 +1,5 @@
+	#炼丹炉配置 - Alchemy Furnace Configuration
+	[alchemy_furnace.fuel_settings]
+		#燃料设置 - Fuel Settings
+		#格式: 'modid:item_id,speed_multiplier'
+		fuel_speed_modifiers = ["mortal_cultivation:mud_essence_charcoal,1.2", "mortal_cultivation:yellow_essence_charcoal,1.5", "mortal_cultivation:black_essence_charcoal,1.8", "mortal_cultivation:void_essence_charcoal,2.5", "mortal_cultivation:prime_essence_charcoal,5.0", "mortal_cultivation:crystal_of_combustion,10.0"]

@@ -1,0 +1,332 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "421FD3DF8E542AD7"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "ftblibrary:icons/notes"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "421FD3DF8E542AD7"
+	images: [{
+		height: 10.0d
+		image: "ablazeaqzlcz:textures/ftb/task.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: -3.0d
+		y: -1.5d
+	}]
+	order_index: 6
+	quest_links: [{
+		id: "4AAC26A63DD9A848"
+		linked_quest: "2C2C9E868AC963D5"
+		x: -4.0d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			id: "5A6FAC9B1299143D"
+			rewards: [
+				{
+					id: "440FF4C797C23A30"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BC7737B8AAB9126"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				autoReset: true
+				category: "DAILY"
+				icon: {
+					components: {
+						"ftbquests:icon": "ftblibrary:icons/notes"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "2ACAEC78034433E0"
+				type: "tensura_tno:stextras_quest"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "6150D75AABF4D73E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "081E234968F33F51"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:ancient_anima"
+				}
+				id: "177114F706F9440D"
+				type: "tensura_tno:re_value"
+				value: 200L
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			id: "21EAF56DDAD44A0F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0860573BF91AE200"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:ancient_anima"
+				}
+				id: "0A5E955BEB780B20"
+				type: "tensura_tno:re_value"
+				value: 500L
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "5144DE98E23BAADC"
+			rewards: [
+				{
+					id: "1A261443ECF6BFAB"
+					type: "xp_levels"
+					xp_levels: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "659AEECEAAF8F2EA"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				autoReset: true
+				category: "WEEKLY"
+				icon: {
+					components: {
+						"ftbquests:icon": "ftblibrary:icons/notes"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "18BEB34DF431A400"
+				type: "tensura_tno:stextras_quest"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "70437B54AB198F40"
+			rewards: [{
+				id: "1683F8F8143D8223"
+				type: "xp_levels"
+				xp_levels: 200
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "11FB6B8C6F61D803"
+				type: "tensura_tno:soul_grade"
+				value: 20L
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "139FD0D57D8FD574"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E2EC63DD750CDA5"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "1A4285F2AF8208B3"
+				type: "tensura_tno:soul_grade"
+				value: 40L
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			id: "506BFD60BC4ACD96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "122A61418F517122"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "0658CC26F6CE7A3D"
+				type: "tensura_tno:soul_grade"
+				value: 60L
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "042E37FB53A715D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27F803423FDF9891"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "3783CE83B9EF0537"
+				type: "tensura_tno:soul_grade"
+				value: 80L
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "3FF5241AB03393D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B3319ED69E5FEC3"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "4E31CF5C32C8DE1D"
+				type: "tensura_tno:soul_grade"
+				value: 100L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "mysticism:textures/skill/intrinsic/poison_transform.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6E1440F32E657018"
+			tasks: [{
+				id: "65575B673424DBB3"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			id: "6533548BC66DB5E7"
+			rewards: [{
+				id: "2E91C9D8CA262D27"
+				item: {
+					count: 1
+					id: "tensura:character_reset_scroll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "30A81175CA1629DC"
+				type: "tensura_tno:reset_counter"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "5B92703EF242240B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DDCB9375DD29CC3"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura_guild:item/guild_task"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "715D2EAA45E04A6F"
+				type: "tensura_guild:join_guild"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B92703EF242240B"]
+			id: "23BB2D872B6C5991"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C4B634D270EADAB"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura_guild:textures/entity/dwarf/task_icon.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "24FBF342E8CC746B"
+				rank_filter: "any"
+				type: "tensura_guild:complete_guild_task"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B92703EF242240B"]
+			id: "008CCF15712A0E0A"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "314C707533CDDFDB"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "tensura_guild:false_alliance"
+				criterion: ""
+				icon: {
+					id: "eternal_starlight:unrealium_sword"
+				}
+				id: "5873CF9F387161F0"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+	]
+}

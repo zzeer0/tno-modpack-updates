@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "14E5090A01AEC2FA"
+	group: "5B307D448551FC61"
+	id: "14E5090A01AEC2FA"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3EA753845BFCC63A"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "6AB7C4BB13261F4B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:beastfolk"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EA753845BFCC63A"]
+			id: "206E248AFDD9BD8F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "57DA6AF78DDEDA21"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:beast_lord"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["206E248AFDD9BD8F"]
+			id: "5C4BF3E0EFF1330F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "226B53740F14F151"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:spirit_beast"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C4BF3E0EFF1330F"]
+			id: "3576C3A19502C1D2"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "73CFCADF112E8775"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_beast"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+	]
+}

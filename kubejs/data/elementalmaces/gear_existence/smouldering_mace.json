@@ -1,0 +1,6 @@
+{
+  "type": "elementalmaces:smouldering_mace",
+  "epGain": 0.0025,
+  "maxEP": 5000,
+  "minEP": 5000
+}

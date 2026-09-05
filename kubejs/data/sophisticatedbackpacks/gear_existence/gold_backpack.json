@@ -1,0 +1,7 @@
+{
+  "type": "sophisticatedbackpacks:gold_backpack",
+  "epGain": 0.0025,
+  "evolution": "sophisticatedbackpacks:diamond_backpack",
+  "maxEP": 6000,
+  "minEP": 4000
+}

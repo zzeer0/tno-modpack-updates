@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:coral_bardiche",
+  "epGain": 0.003,
+  "maxEP": 10000,
+  "minEP": 1000
+}

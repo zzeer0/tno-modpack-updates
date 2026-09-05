@@ -1,0 +1,5 @@
+#Enable Ponderer's built-in Blueprint item.
+#This is a server-side setting synced to clients.
+#When disabled, clients may still use their configured carrier item,
+#but ponderer:blueprint will not appear in creative tabs and cannot be used as the carrier.
+enableBlueprintItem = false

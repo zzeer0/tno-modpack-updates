@@ -1,0 +1,13 @@
+{
+  "type": "bosses_of_mass_destruction:obsidilith",
+  "abilities": [
+      "tensura:flame_attack_nullification",
+      "tensura:heat_nullification",
+      "tensura:abnormal_condition_nullification",
+      "tensura:strengthen_body",
+      "tensura:steel_strength"
+  ],
+  "max_magicule": 600000,
+  "min_magicule": 20000,
+  "spiritualHealth": 600
+}

@@ -1,0 +1,14 @@
+{
+  "type": "bosses_of_mass_destruction:lich",
+  "abilities": [
+      "tensura:flame_attack_nullification",
+      "tensura:corrosion_nullification",
+      "tensura:abnormal_condition_nullification",
+      "tensura:strengthen_body",
+      "tensura:steel_strength",
+      "tensura:ultraspeed_regeneration"
+  ],
+  "max_magicule": 100000,
+  "min_magicule": 70000,
+  "spiritualHealth": 600
+}

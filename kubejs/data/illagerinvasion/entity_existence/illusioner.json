@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:illusioner",
+  "abilities": [],
+  "max_magicule": 3000,
+  "min_magicule": 3000,
+  "spiritualHealth": 100
+}

@@ -1,0 +1,513 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6D1E113C31F1CFA9"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "naturesaura:gold_leaf"
+	}
+	id: "6D1E113C31F1CFA9"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "187252C941FBC59B"
+			rewards: [{
+				id: "5DD3D8AC58827977"
+				item: {
+					components: {
+						"patchouli:book": "naturesaura:book"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				count: 5L
+				id: "353F6BD40CDDF6FC"
+				item: { count: 1, id: "naturesaura:gold_fiber" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["187252C941FBC59B"]
+			id: "11A16F0A491A86A9"
+			tasks: [{
+				count: 16L
+				id: "69597DED0F355BA1"
+				item: { count: 1, id: "naturesaura:gold_powder" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11A16F0A491A86A9"]
+			id: "57148A7A115AD70E"
+			rewards: [{
+				count: 8
+				id: "2899467575832CEA"
+				item: {
+					count: 1
+					id: "naturesaura:gold_leaf"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 8L
+				id: "32B876F40D4044D4"
+				item: { count: 1, id: "naturesaura:wood_stand" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57148A7A115AD70E"]
+			id: "6DC42FE3D59ADDB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "006B98292D6E2CDA"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "41D657689E5DDF23"
+				item: { count: 1, id: "naturesaura:eye" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57148A7A115AD70E"]
+			id: "41449735E77D4C2C"
+			shape: "hexagon"
+			tasks: [{
+				count: 32L
+				id: "109BEFD7129188B2"
+				item: { count: 1, id: "naturesaura:bottle_two_the_rebottling" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41449735E77D4C2C"]
+			id: "6949F6AB3ED18275"
+			tasks: [{
+				id: "48A674AE1DE92B65"
+				item: { count: 1, id: "naturesaura:token_joy" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6949F6AB3ED18275"]
+			icon: {
+				id: "naturesaura:nature_altar"
+			}
+			id: "2C746CE4537BB8EB"
+			rewards: [{
+				id: "5370CB38576E5F84"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "561188402CAA757E"
+					item: { count: 1, id: "naturesaura:nature_altar" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "72249B5BCA825FC9"
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0D57ECC3C80A576E"
+					item: { count: 1, id: "minecraft:chiseled_stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0F409F3A91FFAA46"
+					item: { count: 1, id: "naturesaura:gold_brick" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C746CE4537BB8EB"]
+			id: "0B992C3C64DCBDFD"
+			shape: "circle"
+			tasks: [{
+				id: "42B0A0DCCBE23C36"
+				item: { count: 1, id: "naturesaura:ancient_sapling" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C746CE4537BB8EB"]
+			id: "7FD8A60AE742AD9A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D805071EFAB71A4"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "76CF0F3116D16A3C"
+				item: { count: 1, id: "naturesaura:aura_cache" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C746CE4537BB8EB"]
+			id: "777523E00372E128"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55E01708D561B3D1"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "41A18622E991BBA5"
+				item: { count: 1, id: "naturesaura:flower_generator" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C746CE4537BB8EB"]
+			id: "47DEE3D24B6F2A90"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4539985417D709DB"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7FD549DC7FD84127"
+				item: { count: 1, id: "naturesaura:moss_generator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C746CE4537BB8EB"]
+			icon: {
+				components: {
+					"naturesaura:aura_bottle_data": {
+						aura_type: "naturesaura:nether"
+					}
+				}
+				id: "naturesaura:aura_bottle"
+			}
+			id: "258EA645FB1678A6"
+			rewards: [{
+				id: "6ECB9B62369F06F9"
+				item: {
+					count: 1
+					id: "naturesaura:token_fear"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 2L
+					id: "541769048C70C0C9"
+					item: { components: { "naturesaura:aura_bottle_data": { aura_type: "naturesaura:nether" } }, count: 1, id: "naturesaura:aura_bottle" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "204C736F4A8653AF"
+					item: { count: 1, id: "minecraft:red_nether_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "18F8F21B300FE421"
+					item: { count: 1, id: "minecraft:crimson_planks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "327AC40EDCF099A0"
+					item: { count: 1, id: "naturesaura:gold_nether_brick" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "06C304F2D513CDB7"
+					item: { count: 1, id: "minecraft:nether_bricks" }
+					type: "item"
+				}
+				{
+					id: "3A5F138F05ACD2C3"
+					item: { count: 1, id: "naturesaura:nature_altar" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A8DA43E6867223E"]
+			id: "0CAB66227F82B28F"
+			rewards: [
+				{
+					id: "6FBA60DC796E08C6"
+					item: {
+						count: 1
+						id: "naturesaura:calling_spirit"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "29E001EFDE417AA5"
+					item: {
+						count: 1
+						id: "tensura:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5DD6F27CF4C6E8A2"
+				item: { count: 1, id: "naturesaura:offering_table" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["258EA645FB1678A6"]
+			id: "5A8DA43E6867223E"
+			tasks: [{
+				id: "7D0D0A5A8DB60F1D"
+				item: { count: 1, id: "naturesaura:token_sorrow" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CAB66227F82B28F"]
+			id: "3EBFD5237BAC875A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17142FE9281EB725"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 16L
+				id: "2778FE68ACB4F039"
+				item: { count: 1, id: "naturesaura:sky_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3EBFD5237BAC875A"]
+			id: "0AF699444809DBDD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "178A203E6802FFDF"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "03C1FB2A10668CF8"
+				item: { count: 1, id: "naturesaura:aura_trove" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3EBFD5237BAC875A"]
+			id: "48BB0CD755C747AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6AA561228F4855A3"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "7BF497B944438EDC"
+				item: { count: 1, id: "naturesaura:depth_ingot" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CAB66227F82B28F"]
+			id: "7D39219C9308EF99"
+			tasks: [{
+				id: "5E710B3927E1189D"
+				item: { count: 1, id: "naturesaura:end_flower" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D39219C9308EF99"]
+			id: "382121ED2F3E1625"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C0779BC6793F086"
+				table_id: 3195869884087400432L
+				type: "random"
+			}]
+			tasks: [{
+				id: "765158FAE895075E"
+				item: { count: 1, id: "naturesaura:eye_improved" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57148A7A115AD70E"]
+			id: "735295C03889328B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52CFEA20B39F4927"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 4L
+				id: "443B1B5D60CFAE94"
+				item: { count: 1, id: "naturesaura:conversion_catalyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57148A7A115AD70E"]
+			id: "50C45F7C52165664"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "700BE730CEA40543"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 4L
+				id: "2F56BEFD3B82AD1C"
+				item: { count: 1, id: "naturesaura:crushing_catalyst" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0CAB66227F82B28F"]
+			icon: {
+				id: "naturesaura:time_changer"
+			}
+			id: "52A30DD2FEEEAB9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F3626740C947A3A"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "452B8672FA97341A"
+					item: { count: 1, id: "naturesaura:time_changer" }
+					type: "item"
+				}
+				{
+					id: "545F63BF138FA30E"
+					item: { count: 1, id: "naturesaura:clock_hand" }
+					type: "item"
+				}
+				{
+					id: "6A26C95B9FD05194"
+					item: { count: 1, id: "minecraft:item_frame" }
+					type: "item"
+				}
+				{
+					id: "542843F81ABDEA4D"
+					item: { count: 1, id: "minecraft:clock" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57148A7A115AD70E"]
+			id: "2D67CE51F7110224"
+			rewards: [{
+				count: 4
+				id: "7BC93C553D6F478C"
+				item: {
+					components: {
+						"naturesaura:effect_powder_data": {
+							effect: "naturesaura:ore_spawn"
+						}
+					}
+					count: 1
+					id: "naturesaura:effect_powder"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				consume_items: true
+				id: "3EF98B832E40C7E5"
+				item: { components: { "naturesaura:effect_powder_data": { effect: "naturesaura:ore_spawn" } }, count: 1, id: "naturesaura:effect_powder" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+	]
+}

@@ -1,0 +1,298 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_63D77F4F95DC09D3"
+	group: "5B307D448551FC61"
+	id: "63D77F4F95DC09D3"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A8A7A636200089A"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "4222148A9484E822"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:goblin"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A8A7A636200089A"]
+			id: "74CB27CBB8660128"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7B1973524205FDDD"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:hobgoblin"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["74CB27CBB8660128"]
+			id: "3C6B742D209AE0E4"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "4A41ABBAA2CF0285"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:enlightened_hobgoblin"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C6B742D209AE0E4"]
+			id: "5E0681E7364ADBA3"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "77EBD6F8B132EBAE"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:hobgoblin_saint"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["74CB27CBB8660128"]
+			id: "5287363A937252A3"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "44D9DE5764693C97"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:ogre"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5287363A937252A3"]
+			id: "7CD55F86127725B2"
+			tasks: [
+				{
+					checkInterval: 60
+					exactMatch: false
+					id: "2570B61B8C2BA5A9"
+					nbt: {
+						ManasCoreStorage: {
+							manascore_registry_storage: [{
+								manascore_registry_storage_id: "manascore_race:race_storage"
+								race_key: {
+									race: "tensura:kijin"
+								}
+							}]
+						}
+					}
+					optional_task: true
+					type: "playernbtftb:player_nbt"
+				}
+				{
+					checkInterval: 60
+					exactMatch: false
+					id: "285CB4387AEADCFB"
+					nbt: {
+						ManasCoreStorage: {
+							manascore_registry_storage: [{
+								manascore_registry_storage_id: "manascore_race:race_storage"
+								race_key: {
+									race: "tensura:enlightened_ogre"
+								}
+							}]
+						}
+					}
+					optional_task: true
+					type: "playernbtftb:player_nbt"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5E0681E7364ADBA3"
+				"17AF777874713751"
+			]
+			id: "5CD729F1DBDABD45"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "1FE0EB5FBAC3E4C8"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7CD55F86127725B2"]
+			id: "3E93BB9A16D6CA4F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "69C9CAAA9E57FC3E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:mystic_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CD55F86127725B2"]
+			id: "6E65D7A9CDF154BB"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "372D741D257B294D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:wicked_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E93BB9A16D6CA4F"]
+			id: "17AF777874713751"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "63D1234E248C24D7"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:spirit_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E65D7A9CDF154BB"]
+			id: "0D57D38A259B3457"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "0B1C98E65C8742CF"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:death_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0D57D38A259B3457"]
+			id: "256BDEB62C11C44E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "30F101FA83339C63"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_fighter"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+	]
+}

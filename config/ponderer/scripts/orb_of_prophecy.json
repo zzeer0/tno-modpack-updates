@@ -1,0 +1,65 @@
+{
+  "id": "ponderer:orb_of_prophecy",
+  "items": [
+    "eternal_starlight:orb_of_prophecy"
+  ],
+  "title": {
+    "en_us": "New Scene - orb_of_prophecy",
+    "zh_cn": "新场景 - orb_of_prophecy"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "场景 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:yhxg",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 20,
+          "degrees": 20.0
+        },
+        {
+          "type": "text",
+          "duration": 80,
+          "text": {
+            "zh_cn": "右键传送门框架即可激活传送门进入维度",
+            "en_us": "Right-click the portal frame to "
+          },
+          "point": [
+            1.0,
+            5.0,
+            3.0
+          ]
+        },
+        {
+          "type": "show_controls",
+          "duration": 80,
+          "point": [
+            3.0,
+            3.0,
+            4.0
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "eternal_starlight:orb_of_prophec"
+        }
+      ]
+    }
+  ]
+}

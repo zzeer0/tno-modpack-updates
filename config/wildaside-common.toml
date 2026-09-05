@@ -1,0 +1,7 @@
+["Biome weights"]
+	#Spawn weight of the Hickory Forest biome (def: 3)
+	hickory_forest_weight = 3
+	#Spawn weight of the Glowing Hickory Forest biome (def: 1)
+	glowing_hickory_forest_weight = 1
+	#Spawn weight of the Vibrion Hive biome (def: 4)
+	vibrion_hive_weight = 4

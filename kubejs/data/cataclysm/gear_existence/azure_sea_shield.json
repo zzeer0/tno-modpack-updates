@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:azure_sea_shield",
+  "epGain": 0.003,
+  "maxEP": 4000,
+  "minEP": 0
+}

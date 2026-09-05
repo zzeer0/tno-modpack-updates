@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:golden_axe",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_axe",
+  "maxEP": 4500,
+  "minEP": 3000
+}

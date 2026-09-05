@@ -1,0 +1,871 @@
+{
+	autofocus_id: "1BA1D9A0C6A07A87"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "l"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "waystones:mossy_waystone"
+	}
+	id: "1D40A497A625C53B"
+	images: [
+		{
+			alpha: 233
+			height: 4.5d
+			image: "ablazeaqzlcz:textures/ftb/bomd/lich_tower.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			alpha: 233
+			height: 4.5d
+			image: "ablazeaqzlcz:textures/ftb/bomd/obsidilith_arena.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 4.559523809523853d
+			y: 11.01190476190476d
+		}
+		{
+			alpha: 233
+			height: 3.5d
+			image: "ablazeaqzlcz:textures/ftb/bomd/gauntlet_arena.png"
+			rotation: 0.0d
+			width: 3.5d
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			alpha: 233
+			height: 4.5d
+			image: "ablazeaqzlcz:textures/ftb/bomd/void_blossom.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: -5.273809523809483d
+			y: 11.083333333333329d
+		}
+		{
+			alpha: 233
+			height: 1.5d
+			image: "ablazeaqzlcz:textures/ftb/adventure/happy_ghast.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.500000000000021d
+			y: 7.0d
+		}
+		{
+			height: 2.5d
+			image: "ablazeaqzlcz:textures/ftb/adventure/umvuthi.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			height: 2.5d
+			image: "ablazeaqzlcz:textures/ftb/adventure/sculptor.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			height: 3.5d
+			image: "ablazeaqzlcz:textures/ftb/adventure/frostmaw.png"
+			rotation: 0.0d
+			width: 3.5d
+			x: 0.832142857142891d
+			y: 7.5d
+		}
+		{
+			height: 3.5d
+			image: "ablazeaqzlcz:textures/ftb/adventure/ferrous_wroughtnaut.png"
+			rotation: 0.0d
+			width: 3.5d
+			x: -1.9535714285713937d
+			y: 7.170238095238069d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/ominous_trial_key"
+			rotation: 45.0d
+			width: 1.0d
+			x: 10.214285714285708d
+			y: 8.726190476190474d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/trial_key"
+			rotation: -45.0d
+			width: 1.0d
+			x: 9.714285714285701d
+			y: 8.75d
+		}
+		{
+			alpha: 233
+			height: 1.2d
+			image: "ablazeaqzlcz:textures/ftb/adventure/dummy.png"
+			rotation: -25.0d
+			width: 1.2d
+			x: 11.0d
+			y: 8.876190476190473d
+		}
+		{
+			height: 1.0d
+			image: "explorerscompass:item/explorerscompass_13"
+			rotation: 25.0d
+			width: 1.0d
+			x: 12.785714285714285d
+			y: 8.5d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/adventure/sandworm.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -5.5d
+			y: 3.86904761904767d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/adventure/underworld_knight.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -2.845238095238095d
+			y: 3.875d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/adventure/infernal_dragon.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.2499999999999929d
+			y: 3.8511904761904816d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/adventure/yeti.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 3.297619047619044d
+			y: 4.077380952380956d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/adventure/kraken.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 5.678571428571431d
+			y: 4.232142857142861d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "637C7FB48DE99548"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:soul_star"
+				}
+				id: "63D667DC88C8F172"
+				structure: "bosses_of_mass_destruction:lich_tower"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["637C7FB48DE99548"]
+			id: "2DA0976EFC249F4A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3816ED5DBDF3B1BF"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
+				icon: {
+					components: {
+						"ftbquests:icon": "reliquified_twilight_forest:item/lich_crown"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "6C9909090580B385"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			id: "7536532A088C6144"
+			tasks: [{
+				id: "72B0C6E38D9CE5B1"
+				item: { count: 1, id: "bosses_of_mass_destruction:void_lily" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7536532A088C6144"]
+			id: "48C51904019DBDE9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6449B45D279D8708"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				icon: {
+					id: "twilightforest:huge_water_lily"
+				}
+				id: "2C1E1B1C6A0A860C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			id: "744E572AD1BF9FD6"
+			tasks: [{
+				icon: {
+					id: "iceandfire:dragonarmor_netherite_body"
+				}
+				id: "22074A8B251E2341"
+				structure: "bosses_of_mass_destruction:gauntlet_arena"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["744E572AD1BF9FD6"]
+			id: "2A243EB62B7E854E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "734AF74FC3E7DE2B"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				icon: {
+					id: "bosses_of_mass_destruction:blazing_eye"
+				}
+				id: "4D013DE3DE2A8970"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			id: "4C02AA6C31E0ECC6"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:obsidilith_end_frame"
+				}
+				id: "323A0D3DE9C79AFB"
+				structure: "bosses_of_mass_destruction:obsidilith_arena"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4C02AA6C31E0ECC6"]
+			id: "66D414A26E25F69C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0624285F82EC86CB"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "bosses_of_mass_destruction:obsidilith"
+				icon: {
+					id: "bosses_of_mass_destruction:obsidian_heart"
+				}
+				id: "0114A2F84A8A0E7F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			id: "48C18EC1BD11BFFD"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "719BB3EE2C1E8881"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0FFBB096DC87C4CC"
+				item: { count: 1, id: "minecraft:dried_ghast" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.880952380952387d
+		}
+		{
+			dependencies: ["4B7649B9A42AEBEE"]
+			id: "325BE865B5571472"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E0F3081E51064DA"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "mowziesmobs:kill_umvuthi"
+				criterion: ""
+				id: "6052B387E42123AD"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			id: "55FEB0F5F67B25C0"
+			tasks: [{
+				icon: {
+					id: "minecraft:candle"
+				}
+				id: "5774BE6C5557EF0D"
+				structure: "mowziesmobs:monastery"
+				type: "structure"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["55FEB0F5F67B25C0"]
+			id: "746A6D4AD0F5086F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "764D91916F0C012F"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "mowziesmobs:sculptor_challenge"
+				criterion: ""
+				id: "118F1C59C0B7654F"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			id: "4B7649B9A42AEBEE"
+			tasks: [{
+				icon: {
+					id: "tensura:goblin_club"
+				}
+				id: "6EDB4FA90E1EDFBA"
+				structure: "mowziesmobs:umvuthana_grove"
+				type: "structure"
+			}]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			id: "41BD09AC9E50B869"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C8A535D0437BE5A"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				advancement: "mowziesmobs:kill_frostmaw"
+				criterion: ""
+				icon: {
+					id: "iceandfire:troll_weapon_column_frost"
+				}
+				id: "4FE29DC98B1FBE4A"
+				type: "advancement"
+			}]
+			x: 1.4511904761905043d
+			y: 7.964285714285744d
+		}
+		{
+			id: "562256A0E06D846D"
+			shape: "pentagon"
+			tasks: [{
+				icon: {
+					id: "minecraft:iron_spear"
+				}
+				id: "125387846BD6F234"
+				structure: "mowziesmobs:wrought_chamber"
+				type: "structure"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["562256A0E06D846D"]
+			id: "24DBD8AAE292A647"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E4E2F48DE4C4517"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+				criterion: ""
+				id: "38D321C98934C8BF"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["55FEB0F5F67B25C0"]
+			id: "1ADD951F05FFD421"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0ED4831FDD14E3FD"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:sculptor"
+				icon: {
+					id: "mowziesmobs:earthrend_gauntlet"
+				}
+				id: "7C809F6FB332D080"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			id: "4193D1D21332AB0E"
+			shape: "diamond"
+			tasks: [{
+				advancement: "mowziesmobs:steal_ice_crystal"
+				criterion: ""
+				icon: {
+					id: "mowziesmobs:ice_crystal"
+				}
+				id: "760338121C686074"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 8.186904761904778d
+		}
+		{
+			id: "483CA2541F1AD959"
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "minecraft:mace"
+				}
+				id: "1A4DED642CAE49F2"
+				structure: "minecraft:trial_chambers"
+				type: "structure"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["483CA2541F1AD959"]
+			hide_until_deps_complete: true
+			id: "465BB36E235E14BD"
+			rewards: [{
+				id: "150B4BDEEE5462F4"
+				item: {
+					count: 1
+					id: "minecraft:heavy_core"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "338D852B6ABD29FB"
+				item: { count: 1, id: "minecraft:heavy_core" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["465BB36E235E14BD"]
+			hide_until_deps_complete: true
+			id: "1036256CA899E559"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BF63A10987EB24C"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				id: "23424DD9C022F87F"
+				item: { count: 1, id: "elementalmaces:smouldering_mace" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["465BB36E235E14BD"]
+			hide_until_deps_complete: true
+			id: "545CB13C2863CA5B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33230E4B42A98AFF"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7772E28127ACA476"
+				item: { count: 1, id: "elementalmaces:ender_mace" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["465BB36E235E14BD"]
+			hide_until_deps_complete: true
+			id: "468B8F66BCFF7B52"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D453C7DC4CA6828"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				id: "35F91EDCBE6652F1"
+				item: { count: 1, id: "elementalmaces:withering_mace" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["465BB36E235E14BD"]
+			hide_until_deps_complete: true
+			id: "3A248616C1689C11"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "478A0DDF58BB917D"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1441EE35CEC568EF"
+				item: { count: 1, id: "elementalmaces:resonating_mace" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			id: "6ACAB3449BE6BFE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02064F45CDF43F0D"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1F140D662847CA3E"
+				item: { count: 1, id: "tensura:training_dummy" }
+				type: "item"
+			}]
+			x: 11.490476190476173d
+			y: 9.0d
+		}
+		{
+			id: "413F740EE59BD0A1"
+			shape: "hexagon"
+			tasks: [{
+				id: "4AE4B65D0A8364DA"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 12.490476190476173d
+			y: 8.9952380952381d
+		}
+		{
+			id: "7F849CF92F968CB7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "555DABEA1F8B755C"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_sandworm"
+				criterion: ""
+				id: "599507071C69D476"
+				type: "advancement"
+			}]
+			x: -5.273809523809469d
+			y: 3.0d
+		}
+		{
+			id: "35606BC47E5DCBCF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2AF6258B5DF53464"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:no_hit_sandworm"
+				criterion: ""
+				id: "2DB5D048B98E1C90"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: 5.36904761904767d
+		}
+		{
+			id: "792137DE82A20891"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40879CB8C27ABF7C"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_underworld_knight"
+				criterion: ""
+				id: "44298E5F277ED5A8"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "646AD8F08500C517"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B7A9F06A5FCC339"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:no_hit_underworld_knight"
+				criterion: ""
+				id: "001F887E11C6AF6B"
+				type: "advancement"
+			}]
+			x: -2.345238095238095d
+			y: 4.50595238095233d
+		}
+		{
+			id: "30C4FEDFA9A5DB16"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30A07DB3563BA3DC"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_dragon"
+				criterion: ""
+				id: "448C7D9D31B67C0B"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			id: "5FCCA91F9F89EC14"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "454133B80EC7C786"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:no_hit_dragon"
+				criterion: ""
+				id: "59502C6BAC13357D"
+				type: "advancement"
+			}]
+			x: 0.7499999999999929d
+			y: 4.851190476190482d
+		}
+		{
+			id: "77209E7CA9027AA4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B64627EECE188A0"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_yeti"
+				criterion: ""
+				id: "08D236F1D99BBBD9"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			id: "4DFD037F631CCBDF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DF8AC565822299B"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:no_hit_yeti"
+				criterion: ""
+				id: "0A1BEA773624FCF9"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			id: "32CB962005EE4501"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C695F68A5FB23AD"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_kraken"
+				criterion: ""
+				id: "7D8B646714D73444"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			id: "3B1AB073643097D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74EC22F19A641058"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "block_factorys_bosses:no_hit_kraken"
+				criterion: ""
+				id: "69FB6C68A098AEF3"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			id: "1BA1D9A0C6A07A87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F81B79635AE78D9"
+				table_id: 1706234203185831244L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "mebahelcreaturesdwarven:dwemer_metal_gear"
+				}
+				id: "3A5A95E28DF1C4BF"
+				structure: "mebahelcreaturesdwarven:blackreach"
+				type: "structure"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			id: "193E5B95AEC2897A"
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "rpg_style_more_bosses:exoframe_part"
+				}
+				id: "6920E07F6CCFB81F"
+				structure: "rpg_style_more_bosses:portal_base"
+				type: "structure"
+			}]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["193E5B95AEC2897A"]
+			id: "57E188C1A5AE5F56"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52FAD0646753741C"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "rpg_style_more_bosses:kill_exoframe"
+				criterion: ""
+				id: "7A42C6A425DF22D3"
+				type: "advancement"
+			}]
+			x: 11.5d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "netherman:azazel_trophy"
+			}
+			id: "00DB12A9AF2C1FFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B0FD76F471B1610"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "netherman:enter_mansion"
+				criterion: ""
+				icon: {
+					id: "netherman:chance_totem"
+				}
+				id: "6592398CF8102389"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["00DB12A9AF2C1FFD"]
+			id: "5B38049D9A708555"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55566DF0F2235A27"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "406C6885580A02A8"
+				item: { count: 1, id: "netherman:manipulator_stick" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+	]
+}

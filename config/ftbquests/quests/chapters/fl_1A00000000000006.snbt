@@ -1,0 +1,300 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_1A00000000000006"
+	group: "5B307D448551FC61"
+	id: "1A00000000000006"
+	order_index: 26
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3FF21DC7AE354130"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000002"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:attuned_wyrm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FF21DC7AE354130"]
+			dependency_requirement: "one_completed"
+			id: "650081EF44337BAE"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000003"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lesser_glacier_wyrm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["650081EF44337BAE"]
+			dependency_requirement: "one_completed"
+			id: "177359A9039746C6"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000004"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:greater_glacier_wyrm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["177359A9039746C6"]
+			id: "7DEDC4A7D4391D35"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000005"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:rimefang_drake"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7DEDC4A7D4391D35"]
+			id: "5C0D9FFE288778B7"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000006"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:rimeblight_hydra"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["177359A9039746C6"]
+			id: "1A00000000000007"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000007"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:frostcoil_sea_serpent"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1A00000000000007"]
+			id: "1A00000000000008"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000008"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:frostwrought_leviathan"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FF21DC7AE354130"]
+			id: "1A00000000000009"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2400000000000009"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lesser_pyre_wyrm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A00000000000009"]
+			dependency_requirement: "one_completed"
+			id: "1A0000000000000A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "240000000000000A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:greater_pyre_wyrm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A0000000000000A"]
+			id: "1A0000000000000B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "240000000000000B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:scorchtail_salamander"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1A0000000000000B"]
+			id: "1A0000000000000C"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "240000000000000C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:scorchtalon_wyvern"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1A0000000000000A"]
+			id: "1A0000000000000D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "240000000000000D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:sunfire_lindwurm"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1A0000000000000D"]
+			id: "1A0000000000000E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "240000000000000E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:sundeity_loong"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+	]
+}

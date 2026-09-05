@@ -1,0 +1,11 @@
+[friends]
+	#Whether the friends list pulls from Mojang services. Turn off to silence all friends polling.
+	friendsListEnabled = true
+	#Whether other players can send you friend requests. Mirrors 26.2's Allow friend requests toggle.
+	allowFriendRequests = true
+	#How much presence to advertise to friends.
+	#  NONE   - report OFFLINE so friends see you as offline.
+	#  LIMITED - report ONLINE but hide host details.
+	#  ALL    - full presence, including PLAYING_HOSTED_SERVER when hosting (default).
+	#Allowed Values: NONE, LIMITED, ALL
+	sharePresence = "ALL"

@@ -1,0 +1,7 @@
+{
+  "tr_unique_monsters.skill.appraisal_eye": "鉴定之眼",
+  "tr_unique_monsters.skill.appraisal_eye.description": "揭示隐藏的存在并分析远处的实体。",
+  "tr_unique_monsters.skill.mode.appraisal_eye.scan": "扫描",
+  "tr_unique_monsters.skill.mode.appraisal_eye.remote_analysis": "远程分析",
+  "tr_unique_monsters.deny.unique.tameable": "§c你无法驯服独特生物"
+}

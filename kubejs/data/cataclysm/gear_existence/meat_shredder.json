@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:meat_shredder",
+  "epGain": 0.005,
+  "maxEP": 5000,
+  "minEP": 0
+}

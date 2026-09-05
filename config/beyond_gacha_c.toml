@@ -1,0 +1,21 @@
+[targeting]
+	#Maximum amount of characters deployed
+	maxCharactersDeployed = 3
+	#Whether or not contract entities can target players or other contract entities.
+	#1 = force yes | 2 = force no | 3 = toggle in inventory
+	targetMode = 3
+	#Whether or not gacha companions are purely cosmetic
+	cosmeticCuties = false
+	#Whether or not gacha characters loose data on death
+	removeData = true
+	#Whether or not gacha character skills can grief
+	gachaCharacterGriefing = false
+
+[general]
+	#How the gacha gui is opened
+	#1 = via keybind or rimuru slimie | 2 = only via keybind | 3 = only via rimuru slimie
+	openUIMode = 1
+	#The link to the gacha coins shop
+	buyCoinsLink = "https://trbeyond.com/store/3095036"
+	#Determines if the daily rewards should popup on logic
+	enableDailyPopup = true

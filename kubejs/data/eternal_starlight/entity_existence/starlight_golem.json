@@ -1,0 +1,11 @@
+{
+  "type": "eternal_starlight:starlight_golem",
+  "abilities": [
+	"tensura:cold_nullification",
+	"tensura:flame_attack_nullification",
+	"tensura:abnormal_condition_nullification"
+  ],
+  "max_magicule": 80000,
+  "min_magicule": 20000,
+  "spiritualHealth": 520
+}

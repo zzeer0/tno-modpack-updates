@@ -1,0 +1,242 @@
+[
+  {
+    "id": "beyond_gacha_c:akina",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:dord",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:garm",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gazat",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:glenda",
+    "quality": "RARE",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobchi",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobte",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobuna",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobwa",
+    "quality": "RARE",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobwe",
+    "quality": "RARE",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gobzo",
+    "quality": "RARE",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:haruna",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:kokobu",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:lilina",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:myrd",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:nansou",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:regurd",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:rigur",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:rigurd",
+    "quality": "RARE",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:sai",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:shion",
+    "quality": "LEGENDARY",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:gabiru",
+    "quality": "LEGENDARY",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:geld_jr",
+    "quality": "LEGENDARY",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:sukerou",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:takt",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:touka",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:vesta",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:yashichi",
+    "quality": "COMMON",
+    "type": "CONTRACT"
+  },
+  {
+    "id": "beyond_gacha_c:akina_chestplate",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:akina_pants",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:akina_shoes",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:haruna_chestplate",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:haruna_pants",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:haruna_shoes",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:vesta_chestplate",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:vesta_pants",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:vesta_shoes",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:garm_chestplate",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:garm_pants",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:garm_boots",
+    "quality": "COMMON",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobzo_chestplate",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobzo_leggings",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobzo_boots",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobwe_chestplate",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobwe_leggings",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobwe_boots",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobzo_whip",
+    "quality": "RARE",
+    "type": "ITEM"
+  },
+  {
+    "id": "beyond_gacha_c:gobwe_dagger",
+    "quality": "RARE",
+    "type": "ITEM"
+  }
+]

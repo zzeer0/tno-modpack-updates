@@ -1,0 +1,46 @@
+{
+  "item.reliquified_lenders_cataclysm.scouring_eye": "蚀杀号角",
+  "tooltip.relics.scouring_eye.description": "这是一只从传说中的末地怪物眼眶中被扯下的眼睛。尽管岁月流逝，它依旧活着，仍在为下一场战斗搜寻目标……",
+  "tooltip.relics.scouring_eye.ability.glowing_scour": "追猎",
+  "tooltip.relics.scouring_eye.ability.glowing_scour.description": "记住玩家最近一次攻击的目标，持续 %2$s 秒。激活能力后，玩家会传送到该目标身后，并使该能力进入 %1$s 秒冷却。",
+  "tooltip.relics.scouring_eye.ability.glowing_scour.predicate.target": "已选定目标",
+  "tooltip.relics.scouring_eye.ability.glowing_scour.predicate.tp_allowed": "满足传送条件",
+  "tooltip.relics.scouring_eye.leveling_source.glowing_scour.title": "追猎",
+  "tooltip.relics.scouring_eye.leveling_source.glowing_scour.description": "每次使用 %2$s 能力传送到目标身边时，获得 +%1$s 经验。",
+
+  "item.reliquified_lenders_cataclysm.void_vortex_in_bottle": "瓶中虚空涡旋",
+  "tooltip.relics.void_vortex_in_bottle.description": "这是那所臭名昭著的魔法学院学生留下的作业之一——在那里，学生们必须在致命试炼中学会将闪电、云朵，甚至涡旋封存于瓶中……",
+  "tooltip.relics.void_vortex_in_bottle.ability.spawn_vortex": "虚空龙卷",
+  "tooltip.relics.void_vortex_in_bottle.ability.spawn_vortex.description": "击杀目标时，会召唤一道高达 %1$s 格的虚空涡旋，将附近目标吸入其中，并使该能力进入 %3$s 秒冷却。5 秒后，涡旋会爆炸，对附近所有目标造成 %2$s 点伤害。若附近存在更弱或同等强度的涡旋，它将其吞噬，扩大体型并延长持续时间。",
+  "tooltip.relics.void_vortex_in_bottle.leveling_source.spawn_vortex.title": "虚空龙卷",
+  "tooltip.relics.void_vortex_in_bottle.leveling_source.spawn_vortex.description": "每次通过 %2$s 能力生成虚空涡旋时，获得 +%1$s 经验。",
+
+  "item.reliquified_lenders_cataclysm.void_cloak": "虚空斗篷",
+  "tooltip.relics.void_cloak.description": "这是一位法师的长袍。传说他居住于任何已知世界基岩之下，在那里掌握了前所未见的虚空符文魔法，并击败了一头庞大的末地巨兽，而那怪物的眼睛至今仍在四处游荡，寻找战斗。",
+  "tooltip.relics.void_cloak.ability.void_invulnerability": "虚空免疫",
+  "tooltip.relics.void_cloak.ability.void_invulnerability.description": "获得对虚空伤害的完全免疫。",
+  "tooltip.relics.void_cloak.ability.void_rune": "虚空呼唤",
+  "tooltip.relics.void_cloak.ability.void_rune.description": "每隔 %1$s 秒，在附近随机一个目标脚下召唤一道虚空符文，造成 %2$s 点伤害。",
+  "tooltip.relics.void_cloak.ability.seismic_zone": "终末悲鸣",
+  "tooltip.relics.void_cloak.ability.seismic_zone.description": "当玩家或其操控的生物死亡时，在死亡位置召唤一个半径为 %1$s 格的震荡区域，最多触发 %2$s 次虚空符文，每次造成 %3$s 点伤害。",
+  "tooltip.relics.void_cloak.leveling_source.void_rune.title": "虚空呼唤",
+  "tooltip.relics.void_cloak.leveling_source.void_rune.description": "每次触发 %2$s 能力时，获得 +%1$s 经验。",
+  "tooltip.relics.void_cloak.leveling_source.seismic_zone.title": "终末悲鸣",
+  "tooltip.relics.void_cloak.leveling_source.seismic_zone.description": "每次触发 %2$s 能力时，获得 +%1$s 经验。",
+
+  "item.reliquified_lenders_cataclysm.vacuum_glove": "真空手套",
+  "tooltip.relics.vacuum_glove.description": "这是最肮脏的工具之一，不属于战士，也不属于法师，而是属于“屠夫”。它散发出的气息会令周围空气液化，阻滞行动，也压制心智。",
+  "tooltip.relics.vacuum_glove.ability.vacuum_slowdown": "边界",
+  "tooltip.relics.vacuum_glove.ability.vacuum_slowdown.description": "在玩家周围形成一个半径为 %2$s 格的区域，所有试图逃离该区域的目标在边缘处会被减速 %1$s%%。目标越接近边界，减速效果越强。",
+  "tooltip.relics.vacuum_glove.leveling_source.vacuum_slowdown.title": "边界",
+  "tooltip.relics.vacuum_glove.leveling_source.vacuum_slowdown.description": "每因 %2$s 能力造成 10 秒减速效果，获得 +%1$s 经验。",
+
+  "item.reliquified_lenders_cataclysm.void_bubble": "虚空气泡",
+  "tooltip.relics.void_bubble.description": "这是一件看似脆弱却异常坚固的装置，能够同时保护头部、身躯与心智。",
+  "tooltip.relics.void_bubble.ability.protective_bubble": "守护气泡",
+  "tooltip.relics.void_bubble.ability.protective_bubble.description": "用一个保护性气泡包裹玩家头部，彻底免除对空气的需求。气泡还可在爆裂前最多抵挡 %1$s 次来袭攻击，随后向四周散射 %2$s 枚碎片，每枚造成 %3$s 点伤害。之后会在 %4$s 秒后重新生成。",
+  "tooltip.relics.void_bubble.leveling_source.protective_bubble.title": "守护气泡",
+  "tooltip.relics.void_bubble.leveling_source.protective_bubble.description": "每次通过 %2$s 能力格挡攻击时，获得 +%1$s 经验。",
+
+  "explosion.sub": "爆炸"
+}

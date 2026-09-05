@@ -1,0 +1,275 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_48E816F891BBDE3E"
+	group: "5B307D448551FC61"
+	id: "48E816F891BBDE3E"
+	order_index: 22
+	quest_links: [ ]
+	quests: [
+		{
+			id: "067CC47623C53349"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "566EB4D15DF35771"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:monkey_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["067CC47623C53349"]
+			id: "5A560978EAE38916"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "5A67E533DBFA99E5"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:spirit_monkey_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A560978EAE38916"]
+			id: "1094A58DD6085052"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7B5B17C677E7D9BB"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:demon_monkey_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1094A58DD6085052"]
+			id: "70F95B6C860A9222"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "456A80C8C46C3CC1"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:red_buttocked_horse_monkey_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70F95B6C860A9222"]
+			id: "2A6A33536E5A8A34"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7C05AF8626BFF48E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:immortal_ape_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A6A33536E5A8A34"]
+			id: "2C0213EA8B9EB618"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "043432EA4F76B7D5"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:enlightened_stone_monkey_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2C0213EA8B9EB618"]
+			id: "741F08C7B362DC69"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "3664922E7A648874"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:sun_wukong_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["741F08C7B362DC69"]
+			id: "7BA22D1439A5080A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7D5D05DE06D4B934"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:sun_wukong_heavenly_equal_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7BA22D1439A5080A"]
+			id: "5991FD755C90D05E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "28F1DCA16275FAD2"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:sun_wukong_victorious_buddha_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2C0213EA8B9EB618"]
+			id: "72DFAB8D88986544"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "55678D579EDA8C66"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:six_eared_macaque_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72DFAB8D88986544"]
+			id: "104D2BA08969789A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2FE809454BAF5417"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:soundwave_immortal_ape_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["104D2BA08969789A"]
+			id: "286AFAE35357FAB7"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "43F17A9D94C1DF88"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mortal_cultivation:cosmic_mind_ape_race"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 9.5d
+		}
+	]
+}

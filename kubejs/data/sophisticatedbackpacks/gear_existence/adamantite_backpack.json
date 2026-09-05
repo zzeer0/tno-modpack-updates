@@ -1,0 +1,7 @@
+{
+  "type": "tensura_tno:adamantite_backpack",
+  "epGain": 0.0025,
+  "evolution": "tensura_tno:hihiirokane_backpack",
+  "maxEP": 40000,
+  "minEP": 25000
+}

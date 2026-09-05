@@ -1,0 +1,26 @@
+[compatibility_patches]
+	#Change the default value of the npcWorking game rule from true to false.
+	npcWorkingDefaultDisabled = true
+	#Refresh Sophisticated Backpacks slot components after Tensura gear evolution.
+	sophisticatedBackpacksEvolutionSlotRefresh = true
+	#Amount of Soul Grade gained per prestige (reincarnation) when no race prestige quest is completed.
+	#Default: 1. Set to 0 to disable automatic gain. Higher values speed up soul grade progression.
+	# Default: 1
+	# Range: 0 ~ 100
+	soulGradePerPrestige = 20
+
+[performance]
+	#Optimize Mowzie's Mobs AvoidEntityIfNotTamedGoal to skip expensive entity scans
+	#for tamed animals and throttle scan frequency for untamed ones (every 4 ticks).
+	#Eliminates ~2-5% server tick cost per BladeTiger / Tensura tamable entity.
+	mowzieAvoidGoalOptimization = true
+
+[gameplay]
+	#Allow players to tick a per-player Rimuru-mode checkbox in the reincarnation GUI
+	#when picking the Slime race for the first time. Default: false.
+	#Note: this option only gates DEDICATED servers. Single-player worlds and integrated
+	#servers (including LAN hosts) ignore it and the checkbox is always available there.
+	#When true on a dedicated server, the checkbox shows up only on first race selection
+	#(not on race-reset / character-reset scrolls) and only if the world's vanilla
+	#'rimuruMode' game rule is OFF.
+	rimuruModeCheckboxEnabled = false

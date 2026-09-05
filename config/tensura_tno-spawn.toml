@@ -1,0 +1,24 @@
+[spawn]
+	#Master toggle for the spawn-biome-blacklist feature.
+	#When false, the world initial spawn point and player first-login spawn are
+	#left untouched regardless of the configured blacklist.
+	spawnBiomeBlacklistEnabled = true
+	#Biomes that must NOT host the world's initial spawn point or a new player's
+	#first-login spawn position. Each entry is a ResourceLocation in 'namespace:path'
+	#form. Invalid entries are logged at WARN and skipped at runtime.
+	#Default targets the Tensura overworld biomes that apply heavy magicule
+	#poisoning to unprotected new players.
+	spawnBiomeBlacklist = ["tensura:ancient_forest", "tensura:desert_of_death"]
+	#Maximum horizontal radius (in blocks) that the safe-spawn finder will scan
+	#outward from the original spawn point when relocating.
+	#Range: [64, 8192].
+	# Default: 1024
+	# Range: 64 ~ 8192
+	spawnSafeSearchRadius = 1024
+	#Sampling step (in blocks) used by the safe-spawn finder while spiral-scanning.
+	#Smaller values produce a denser grid (more accurate but slower); larger values
+	#produce a coarser grid.
+	#Range: [16, 512].
+	# Default: 64
+	# Range: 16 ~ 512
+	spawnSafeSearchStep = 64

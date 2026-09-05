@@ -1,0 +1,2368 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2BBC871DFBFF362A"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/skill/extra/shadow_motion.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "2BBC871DFBFF362A"
+	images: [
+		{
+			height: 3.0d
+			image: "tensura:item/grimoire_special_a_item"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.4656462585033765d
+			y: -6.417857142857123d
+		}
+		{
+			alpha: 233
+			height: 5.2d
+			image: "bosses_of_mass_destruction:textures/particle/magic_circle_22.png"
+			order: -1
+			rotation: 0.0d
+			width: 5.2d
+			x: -3.4333333333333087d
+			y: -6.394047619047626d
+		}
+		{
+			alpha: 233
+			height: 5.2d
+			image: "bosses_of_mass_destruction:textures/particle/magic_circle_17.png"
+			rotation: 0.0d
+			width: 5.2d
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			height: 3.0d
+			image: "tensura:item/high_magic_staff_item"
+			rotation: 0.0d
+			width: 3.0d
+			x: 2.4760450074540543d
+			y: -6.428571428571459d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/wizard_tower/ruined.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/wizard_tower/rotted.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/wizard_tower/frozen.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/wizard_tower/burnt.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/wizard_tower/buried.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			alpha: 233
+			height: 6.0d
+			image: "ablazeaqzlcz:textures/ftb/gazel.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_1.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 14.550340136054402d
+			y: -1.2523809523809675d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_2.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 16.150340136054403d
+			y: -1.3095238095238244d
+		}
+		{
+			height: 5.5d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_3.png"
+			rotation: 0.0d
+			width: 5.5d
+			x: 17.81700680272108d
+			y: -1.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_4.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 19.188435374149655d
+			y: -1.2714285714285722d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 20.788095238095238d
+			y: -1.499659863945567d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_6.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 22.591836734693878d
+			y: -1.2869047619047649d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/bone_golem_7.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 24.163265306122447d
+			y: -1.2869047619047649d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/daemon_essence"
+			rotation: 120.0d
+			width: 1.0d
+			x: 18.60714285714286d
+			y: 0.7397959183673564d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/daemon_core"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.678571428571423d
+			y: 2.6683673469387728d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/daemon_essence"
+			rotation: 0.0d
+			width: 1.0d
+			x: 25.035714285714285d
+			y: -0.5459183673469425d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/hell_moth.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 11.5d
+			y: 3.5d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/phantaspore.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.529251700680284d
+			y: 3.5809523809523753d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/unicorn.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.193537414966002d
+			y: 3.4952380952380793d
+		}
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/horned_rabbit.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.6125850340136196d
+			y: 3.819047619047609d
+		}
+	]
+	order_index: 1
+	quest_links: [{
+		id: "5AC2E2A812418442"
+		linked_quest: "3A9101C87B524BD3"
+		x: 2.5d
+		y: -4.5d
+	}]
+	quests: [
+		{
+			hide_dependency_lines: true
+			id: "318F8A3B3BBD8349"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EF309A1B960F9B8"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									discount: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											multiplier: {
+												initialValue: 11.404d
+											}
+										}
+									}
+									passive: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: { }
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					id: "artifacts:villager_hat"
+				}
+				id: "6531C97D52D437FA"
+				structure: "tensura:villages/dwarf_village"
+				type: "structure"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "66605EA61680E3AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EA2D77149A13041"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					id: "tensura:goblin_club"
+				}
+				id: "2925FA07066B2E6D"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tensura:goblin"
+				type: "observation"
+			}]
+			x: 1.25d
+			y: -1.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "48345B3536C27D98"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "220FF3B9DBD5212B"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					id: "cataclysm:coral_spear"
+				}
+				id: "7F6D1AD937FCC94B"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tensura:lizardman"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: -1.4913265306122483d
+		}
+		{
+			id: "42D4A8EEE5E25183"
+			shape: "octagon"
+			tasks: [{
+				icon: {
+					id: "tensura:stone_warp_pad"
+				}
+				id: "2B2A0F6B5A118BDE"
+				observation_type: "block_tag"
+				observe_type: 1
+				timer: 0L
+				to_observe: "tensura:warp_pads"
+				type: "observation"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"42D4A8EEE5E25183"
+				"318F8A3B3BBD8349"
+			]
+			id: "3A597A26AAFD54B9"
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "tensura:royal_dwarven_warp_pad"
+				}
+				id: "5502285173020BEF"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tensura:royal_dwarven_warp_pad"
+				type: "observation"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"48849045FD239568"
+				"318F8A3B3BBD8349"
+				"5516DAB3B483E0B7"
+				"76D0AE3CA0CEC97B"
+				"70918DAFF1515131"
+				"74C1BF247D821009"
+				"6985BDDEBC97AD23"
+			]
+			dependency_requirement: "one_completed"
+			id: "46F9C1A11397AF4E"
+			shape: "hexagon"
+			tasks: [{
+				id: "631112B36D310BF7"
+				item: { count: 1, id: "tensura:spellbinding_table" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "48849045FD239568"
+			shape: "octagon"
+			tasks: [{
+				id: "65D6F24B30B7A093"
+				item: { count: 1, id: "tensura:magic_stone" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			id: "2A28C48839DFA9E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A5BEED6808E5E2A"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "276A762E8BBFDA8A"
+				item: { count: 1, id: "tensura:grimoire_d" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			id: "5334334051974ED6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68BA819DE16D38EF"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "34964930C399F367"
+				item: { count: 1, id: "tensura:grimoire_c" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			id: "500B2D888F2CA9A9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36EB1435BF7457CF"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "306EE6CE015D6C72"
+				item: { count: 1, id: "tensura:grimoire_b" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			id: "1C367AE15A6C4B76"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5AB20D672FA6F4DA"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "63BF9A8F2FC11490"
+				item: { count: 1, id: "tensura:grimoire_a" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "4F6A1E007DA17970"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "655D80C8A598EE94"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4DE28B5714525C12"
+				item: { count: 1, id: "tensura:grimoire_special_a" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			id: "56987D716B42A309"
+			tasks: [{
+				id: "0BB0A4B1CB6D2E8F"
+				item: { count: 1, id: "tensura:dubious_food" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["66605EA61680E3AF"]
+			id: "7B6061ABE0B80F0F"
+			rewards: [
+				{
+					id: "2A0EC76EC9ADB598"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39E231D831B42876"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "37D08B49AACAA7F4"
+				item: { count: 1, id: "tensura:basic_bows_schematic" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "518847CE0B2E7EE2"
+			rewards: [
+				{
+					id: "6825B62440593559"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21D19780E9115A2B"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "68E05FDD1920C805"
+				item: { count: 1, id: "tensura:spider_bows_schematic" }
+				type: "item"
+			}]
+			x: 8.541666666666671d
+			y: -7.986309523809524d
+		}
+		{
+			id: "53C000197B6C28B7"
+			rewards: [
+				{
+					id: "327D20310C2BD633"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21E15BD0847777CF"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2C43B380CAD04BD7"
+				item: { count: 1, id: "tensura:japanese_sword_schematic" }
+				type: "item"
+			}]
+			x: 10.041666666666671d
+			y: -7.986309523809524d
+		}
+		{
+			id: "346EA278C5561801"
+			rewards: [
+				{
+					id: "32C7552C7447CCFC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D01537A7BCE7860"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3D94D03C3CDD719C"
+				item: { count: 1, id: "tensura:hunting_knife_schematic" }
+				type: "item"
+			}]
+			x: 11.541666666666671d
+			y: -7.986309523809524d
+		}
+		{
+			dependencies: ["66605EA61680E3AF"]
+			id: "732D8C1CA3E4DD58"
+			rewards: [
+				{
+					id: "19C4A8364111C2F9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F129896F69AD82C"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6570762DB005E804"
+				item: { count: 1, id: "tensura:short_sword_schematic" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			id: "376A521FBEE60056"
+			rewards: [
+				{
+					id: "70B8A81F5BB761D3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4818677C9A678788"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1ED158342ED15CB3"
+				item: { count: 1, id: "tensura:long_sword_schematic" }
+				type: "item"
+			}]
+			x: 14.541666666666671d
+			y: -7.986309523809524d
+		}
+		{
+			id: "19A435BCF2961DDB"
+			rewards: [
+				{
+					id: "1C0078D8B6DD30B8"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FCC275A63D46D35"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1C84742B56D17A8A"
+				item: { count: 1, id: "tensura:great_sword_schematic" }
+				type: "item"
+			}]
+			x: 16.04166666666667d
+			y: -7.986309523809524d
+		}
+		{
+			dependencies: ["48345B3536C27D98"]
+			id: "4A73E90DD49AEA1B"
+			rewards: [
+				{
+					id: "38AF8C0A05DAC909"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53C63C90A2941319"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "684A018680E39FE9"
+				item: { count: 1, id: "tensura:spear_schematic" }
+				type: "item"
+			}]
+			x: 3.5714285714285623d
+			y: -3.0d
+		}
+		{
+			id: "2F641B5AE94AA701"
+			rewards: [
+				{
+					id: "77A33CCD8F6DA2AB"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71F9B54DB57CB7DA"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "155BFA45B6206643"
+				item: { count: 1, id: "tensura:kunai_schematic" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			id: "1DC278980028351A"
+			rewards: [
+				{
+					id: "54D17483B39E61C3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3640842BC435E670"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "61CFC1B958157B49"
+				item: { count: 1, id: "tensura:shield_schematic" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			id: "11B8CD2C7AD45FA3"
+			rewards: [
+				{
+					id: "1489B8F0BC3D608D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32A170C95ACCACD4"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "441FAE645E4EAB9B"
+				item: { count: 1, id: "tensura:leather_gear_schematic" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			id: "5F126046F9279D9D"
+			rewards: [
+				{
+					id: "39B2A685F57CAA92"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5944AF26809BDC45"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "41F74606A013D6A2"
+				item: { count: 1, id: "tensura:monster_leather_gear_schematic" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -7.0d
+		}
+		{
+			id: "6A7F827F22E4D604"
+			rewards: [
+				{
+					id: "494859ED9BEA2EF4"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "268E10FE25AB77B4"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "78501239F99206F4"
+				item: { count: 1, id: "tensura:gold_gear_schematic" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -7.0d
+		}
+		{
+			id: "67BE8A852FDE2783"
+			rewards: [
+				{
+					id: "31701C02197C7B32"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33B29F3C8AB608BC"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "55F6722E32250339"
+				item: { count: 1, id: "tensura:iron_gear_schematic" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -7.0d
+		}
+		{
+			id: "18627F1DE54A27A3"
+			rewards: [
+				{
+					id: "6D061B9691AAA437"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A871565A013A783"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "622E5A4125BEAD74"
+				item: { count: 1, id: "tensura:silver_gear_schematic" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			id: "49196296DCDBCC5A"
+			rewards: [
+				{
+					id: "003639BF82C6A9CE"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46F56201D2696301"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3B1F0F5567F0F28B"
+				item: { count: 1, id: "tensura:ant_carapace_gear_schematic" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			id: "74C7BE88925D773C"
+			rewards: [
+				{
+					id: "52A632C7D7ECE3FD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "095CA071E5CCFC16"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2DEE7808B103551A"
+				item: { count: 1, id: "tensura:serpent_scalemail_gear_schematic" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			id: "0013320855C2B05A"
+			rewards: [
+				{
+					id: "62462F8816214AC3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24130407BE9AA741"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0C9CC2F46B51BB25"
+				item: { count: 1, id: "tensura:diamond_gear_schematic" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			id: "37A8B7EA5A8BA69D"
+			rewards: [
+				{
+					id: "76616E9CEC4EB041"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C39829D1628AB4A"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "508F32C6D6BED1BF"
+				item: { count: 1, id: "tensura:knight_spider_carapace_gear_schematic" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			id: "148614371C6CFF90"
+			rewards: [
+				{
+					id: "326F7295161CFE23"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69C1CA735D9CF4F1"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6EA151C4A1FD298B"
+				item: { count: 1, id: "tensura:low_magisteel_gear_schematic" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			id: "68D56DFE29B74B5C"
+			rewards: [
+				{
+					id: "03F3CE52BBBE2DDA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23577552D6E3CB73"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "7E0BCF1410F1262C"
+				item: { count: 1, id: "tensura:armorsaurus_scalemail_gear_schematic" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -6.0d
+		}
+		{
+			id: "40621BDB05AAA9AF"
+			rewards: [
+				{
+					id: "265BB5B2BE83B881"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C4F71D438068189"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "133CCA6A826FACF7"
+				item: { count: 1, id: "tensura:high_magisteel_gear_schematic" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -6.0d
+		}
+		{
+			id: "5438AECF8A9DAC57"
+			rewards: [
+				{
+					id: "62F99E27DAD23B48"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3582922CAD06BFF0"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "53EC7AB519EE2BD7"
+				item: { count: 1, id: "tensura:charybdis_scalemail_gear_schematic" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -7.0d
+		}
+		{
+			id: "1260240242C120A3"
+			rewards: [
+				{
+					id: "3BC2DD4B1AB21056"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3CB743F515D87441"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0A07233CA23D9D6A"
+				item: { count: 1, id: "tensura:mithril_gear_schematic" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -6.0d
+		}
+		{
+			id: "25C57B766FA378FB"
+			rewards: [
+				{
+					id: "2059B758634287CF"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3102B185570355AC"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "78EB968752F5FED7"
+				item: { count: 1, id: "tensura:orichalcum_gear_schematic" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			id: "69FAEA0DB45A299E"
+			rewards: [
+				{
+					id: "4A2FBA073F4AB7A9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3CE5756A8B9CE444"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "44EE04A6247F214A"
+				item: { count: 1, id: "tensura:pure_magisteel_gear_schematic" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			id: "4BB56FA1EA63645A"
+			rewards: [
+				{
+					id: "5D8826A0A3CB3C95"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54B1D6BC46A48458"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "50C9C2B66E03136B"
+				item: { count: 1, id: "tensura:adamantite_gear_schematic" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			id: "585ADF202ADFF8E1"
+			rewards: [
+				{
+					id: "582F12FB3751E958"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A32B3219AF0AB20"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4E3301FDF717589A"
+				item: { count: 1, id: "tensura:hihiirokane_gear_schematic" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.0d
+		}
+		{
+			id: "62F79BFB49686D64"
+			rewards: [
+				{
+					id: "225F3FC6217A9EB1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FA84F4CBAC09369"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "722A13E5B3EE6BCB"
+				item: { count: 1, id: "tensura:anti_magic_mask_schematic" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -5.0d
+		}
+		{
+			id: "09259C689BC078CB"
+			rewards: [
+				{
+					id: "49B7677D2463D543"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00B2E63483F71EBA"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "21935E0268AF0840"
+				item: { count: 1, id: "tensura:dark_set_schematic" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -5.0d
+		}
+		{
+			id: "51684A18321B7E1D"
+			rewards: [
+				{
+					id: "561CE08E1967A577"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48951BC902230489"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6A99161CDC9E8CF7"
+				item: { count: 1, id: "tensura:pierrot_mask_schematic" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			id: "4885F28A50901774"
+			rewards: [
+				{
+					id: "647A83684B441CF0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3FC073EBBBCD02CC"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "670B7AA6ED4D3E42"
+				item: { count: 1, id: "tensura:spatial_blade_schematic" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -8.0d
+		}
+		{
+			id: "51B3B2ED81B7F0E5"
+			rewards: [
+				{
+					id: "0B0532604907A0E4"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C9A304CE5802D2C"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6B43E9F238111F34"
+				item: { count: 1, id: "tensura:web_gun_schematic" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -8.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "3A9101C87B524BD3"
+			rewards: [
+				{
+					id: "654C5ACB2CDE0D52"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "56273C2819CAA0A9"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3C41617C2C3BC81F"
+				item: { count: 1, id: "tensura:magic_staff_schematic" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3A9101C87B524BD3"]
+			id: "068F19A731087BC0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "288BF52D808EDC71"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "39A4A268B0427C67"
+				item: { count: 1, id: "tensura:low_magic_staff" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3A9101C87B524BD3"]
+			id: "2A616C1ABBDB8D9D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7986724892C9069A"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "637C8D39037781C3"
+				item: { count: 1, id: "tensura:medium_magic_staff" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3A9101C87B524BD3"]
+			id: "7937052EB7E3CC74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36407BA780CC66CF"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2152F56CF9309290"
+				item: { count: 1, id: "tensura:high_magic_staff" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "1D217C6641299B70"
+			tasks: [{
+				id: "37795DB50EDD4074"
+				item: { count: 1, id: "tensura:dwargon_banner_pattern" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			dependency_requirement: "one_completed"
+			id: "7621D7B84C9D710F"
+			tasks: [{
+				id: "7EC931EFE9E40052"
+				item: { count: 1, id: "tensura:unbound_tome" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "6985BDDEBC97AD23"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E69040B0B372429"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/painting/world_map.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4C04575A2C799D63"
+				structure: "tensura:ruin/wizard_tower/buried"
+				type: "structure"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "70918DAFF1515131"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "760FDF821456B5FD"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/painting/world_map.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "3876F6102474D9ED"
+				structure: "tensura:ruin/wizard_tower/burnt"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "74C1BF247D821009"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E40C62388E8EC03"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/painting/world_map.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "32894D3CADAC3E21"
+				structure: "tensura:ruin/wizard_tower/frozen"
+				type: "structure"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "76D0AE3CA0CEC97B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EB17B621FED59B6"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/painting/world_map.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1CE8765E222F6E6E"
+				structure: "tensura:ruin/wizard_tower/ruined"
+				type: "structure"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "5516DAB3B483E0B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A228E29C48777AC"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:textures/painting/world_map.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5A31932C03AD9A76"
+				structure: "tensura:ruin/wizard_tower/rotted"
+				type: "structure"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			id: "47C041D061CC6669"
+			tasks: [{
+				id: "6DCF93960A2BAF23"
+				item: { count: 1, id: "tensura:monster_saddle" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 5.5d
+		}
+		{
+			id: "0E105E703E79C81B"
+			rewards: [{
+				id: "57DCDE236C5FED15"
+				item: {
+					count: 1
+					id: "tensura:labyrinth_bricks_magic_engine"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "tensura:no_no_square"
+				criterion: ""
+				icon: {
+					id: "tensura:stone_bricks_magic_engine"
+				}
+				id: "413CE05C482C1769"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "0E4A2C7FB4B21F4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2D8743B529075087"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "350AAD180CDFF5FC"
+				item: { count: 1, id: "tensura:low_arcane_potion" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "5C1916C1CDFAD8A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36546D9B2AFB5820"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "536F9578F45856DF"
+				item: { count: 1, id: "tensura:medium_arcane_potion" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "5BB396353EB783E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "469EE60BFD3A7A22"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0291C3479863CCAE"
+				item: { count: 1, id: "tensura:high_arcane_potion" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "527C27144046597D"
+			tasks: [{
+				id: "72B3ED1DDCC2EE2F"
+				item: { count: 1, id: "tensura:warp_core" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "1E7A25799F815ABA"
+			shape: "hexagon"
+			tasks: [{
+				id: "5FF41B6884AA0278"
+				item: { count: 1, id: "tensura:woodcutter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/mob_effect/hero_of_the_village.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "56413501A9E9D8FC"
+			shape: "hexagon"
+			tasks: [{
+				id: "32CEA1EB03A73DDC"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "0E80325865685EE6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66BB6BA14E7B99DB"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "tensura:gazel_dwargo"
+				icon: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									biome_burn: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											multiplier: {
+												initialValue: 0.04206d
+											}
+										}
+									}
+									bone_pact: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: { }
+									}
+									ethereal_guard: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											cooldown: {
+												initialValue: 205.65633d
+											}
+											max_projectiles: {
+												initialValue: 3.57087d
+											}
+										}
+									}
+									fortification: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											interval: {
+												initialValue: 190.43338d
+											}
+											max_shields: {
+												initialValue: 3.35175d
+											}
+										}
+									}
+									frenzy: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											additive_multiplier: {
+												initialValue: 0.03609d
+											}
+										}
+									}
+									frostbite: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											duration: {
+												initialValue: 80.20573d
+											}
+										}
+									}
+									lifedrain: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											heal_percentage: {
+												initialValue: 0.01472d
+											}
+											interval: {
+												initialValue: 263.78393d
+											}
+											radius: {
+												initialValue: 4.77314d
+											}
+										}
+									}
+									mirror_leech: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											chance: {
+												initialValue: 0.09077d
+											}
+										}
+									}
+									soulbound_gems: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											gem_amount: {
+												initialValue: 2.25043d
+											}
+										}
+									}
+									twilight: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											damage: {
+												initialValue: 3.31787d
+											}
+											speed_scale: {
+												initialValue: 1.10912d
+											}
+										}
+									}
+									twilight_sovereign: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: { }
+									}
+									vendetta: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											lifetime: {
+												initialValue: 7.50924d
+											}
+											multiplier: {
+												initialValue: 0.39612d
+											}
+										}
+									}
+									zombie: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											damage: {
+												initialValue: 2.58065d
+											}
+											interval: {
+												initialValue: 358.73244d
+											}
+											max_zombies: {
+												initialValue: 1.04784d
+											}
+										}
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					id: "reliquified_twilight_forest:lich_crown"
+				}
+				id: "518178CF230071F2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "422C2AB8F6ED97D3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CA94293A6F6434A"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "39319A4F29A81F2A"
+				item: { count: 1, id: "tensura:low_magisteel_bone_golem" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.0142857142857196d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "6AB56D8DC3F45C3F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B15ABDDD7042CCA"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1074ED2B6464D10D"
+				item: { count: 1, id: "tensura:high_magisteel_bone_golem" }
+				type: "item"
+			}]
+			x: 16.15306122448979d
+			y: 1.0142857142857125d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "2F9D7C225690E687"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E93E54B7A4EC228"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5669D89646876EFB"
+				item: { count: 1, id: "tensura:mithril_bone_golem" }
+				type: "item"
+			}]
+			x: 17.765306122448976d
+			y: 1.0142857142857125d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "0A73EE2B5936AAF6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "498748789730B8E2"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3185CFA698A7635B"
+				item: { count: 1, id: "tensura:pure_magisteel_bone_golem" }
+				type: "item"
+			}]
+			x: 19.35714285714286d
+			y: 1.0142857142857125d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "518877FA2963DC66"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F8DA6245FDADFE3"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4BF87DEFAAFA53C6"
+				item: { count: 1, id: "tensura:orichalcum_bone_golem" }
+				type: "item"
+			}]
+			x: 20.826530612244895d
+			y: 0.9734693877551095d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "234FE96EA8DEB17B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18EAE9E1E78FBAC0"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5A35C482633014AF"
+				item: { count: 1, id: "tensura:adamantite_bone_golem" }
+				type: "item"
+			}]
+			x: 22.540816326530603d
+			y: 0.993877551020411d
+		}
+		{
+			dependencies: ["30A3566EB22079CA"]
+			id: "02D7E33F9A392AB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C35733AA88B9168"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "16C3BB71DB138265"
+				item: { count: 1, id: "tensura:hihiirokane_bone_golem" }
+				type: "item"
+			}]
+			x: 24.153061224489797d
+			y: 0.993877551020411d
+		}
+		{
+			id: "30A3566EB22079CA"
+			shape: "hexagon"
+			tasks: [{
+				id: "5DC3256A4D5D5C73"
+				item: { count: 1, id: "tensura:daemon_core" }
+				type: "item"
+			}]
+			x: 19.336734693877553d
+			y: 3.0081632653061305d
+		}
+		{
+			id: "5919C85A1A49C857"
+			rewards: [{
+				auto: "enabled"
+				description: "Disorients the player"
+				icon: {
+					id: "tensura:baffledil"
+				}
+				id: "1E07B1829555A6B5"
+				type: "toast"
+			}]
+			tasks: [{
+				icon: {
+					id: "tensura:baffledil"
+				}
+				id: "1C9175DECE99427D"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tensura:baffledil"
+				type: "observation"
+			}]
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			icon: {
+				id: "tensura:hell_moth_silk"
+			}
+			id: "1CF63C044EAFA8D7"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "7EB2330C9B140F13"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "08F3651BDB3D1362"
+					item: { count: 1, id: "tensura:hell_moth_silk" }
+					type: "item"
+				}
+				{
+					entity: "tensura:hell_moth"
+					id: "1F58673FAED554B4"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			id: "298D2956301C4909"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "27D18CADFDA87F42"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				entity: "tensura:phantaspore"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/phantaspore.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5B04F74B18E6A092"
+				type: "kill"
+				value: 5L
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			id: "08889BAAC91E4DA2"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2C89483846DB44D4"
+				type: "tensura_ftb:existence_value"
+				value: 3000
+			}]
+			tasks: [{
+				entity: "tensura:unicorn"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/unicorn.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7BF2EFBEF07F4363"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			icon_scale: 1.5d
+			id: "07529A000076D20F"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "7B462F2F833B0C39"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				entity: "tensura:horned_rabbit"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/horned_rabbit.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "056892465B14AC83"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			id: "49250178B975344D"
+			tasks: [{
+				id: "2804D5D140FF6A52"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			id: "207CE698F9A78BCE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BA8406C5E872A11"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "22B163B468D5CD01"
+				item: { count: 1, id: "tensuraenigmatic:ring_of_arcane_source" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -8.0d
+		}
+		{
+			id: "5CC6FEF8201DF611"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2008C239C80AD40E"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1470B982093134F3"
+				item: { count: 1, id: "tensuraenigmatic:mana_ring" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -8.0d
+		}
+		{
+			id: "5400019E1A822A40"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09FEB4263B3303F2"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F8383F38BEDC2F8"
+				item: { count: 1, id: "tensuraenigmatic:power_of_force" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["318F8A3B3BBD8349"]
+			id: "5073A6AD3F69B887"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "749A290E8C043735"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura_guild:item/guild_task"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "27DD97A79E754A3A"
+				type: "tensura_guild:complete_dwarf_task"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "42FCA469EA5C94D7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E4D21A7B91A0E49"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2A889A6564BDCC5E"
+				item: { components: { "tensura:existence_durability": 52000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 52000.0d, "tensura:max_existence_point": 0.0d }, count: 1, id: "ancient_artifacts:titanstride_greaves" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -7.0d
+		}
+		{
+			id: "6BC22C266AD65BED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0350C59DBFEB8826"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "13A67932A58D00A5"
+				item: { components: { "tensura:existence_durability": 52000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 52000.0d, "tensura:max_existence_point": 225000.0d }, count: 1, id: "ancient_artifacts:war_pendant" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -6.0d
+		}
+		{
+			id: "263A8208AA5CCDA6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62C88A52CF002798"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "16EFA9E0F7FF24B4"
+				item: { components: { "tensura:existence_durability": 52000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 52000.0d, "tensura:max_existence_point": 52000.0d }, count: 1, id: "ancient_artifacts:magicule_conduit_belt" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -7.0d
+		}
+		{
+			id: "06D9CFEA57AC9827"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D0852DD28562F2F"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "67AB1D17B58FDC74"
+				item: { components: { "tensura:existence_durability": 52000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 52000.0d, "tensura:max_existence_point": 225000.0d }, count: 1, id: "ancient_artifacts:amulet_of_the_sylphs" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -6.0d
+		}
+		{
+			id: "2B51A873B4182555"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F111FBDE5AF78BD"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5D64B9181BFC80C6"
+				item: { components: { "tensura:existence_durability": 225000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 225000.0d, "tensura:max_existence_point": 5000000.0d }, count: 1, id: "ancient_artifacts:lion_emblem" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -5.0d
+		}
+		{
+			id: "6FC262DD2B5C2847"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42813BED094F7DE6"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3E0DC1990130002E"
+				item: { components: { "tensura:existence_durability": 225000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 225000.0d, "tensura:max_existence_point": 5000000.0d }, count: 1, id: "ancient_artifacts:shadowbind_bracelet" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -5.0d
+		}
+		{
+			id: "5A54C9E87F1CE967"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B48A4CB7D555E4D"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "31819E9D202361C2"
+				item: { components: { "tensura:existence_durability": 52000.0d, "tensura:existence_gain": 0.02d, "tensura:existence_point": 52000.0d, "tensura:max_existence_point": 225000.0d }, count: 1, id: "ancient_artifacts:crimson_mizuhiki" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -6.0d
+		}
+	]
+}

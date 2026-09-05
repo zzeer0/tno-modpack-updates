@@ -1,0 +1,121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_45747C88D8F7018C"
+	group: "5B307D448551FC61"
+	id: "45747C88D8F7018C"
+	order_index: 31
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7597EDD5BA13933F"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "4244295F7D02DDE1"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_tno:baby_spirit_fox"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7597EDD5BA13933F"]
+			id: "232057215787C21D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "60E08B7B78A092DF"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_tno:fox_spirit_envoy"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["232057215787C21D"]
+			id: "2735D224F962092B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "17768E9573629A6C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_tno:spirit_fox_contract_master"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2735D224F962092B"]
+			id: "72E8C3504B6FF238"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7EB443424E3CE972"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_tno:mystic_fox_master"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["72E8C3504B6FF238"]
+			id: "51409C67BDBE3B36"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2F418596ED830E02"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_tno:heavenly_fox_sovereign"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+	]
+}

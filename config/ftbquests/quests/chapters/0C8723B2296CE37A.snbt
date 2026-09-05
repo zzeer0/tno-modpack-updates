@@ -1,0 +1,121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "0C8723B2296CE37A"
+	group: "5B307D448551FC61"
+	id: "0C8723B2296CE37A"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "37B9BEFB995A9AF8"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "60D67C34D0108074"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:ghoul"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			id: "0E6BE9BB40F83D74"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "04CD19D1CE7EC1B1"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:vampire"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0E6BE9BB40F83D74"]
+			id: "514EED697021E411"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "6B75FBDEA8313639"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:vampire_overcomer"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["514EED697021E411"]
+			id: "26D8DC34A4C6EDEB"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2F0BC87FBB4B8881"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:vampire_lord"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["26D8DC34A4C6EDEB"]
+			id: "3B4DEC7925040470"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "3D3106F2710AEBEC"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_vampire"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+	]
+}

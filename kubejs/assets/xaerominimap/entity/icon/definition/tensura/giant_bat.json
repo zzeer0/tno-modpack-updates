@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "default": "outlined_sprite:tensura/giantbat.png",
+        "layersAllowed": true
+    }
+}

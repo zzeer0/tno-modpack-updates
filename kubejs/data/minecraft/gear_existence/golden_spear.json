@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:golden_spear",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_spear",
+  "maxEP": 4500,
+  "minEP": 3000
+}

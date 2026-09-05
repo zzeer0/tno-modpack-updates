@@ -1,0 +1,1574 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_1A00000000000003"
+	group: "5B307D448551FC61"
+	id: "1A00000000000003"
+	order_index: 28
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1700000000000002"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000002"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:ant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1700000000000002"]
+			id: "1700000000000003"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000003"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:fire_ant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1700000000000003"]
+			id: "1700000000000004"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000004"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:fire_ant_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1700000000000004"]
+			id: "1700000000000005"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000005"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:fire_ant_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1700000000000005"]
+			id: "1700000000000006"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000006"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:flame_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1700000000000006"]
+			id: "1700000000000007"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000007"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_fire_ant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1700000000000002"]
+			id: "1700000000000008"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000008"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:hardshell_ant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1700000000000008"]
+			id: "1700000000000009"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000009"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:hardshell_ant_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1700000000000009"]
+			id: "170000000000000A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:hardshell_ant_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["170000000000000A"]
+			id: "170000000000000B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:earth_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["170000000000000B"]
+			id: "170000000000000C"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_hardshell_ant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -6.5d
+			y: 9.5d
+		}
+		{
+			id: "170000000000000D"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:beetle"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["170000000000000D"]
+			id: "170000000000000E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:drone_beetle"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["170000000000000E"]
+			id: "170000000000000F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000000F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:drone_beetle_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["170000000000000F"]
+			id: "1700000000000010"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000010"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:drone_beetle_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1700000000000010"]
+			id: "1700000000000011"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000011"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lightning_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1700000000000011"]
+			id: "1700000000000012"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000012"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_drone_beetle"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["170000000000000D"]
+			id: "1700000000000013"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000013"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:stag_beetle"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1700000000000013"]
+			id: "1700000000000014"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000014"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:stag_beetle_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1700000000000014"]
+			id: "1700000000000015"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000015"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:stag_beetle_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1700000000000015"]
+			id: "1700000000000016"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000016"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:fantasy_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1700000000000016"]
+			id: "1700000000000017"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000017"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_stag_beetle"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			id: "1700000000000018"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000018"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1700000000000018"]
+			id: "1700000000000019"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000019"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:yellow_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1700000000000019"]
+			id: "170000000000001A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:yellow_centipede_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["170000000000001A"]
+			id: "170000000000001B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:yellow_centipede_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["170000000000001B"]
+			dependency_requirement: "one_completed"
+			id: "170000000000001C"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:paralysis_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["170000000000001C"]
+			id: "170000000000001D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_yellow_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1700000000000018"]
+			id: "170000000000001E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:blue_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["170000000000001E"]
+			id: "170000000000001F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000001F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:blue_centipede_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["170000000000001F"]
+			id: "1700000000000020"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000020"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:blue_centipede_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1700000000000020"]
+			id: "1700000000000021"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000021"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:water_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1700000000000021"]
+			id: "1700000000000022"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000022"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_blue_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1700000000000018"]
+			id: "1700000000000023"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000023"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:purple_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1700000000000023"]
+			id: "1700000000000024"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000024"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:purple_centipede_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1700000000000024"]
+			id: "1700000000000025"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000025"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:purple_centipede_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1700000000000025"]
+			id: "1700000000000026"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000026"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:spatial_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1700000000000026"]
+			id: "1700000000000027"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000027"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_purple_centipede"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			id: "1700000000000028"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000028"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:mantis"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1700000000000028"]
+			id: "1700000000000029"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000029"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:preying_mantis"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1700000000000029"]
+			id: "170000000000002A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:preying_mantis_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["170000000000002A"]
+			id: "170000000000002B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:preying_mantis_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["170000000000002B"]
+			id: "170000000000002C"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:steel_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["170000000000002C"]
+			id: "170000000000002D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_preying_mantis"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1700000000000028"]
+			id: "170000000000002E"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lixivant_mantis"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["170000000000002E"]
+			id: "170000000000002F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000002F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lixivant_mantis_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["170000000000002F"]
+			id: "1700000000000030"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000030"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:lixivant_mantis_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1700000000000030"]
+			id: "1700000000000031"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000031"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:corrosion_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1700000000000031"]
+			id: "1700000000000032"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000032"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_lixivant_mantis"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			id: "1700000000000033"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000033"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:scorpion"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1700000000000033"]
+			id: "1700000000000034"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000034"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:singularity_scorpion"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1700000000000034"]
+			id: "1700000000000035"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000035"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:singularity_scorpion_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1700000000000035"]
+			id: "1700000000000036"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000036"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:singularity_scorpion_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1700000000000036"]
+			id: "1700000000000037"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000037"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:gravity_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1700000000000037"]
+			id: "1700000000000038"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000038"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_singularity_scorpion"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1700000000000033"]
+			id: "1700000000000039"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000039"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:loxodrome_scorpion"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1700000000000039"]
+			id: "170000000000003A"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:loxodrome_scorpion_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["170000000000003A"]
+			id: "170000000000003B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003B"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:loxodrome_scorpion_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["170000000000003B"]
+			id: "170000000000003C"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:poison_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["170000000000003C"]
+			id: "170000000000003D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_loxodrome_scorpion"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			id: "170000000000003E"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:wasp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["170000000000003E"]
+			id: "170000000000003F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "210000000000003F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:army_wasp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["170000000000003F"]
+			id: "1700000000000040"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000040"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:army_wasp_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1700000000000040"]
+			id: "1700000000000041"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000041"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:army_wasp_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1700000000000041"]
+			id: "1700000000000042"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000042"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:wind_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1700000000000042"]
+			id: "1700000000000043"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000043"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_army_wasp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 10.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["170000000000003E"]
+			id: "1700000000000044"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000044"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:queen_wasp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1700000000000044"]
+			id: "1700000000000045"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000045"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:queen_wasp_insectar"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1700000000000045"]
+			id: "1700000000000046"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000046"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:queen_wasp_savant"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1700000000000046"]
+			id: "1700000000000047"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000047"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:star_soul_insect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1700000000000047"]
+			id: "1700000000000048"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2100000000000048"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "mysticism:divine_queen_wasp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 12.5d
+			y: 9.5d
+		}
+	]
+}

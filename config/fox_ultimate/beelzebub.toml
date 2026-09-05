@@ -1,0 +1,47 @@
+[Beelzebub]
+	#Require player to be a Hero seed (HeroEgg / TrueHero) OR Demon Lord seed (DemonLordSeed / TrueDemonLord) before fusion. Default true.
+	fusionRequireSpecialRace = true
+	#Mastery value to assign on fusion (0-100). Default 0 grants only the LEARNED stage; set 100 to also skip the grind.
+	fusionGrantMastery = 0
+	#Ticks to wait between the declaration line and the fusion_message. 20 ticks = 1 second. Default 40 (2s).
+	fusionDeclarationDelayTicks = 40
+	#Ticks to wait between the fusion_message and the actual skill grant / forget of source skills. Default 30 (1.5s).
+	fusionGrantDelayTicks = 30
+	#Magicule cost for Isolation (mode 2). Default 250.
+	magiculeCostIsolation = 250.0
+	#Magicule cost for Corrosion (mode 3). Default 50.
+	magiculeCostCorrosion = 50.0
+	#Magicule cost for Soul Steal (mode 5). Default 200.
+	magiculeCostSteal = 200.0
+	#Magicule cost for Soul Consume (mode 6, per damage event). Default 100.
+	magiculeCostConsume = 100.0
+	#Cooldown multiplier for ALL beelzebub modes (vs raw Gluttony/Merciless cooldown). Lock decision: 0.7.
+	cooldownMultiplier = 0.7
+	#Damage multiplier applied to Predation / Corrosion / Soul Steal / Soul Consume; also widens Soul Steal HP & EP gates. Lock decision: 1.5.
+	damageMultiplier = 1.5
+	#Range multiplier applied to Predation reach, Receive radius, and Soul Steal radius. Lock decision: 1.5.
+	rangeMultiplier = 1.5
+	#Duration multiplier applied to Isolation negative-effect cleanse window and to Soul Consume's SOUL_DRAIN duration. Lock decision: 1.3.
+	durationMultiplier = 1.3
+	#Extra multiplier stacked on top of the above when the skill is mastered (mastery >= 100). Lock decision: 1.2.
+	masteredExtraMultiplier = 1.2
+	#Pages available at mastery=0 (each page = 27 slots). Default 4 → 108 slots.
+	spatialStoragePagesMin = 4
+	#Pages available at mastery=100% (each page = 27 slots). Default 10 → 270 slots.
+	spatialStoragePagesMax = 10
+	#Max stack size in the imaginary space. Default 666 to match Gluttony's vanilla spatial storage (Beelzebuth is the upgraded form, must not feel smaller). Researcher's 128 is a deliberate downgrade for that specific skill — does NOT apply here.
+	spatialStorageMaxStackSize = 666
+	#Cooldown in seconds between two successful captures (anti double-click spam). Default 1.
+	captureCooldownSeconds = 1
+	#If false, players cannot be captured even when their max EP is at or below the captor's. Lock decision: false (forbid).
+	captureAllowPlayers = false
+	#If false, vanilla bosses (Wither, Ender Dragon, etc.) cannot be captured. Lock decision: false (forbid).
+	captureAllowBosses = false
+	#Entity registry IDs that are NEVER capturable, regardless of EP. Default forbids wandering / villager traders to keep economy intact.
+	captureBlacklist = ["minecraft:villager", "minecraft:wandering_trader"]
+	#If true, captured entities have their TickCount frozen — no aging, growth, breeding, or hunger while stored. Lock decision: true.
+	captureFreezeTicks = true
+	#Block distance in front of the player at which the released entity spawns. Default 1.5.
+	releaseDistance = 1.5
+	#If the spawn position is obstructed (suffocation / non-empty space), refund the captured-entity item rather than damaging the world. Lock decision: true (refund).
+	releaseRefundOnObstruction = true

@@ -1,0 +1,19 @@
+{
+  "ftbquests.task.extraquests.key_value": "键值对",
+  "ftbquests.reward.extraquests.key_value": "键值对",
+  "extraquests.key_value.title": "%s: %s",
+  "extraquests.key_value.key": "键",
+  "extraquests.key_value.key.tooltip": "用于存储值的键",
+  "extraquests.key_value.value": "值",
+  "extraquests.key_value.value.tooltip": "键的值",
+
+  "ftbquests.reward.extraquests.timer": "计时器",
+  "extraquests.timer.title": "每 %s 秒重置一次",
+  "extraquests.timer.questid": "要重置的任务ID",
+  "extraquests.timer.questid.tooltip": "留空则重置当前任务",
+  "extraquests.timer.time": "任务重置时间",
+  "extraquests.timer.time.tooltip": "任务重置前的秒数。如果任务是基于团队的，则将奖励设为基于团队的。",
+
+  "extraquests.reward.command.console": "控制台",
+  "extraquests.reward.command.console.tooltip": "从控制台执行命令"
+}

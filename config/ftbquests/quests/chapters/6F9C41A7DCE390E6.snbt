@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "6F9C41A7DCE390E6"
+	group: "5B307D448551FC61"
+	id: "6F9C41A7DCE390E6"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2E14663B3896C682"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "39FCC2417AA6AADA"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:harpy"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E14663B3896C682"]
+			id: "0D58B49E42118932"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2DCEB3DF4B1EB3A0"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:harpy_queen"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0D58B49E42118932"]
+			id: "44C72840DEC72EAF"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7C84A3AF7D383005"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:spirit_bird"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["44C72840DEC72EAF"]
+			id: "775031CB7C327790"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "1B9FF88237EF420F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:divine_bird"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+	]
+}

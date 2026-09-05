@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:diamond_spear",
+  "epGain": 0.003,
+  "evolution": "minecraft:netherite_spear",
+  "maxEP": 5500,
+  "minEP": 4500
+}

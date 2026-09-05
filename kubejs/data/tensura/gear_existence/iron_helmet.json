@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:iron_helmet",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_helmet",
+  "maxEP": 4000,
+  "minEP": 3000
+}

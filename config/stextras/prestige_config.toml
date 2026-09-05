@@ -1,0 +1,38 @@
+#If true, daily quest RE rewards scale with prestige.
+questREBoostDaily = true
+#If true, the same boss can be killed repeatedly for prestige boss requirements. If false, each configured boss only counts once.
+allowRepeatedPrestigeBossKills = true
+#If true, matching daily, weekly, required, and race prestige quests take priority over repeatable quests for the same progression event.
+questPriority = true
+#If true, race prestige quests are applied as soon as the player reaches max evolution
+ImmediateRaceQuests = false
+#Race ids to disable from race prestige entirely. Disabled races are excluded from race prestige quests, race lists, and auto-calculated soul grade totals. Example: stextras:divine_fox
+disabledRacePrestigeRaces = []
+#Should the QuestDefinition messages use small caps.
+questsUseSmallCaps = true
+#If true, weekly quest RE rewards scale with prestige.
+questREBoostWeekly = true
+#Should the quests RE rewards boost based on the players prestige.
+questREBoost = true
+#List of valid bosses that count to your required boss kills.
+validBosses = ["tensura:charybdis", "tensura:elemental_colossus", "tensura:hinata_sakaguchi", "tensura:orc_lord", "tensura:shizu", "tensura:supermassive_slime", "mowziesmobs:wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:umvuthi", "mowziesmobs:sculptor", "twilightforest:naga", "twilightforest:lich", "twilightforest:minoshroom", "twilightforest:hydra", "twilightforest:knight_phantom", "twilightforest:ur_ghast", "twilightforest:alpha_yeti", "twilightforest:snow_queen", "cataclysm:ender_guardian", "cataclysm:ignis", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "cataclysm:the_leviathan", "cataclysm:ancient_remnant", "cataclysm:maledictus", "cataclysm:scylla", "eternal_starlight:the_gatekeeper", "eternal_starlight:starlight_golem", "eternal_starlight:lunar_monstrosity", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:void_blossom", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:gauntlet", "meetyourfight:rose_spirit", "meetyourfight:bellringer", "meetyourfight:dame_fortuna", "meetyourfight:swampjaw", "meetyourfight:rosalyne"]
+#Which quest schedules reroll when a player prestiges. Valid values: BOTH, WEEKLY, DAILY, NONE.
+prestigeQuestRerollMode = "NONE"
+#If true, repeatable quest RE rewards scale with prestige.
+questREBoostRepeatable = false
+#The percentage that the RE rewards will boost based on the players prestige.
+questREBoostAmount = 0.05
+#If true, use the configured soul grade thresholds below instead of auto-splitting the total race prestige soul grade into 6 levels.
+overrideSoulGradeLevels = false
+#Additional soul grade added to the auto-calculated total when overrideSoulGradeLevels is false.
+additionalSoulGradeForAutoLevels = 0
+#Soul grade needed for levels 1 through 6 when overrideSoulGradeLevels is true.
+soulGradeLevelThresholds = [20, 40, 60, 80, 100, 120]
+#If true, required quest RE rewards scale with prestige.
+questREBoostRequired = false
+#If true, quests that are similor be skipped until a different quest can be assigned.
+skipDupe = true
+#If entities that are owned by you or other players will contribute to your kill quest progression
+killOwnedEntities = false
+#Prevents locked skills from reducing the number of unique skills granted during a reset.
+ignoreLockedSkillsOnReset = false

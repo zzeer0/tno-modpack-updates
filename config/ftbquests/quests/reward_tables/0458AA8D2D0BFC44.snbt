@@ -1,0 +1,19 @@
+{
+	icon: {
+		id: "twilightforest:twilight_oak_chest"
+	}
+	id: "0458AA8D2D0BFC44"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ id: "76AE4E53057D2EBE", item: { count: 1, id: "tensura:bronze_coin" } }
+		{
+			count: 2
+			id: "66F90EFC244D9904"
+			item: {
+				count: 1
+				id: "tensura:bronze_coin"
+			}
+		}
+	]
+}

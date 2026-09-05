@@ -1,0 +1,10 @@
+[compatibility_patches]
+	#Delay VanillaBackport sheep undercoat layer registration until its config is ready.
+	vanillaBackportDelayedSheepLayer = true
+	#Make Curios SlotAttribute.getOrCreate thread-safe to avoid creative tooltip ConcurrentModificationException.
+	curiosSlotAttributeConcurrency = true
+
+[rendering]
+	#Render Tensura TNO's supported race-specific player models and matching first-person arms.
+	#Disable to use the normal player model for Slime, Lizardman, Orc, and Fox Spirit races.
+	racePlayerModels = true

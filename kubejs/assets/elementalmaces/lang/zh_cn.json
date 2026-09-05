@@ -1,0 +1,20 @@
+{
+    "item.elementalmaces.withering_mace": "凋零重锤",
+    "item.elementalmaces.withering_mace.lore.line1": "吸取敌人的生命力，",
+    "item.elementalmaces.withering_mace.lore.line2": "撞击后缓慢将其化为尘土",
+
+    "item.elementalmaces.resonating_mace": "共鸣重锤",
+    "item.elementalmaces.resonating_mace.lore.line1": "以强烈的音波力量振动，",
+    "item.elementalmaces.resonating_mace.lore.line2": "撞击时产生冲击波",
+
+    "item.elementalmaces.ender_mace": "末影重锤",
+    "item.elementalmaces.ender_mace.lore.line1": "古老的末地科技创造浮空效果，",
+    "item.elementalmaces.ender_mace.lore.line2": "撞击时将敌人悬浮在空中",
+
+    "item.elementalmaces.smouldering_mace": "闷燃重锤",
+    "item.elementalmaces.smouldering_mace.lore.line1": "燃烧着下界的力量，",
+    "item.elementalmaces.smouldering_mace.lore.line2": "撞击时点燃周围的一切",
+
+    "item.elementalmaces.withering_rod": "凋零微风杖",
+    "item.elementalmaces.resonating_rod": "共鸣微风杖"
+}

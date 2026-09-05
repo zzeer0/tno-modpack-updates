@@ -1,0 +1,100 @@
+{
+  "id": "ponderer:mithril_block",
+  "items": [
+    "tensura:mithril_block"
+  ],
+  "title": {
+    "zh_cn": "费尔德维的召唤仪式（需要在路径之门维度进行）",
+    "en_us": "Feldway’s summoning ritual"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "费尔德维的召唤仪式（需要在路径之门维度进行）",
+        "en_us": "Feldway’s summoning ritual"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "block": "tensura:pure_magisteel_block",
+          "blockPos": [
+            1,
+            1,
+            1
+          ],
+          "blockPos2": [
+            3,
+            1,
+            3
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "block": "tensura:mithril_block",
+          "blockPos": [
+            2,
+            2,
+            2
+          ],
+          "blockPos2": [
+            2,
+            2,
+            2
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 100,
+          "text": {
+            "zh_cn": "右键魔银块即可召唤费尔德维",
+            "en_us": "Right-click the Magic Silver Blo"
+          },
+          "point": [
+            2.0,
+            2.5,
+            2.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 100,
+          "text": {
+            "zh_cn": "需要在路径之门维度进行",
+            "en_us": "(Paths Gate dimension only)"
+          },
+          "point": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "color": "red",
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

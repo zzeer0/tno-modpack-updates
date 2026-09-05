@@ -1,0 +1,7 @@
+{
+  "type": "tensura_tno:low_magisteel_backpack",
+  "epGain": 0.0025,
+  "evolution": "tensura_tno:high_magisteel_backpack",
+  "maxEP": 16000,
+  "minEP": 13000
+}

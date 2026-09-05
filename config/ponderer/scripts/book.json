@@ -1,0 +1,74 @@
+{
+  "id": "ponderer:book",
+  "items": [
+    "ftbquests:book"
+  ],
+  "title": {
+    "zh_cn": "这里是任务书？",
+    "en_us": "Is this the quest book?"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "利姆露！",
+        "en_us": "Rimuru!"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:ftbq",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 10,
+          "degrees": 180.0
+        },
+        {
+          "type": "zoom_scene",
+          "duration": 20,
+          "scale": 1.6
+        },
+        {
+          "type": "create_entity",
+          "entity": "tensura_neb:rimuru_ogre_fight",
+          "pos": [
+            2.0,
+            1.0,
+            2.0
+          ],
+          "lookAt": [
+            5.0,
+            2.0,
+            5.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "嘿！转生者你好呀！这里是思索场景哦，任务书还要思索？",
+            "en_us": "Hey! Hello there, Reincarnate!"
+          },
+          "point": [
+            2.0,
+            2.5,
+            2.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        }
+      ]
+    }
+  ]
+}

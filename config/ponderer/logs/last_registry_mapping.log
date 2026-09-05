@@ -1,0 +1,10 @@
+Display Name → Registry ID mapping:
+  白色混凝土 → minecraft:white_concrete [block/item]
+  雪块 → minecraft:snow_block [block/item]
+  窑炉 → tensura:kiln [block/item]  [Lv1: exact match]
+  原魔法矿石碎片 → (NOT FOUND — use the exact registry ID, e.g. "mod:block_name")  [Lv4]
+  煤炭 → minecraft:coal [item]  [Lv1: exact match]
+  熔融魔钢 → (NOT FOUND — use the exact registry ID, e.g. "mod:block_name")  [Lv4]
+  铁锭 → minecraft:iron_ingot [item]  [Lv1: exact match]
+  金锭 → minecraft:gold_ingot [item]  [Lv1: exact match]
+  低魔钢锭 → (NOT FOUND — use the exact registry ID, e.g. "mod:block_name")  [Lv4]

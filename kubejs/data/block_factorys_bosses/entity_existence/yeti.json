@@ -1,0 +1,12 @@
+{
+  "type": "block_factorys_bosses:yeti",
+  "abilities": [
+    "tensura:cold_nullification",
+    "tensura:physical_attack_resistance",
+    "tensura:pain_resistance",
+    "tensura:paralysis_resistance"
+  ],
+  "max_magicule": 50000,
+  "min_magicule": 30000,
+  "spiritualHealth": 1000
+}

@@ -1,0 +1,42 @@
+[ring_of_arcane_source]
+	# Default: 150
+	# Range: 0 ~ 10000
+	magicule_recovery = 150
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	drop_chance = 0.05
+
+[ring_of_the_elves]
+	# Default: 10
+	# Range: 0 ~ 100
+	armor_bonus = 10
+	# Default: 20
+	# Range: 0 ~ 1000
+	health_bonus = 20
+	# Default: 1500
+	# Range: 0 ~ 10000
+	magicule_recovery = 1500
+	# Default: 4
+	# Range: 1 ~ 10
+	protection_level = 4
+
+[mana_ring]
+	# Default: 70
+	# Range: 1 ~ 1000
+	recovery_amount = 70
+	# Default: 20
+	# Range: 1 ~ 200
+	recovery_interval = 20
+
+[cursed_ring]
+	# Default: 0.4
+	# Range: 0.0 ~ 10.0
+	magicule_recovery_percent = 0.4
+
+[power_of_force]
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	aura_recovery_percent = 1.0
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	drop_chance = 0.5

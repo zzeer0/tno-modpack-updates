@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "default": "outlined_sprite:tensura/hound.png",
+        "layersAllowed": true
+    }
+}

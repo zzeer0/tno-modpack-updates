@@ -1,0 +1,195 @@
+{
+  "id": "ponderer:battlewill_manual",
+  "items": [
+    "tensura:battlewill_manual"
+  ],
+  "title": {
+    "en_us": "Battlewill Manual - Dungeon Loot & Skill Learning",
+    "zh_cn": "战斗意志手册 - 地牢战利品与技能学习"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "scenes": [
+    {
+      "id": "obtainment",
+      "title": {
+        "en_us": "Obtainment & Introduction",
+        "zh_cn": "获取方式"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:basic",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "replace_blocks",
+          "block": "minecraft:stone_bricks",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "blockPos2": [
+            4,
+            0,
+            4
+          ],
+          "spawnParticles": false
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:chest",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "item": "tensura:battlewill_manual",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "show_controls",
+          "duration": 70,
+          "point": [
+            3.0,
+            1.8,
+            3.0
+          ],
+          "direction": "down",
+          "item": "tensura:battlewill_manual",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 50,
+          "text": {
+            "en_us": "Found in dungeon chests with a 50% chance.",
+            "zh_cn": "在地牢遗迹的箱子中有 50% 几率找到战斗意志手册。"
+          },
+          "point": [
+            2.5,
+            1.5,
+            2.0
+          ],
+          "color": "green",
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        }
+      ]
+    },
+    {
+      "id": "usage",
+      "title": {
+        "en_us": "Usage – Learning a Battlewill Skill",
+        "zh_cn": "使用与技能学习"
+      },
+      "steps": [
+        {
+          "type": "show_structure"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "item": "tensura:battlewill_manual",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "show_controls",
+          "duration": 40,
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "tensura:battlewill_manual",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 50,
+          "text": {
+            "en_us": "Hold right-click to use. Learns a random Battlewill skill.",
+            "zh_cn": "长按右键使用，随机学习一种斗气技能。"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "color": "green",
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "indicate_success",
+          "blockPos": [
+            2,
+            2,
+            2
+          ],
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 50,
+          "text": {
+            "en_us": "Successfully learned Hazy Style Fighting!",
+            "zh_cn": "成功学习气斗法！"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "color": "green",
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

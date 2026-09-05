@@ -1,0 +1,44 @@
+{
+	"definitions": [
+		{
+			"image": "legendarytooltips:textures/gui/tensura.png",
+			"index": 0,
+			"startColor": "#87CEEB",
+			"endColor": "dark_blue",
+			"priority": 0,
+			"selectors": ["!rare"]
+		},
+		{
+			"image": "legendarytooltips:textures/gui/tensura.png",
+			"index": 1,
+			"startColor": "#E0EEEE",
+			"endColor": "white",
+			"priority": 0,
+			"selectors": ["!common"]
+		},
+		{
+			"image": "legendarytooltips:textures/gui/tensura.png",
+			"index": 2,
+			"startColor": "#E066FF",
+			"endColor": "dark_purple",
+			"priority": 0,
+			"selectors": ["!epic"]
+		},
+		{
+			"image": "legendarytooltips:textures/gui/tensura.png",
+			"index": 3,
+			"startColor": "#EEDC82",
+			"endColor": "yellow",
+			"priority": 0,
+			"selectors": ["$tensura:schematics"]
+		},
+		{
+			"image": "legendarytooltips:textures/gui/tensura.png",
+			"index": 4,
+			"startColor": "#696969",
+			"endColor": "white",
+			"priority": 0,
+			"selectors": ["minecraft:enchanted_book"]
+		}
+	]
+}

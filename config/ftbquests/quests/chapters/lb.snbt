@@ -1,0 +1,75 @@
+{
+	autofocus_id: "33C7424919F54C10"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lb"
+	group: ""
+	icon: {
+		id: "tensura:zane_blood"
+	}
+	id: "454912A0225B6F7D"
+	images: [{
+		height: 12.0d
+		image: "ablazeaqzlcz:textures/ftb/logo.png"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -1.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ablazeaqzlcz:textures/ftb/icon1.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 1.2d
+			id: "33C7424919F54C10"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/icon1.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0CE6F2BB77098C40"
+				ignore_dimension: false
+				position: [I;
+					6666
+					6666
+					6666
+				]
+				size: [I;
+					6666
+					6666
+					6666
+				]
+				type: "location"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["33C7424919F54C10"]
+			id: "0831BD175FEF3A79"
+			invisible: true
+			shape: "none"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["33C7424919F54C10"]
+			id: "7D00E143DC7B8D9E"
+			invisible: true
+			shape: "none"
+			x: 0.0d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "sophisticatedbackpacks:backpack",
+  "epGain": 0.0025,
+  "evolution": "sophisticatedbackpacks:copper_backpack",
+  "maxEP": 1000,
+  "minEP": 0
+}

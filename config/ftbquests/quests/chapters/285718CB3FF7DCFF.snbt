@@ -1,0 +1,153 @@
+{
+	autofocus_id: "3DE59F19B491EDC7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "285718CB3FF7DCFF"
+	group: "3535525D866EB536"
+	icon: {
+		id: "tensura:stellar_gold_coin"
+	}
+	id: "285718CB3FF7DCFF"
+	images: [
+		{
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/gazel_dwargo.png"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: -7.819387755102063d
+			y: -1.901020408163248d
+		}
+		{
+			height: 10.0d
+			image: "ablazeaqzlcz:textures/ftb/shop.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -3.80952380952381d
+			y: -3.297619047619051d
+		}
+		{
+			height: 0.5d
+			image: "tensura:textures/skill/unique/gluttony.png"
+			order: 2
+			rotation: -25.0d
+			width: 0.5d
+			x: -5.48333333333332d
+			y: -3.788095238095231d
+		}
+		{
+			height: 0.5d
+			image: "tensura:textures/skill/unique/reaper.png"
+			order: 2
+			rotation: 25.0d
+			width: 0.5d
+			x: -5.019047619047605d
+			y: -3.788095238095231d
+		}
+		{
+			height: 0.5d
+			image: "tensura:item/silver_coin"
+			rotation: 15.0d
+			width: 0.5d
+			x: -5.009863945578218d
+			y: -3.557482993197276d
+		}
+		{
+			height: 0.5d
+			image: "tensura:item/gold_coin"
+			order: 3
+			rotation: -15.0d
+			width: 0.5d
+			x: -5.545578231292517d
+			y: -3.55748299319729d
+		}
+	]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura_skill_books:item/logo"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3DE59F19B491EDC7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C0025C6065F9263"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 300L
+				id: "60C43FE4585A4EFC"
+				item: { count: 1, id: "tensura:gold_coin" }
+				type: "item"
+			}]
+			x: -6.25714285714286d
+			y: -3.7642857142857125d
+		}
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura:item/gold_coin"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "313C7B20500ED01E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "139415A4898DCA5F"
+				table_id: 3195869884087400432L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:item/gold_coin"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "18F2335BA60373B9"
+				items: [ ]
+				match_components: "fuzzy"
+				reward_table: "5100281D136ABF44"
+				type: "tensura_tno:task_table_item"
+			}]
+			x: -5.257142857142853d
+			y: -3.6571428571428513d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "rpg_style_more_bosses:exoframe_part"
+			}
+			id: "561045977B27EDC9"
+			rewards: [{
+				count: 6
+				id: "7D36DEE25C71B12C"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "3285B813C7E9EBB8"
+				item: { count: 1, id: "rpg_style_more_bosses:exoframe_part" }
+				type: "item"
+			}]
+			x: -1.2928571428571374d
+			y: -3.6979591836734826d
+		}
+	]
+}

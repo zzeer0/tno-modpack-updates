@@ -1,0 +1,44 @@
+[
+    {
+        "matchItems": [
+            "iceandfire:silver_ingot"
+        ],
+        "resultItems": "tensura:silver_ingot"
+    },
+    {
+        "matchItems": [
+            "iceandfire:silver_nugget"
+        ],
+        "resultItems": "tensura:silver_nugget"
+    },
+    {
+        "matchItems": [
+            "iceandfire:raw_silver"
+        ],
+        "resultItems": "tensura:raw_silver"
+    },
+	{
+        "matchItems": [
+            "iceandfire:raw_silver_block"
+        ],
+        "resultItems": "tensura:raw_silver_block"
+    },
+	{
+        "matchItems": [
+            "iceandfire:silver_block"
+        ],
+        "resultItems": "tensura:silver_block"
+    },
+	{
+        "matchItems": [
+            "iceandfire:silver_ore"
+        ],
+        "resultItems": "tensura:silver_ore"
+    },
+	{
+        "matchItems": [
+            "iceandfire:deepslate_silver_ore"
+        ],
+        "resultItems": "tensura:deepslate_silver_ore"
+    }
+]

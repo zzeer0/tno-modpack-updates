@@ -1,0 +1,89 @@
+{
+  "entity.spider_overhaul.desert_spider": "沙漠蜘蛛",
+  "entity.spider_overhaul.ice_spider": "冰霜蜘蛛",
+  "entity.spider_overhaul.jungle_spider": "丛林蜘蛛",
+  "entity.spider_overhaul.sculk_spider": "幽匿蜘蛛",
+  "entity.spider_overhaul.mushroom_spider": "蘑菇蜘蛛",
+  "entity.spider_overhaul.cavern_spider": "洞窟蜘蛛",
+  "entity.spider_overhaul.cavern_spider.type.amethyst": "紫水晶洞窟蜘蛛",
+  "entity.spider_overhaul.cavern_spider.type.emerald": "绿宝石洞窟蜘蛛",
+  "entity.spider_overhaul.cavern_spider.type.diamond": "钻石洞窟蜘蛛",
+  "entity.spider_overhaul.ocean_spider": "海洋蜘蛛",
+  "entity.spider_overhaul.taiga_spider": "针叶林蜘蛛",
+  "entity.spider_overhaul.birch_spider": "白桦蜘蛛",
+  "entity.spider_overhaul.savanna_spider": "热带草原蜘蛛",
+  "entity.spider_overhaul.swamp_spider": "沼泽蜘蛛",
+  
+  "block.spider_overhaul.birch_nest": "白桦蜘蛛巢",
+  "block.spider_overhaul.spider_lily_pad": "蜘蛛睡莲叶",
+  "block.spider_overhaul.giant_bamboo_block": "巨型竹块",
+  
+  "item.spider_overhaul.cactus_spine": "仙人掌刺",
+  "item.spider_overhaul.ice_shard": "冰晶碎片",
+  "item.spider_overhaul.ice_snowball": "冰雪球",
+  "item.spider_overhaul.crab_leg": "蟹腿",
+  "item.spider_overhaul.cooked_crab": "熟螃蟹",
+  "item.spider_overhaul.spider_lily_pad": "蜘蛛睡莲叶",
+  "item.spider_overhaul.bottle_of_spider_pollen": "瓶装蜘蛛花粉",
+  
+  "item.spider_overhaul.desert_spider_spawn_egg": "沙漠蜘蛛刷怪蛋",
+  "item.spider_overhaul.ice_spider_spawn_egg": "冰霜蜘蛛刷怪蛋",
+  "item.spider_overhaul.jungle_spider_spawn_egg": "丛林蜘蛛刷怪蛋",
+  "item.spider_overhaul.sculk_spider_spawn_egg": "幽匿蜘蛛刷怪蛋",
+  "item.spider_overhaul.mushroom_spider_spawn_egg": "蘑菇蜘蛛刷怪蛋",
+  "item.spider_overhaul.cavern_spider_spawn_egg": "洞窟蜘蛛刷怪蛋",
+  "item.spider_overhaul.ocean_spider_spawn_egg": "海洋蜘蛛刷怪蛋",
+  "item.spider_overhaul.taiga_spider_spawn_egg": "针叶林蜘蛛刷怪蛋",
+  "item.spider_overhaul.birch_spider_spawn_egg": "白桦蜘蛛刷怪蛋",
+  "item.spider_overhaul.savanna_spider_spawn_egg": "热带草原蜘蛛刷怪蛋",
+  "item.spider_overhaul.swamp_spider_spawn_egg": "沼泽蜘蛛刷怪蛋",
+  
+  "effect.spider_overhaul.icy": "冰冷",
+  "effect.spider_overhaul.bog": "泥沼",
+  "effect.spider_overhaul.webbed": "蛛网缠身",
+  
+  "item.minecraft.potion.effect.icy": "冰冷药水",
+  "item.minecraft.splash_potion.effect.icy": "喷溅型冰冷药水",
+  "item.minecraft.lingering_potion.effect.icy": "滞留型冰冷药水",
+  "item.minecraft.tipped_arrow.effect.icy": "冰冷之箭",
+  
+  "item.minecraft.potion.effect.long_icy": "冰冷药水",
+  "item.minecraft.splash_potion.effect.long_icy": "喷溅型冰冷药水",
+  "item.minecraft.lingering_potion.effect.long_icy": "滞留型冰冷药水",
+  "item.minecraft.tipped_arrow.effect.long_icy": "冰冷之箭",
+  
+  "item.minecraft.potion.effect.bog": "泥沼药水",
+  "item.minecraft.splash_potion.effect.bog": "喷溅型泥沼药水",
+  "item.minecraft.lingering_potion.effect.bog": "滞留型泥沼药水",
+  "item.minecraft.tipped_arrow.effect.bog": "泥沼之箭",
+  
+  "item.minecraft.potion.effect.long_bog": "泥沼药水",
+  "item.minecraft.splash_potion.effect.long_bog": "喷溅型泥沼药水",
+  "item.minecraft.lingering_potion.effect.long_bog": "滞留型泥沼药水",
+  "item.minecraft.tipped_arrow.effect.long_bog": "泥沼之箭",
+  
+  "itemGroup.spider_overhaul.general": "蜘蛛革新",
+
+  "config.spider_overhaul.title": "蜘蛛革新配置",
+  "config.spider_overhaul.category.general": "常规",
+  "config.spider_overhaul.category.spawning": "生成",
+  "config.spider_overhaul.category.attributes": "属性",
+
+  "config.spider_overhaul.replace_vanilla_spiders": "替换原版蜘蛛",
+  "config.spider_overhaul.replace_vanilla_spiders.tooltip": "在会生成变种蜘蛛的生物群系中，移除原版蜘蛛和洞穴蜘蛛的生成。",
+
+  "config.spider_overhaul.use_vanilla_models": "使用原版模型",
+  "config.spider_overhaul.use_vanilla_models.tooltip": "将蜘蛛模型切换为原版风格。关闭此选项可使用经过重新设计的自定义模型。",
+
+  "config.spider_overhaul.spawn_weight_multiplier": "生成权重倍率",
+  "config.spider_overhaul.spawn_weight_multiplier.tooltip": "调整所有变种蜘蛛的生成权重。数值越高，生成越频繁。",
+
+  "config.spider_overhaul.health_multiplier": "生命值倍率",
+  "config.spider_overhaul.health_multiplier.tooltip": "调整所有变种蜘蛛的基础生命值。",
+
+  "config.spider_overhaul.damage_multiplier": "伤害倍率",
+  "config.spider_overhaul.damage_multiplier.tooltip": "调整所有变种蜘蛛的基础攻击伤害。",
+
+  "config.spider_overhaul.speed_multiplier": "速度倍率",
+  "config.spider_overhaul.speed_multiplier.tooltip": "调整所有变种蜘蛛的基础移动速度。"
+}

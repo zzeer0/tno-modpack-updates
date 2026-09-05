@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:iron_leggings",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_leggings",
+  "maxEP": 4000,
+  "minEP": 3000
+}

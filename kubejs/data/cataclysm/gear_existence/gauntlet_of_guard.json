@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:gauntlet_of_guard",
+  "epGain": 0.005,
+  "maxEP": 5000,
+  "minEP": 0
+}

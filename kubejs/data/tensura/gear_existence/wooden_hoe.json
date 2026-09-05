@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_hoe",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_hoe",
+  "maxEP": 750,
+  "minEP": 0
+}

@@ -1,0 +1,232 @@
+{
+	autofocus_id: "24A42438DA227224"
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "2CCC1E9E4F4983C3"
+	group: "78C5E38A2D65F821"
+	icon: {
+		components: {
+			"ftbquests:icon": "ftbteams:textures/chat.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "2CCC1E9E4F4983C3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0FDA8DE439A0FC25"
+			size: 1.0d
+			tasks: [{
+				id: "145D938B244B3643"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "73C1BBF552AF3614"
+			tasks: [{
+				id: "0C12746767A8ACE4"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73C1BBF552AF3614"]
+			id: "7D000AE461BC6886"
+			tasks: [{
+				id: "0F45E6E8C4FB665C"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["24A44C95A35D658D"]
+			id: "6BF28FAF8EB4389A"
+			tasks: [{
+				id: "5F5DA5C34BEBA501"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "24A44C95A35D658D"
+			tasks: [{
+				id: "247EBEE3F73DC147"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2E0D203C4166C35C"]
+			id: "166F39FFE1C98A63"
+			tasks: [{
+				id: "12F65F5369D8EE4C"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73C1BBF552AF3614"]
+			id: "2E0D203C4166C35C"
+			tasks: [{
+				id: "0CE09CF449C94413"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ablazeaqzlcz:textures/ftb/button.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 0.8d
+			id: "24A42438DA227224"
+			size: 1.5d
+			tasks: [{
+				id: "06DCCBF0E68C2A95"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2E0D203C4166C35C"]
+			icon: {
+				components: {
+					"ftbquests:icon": "stextras:textures/skill/ultimate/mammon_skill.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "2C2C9E868AC963D5"
+			tasks: [{
+				id: "6E150E130A78A134"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura:item/skill_reset_scroll"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4205403C9223C4B7"
+			tasks: [{
+				id: "7109D42BE94E9F9C"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			id: "565894017692BCC7"
+			tasks: [{
+				id: "0832F7E32B6C8C71"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura:textures/temp_textures/item/exclaimed_amethyst_rimuru.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "5FFF9F5C6F8E18C8"
+			tasks: [{
+				id: "278E946657659469"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4205403C9223C4B7"
+				"7D000AE461BC6886"
+				"2C2C9E868AC963D5"
+				"166F39FFE1C98A63"
+				"24A44C95A35D658D"
+				"6BF28FAF8EB4389A"
+				"5FFF9F5C6F8E18C8"
+				"24A42438DA227224"
+				"2E0D203C4166C35C"
+				"0FDA8DE439A0FC25"
+				"565894017692BCC7"
+				"73C1BBF552AF3614"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ablazeaqzlcz:textures/ftb/icon1.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0445C949179D554A"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "minecraft:textures/particle/soul_8.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "1054F045BC1BE062"
+					type: "tensura_tno:soul_energy"
+					value: 35000
+				}
+				{
+					id: "11F501E36A058744"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "22776528771BCA96"
+					item: {
+						count: 1
+						id: "royalvariations:royal_knight_helmet"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "1D12F237F1CF868F"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:missing_item": "ancient_artifacts:lion_emblem"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "4DB740093C0BA804"
+			tasks: [{
+				id: "27F0B1ABD64ABDC4"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+	]
+}

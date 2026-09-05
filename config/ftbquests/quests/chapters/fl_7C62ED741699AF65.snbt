@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_7C62ED741699AF65"
+	group: "5B307D448551FC61"
+	id: "7C62ED741699AF65"
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3CB432E245250E8E"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "59C82696E4F29A26"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:wispfolk"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3CB432E245250E8E"]
+			id: "58A7FABEB00CF846"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "06BACD84DF0FB0FA"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:gale_wisp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58A7FABEB00CF846"]
+			id: "6B79503CCBE0882B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "60A4DA722314D316"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:zephyr_wisp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B79503CCBE0882B"]
+			id: "4D59E0250D817393"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "34A22949E4EA5FE7"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:divine_wisp"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+}

@@ -1,0 +1,50 @@
+```
+Segment 1: 窑炉使用教程
+
+步骤:
+1. show_structure (显示默认平台)
+2. idle 20
+3. set_block [2,1,2] 窑炉 (放置窑炉方块)
+4. text [2.5, 1.5, 2.5] "窑炉是一种用于熔炼魔法矿石的特殊熔炉"
+5. idle 60
+6. show_controls [2.5, 1.5, 2.5] item="原魔法矿石碎片"
+7. text [2.5, 1.5, 2.5] "输入：原魔法矿石碎片 (右侧上方槽)"
+8. idle 60
+9. show_controls [2.5, 1.5, 2.5] item="煤炭"
+10. text [2.5, 1.5, 2.5] "输入：燃料 (右侧下方槽)"
+11. idle 60
+12. show_controls [2.5, 1.5, 2.5] item="熔融魔钢"
+13. text [2.5, 1.5, 2.5] "输出：熔融魔钢 (中间槽)"
+14. idle 60
+15. show_controls [2.5, 1.5, 2.5] item="铁锭"
+16. text [2.5, 1.5, 2.5] "可混入铁锭、金锭等制作合金"
+17. idle 40
+18. show_controls [2.5, 1.5, 2.5] item="金锭"
+19. idle 60
+20. show_controls [2.5, 1.5, 2.5] item="低魔钢锭"
+21. text [2.5, 1.5, 2.5] "产出合金示例：低魔钢锭"
+22. idle 60
+23. show_controls [2.5, 1.5, 2.5] item="金锭"
+24. text [2.5, 1.5, 2.5] "也能取出基础金属，例如金锭"
+25. idle 60
+26. show_controls [2.5, 1.5, 2.5] action="right" item="窑炉"
+27. text [2.5, 1.5, 2.5] "右键点击窑炉打开菜单"
+28. idle 60
+29. create_item_entity [2.5, 1.5, 1.5] "煤炭" (燃料物品实体出现在窑炉北侧)
+30. idle 20
+31. text [2.5, 1.5, 2.5] "放入燃料"
+32. idle 40
+33. clear_item_entities
+34. create_item_entity [2.5, 1.5, 1.5] "原魔法矿石碎片"
+35. idle 20
+36. text [2.5, 1.5, 2.5] "放入熔炼物品"
+37. idle 40
+38. clear_item_entities
+39. idle 40 (模拟熔炼过程)
+40. create_item_entity [2.5, 1.5, 1.5] "熔融魔钢" (输出物品实体)
+41. text [2.5, 1.5, 2.5] "获得熔融魔钢"
+42. idle 60
+43. indicate_success [2.5, 1.5, 2.5]
+44. idle 20
+```
+REQUIRED_ELEMENTS: 窑炉, 原魔法矿石碎片, 煤炭, 熔融魔钢, 铁锭, 金锭, 低魔钢锭

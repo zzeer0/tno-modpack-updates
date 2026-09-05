@@ -1,0 +1,1952 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "3E1D1380BCF77B3C"
+	group: "13F20E01BC3FA737"
+	icon: {
+		components: {
+			"relics:data": {
+				abilities: {
+					abilities: {
+						ascend_heaven: {
+							extender: {
+								cooldown: 0
+								cooldownCap: 0
+								ticking: 0b
+							}
+							lock: {
+								breaks: 5
+							}
+							points: 0
+							research: {
+								links: { }
+								researched: 0b
+							}
+							stats: { }
+						}
+					}
+				}
+				leveling: {
+					experience: 0
+					level: 0
+					luck: 0
+					points: 0
+				}
+			}
+		}
+		id: "morerelics:whispering_amulet"
+	}
+	id: "3E1D1380BCF77B3C"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4FEF19D8C1E2829A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64489E5DE91151D6"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5EB1249AA0B237EA"
+				item: { components: { "relics:data": { abilities: { abilities: { luck: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.12612d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:lucky_scarf" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "06EAE9E79B48163A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48C6AEF1F1BBC321"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1C224BC02B6789FE"
+				item: { components: { "relics:data": { abilities: { abilities: { invisible: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { time: { initialValue: 125.4597d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:scarf_of_invisibility" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "5DC95E0F81A33DBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6251851D61FF275F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "00C2BD63AB02F38E"
+				item: { components: { "relics:data": { abilities: { abilities: { invulnerability: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.43812d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:cross_necklace" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "5D7A394181E99CC2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3883B610F68DBB51"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6472D2555CDBF17D"
+				item: { components: { "relics:data": { abilities: { abilities: { vision: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.13513d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:night_vision_goggles" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "1DF55B2C88B9B888"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "355E3681D3D897E4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6E70F5A08D5E9326"
+				item: { components: { "relics:data": { abilities: { abilities: { drinking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.32313d } } }, nutrition: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { hunger: { initialValue: 2.66059d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:plastic_drinking_hat" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "40AEB58A3D88CA54"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "049F4CE4965AC25B"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "59799FA7317B0E61"
+				item: { components: { "relics:data": { abilities: { abilities: { drinking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.32246d } } }, nutrition: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { hunger: { initialValue: 1.79059d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:novelty_drinking_hat" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "5041B1DD9496F5E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31D21A3CE43C0939"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7D94BE6AF4EC2B8D"
+				item: { components: { "relics:data": { abilities: { abilities: { diving: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 5.23177d } } }, passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:snorkel" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			id: "39C80E7870D80734"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D9984CFD30BC1FF"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "66913FC99F36FBC0"
+				item: { components: { "relics:data": { abilities: { abilities: { discount: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multiplier: { initialValue: 17.81605d } } }, passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:villager_hat" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			id: "1EEA7724FA3BB72C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C99FAADD8AD1DE3"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "15546E1A97226061"
+				item: { components: { "relics:data": { abilities: { abilities: { looting: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.14474d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:superstitious_hat" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			id: "19098B587950C0D2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7361E9AA62535B1B"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "17D9730DC025A23D"
+				item: { components: { "relics:data": { abilities: { abilities: { cowboy: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.25349d } } }, overlord: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { time: { initialValue: 4.49141d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:cowboy_hat" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			id: "0983787012437700"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B6B61B1500F2354"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1F2CB7FD4B42DDF6"
+				item: { components: { "relics:data": { abilities: { abilities: { catch: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.1054d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:anglers_hat" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			id: "68C04E1811101051"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "275CD0A31BE2131E"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6B5B73A462EAA293"
+				item: { components: { "relics:data": { abilities: { abilities: { panic: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { movement: { initialValue: 0.16161d }, radius: { initialValue: 6.45957d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:panic_necklace" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "315C6016D88D781D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52255DB8D4EE1580"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0AD676EEBB047C7A"
+				item: { components: { "relics:data": { abilities: { abilities: { lightning: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.18067d }, damage: { initialValue: 1.14393d } } }, passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:shock_pendant" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "20649F463DE77186"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69FBAF9F8B65A8E2"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5F24C61443519174"
+				item: { components: { "relics:data": { abilities: { abilities: { fire: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.27562d }, time: { initialValue: 2.99846d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:flame_pendant" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "3FF9F50B6BD99394"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00AEF47FF58ECBC0"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "29A2627472E3F4D6"
+				item: { components: { "relics:data": { abilities: { abilities: { poison: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.18242d }, multiplier: { initialValue: 0.08519d }, time: { initialValue: 3.43432d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:thorn_pendant" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			id: "1F894D1554FABD87"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FBE1B88B6D6A046"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4A56B46B812C48AA"
+				item: { components: { "relics:data": { abilities: { abilities: { dipping: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { air: { initialValue: 0.28675d } } }, dive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:charm_of_sinking" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "02B3F8BFAE686637"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00F44CBE696281A8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3DCA9513ECD51F93"
+				item: { components: { "relics:data": { abilities: { abilities: { shrinking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multiplier: { initialValue: 0.20892d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:charm_of_shrinking" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "00203346F41F49AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A202D6A43C19E1B"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7E623C547DCA24F9"
+				item: { components: { "relics:data": { abilities: { abilities: { jump: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { count: { initialValue: 2.56835d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:cloud_in_a_bottle" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "4DC96C29B2067A37"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "506A4349BA55742F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "62CF0EFFEB358CA1"
+				item: { components: { "relics:data": { abilities: { abilities: { hell: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 47.81827d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:obsidian_skull" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "2B8533422784771E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02E73E1515CEF0BC"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0B9204CE0656FC19"
+				item: { components: { "relics:data": { abilities: { abilities: { antidote: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.22398d } } }, devourer: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 1.3093d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:antidote_vessel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			id: "6C7F708608093C05"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F3B7F72ECFD810D"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "09CE69CE7543EB82"
+				item: { components: { "relics:data": { abilities: { abilities: { attractor: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { radius: { initialValue: 4.58508d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:universal_attractor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			id: "178FC6B4CAE47438"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10F6207F9F531CBB"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7440FB8CC91D2058"
+				item: { components: { "relics:data": { abilities: { abilities: { heart: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 3.74986d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:crystal_heart" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			id: "233EA230481C1325"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4641224A11A17D29"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0083175C4FF6D55B"
+				item: { components: { "relics:data": { abilities: { abilities: { flying: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.29744d }, time: { initialValue: 3.28085d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:helium_flamingo" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "39A68D4DE6B3A36E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6AA5C0E19668C16A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5CD72DC5F482385A"
+				item: { components: { "relics:data": { abilities: { abilities: { past: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.02145d }, radius: { initialValue: 6.95948d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:chorus_totem" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "433E4C57CCADC78A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46326C1DC727290D"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "56B8D1EBFC4B33F6"
+				item: { components: { "relics:data": { abilities: { abilities: { teleport: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 96.46174d }, distance: { initialValue: 6.91139d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:warp_drive" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "3ADAFAAD1D65C684"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74CA25768A520A56"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "379BF0CA1E79A022"
+				item: { components: { "relics:data": { abilities: { abilities: { fast_mining: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.16877d } } }, passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:digging_claws" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			id: "0B4EDB23775D37DE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7ACE66196015B5DC"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "18148E1021448CD9"
+				item: { components: { "relics:data": { abilities: { abilities: { claws: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.08791d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:feral_claws" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "3EA168B1C1E75534"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24BE52B5F5E46AB5"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "31D7379C4C187A6E"
+				item: { components: { "relics:data": { abilities: { abilities: { power: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.97728d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:power_glove" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			id: "5255EE4334AFE8B5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09BC38911EC5BF8F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "474289DB577E9026"
+				item: { components: { "relics:data": { abilities: { abilities: { caster: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.2041d }, damage: { initialValue: 0.09814d }, duration: { initialValue: 40.78699d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "artifacts:fire_gauntlet" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			id: "7C93900E3AB7AF3B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2779752E235DA3D4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "79AA482CD3F20391"
+				item: { components: { "relics:data": { abilities: { abilities: { discarding: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { interaction: { initialValue: 0.37218d } } }, interaction: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { range: { initialValue: 0.28788d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:pocket_piston" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "5E6F662777B1A016"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "38B07742AD6A6580"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "272A1D1E6B2DCB0F"
+				item: { components: { "relics:data": { abilities: { abilities: { vampire: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.11982d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:vampiric_glove" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			id: "5173BCAA887EED96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "431DC7A716E483C4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0BE4B57FC3A0393B"
+				item: { components: { "relics:data": { abilities: { abilities: { hook: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.29049d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:golden_hook" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			id: "3798CF1937BBF8B6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "748D163CD917DEB4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7378B4E72741BD4D"
+				item: { components: { "relics:data": { abilities: { abilities: { onion: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.01346d } } }, saturation: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.05123d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:onion_ring" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			id: "21D347803B46C929"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "752C004D0976E507"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "74D7B997FD3F3FF9"
+				item: { components: { "relics:data": { abilities: { abilities: { heater: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { capacity: { initialValue: 24.43067d }, duration: { initialValue: 127.52446d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:pickaxe_heater" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			id: "778F7F419DDC348B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "666B8375721BB31D"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "29BF4102B45BE158"
+				item: { components: { "relics:data": { abilities: { abilities: { passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, withered: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.29751d }, time: { initialValue: 3.21982d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:withered_bracelet" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			id: "0C4443976C455711"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63F48F41206B3240"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "04BDC000C70C41B1"
+				item: { components: { "relics:data": { abilities: { abilities: { hold: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 3.73063d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:bunny_hoppers" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			id: "58E92D97F59A48E0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "783FE4AA94A8EB35"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4F3A8567230B5474"
+				item: { components: { "relics:data": { abilities: { abilities: { fall: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 2.54269d } } }, passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, resurrected: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.09914d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:kitty_slippers" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "34E0334CE84204BB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62DBDA735FA48E40"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0A375D1F5B866F4F"
+				item: { components: { "relics:data": { abilities: { abilities: { runner: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.72029d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:running_shoes" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			id: "5379649F70548961"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48E04582C12B4137"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "604FCC857434D005"
+				item: { components: { "relics:data": { abilities: { abilities: { passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, speed: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.29464d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:snowshoes" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "0CBCF91E8392BAC3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30A59494E0DF1BF3"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3D5F51988011A84A"
+				item: { components: { "relics:data": { abilities: { abilities: { passive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, resistance: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.2197d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:steadfast_spikes" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			id: "1CD12BF205D551B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E7BCA6C6B96D9C"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6853EEDABDF3B959"
+				item: { components: { "relics:data": { abilities: { abilities: { swimmer: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.33348d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:flippers" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "7B80FCC0C677B8D1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16763F765F2CE3F0"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5EC36748C09BE39C"
+				item: { components: { "relics:data": { abilities: { abilities: { devouring: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { frequency: { initialValue: 125.77041d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:rooted_boots" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			id: "36DE9DF996B1718E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51615722CD5FB35A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "348917BA1C8E7D7B"
+				item: { components: { "relics:data": { abilities: { abilities: { push: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.3872d }, radius: { initialValue: 3.01729d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:whoopee_cushion" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			id: "7BB04A8BCC668048"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "7A476CAA2F464AC3"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "26A8DF2FBF6DF28A"
+				item: { components: { "relics:data": { abilities: { abilities: { glowing_scour: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 19.06579d }, glowing_time: { initialValue: 11.40726d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_lenders_cataclysm:scouring_eye" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			id: "59221C4C89799EF1"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "3CF10469C636EFE6"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "28A256C227FEBF25"
+				item: { components: { "relics:data": { abilities: { abilities: { spawn_vortex: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 28.28348d }, damage: { initialValue: 7.51962d }, height: { initialValue: 3.65976d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_lenders_cataclysm:void_vortex_in_bottle" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			id: "3CBA97A5A6FB6223"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "52EC7D7903ADB608"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "094BA0014E335C34"
+				item: { components: { "relics:data": { abilities: { abilities: { seismic_zone: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.57537d }, radius: { initialValue: 2.66267d }, waves: { initialValue: 2.47312d } } }, void_invulnerability: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, void_rune: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 18.35987d }, damage: { initialValue: 1.53646d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_lenders_cataclysm:void_cloak" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			id: "04AA82847FB35A1D"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0026BE72E1AA3DE2"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "4AA5EB6264F7E533"
+				item: { components: { "relics:data": { abilities: { abilities: { vacuum_slowdown: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { radius: { initialValue: 6.10061d }, slowdown: { initialValue: 0.30407d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_lenders_cataclysm:vacuum_glove" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.5d
+		}
+		{
+			id: "5F1C4B99718C71CC"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2D35983DDC01C677"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2E5F097FAE6B76E1"
+				item: { components: { "relics:data": { abilities: { abilities: { protective_bubble: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { attack_blocks: { initialValue: 2.53787d }, cooldown: { initialValue: 25.70707d }, damage: { initialValue: 0.49056d }, projectiles: { initialValue: 19.0672d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_lenders_cataclysm:void_bubble" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			id: "37AAF9984391CAF1"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0FED37BC042C6965"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "4E9F32210BA12F45"
+				item: { components: { "relics:data": { abilities: { abilities: { guts: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage_perchantage: { initialValue: 0.21272d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:guts_orb" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			id: "7917D94D3CE86EE2"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "4A4B704111FA89F4"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2C0F6A9DE0483177"
+				item: { components: { "relics:data": { abilities: { abilities: { awakening_potential: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, odd_aura: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:slumbering_amulet" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7917D94D3CE86EE2"]
+			id: "01C7E47DCCB05994"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "047A35A26E4E7025"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "37AFC7E5749F094D"
+				item: { components: { "relics:data": { abilities: { abilities: { ascend_heaven: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:whispering_amulet" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "142311B7FAD841DF"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "225A2B92AE1AC806"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3E548980E206A5A9"
+				item: { components: { "relics:data": { abilities: { abilities: { heavy_hitter: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { perch: { initialValue: 8.42636d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "morerelics:mass_gauntlet" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			id: "2BDB3C8F6E2838C4"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "452714AB34AB9D3D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7305958C25FFA9C3"
+				item: { components: { "relics:data": { abilities: { abilities: { nope: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 1.75558d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:eject_button" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			id: "5B791C8BCC0AF765"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "531A5EC57E0AE7E1"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "08E1B28048E293AE"
+				item: { components: { "relics:data": { abilities: { abilities: { dynamic_thread: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { perch: { initialValue: 6.27173d } } }, impact_shield: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { flat_chance: { initialValue: 3.65433d }, per_armor: { initialValue: 0.27374d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:shieldweave_cape" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			id: "3FBF4CDA10BC3E16"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "56D3E2D64CE50819"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1D006FD571942E94"
+				item: { components: { "relics:data": { abilities: { abilities: { mend_moisturize: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multip: { initialValue: 0.72691d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:axolotl_cream" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			id: "03C5DFBA87711F3C"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0E18C2C6EF9C7999"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "6CD1A9B31A4653B8"
+				item: { components: { "relics:data": { abilities: { abilities: { corrosive: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { seconds: { initialValue: 25.71544d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:sentient_rust" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			id: "0FD46C37B57C2A88"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "70D2B198B7A2F7A5"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "773605188EB4D925"
+				item: { components: { "relics:data": { abilities: { abilities: { bubble_shield: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 266.88322d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:opal_necklace" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			id: "202F300D4411B29E"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "4C5A915292555645"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0A1A20A2B13F3512"
+				item: { components: { "morerelics:three_int_holder": { x: 0.0d, y: 0.0d, z: 0.0d }, "relics:data": { abilities: { abilities: { futility: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, monotony: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, regrets: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { debuff: { initialValue: 20.0d } } }, revenge: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:tyrant_mask" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["202F300D4411B29E"]
+			id: "650CEA57092B481D"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "71067F84FDEA86FD"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "6A246FF7E314BC36"
+				item: { components: { "relics:data": { abilities: { abilities: { epitaph: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 173.9375d } } }, talk_to_the_wind: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 3.91854d }, seconds: { initialValue: 5.57909d } } }, the_court: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { threshold: { initialValue: 13.84362d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:king_crimson" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "6C5EAFA1A2EE35A7"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "758534788AE18092"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3658A3ED58E7458E"
+				item: { components: { "relics:data": { abilities: { abilities: { never_die: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { potency: { initialValue: 0.18223d } } }, pig_king: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { perch: { initialValue: 0.25972d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:crown_of_the_legend" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			id: "695C01DDC6CBDAB6"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "53E338A1C6236C90"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "164D1E489E9CF9B1"
+				item: { components: { "morerelics:three_int_holder": { x: 0.0d, y: 0.0d, z: 0.0d }, "relics:data": { abilities: { abilities: { just_one_more: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage_reduction_per: { initialValue: 0.97204d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:whims_of_fate" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			id: "3F9552360378DA47"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "742946A3BF7D532A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "50E643DFA38981D1"
+				item: { components: { "relics:data": { abilities: { abilities: { bind: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { healing_amount: { initialValue: 3.68252d } } }, soar: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { leap_power: { initialValue: 1.28566d }, speed_duration: { initialValue: 7.52499d } } }, unravel: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 4.99216d }, slow_duration: { initialValue: 2.75486d } } }, weaver: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { passive_regen_time: { initialValue: 6.82497d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:weavers_spool" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			id: "2DA4EC3F0B616181"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0A648226690BFFB9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "14D10D6E9D87D091"
+				item: { components: { "morerelics:alt_int_counter": { current: 0 }, "relics:data": { abilities: { abilities: { moody: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multip: { initialValue: 0.77808d }, reduction: { initialValue: 11.01673d } } }, tranquillity: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:moodworm" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5450977DBD1CC7B2"]
+			id: "3419A73A2FA3BFF4"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "004D085DD4064E6D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "365A1359A6FC3F97"
+				item: { components: { "relics:data": { abilities: { abilities: { entropy: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { perch: { initialValue: 9.55922d } } }, event_horizon: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 445.84963d }, duration: { initialValue: 6.88114d } } }, flow_of_calamity: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 15.15382d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:wonder_of_u" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			id: "4EF89A4C749C56D7"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "08A28EB3EA261B63"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2115DCADCCCAC03F"
+				item: { components: { "relics:data": { abilities: { abilities: { all_in: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage_boost: { initialValue: 1.59844d } } }, bonk: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 4.70842d }, duration: { initialValue: 4.12258d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:gravitum_glove" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			id: "4A027FC62FA0F8B5"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2471637A48E95FE7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "748729E4EE4C8861"
+				item: { components: { "relics:data": { abilities: { abilities: { acquired_immunity: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, cyberpsychosis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 4.92844d }, duration: { initialValue: 6.8447d } } }, fortification: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { increase: { initialValue: 18.50542d }, reduction: { initialValue: 16.83366d } } }, inoculation: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:vertebrax" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 3.0d
+		}
+		{
+			id: "1D8E65268D3D1C28"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "3728C379F8F9E0AB"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "5D45B7F45D61EC36"
+				item: { components: { "morerelics:alt_alt_int_counter": { current: 1 }, "morerelics:alt_int_counter": { current: 0 }, "morerelics:int_counter": { current: 17152 }, "relics:data": { abilities: { abilities: { persistent: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 14.29412d } } }, ripen: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 54.77811d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:epoch_apple" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 3.0d
+		}
+		{
+			id: "0F7FF00451E026CE"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "195EE180B1623FD5"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0667D6EAC4700702"
+				item: { components: { "relics:data": { abilities: { abilities: { elevated_steps: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { gravity_reduction: { initialValue: 37.55142d } } }, leap: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { jump_force: { initialValue: 0.21581d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:gravitum_strider" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			id: "3F505494B7AE2D58"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "317869575D032192"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "222DAA134DCACD7F"
+				item: { components: { "relics:data": { abilities: { abilities: { explode: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { capacity: { initialValue: 58.51418d }, damage: { initialValue: 0.38866d }, stun: { initialValue: 0.08121d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:reflection_necklace" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			id: "63695D63AD874B14"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "017BA1263ED5AF6F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "5D87A8A2DF64E614"
+				item: { components: { "relics:data": { abilities: { abilities: { heat_resistance: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, pace: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { time: { initialValue: 44.88396d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magma_walker" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			id: "6ECF28832AF9A1CD"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "1CA1B8B649507FFF"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "05265A1E1AFDDEAB"
+				item: { components: { "relics:data": { abilities: { abilities: { walking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { time: { initialValue: 47.03552d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:aqua_walker" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			id: "58C1F38C5685931F"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "59A6BD87C2377F26"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "5A408B18320AE314"
+				item: { components: { "relics:data": { abilities: { abilities: { backstab: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.59631d }, distance: { initialValue: 18.27351d } } }, vanish: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { light: { initialValue: 1.06425d }, speed: { initialValue: 0.19808d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:midnight_robe" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "5450977DBD1CC7B2"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "7C4AFE6307437474"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "36F0521C6ACFF217"
+				item: { components: { "morerelics:alt_int_counter": { current: 0 }, "morerelics:double_holder": { x: 0.0d }, "morerelics:int_counter": { current: 0 }, "relics:data": { abilities: { abilities: { convergence: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:converging_orb" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 4.5d
+		}
+		{
+			id: "5843E480E0D48A65"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "518B90A5B4737648"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3F3B4DC623903A2B"
+				item: { components: { "morerelics:three_int_holder": { x: 0.0d, y: 0.0d, z: 0.0d }, "relics:data": { abilities: { abilities: { restoration: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:depleted_spool" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 1.5d
+		}
+		{
+			id: "19CAEF22AF39F4EE"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "79465AFFB88F6DEC"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2CD0946BB534F547"
+				item: { components: { "relics:data": { abilities: { abilities: { cyberpsychosis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 4.61868d }, duration: { initialValue: 4.73551d } } }, suspension: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { max_reduction: { initialValue: 11.69149d }, min_reduction: { initialValue: 5.50943d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:biojoint" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			id: "4B07B0D902588305"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "068E85B988AF8FEC"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1BE54C204A2F7868"
+				item: { components: { "relics:data": { abilities: { abilities: { cyberpsychosis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 3.06967d }, duration: { initialValue: 4.68976d } } }, pyromania: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 28.11898d } } }, thermal_discharge: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 4.64572d }, radius: { initialValue: 1.14824d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:thermoseismic_heart" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.5d
+		}
+		{
+			id: "26CD4886B98D5B36"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "73E8323ECF22305B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3986C2A6F0467711"
+				item: { components: { "relics:data": { abilities: { abilities: { cyberpsychosis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 4.78009d }, duration: { initialValue: 6.17834d } } }, seeker: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 101.60664d }, duration: { initialValue: 13.37716d }, range: { initialValue: 14.93754d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "morerelics:bionic_eye" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			id: "2E7FA4A4467AD1FC"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "54D59088C6712556"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "338B559F1692BC57"
+				item: { components: { "relics:data": { abilities: { abilities: { paralysis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 1.44321d } } }, shock: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.97495d } } }, unsinkable: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "relics:jellyfish_necklace" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			id: "43118E590DF5ACDD"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2B95A144F1C7B7E9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0FDFA68B05A08FEE"
+				item: { components: { "relics:data": { abilities: { abilities: { slots: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { charm: { initialValue: 1.29236d } } }, training: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.66723d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:hunter_belt" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			id: "0D708AB123C17817"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "271E59325B52EE05"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7E5DA1B90CF6EEF2"
+				item: { components: { "relics:data": { abilities: { abilities: { phlebotomy: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { attack_speed: { initialValue: 0.00613d }, heal: { initialValue: 1.9E-4d }, movement_speed: { initialValue: 0.01659d } } }, rage: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { dealt_damage: { initialValue: 0.05194d }, duration: { initialValue: 3.13614d }, incoming_damage: { initialValue: 0.03444d } } }, spurt: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 17.14599d }, damage: { initialValue: 0.18001d }, distance: { initialValue: 3.90414d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:rage_glove" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			id: "736DE6ADE8952000"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "7B13FA52AB99566B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7560A321BC321D82"
+				item: { components: { "relics:data": { abilities: { abilities: { ram: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 0.13135d } } }, skating: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 42.86257d }, speed: { initialValue: 0.01988d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:ice_skates" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "39A7C72C5CD55CCD"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "31D766AD3E95029A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3AE310608ADD1A9E"
+				item: { components: { "relics:data": { abilities: { abilities: { blink: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 7.97127d }, distance: { initialValue: 30.71649d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:chorus_inhibitor" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			id: "124B46B9E1EA01D4"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "32EB06282C24BFE7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "4C103885E1B12CDC"
+				item: { components: { "relics:data": { abilities: { abilities: { compass: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, trade: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { rolls: { initialValue: 0.03176d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:bastion_ring" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 6.0d
+		}
+		{
+			id: "27961567E212A01F"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "66B932760B51248E"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "5A03551A197F54CD"
+				item: { components: { "relics:data": { abilities: { abilities: { dissection: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { distance: { initialValue: 29.19381d }, time: { initialValue: 6.09313d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:space_dissector" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 6.0d
+		}
+		{
+			id: "5CE5A63A8C0D26FC"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "4289C72E674232A9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "76AC34DDC9F743A3"
+				item: { components: { "relics:data": { abilities: { abilities: { ascension: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 0.73598d }, max_duration: { initialValue: 10.44973d } } }, faith: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 0.73945d }, health: { initialValue: 0.21186d }, radius: { initialValue: 7.7519d } } }, penitence: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.29762d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:holy_locket" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 6.0d
+		}
+		{
+			id: "543CE9CD7D306B0A"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "3ED9F4D21DE4DD8A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "691F04999D73ACEA"
+				item: { components: { "relics:data": { abilities: { abilities: { neutrality: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, swap: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { distance: { initialValue: 19.63661d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:enders_hand" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			id: "31E92034EE27F8BD"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "32ACA9B268C4F8DF"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7CF8E54EB6B87093"
+				item: { components: { "relics:data": { abilities: { abilities: { boost: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { capacity: { initialValue: 89.50543d }, speed: { initialValue: 1.14758d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "relics:elytra_booster" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			id: "4B406861617A4C57"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "79596BB19E203C6F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "206A100C562BED00"
+				item: { components: { "relics:data": { abilities: { abilities: { teleport: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 100.4414d }, distance: { initialValue: 507.97402d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magic_mirror" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			id: "0C8FEE7F80CBE55F"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "1DB6460CE97A08D4"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "37AFF43E8187CFC6"
+				item: { components: { "relics:data": { abilities: { abilities: { impact: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 2.98195d }, size: { initialValue: 3.4511d } } }, sustainability: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.53114d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:ice_breaker" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			id: "2311E808C8FD8073"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "500DB9C3800CB5E1"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "18306C1641943F71"
+				item: { components: { "relics:data": { abilities: { abilities: { bonfire: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { height: { initialValue: 3.65116d }, speed: { initialValue: 0.03582d }, step: { initialValue: 1.74494d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:blazing_flask" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			id: "6E78BDC703E8577D"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "064A678DE65D0C87"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "24E7572830C87562"
+				item: { components: { "relics:data": { abilities: { abilities: { spore_mist: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 5.37396d }, damage: { initialValue: 0.24017d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:spore_sack" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 7.5d
+		}
+		{
+			id: "407BCBCE46984A72"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "26FFE8FE59E76AED"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "10858FACB277D8DE"
+				item: { components: { "relics:data": { abilities: { abilities: { cloning: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.05709d } } }, mayhem: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { bounces: { initialValue: 2.91258d }, chance: { initialValue: 0.115d }, damage: { initialValue: 0.1335d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:shadow_glaive" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 7.5d
+		}
+		{
+			id: "440C29ED0153082D"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "4BFE2CD587ABA883"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "18095A9FF395EA59"
+				item: { components: { "relics:data": { abilities: { abilities: { skating: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 20.01171d }, speed: { initialValue: 0.00107d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:roller_skates" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.5d
+		}
+		{
+			id: "5935CB9D4F9F2ED7"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "373F3D915DDDFD5D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1B2B871E6516DD8E"
+				item: { components: { "relics:data": { abilities: { abilities: { slots: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { charm: { initialValue: 1.60419d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:leather_belt" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 7.5d
+		}
+		{
+			id: "7B69405397D281B9"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "454351C8F86A9C44"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7C0C1A069ABBEFFC"
+				item: { components: { "relics:charge": 6, "relics:data": { abilities: { abilities: { marinade: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 1.74654d } } }, meat_bat: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.38352d }, stun: { initialValue: 0.10362d } } }, regeneration: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 20.49357d }, feed: { initialValue: 2.7861d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:infinity_ham" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			id: "0E26D8D68FE2FE99"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "00328F42B3533837"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "14B8FDFF09AFA07A"
+				item: { components: { "relics:data": { abilities: { abilities: { mold: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 0.244d }, freeze: { initialValue: 1.81797d }, size: { initialValue: 31.89274d }, stun: { initialValue: 0.03012d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "relics:wool_mitten" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			id: "56C61F9368E91010"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "3290AA01A3F17C67"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "33C22C98F1938E05"
+				item: { components: { "relics:data": { abilities: { abilities: { gills: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.05761d } } }, slipping: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 15.27805d }, speed: { initialValue: 0.00886d } } }, swimming: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 21.50093d }, speed: { initialValue: 0.00647d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:amphibian_boot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			id: "0A44A21A274BF612"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "562716817B9B4342"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "66986C99ED47FF78"
+				item: { components: { "relics:data": { abilities: { abilities: { hide: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.23142d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:leafy_ring" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			id: "6392D929D68CF050"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0B082AAFAAE65D3A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "237184F185C2A790"
+				item: { components: { "relics:data": { abilities: { abilities: { bridge: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 0.49685d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:phantom_boot" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 9.0d
+		}
+		{
+			id: "30EAA4A7D25945FB"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "77B1EBBDEC2DB70C"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "05FEC48CC2EC4F99"
+				item: { components: { "relics:data": { abilities: { abilities: { bounce: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { power: { initialValue: 0.34053d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:springy_boot" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			id: "2F72A436E49E00A5"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "031F3F852C374EA9"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "20AD21E4B0CD7312"
+				item: { components: { "relics:data": { abilities: { abilities: { biome_burn: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multiplier: { initialValue: 0.03135d } } }, bone_pact: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, ethereal_guard: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 283.76702d }, max_projectiles: { initialValue: 4.87591d } } }, fortification: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { interval: { initialValue: 176.66329d }, max_shields: { initialValue: 4.17773d } } }, frenzy: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { additive_multiplier: { initialValue: 0.03561d } } }, frostbite: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 91.86365d } } }, lifedrain: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { heal_percentage: { initialValue: 0.00868d }, interval: { initialValue: 291.36422d }, radius: { initialValue: 2.40819d } } }, mirror_leech: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.0656d } } }, soulbound_gems: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { gem_amount: { initialValue: 1.87372d } } }, twilight: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 3.58882d }, speed_scale: { initialValue: 1.0849d } } }, twilight_sovereign: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, vendetta: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { lifetime: { initialValue: 8.16281d }, multiplier: { initialValue: 0.38483d } } }, zombie: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 2.53906d }, interval: { initialValue: 367.36154d }, max_zombies: { initialValue: 1.00519d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "reliquified_twilight_forest:lich_crown" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			id: "176B25AE0EB7CB43"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "4A4404C4DB0A70F6"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "4F78F814D0ED2AAE"
+				item: { components: { "relics:data": { abilities: { abilities: { hydra_fire: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.17826d }, damage: { initialValue: 1.07682d }, lifetime: { initialValue: 97.08438d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:hydra_heart" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			id: "2F70D8BD995E5CCA"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "42D70F86D7CE9A9E"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "5BE1C6FFACBC0551"
+				item: { components: { "relics:data": { abilities: { abilities: { momentum_rush: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.44221d }, damage_reduction: { initialValue: 0.26121d }, max_speed_multiplier: { initialValue: 0.29926d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:minotaur_hoof" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			id: "158F27A22B089C35"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "583E4FBD48307094"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "449153F2DBEC41B2"
+				item: { components: { "relics:data": { abilities: { abilities: { ride_along: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { entity_volume: { initialValue: 1.0854d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:deer_antler" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			id: "54BCA42D311F8908"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "1A973D7CEB596B09"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "358FD9576CD432D8"
+				item: { components: { "relics:data": { abilities: { abilities: { elusive_stare: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.14021d } } }, wall_crawler: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { max_time: { initialValue: 67.99537d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:scaled_cloak" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			id: "32CDE6CCBBBB76A9"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0687886DA1E4B6A4"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "08914FEDE7462E55"
+				item: { components: { "relics:data": { abilities: { abilities: { glowkeeper: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 160.41928d }, max_charges: { initialValue: 2.60253d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:firefly_queen" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -1.5d
+		}
+		{
+			id: "1CAC912D4B9D5EF5"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0CFBBC243A663263"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "3943A5EA578B489E"
+				item: { components: { "relics:data": { abilities: { abilities: { cicada_infestation: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.14883d }, duration: { initialValue: 117.28609d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:cicada_bottle" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			id: "3185D36CA3ADAA98"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "32E04A856D96FB94"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "784D94B36F04AA88"
+				item: { components: { "relics:data": { abilities: { abilities: { iron_guard: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.19677d }, damage: { initialValue: 5.34767d }, flat_armor: { initialValue: 0.2248d }, stun_duration: { initialValue: 17.859d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:steel_cape" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			id: "304550011791E63C"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2102F694BCB1A108"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "63DD2E08C7102B46"
+				item: { components: { "relics:data": { abilities: { abilities: { poking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.91127d }, paralyze_chance: { initialValue: 0.08199d }, paralyze_duration: { initialValue: 14.07002d } } }, thorn_shield: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:thorn_crown" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.5d
+		}
+		{
+			id: "6F93F58EA9E14874"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04877E306E4801C3"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			tasks: [{
+				id: "49A3B9DFE898574B"
+				item: { components: { "relics:charge": 3, "relics:data": { abilities: { abilities: { glider: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 1.66628d }, count: { initialValue: 2.7413d } } }, shield: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { knockback: { initialValue: 1.58351d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:umbrella" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			id: "308C6961A6EC44F0"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "60725FDBB35E5547"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "3774E6B95DA9B71B"
+				item: { components: { "relics:data": { abilities: { abilities: { charm_storage: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { max_slots: { initialValue: 1.61084d }, repair_time: { initialValue: 21.28791d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "tensura:max_existence_point": 0.0d }, count: 1, id: "reliquified_twilight_forest:charm_backpack" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "059870567069FB0A"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "615964BB96B1F3CB"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "263A877F271EB0DA"
+				item: { components: { "relics:data": { abilities: { abilities: { oversized_grip: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { multiplier: { initialValue: 0.09488d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:giant_glove" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			id: "78489A3550D66D5D"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "0877CD3A69088875"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "777DB8BA1FE58B89"
+				item: { components: { "relics:data": { abilities: { abilities: { execution: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.00999d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:twilight_feather" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "7093042FC35701E2"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "354A76E93356FFE9"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "792118D5132F031C"
+				item: { components: { "relics:data": { abilities: { abilities: { effect_stacking: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { max_amplifier: { initialValue: 2.2352d } } }, wool_storage: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 267.15626d }, max_slots: { initialValue: 4.49781d }, max_stack_size: { initialValue: 6.21275d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:chromatic_cloak" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			id: "6B4B5B54B63554E6"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "26784FB22BB23B33"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "5D6E516691C70AF5"
+				item: { components: { "relics:data": { abilities: { abilities: { sugar_rush: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.13701d }, regen_multiplier: { initialValue: 0.47747d }, regen_time: { initialValue: 155.4172d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:maple_syrup_bottle" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			id: "3F789D86DCA9D97E"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "148D9E8DD7F69772"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "4B241BC83AC27802"
+				item: { components: { "relics:data": { abilities: { abilities: { cosmetic_armor: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } }, invisibility: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 143.76358d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:invisibility_cloak" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			id: "58BFC25A3586E3D4"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "06449601F91CDD88"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "773267799742DF84"
+				item: { components: { "relics:data": { abilities: { abilities: { infectious_bloom: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.11196d }, damage: { initialValue: 0.68179d }, drops: { initialValue: 2.55944d }, max_attacks: { initialValue: 2.64568d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:parasite_115" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			id: "3ECC4CA3D7B61C65"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "2156A73E73A52FDC"
+				type: "tensura_ftb:existence_value"
+				value: 1500
+			}]
+			tasks: [{
+				id: "38F93739F2CB1B83"
+				item: { components: { "relics:data": { abilities: { abilities: { infectious_bloom: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.11031d }, damage: { initialValue: 1.17405d }, drops: { initialValue: 2.157d }, max_attacks: { initialValue: 2.65901d } } }, rage_consumption: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount_restored: { initialValue: 86.44404d }, multiplier: { initialValue: 0.74786d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_twilight_forest:parasite_116" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01C7E47DCCB05994"]
+			id: "5607EC73F64E7547"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "03A5B45F611357C8"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "175E3B629F05EA52"
+				item: { components: { "relics:data": { abilities: { abilities: { as_one: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { accel_cooldown: { initialValue: 36.49968d }, initial_boost: { initialValue: 0.03654d } } }, condemn: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 53.94986d }, damage: { initialValue: 4.60346d } } }, divine_judgement: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 1194.88566d }, damage: { initialValue: 41.62058d } } }, zenith: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 0 }, points: 0, research: { links: { }, researched: 0b }, stats: { revive_cooldown: { initialValue: 1129.10948d }, stat_boost: { initialValue: 0.13636d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "morerelics:made_in_heaven" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "default": "outlined_sprite:tensura/gazel.png",
+        "layersAllowed": true
+    }
+}

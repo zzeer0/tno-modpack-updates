@@ -1,0 +1,2840 @@
+{
+	autofocus_id: "3B5B1BFC34011F6C"
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "2C04AFD8A4D7CF3A"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/magic/summoning/summon_greater_elemental.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "2C04AFD8A4D7CF3A"
+	images: [
+		{
+			alpha: 150
+			height: 3.0d
+			image: "minecraft:block/nether_portal"
+			order: 2
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			image: "minecraft:block/obsidian"
+			order: 1
+			rotation: 0.0d
+			width: 4.0d
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "tensura:textures/skill/unique/creator.png"
+			order: 3
+			rotation: 35.0d
+			width: 1.0d
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			height: 3.6d
+			image: "ablazeaqzlcz:textures/ftb/background_1.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 2.6574077314673374d
+			y: -3.4301350456959696d
+		}
+		{
+			alpha: 200
+			height: 2.1d
+			image: "ablazeaqzlcz:textures/ftb/background_2.png"
+			order: -1
+			rotation: 0.0d
+			width: 3.0d
+			x: 12.092857142857135d
+			y: 0.5357142857142847d
+		}
+		{
+			alpha: 180
+			height: 0.5d
+			image: "tensura:textures/skill/unique/predator.png"
+			rotation: -20.0d
+			width: 0.5d
+			x: 12.37857142857142d
+			y: 0.9285714285714306d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_ore_shard"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0305202978425854d
+			y: 2.318114946454422d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_ore_shard"
+			rotation: 20.0d
+			width: 1.0d
+			x: 4.58478275396223d
+			y: 2.233141430897213d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_ore_shard"
+			rotation: -35.0d
+			width: 1.0d
+			x: 3.0d
+			y: 3.826876018061391d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_ore_shard"
+			rotation: 55.0d
+			width: 1.0d
+			x: 4.5714285714285765d
+			y: 3.7911617323471063d
+		}
+		{
+			height: 2.0d
+			image: "tensura:block/deepslate_magic_ore"
+			order: -1
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.7602447868104534d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			image: "tensura:item/monster_leather_c"
+			rotation: -35.0d
+			width: 2.0d
+			x: 0.7177662761368495d
+			y: 0.6416004121676195d
+		}
+		{
+			height: 1.0d
+			image: "tensura:block/magic_ore_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.760244786810453d
+			y: 3.0d
+		}
+		{
+			height: 2.8d
+			image: "ablazeaqzlcz:textures/ftb/background_4.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.5714285714285836d
+			y: 5.745556396883593d
+		}
+		{
+			alpha: 180
+			height: 2.8d
+			image: "ablazeaqzlcz:textures/ftb/background_4_1.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.2285714285714349d
+			y: 5.7455563968836d
+		}
+		{
+			alpha: 180
+			height: 2.8d
+			image: "ablazeaqzlcz:textures/ftb/background_4_2.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.0d
+			y: 5.631270682597886d
+		}
+		{
+			height: 1.5d
+			image: "minecraft:item/netherite_pickaxe"
+			rotation: -70.0d
+			width: 1.5d
+			x: 4.579329821652102d
+			y: 2.335972089311589d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/hipokute_seeds"
+			rotation: -35.0d
+			width: 1.0d
+			x: 3.998391414402093d
+			y: -1.6852030625537324d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/hipokute_seeds"
+			rotation: -20.0d
+			width: 1.0d
+			x: 4.5222009382116255d
+			y: -1.2625840149346885d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/hipokute_seeds"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.569819985830662d
+			y: -1.8280602054108712d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/hipokute_seeds"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.9841057001163875d
+			y: -1.2173459196965908d
+		}
+		{
+			alpha: 210
+			height: 1.3d
+			image: "tensura:item/slime_staff"
+			rotation: -80.0d
+			width: 1.3d
+			x: 12.485714285714273d
+			y: 0.5d
+		}
+		{
+			alpha: 200
+			height: 1.0d
+			image: "tensura:item/vacuumed_magic_bottle_of_water"
+			rotation: -60.0d
+			width: 1.0d
+			x: 4.034105700116385d
+			y: -2.2923459196965865d
+		}
+		{
+			alpha: 200
+			height: 1.0d
+			image: "tensura:item/vacuumed_magic_bottle_of_water"
+			rotation: 60.0d
+			width: 1.0d
+			x: 4.034105700116385d
+			y: -0.7209173482680171d
+		}
+		{
+			height: 0.8d
+			image: "tensura:textures/skill/common/coercion.png"
+			rotation: 15.0d
+			width: 0.8d
+			x: 11.86807597856599d
+			y: -2.197176145331767d
+		}
+		{
+			height: 0.8d
+			image: "tensura:textures/skill/common/farsight.png"
+			rotation: -15.0d
+			width: 0.8d
+			x: 11.085036488885308d
+			y: -2.068226865489919d
+		}
+		{
+			height: 0.9d
+			image: "tensura:textures/skill/common/strength.png"
+			order: 1
+			rotation: 0.0d
+			width: 0.9d
+			x: 11.509237815464253d
+			y: -2.364557572156478d
+		}
+		{
+			height: 8.0d
+			image: "ablazeaqzlcz:textures/ftb/charybdis.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 24.467697704081623d
+			y: -10.371031182386737d
+		}
+		{
+			height: 7.0d
+			image: "ablazeaqzlcz:textures/ftb/charybdis_cave_charybdis_room.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 21.0d
+			y: -5.377083333333392d
+		}
+		{
+			height: 4.0d
+			image: "ablazeaqzlcz:textures/ftb/megalodon.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 24.930717676209397d
+			y: -8.141414737605103d
+		}
+		{
+			height: 3.0d
+			image: "ablazeaqzlcz:textures/ftb/megalodon.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 22.087634005103816d
+			y: -10.913986500536133d
+		}
+		{
+			height: 2.5d
+			image: "ablazeaqzlcz:textures/ftb/megalodon.png"
+			order: -1
+			rotation: 0.0d
+			width: 2.5d
+			x: 26.112171417502886d
+			y: -11.140029761904735d
+		}
+		{
+			height: 5.6d
+			image: "ablazeaqzlcz:textures/ftb/orc_lord.png"
+			rotation: 0.0d
+			width: 5.6d
+			x: 20.715587724842592d
+			y: 4.196879587707471d
+		}
+		{
+			alpha: 233
+			height: 10.0d
+			image: "ablazeaqzlcz:textures/ftb/labyrinth_tree.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 12.357142857142861d
+			y: -7.5d
+		}
+		{
+			height: 1.5d
+			image: "tensura:block/high_magisteel_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "tensura:block/magic_ore_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			image: "tensura:block/pure_magisteel_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "tensura:block/magic_ore_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			image: "tensura:block/adamantite_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			image: "tensura:block/low_magisteel_block"
+			order: -1
+			rotation: 0.0d
+			width: 1.5d
+			x: 6.783956131303725d
+			y: 2.9994660706345186d
+		}
+		{
+			height: 1.0d
+			image: "tensura:block/magic_ore_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			height: 1.5d
+			image: "tensura:block/hihiirokane_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "tensura:block/magic_ore_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			alpha: 233
+			height: 5.0d
+			image: "ablazeaqzlcz:textures/ftb/brewing_stand.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_bottle_of_water"
+			rotation: 25.0d
+			width: 1.0d
+			x: 3.6675747286047056d
+			y: -5.500041801171683d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_bottle"
+			rotation: -15.0d
+			width: 1.0d
+			x: 6.464285714285687d
+			y: -7.964285714285701d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/magic_bottle_of_water"
+			rotation: 35.0d
+			width: 1.0d
+			x: 3.678571428571388d
+			y: -7.964285714285708d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/high_potion"
+			rotation: -10.0d
+			width: 1.0d
+			x: 7.240120475567437d
+			y: -6.388241798584929d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/full_potion"
+			rotation: 15.0d
+			width: 1.0d
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			height: 1.0d
+			image: "tensura:item/revival_elixir"
+			rotation: -25.0d
+			width: 1.0d
+			x: 3.381860442890442d
+			y: -5.535756086885989d
+		}
+		{
+			height: 1.2d
+			image: "tensura:item/hipokute_flower"
+			rotation: -21.0d
+			width: 1.2d
+			x: 5.495895403358816d
+			y: -7.763763794679534d
+		}
+		{
+			height: 1.0d
+			image: "tensura:textures/skill/unique/great_sage.png"
+			order: 1
+			rotation: 45.0d
+			width: 1.0d
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "tensura:textures/skill/unique/greed.png"
+			order: 1
+			rotation: 45.0d
+			width: 1.0d
+			x: -5.0657738095238045d
+			y: 0.07638917071138707d
+		}
+		{
+			height: 10.0d
+			image: "ablazeaqzlcz:textures/fantasy.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:textures/gui/nord_button.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			height: 1.0d
+			image: "beyond_gacha_c:textures/gui/components/missions/chest/golden_closed.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5778911564625986d
+			y: 3.1809523809523697d
+		}
+		{
+			height: 0.8d
+			image: "artifacts:item/villager_hat"
+			rotation: 0.0d
+			width: 0.8d
+			x: -1.703741496598667d
+			y: 4.004081632653055d
+		}
+	]
+	order_index: 0
+	quest_links: [{
+		id: "25A6FD2917EE9833"
+		linked_quest: "6533548BC66DB5E7"
+		shape: "hexagon"
+		size: 2.0d
+		x: 34.0d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura:textures/magic/spiritual/teleport.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3B5B1BFC34011F6C"
+			rewards: [
+				{
+					id: "4225E8061E659651"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "2C91D238C293AB01"
+					item: {
+						count: 1
+						id: "toms_storage:inventory_connector"
+					}
+					type: "item"
+				}
+				{
+					id: "48C28D38F6C6BA4A"
+					item: {
+						count: 1
+						id: "toms_storage:storage_terminal"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3027D6F4CC5F3FA3"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			hide_dependency_lines: true
+			id: "65FF1BAAC4E9B133"
+			shape: "diamond"
+			tasks: [{
+				count: 2L
+				id: "4DF277BA13859C33"
+				item: { count: 1, id: "tensura:low_quality_magic_crystal" }
+				type: "item"
+			}]
+			x: 0.2422556788578376d
+			y: -1.4969802734380622d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			icon: {
+				id: "tensura:monster_leather_c"
+			}
+			id: "101F636AC88EA48C"
+			rewards: [{
+				id: "1A7ED74BE735B732"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				count: 3L
+				id: "273B2627E983F5E1"
+				item: { count: 1, id: "tensura:monster_leather_c" }
+				type: "item"
+			}]
+			x: 2.2422556788578376d
+			y: -1.4969802734380622d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			id: "5E173415DC087BC4"
+			rewards: [{
+				count: 3
+				id: "0D14D6DB0FF1BF6F"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "3A9218FE53AEA342"
+				item: { count: 1, id: "tensura:smithing_bench" }
+				type: "item"
+			}]
+			x: 2.2653167517006807d
+			y: 0.634212299963103d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			icon: {
+				id: "tensura:monster_leather_helmet_c"
+			}
+			id: "12E7EFE9B3A1B5A7"
+			rewards: [
+				{
+					id: "16A4E3F99DF3652E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "3B1A6C3E6DD1D2E9"
+					item: {
+						count: 1
+						id: "tensura:diamond_great_sword"
+					}
+					type: "item"
+				}
+				{
+					id: "119F6A86D61BF8DF"
+					item: {
+						count: 1
+						id: "tensura:monster_leather_helmet_c"
+					}
+					type: "item"
+				}
+				{
+					id: "5D91B519EF867148"
+					item: {
+						count: 1
+						id: "tensura:monster_leather_chestplate_c"
+					}
+					type: "item"
+				}
+				{
+					id: "1A170C10F571F02E"
+					item: {
+						count: 1
+						id: "tensura:monster_leather_leggings_c"
+					}
+					type: "item"
+				}
+				{
+					id: "2849BF53907433A6"
+					item: {
+						count: 1
+						id: "tensura:monster_leather_boots_c"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "7A673B90B3A69F6E"
+				item: { count: 1, id: "tensura:monster_leather_c" }
+				type: "item"
+			}]
+			x: 0.7177662761368495d
+			y: 0.6416004121676195d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			id: "37B21D9B564CCEBA"
+			rewards: [
+				{
+					id: "35EDB53E36372297"
+					item: {
+						count: 1
+						id: "tensura:magic_ore_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "2E5D0BA43E7662D5"
+					item: {
+						count: 1
+						id: "tensura:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "2E20DC19EED96044"
+				item: { count: 1, id: "tensura:magic_ore_shard" }
+				type: "item"
+			}]
+			x: 3.7602447868104534d
+			y: 3.0d
+		}
+		{
+			dependencies: ["76CF8528AD72AE60"]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "tensura:low_magisteel_helmet"
+			}
+			id: "3F98657DFD336347"
+			rewards: [
+				{
+					id: "0FB97F35EAD254BB"
+					item: {
+						count: 1
+						id: "tensura:magic_ore_block"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "27B7B7D3AD7BB51B"
+					item: {
+						count: 1
+						id: "tensura:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6656B058EED45A9B"
+					item: { count: 1, id: "tensura:low_magisteel_helmet" }
+					type: "item"
+				}
+				{
+					id: "52EC4BC8922BC6A4"
+					item: { count: 1, id: "tensura:low_magisteel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2C1D64307A08D07F"
+					item: { count: 1, id: "tensura:low_magisteel_leggings" }
+					type: "item"
+				}
+				{
+					id: "6D15A887FB39755D"
+					item: { count: 1, id: "tensura:low_magisteel_boots" }
+					type: "item"
+				}
+			]
+			x: 6.760244786810453d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			hide_until_deps_complete: false
+			id: "32E1EA9C678DFF9C"
+			rewards: [
+				{
+					id: "2D809294EDFA06D3"
+					item: {
+						count: 1
+						id: "tensura:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "7F4863703B5B7A1D"
+					item: {
+						count: 1
+						id: "tensura:magic_ore"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "7A1156DA42961EC7"
+				item: { count: 1, id: "tensura:kiln" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["32E1EA9C678DFF9C"]
+			id: "5B4ADF4349E0110E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7968CE0C2C145B4D"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "517888179C44AFD2"
+				item: { count: 1, id: "tensura:kiln_mithril" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B4ADF4349E0110E"]
+			id: "1DE8784B7276EDA8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "359FAB0F24090A7C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "03DD6A67BCD83793"
+				item: { count: 1, id: "tensura:kiln_orichalcum" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			hide_dependency_lines: true
+			id: "06D1B9E52BAEA193"
+			rewards: [{
+				id: "21C1D45744529DA9"
+				item: {
+					components: {
+						"sellingbin:bin_material": "netherite"
+						"sellingbin:bin_mode": "player_bound"
+					}
+					count: 1
+					id: "sellingbin:selling_bin"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5148F5534D18ABC1"
+				item: { count: 1, id: "tensura:medium_quality_magic_crystal" }
+				type: "item"
+			}]
+			x: 0.7422556788578376d
+			y: -1.9969802734380622d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			hide_dependency_lines: true
+			id: "61D5F38862A9CCFB"
+			shape: "diamond"
+			tasks: [{
+				id: "752896E3D7FB6E38"
+				item: { count: 1, id: "tensura:high_quality_magic_crystal" }
+				type: "item"
+			}]
+			x: 0.7422556788578376d
+			y: -0.9969802734380622d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			hide_dependency_lines: true
+			id: "3793BC9A3109DA3E"
+			rewards: [
+				{
+					count: 10
+					id: "447E057FA0B7D483"
+					item: {
+						count: 1
+						id: "tensura:hipokute_seeds"
+					}
+					type: "item"
+				}
+				{
+					id: "43DE33E5686B861D"
+					item: {
+						count: 1
+						id: "tensura:magic_bottle"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				count: 3L
+				id: "277BFA2821395CDE"
+				item: { count: 1, id: "tensura:hipokute_seeds" }
+				type: "item"
+			}]
+			x: 4.242255678857838d
+			y: -1.4969802734380622d
+		}
+		{
+			dependencies: ["3793BC9A3109DA3E"]
+			id: "5DA728ED082DF106"
+			rewards: [{
+				id: "08984BCF0946B61A"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "27A36A1460C7A13C"
+				item: { count: 1, id: "tensura:hipokute_grass" }
+				type: "item"
+			}]
+			x: 3.7422556788578376d
+			y: -1.9969802734380622d
+		}
+		{
+			dependencies: ["3793BC9A3109DA3E"]
+			id: "5F19CC487D430A1C"
+			rewards: [{
+				id: "00648827F6A0493E"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2E7E46E203621575"
+				item: { count: 1, id: "tensura:hipokute_flower" }
+				type: "item"
+			}]
+			x: 3.7422556788578376d
+			y: -0.9969802734380622d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_dependency_lines: true
+			id: "0A78354A482CA2D2"
+			rewards: [{
+				id: "3A95FC2B90729639"
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "35987FB3AA3A9D4B"
+				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E40614E1212A8E7"]
+			hide_until_deps_complete: false
+			icon: {
+				id: "tensura:orichalcum_nugget"
+			}
+			id: "4A6D37AACDB09FA2"
+			rewards: [{
+				id: "07F6131BC7F1F61C"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.65d
+			tasks: [{
+				advancement: "tensura:a_rank"
+				criterion: ""
+				id: "7F38F13CFE1A8356"
+				type: "advancement"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37B21D9B564CCEBA"]
+			id: "76CF8528AD72AE60"
+			rewards: [{
+				id: "6FAC7FD318016C67"
+				item: {
+					count: 1
+					id: "tensura:low_magisteel_ingot"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "624C4129F05A801D"
+				item: { count: 1, id: "tensura:low_magisteel_ingot" }
+				type: "item"
+			}]
+			x: 5.260244786810453d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A6D37AACDB09FA2"]
+			id: "4835EBAC6D933CDB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CA4E244DFC901DA"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				biome: "tensura:ancient_forest"
+				icon: {
+					id: "minecraft:dark_oak_sapling"
+				}
+				id: "0CE9BDF1C7DFFF7C"
+				type: "biome"
+			}]
+			x: 11.54375000000001d
+			y: -5.27157001296208d
+		}
+		{
+			dependencies: ["4A6D37AACDB09FA2"]
+			id: "69A16C2D76C41BDE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "116F74A43F99D4F6"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E66223F2D84396D"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				entity: "tensura:supermassive_slime"
+				icon: {
+					id: "tensura:slime_in_a_bucket"
+				}
+				id: "4CF7280A1C662749"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.5d
+			y: 0.7392857142857139d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_dependency_lines: true
+			id: "4547F61DCD2D7B57"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E2ACE4DBDE67E64"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0B2D434F463E6F6F"
+				item: { count: 1, id: "tensura:battlewill_manual" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E40614E1212A8E7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "1CD3F15F43DC7C8F"
+			shape: "hexagon"
+			tasks: [{
+				id: "24954510A345779E"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			icon: {
+				id: "tensura:high_magisteel_nugget"
+			}
+			id: "0BC3C85CABC897FD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "160AB81B25F7EB45"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tensura:c_rank"
+				criterion: ""
+				id: "53AE7017E356F3F8"
+				type: "advancement"
+			}]
+			x: 6.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BC3C85CABC897FD"]
+			icon: {
+				id: "tensura:mithril_nugget"
+			}
+			id: "0E40614E1212A8E7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E612A5E1C6E7196"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				existence: "MAX_EP"
+				id: "28BB60BCBF15A415"
+				type: "tensura_ftb:existence_value"
+				value: 5000L
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_dependency_lines: true
+			id: "576F41DB3BC82B6B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34EE3FA7CD3D6144"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "524AF2E1EB72F14D"
+				item: { count: 1, id: "tensura:marionette_heart" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"69A16C2D76C41BDE"
+				"3A9101C87B524BD3"
+			]
+			id: "0B45B06246AC854D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "750231E1F3DA1454"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 1.22d
+			tasks: [{
+				id: "71146AE0FEF30FD0"
+				item: { count: 1, id: "tensura:slime_staff" }
+				type: "item"
+			}]
+			x: 13.105769026360512d
+			y: 0.7542602040816675d
+		}
+		{
+			dependencies: ["2DB4047F56352F3B"]
+			id: "3C5160A9C279B5A9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "23BFFB4EF6E55ECB"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "51B16CE9DE8F1DEF"
+				status: "DEMON_LORD_SEED"
+				type: "tensura_ftb:awakening"
+			}]
+			x: 15.001318652124304d
+			y: -0.14340542322071315d
+		}
+		{
+			dependencies: ["4A6D37AACDB09FA2"]
+			icon: {
+				id: "tensura:pure_magisteel_nugget"
+			}
+			id: "5EE843E435DF40B8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51FF076F0C50E335"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tensura:sa_rank"
+				criterion: ""
+				id: "18C04B1960EE12AA"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C5160A9C279B5A9"]
+			id: "07E64C0B306DB76F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2594351028717545"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				icon: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									never_die: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 0
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											potency: {
+												initialValue: 0.1451d
+											}
+										}
+									}
+									pig_king: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											perch: {
+												initialValue: 0.35907d
+											}
+										}
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					id: "morerelics:crown_of_the_legend"
+				}
+				id: "2127F2BCE5EFAF3E"
+				status: "DEMON_LORD"
+				type: "tensura_ftb:awakening"
+			}]
+			x: 16.24728954081636d
+			y: -0.11238633949269428d
+		}
+		{
+			dependencies: ["2DB4047F56352F3B"]
+			id: "7BD3A28C97D7CA72"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50234FA36C2F82B9"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50BAB510E9534596"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.65d
+			tasks: [{
+				advancement: "tensura:s_rank"
+				criterion: ""
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1E1ADA2F0101F93D"
+				type: "advancement"
+			}]
+			x: 18.721864031382758d
+			y: -1.46777148356459d
+		}
+		{
+			dependencies: ["5EE843E435DF40B8"]
+			id: "2DB4047F56352F3B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6F89072CC6FC6B45"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3974EF59817F36CF"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				existence: "MAX_EP"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "38D72FB325196881"
+				type: "tensura_ftb:existence_value"
+				value: 200000L
+			}]
+			x: 15.598795944584566d
+			y: -1.5031698623903154d
+		}
+		{
+			dependencies: ["4835EBAC6D933CDB"]
+			id: "3091985C0E95C53F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C3C8B8A6D665720"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B45847DC20D921F"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				advancement: "tensura:conqueror_of_flames"
+				criterion: ""
+				id: "3A461190B485D744"
+				type: "advancement"
+			}]
+			x: 12.759736394557848d
+			y: -5.29027749595528d
+		}
+		{
+			dependencies: ["7BD3A28C97D7CA72"]
+			id: "6D48812C418A0654"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A30DB891A10D36F"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					id: "tensura:charybdis_core"
+				}
+				id: "6999541F0BCBBB56"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "tensura:charybdis_core"
+				type: "observation"
+			}]
+			x: 21.255028560360067d
+			y: -5.259522191289083d
+		}
+		{
+			dependencies: ["6D48812C418A0654"]
+			id: "15B40702B126BC7E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04AEA372DE39C35A"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				entity: "tensura:charybdis"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/charybdis.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0C9FBB72436806F3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 23.303411989795926d
+			y: -9.271031182386736d
+		}
+		{
+			dependencies: ["7BD3A28C97D7CA72"]
+			id: "7CD7FD7FA288E4E6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FDAF57BE8D64157"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					id: "tensura:orc_disaster_head"
+				}
+				id: "6850EDF9A1EFAC7C"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tensura:orc"
+				type: "observation"
+			}]
+			x: 18.755784970238103d
+			y: 3.0516369047618994d
+		}
+		{
+			dependencies: ["7CD7FD7FA288E4E6"]
+			id: "55465CA3AEA7E0F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EE5D6F291522D3E"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					id: "tensura:zane_blood"
+				}
+				id: "3CBF2F01D39577AD"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "tensura:orc_lord"
+				type: "observation"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["55465CA3AEA7E0F1"]
+			icon_scale: 2.0d
+			id: "5C4E0D0411A674BB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7308A5D9845F414F"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "tensura:orc_disaster"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/orc_disaster.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "659343390AADF8FD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 20.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7BD3A28C97D7CA72"]
+			id: "7200F3B7B5FD0B02"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "649FB0691F693551"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1BFF8DD0AF825843"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+				{
+					id: "0D83149890E33441"
+					item: {
+						count: 1
+						id: "tensura_boss_structure:hinata_church_map"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				existence: "MAX_EP"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "38CDBA0D36BB489A"
+				type: "tensura_ftb:existence_value"
+				value: 800000L
+			}]
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7200F3B7B5FD0B02"]
+			id: "562807A2687B3DEF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "138BBAF3465B3CBA"
+				table_id: 4631845433433211114L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "tensura:hinata_sakaguchi"
+				icon: {
+					id: "tensura:moonlight"
+				}
+				id: "6847EC71848EDBD1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 22.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["7200F3B7B5FD0B02"]
+			id: "76E9B499018DF134"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F1882BCB3D84709"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54196BFC05FE5C6D"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+				{
+					id: "6700F7DF7A8C6B16"
+					item: {
+						count: 1
+						id: "tensura_boss_structure:rimuru_arena_map"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.65d
+			tasks: [{
+				existence: "MAX_EP"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "6F9241732D808510"
+				type: "tensura_ftb:existence_value"
+				value: 1200000L
+			}]
+			x: 26.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["35289058F397A21C"]
+			id: "5631F6ECD23395D2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F5D6A251023A31B"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53B465178C2898EA"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "tensura_neb:carrion"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/neb_boss/carrion_head.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "42D46EAA8423F355"
+				type: "kill"
+				value: 1L
+			}]
+			x: 29.01964285714287d
+			y: 0.7444054643912921d
+		}
+		{
+			dependencies: ["76E9B499018DF134"]
+			id: "35289058F397A21C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B8AEF66D652ED00"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0EFEE5ADE88207DC"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+				{
+					id: "204B27D99233A119"
+					item: {
+						count: 1
+						id: "tensura_boss_structure:beast_kingdom_of_eurazania_map"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.65d
+			tasks: [{
+				existence: "MAX_EP"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7E259829F7516F97"
+				type: "tensura_ftb:existence_value"
+				value: 1800000L
+			}]
+			x: 29.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["76E9B499018DF134"]
+			id: "4454735A12F6DC87"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "408F7A4A7C52FCAB"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0CE95D498F13712B"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "tensura_neb:rimuru_ogre_fight"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/neb_boss/rimuru_ogre_fight_head.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5E805CA407F7E6BC"
+				type: "kill"
+				value: 1L
+			}]
+			x: 26.01964285714287d
+			y: 0.7444054643912921d
+		}
+		{
+			dependencies: ["35289058F397A21C"]
+			id: "5DED91157DA1F45C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59E10E90507663A9"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5749D157886F5648"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+				{
+					id: "0C2A6AB612D3601B"
+					item: {
+						count: 1
+						id: "tensura_boss_structure:night_rose_map"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.65d
+			tasks: [{
+				existence: "MAX_EP"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/ep.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "152528B5C85AA35F"
+				type: "tensura_ftb:existence_value"
+				value: 2000000L
+			}]
+			x: 31.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5DED91157DA1F45C"]
+			id: "658BA859C44C25BF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "30A19403830673FA"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "42BE81FCEA08DE58"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "tensura_neb:luminous_valentine"
+				icon: {
+					components: {
+						"ftbquests:icon": "ablazeaqzlcz:textures/ftb/neb_boss/luminous_valentine_head.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "2CCC4D2770987C93"
+				type: "kill"
+				value: 1L
+			}]
+			x: 31.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"76CF8528AD72AE60"
+				"1AA35C0479B67340"
+			]
+			dependency_requirement: "one_completed"
+			id: "5F4385F1FC6627D3"
+			shape: "gear"
+			tasks: [{
+				id: "209EB69986F81989"
+				item: { count: 1, id: "tensura_tno:enchantment_stone" }
+				type: "item"
+			}]
+			x: 5.260244786810453d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F98657DFD336347"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tensura:high_magisteel_helmet"
+			}
+			id: "4E8B980CF62609B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28FBD05F9410D4CE"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "58F925B26F6F996D"
+					item: { count: 1, id: "tensura:high_magisteel_helmet" }
+					type: "item"
+				}
+				{
+					id: "124E48E29D53EFAD"
+					item: { count: 1, id: "tensura:high_magisteel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "25B9EC217061A057"
+					item: { count: 1, id: "tensura:high_magisteel_leggings" }
+					type: "item"
+				}
+				{
+					id: "316311252686C526"
+					item: { count: 1, id: "tensura:high_magisteel_boots" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F98657DFD336347"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tensura:pure_magisteel_helmet"
+			}
+			id: "3F046818B4E935CB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "500DA469023E27E9"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7870334FAE1CE90C"
+					item: { count: 1, id: "tensura:pure_magisteel_helmet" }
+					type: "item"
+				}
+				{
+					id: "600F5043E28F7633"
+					item: { count: 1, id: "tensura:pure_magisteel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2A7913875D5AF0B2"
+					item: { count: 1, id: "tensura:pure_magisteel_leggings" }
+					type: "item"
+				}
+				{
+					id: "1813E8DCD5EE714E"
+					item: { count: 1, id: "tensura:pure_magisteel_boots" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F98657DFD336347"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tensura:adamantite_helmet"
+			}
+			id: "7B2094413769B668"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BEC7FAC22780B96"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "45754842EAB63C3B"
+					item: { count: 1, id: "tensura:adamantite_helmet" }
+					type: "item"
+				}
+				{
+					id: "6909119685784DCC"
+					item: { count: 1, id: "tensura:adamantite_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7DEAEC3ECD90E3FD"
+					item: { count: 1, id: "tensura:adamantite_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B701410CE349289"
+					item: { count: 1, id: "tensura:adamantite_boots" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F98657DFD336347"]
+			hide_dependency_lines: true
+			icon: {
+				id: "tensura:hihiirokane_helmet"
+			}
+			id: "45C5C1ECD7ED5781"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D7967DE64085B00"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6D0DDF7979B5430E"
+					item: { count: 1, id: "tensura:hihiirokane_helmet" }
+					type: "item"
+				}
+				{
+					id: "25BAAB4C0452DF90"
+					item: { count: 1, id: "tensura:hihiirokane_chestplate" }
+					type: "item"
+				}
+				{
+					id: "26DAFB598F9F02F0"
+					item: { count: 1, id: "tensura:hihiirokane_leggings" }
+					type: "item"
+				}
+				{
+					id: "4405B7663ED90B6E"
+					item: { count: 1, id: "tensura:hihiirokane_boots" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			id: "74F615E1EE2FC750"
+			shape: "gear"
+			tasks: [{
+				id: "3D3C2AFF78C12EC7"
+				item: { count: 1, id: "tensura:mining_station" }
+				type: "item"
+			}]
+			x: 3.753561595001109d
+			y: 0.6548087289647029d
+		}
+		{
+			dependencies: ["5F19CC487D430A1C"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "02A58E5987A621B5"
+			rewards: [{
+				count: 3
+				id: "0A3B07EB6D9580E4"
+				item: {
+					count: 1
+					id: "tensura:magic_bottle_of_water"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "61EA2346AAAF9840"
+				item: { count: 1, id: "tensura:magic_bottle" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["02A58E5987A621B5"]
+			id: "14CD486EE27C60B3"
+			tasks: [{
+				count: 3L
+				id: "7AAB61D20AF5F626"
+				item: { count: 1, id: "tensura:vacuumed_magic_bottle_of_water" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["46FF849AF3C24F9E"]
+			id: "31406DA796F5CD57"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B22F66D3361A931"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4F819C5048AEBB4C"
+				item: { count: 1, id: "tensura:full_potion" }
+				type: "item"
+			}]
+			x: 6.510996699966697d
+			y: -9.107101055971157d
+		}
+		{
+			dependencies: ["02A58E5987A621B5"]
+			id: "234F14E5F778ADE7"
+			tasks: [{
+				count: 3L
+				id: "25DE0D6086FBD4A7"
+				item: { count: 1, id: "tensura:magic_bottle_of_water" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"46FF849AF3C24F9E"
+				"00224B9E2824795F"
+			]
+			dependency_requirement: "one_completed"
+			id: "12B1D45C91AFEAEB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77D9ECC5C1A4BF15"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6E46D1AF974C5EF6"
+				item: { count: 1, id: "tensura:high_potion" }
+				type: "item"
+			}]
+			x: 5.010996699966697d
+			y: -9.107101055971157d
+		}
+		{
+			dependencies: [
+				"234F14E5F778ADE7"
+				"14CD486EE27C60B3"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "46FF849AF3C24F9E"
+			tasks: [{
+				id: "56AABE34D842976E"
+				item: { count: 1, id: "tensura:hipokute_flower" }
+				type: "item"
+			}]
+			x: 6.010996699966697d
+			y: -7.607101055971157d
+		}
+		{
+			dependencies: [
+				"234F14E5F778ADE7"
+				"14CD486EE27C60B3"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "00224B9E2824795F"
+			tasks: [{
+				id: "7D477D741B423644"
+				item: { count: 1, id: "tensura:hipokute_grass" }
+				type: "item"
+			}]
+			x: 4.010996699966697d
+			y: -7.607101055971157d
+		}
+		{
+			dependencies: ["00224B9E2824795F"]
+			id: "06F901B9C0674A9E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D87D22D84A66635"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				id: "211AC4785A8E65FC"
+				item: { count: 1, id: "tensura:low_potion" }
+				type: "item"
+			}]
+			x: 3.5109966999666966d
+			y: -9.107101055971157d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			hide_dependency_lines: true
+			id: "178630352DAC45B8"
+			shape: "square"
+			tasks: [{
+				entity: "tensura:giant_ant"
+				icon: {
+					id: "tensura:giant_ant_leg"
+				}
+				id: "30696411656FA51F"
+				type: "kill"
+				value: 3L
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["178630352DAC45B8"]
+			icon: {
+				id: "tensura:ant_carapace_helmet"
+			}
+			id: "3B60B1CC41276A5D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "290028258FCCD5A7"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "6136A1EF61F8247A"
+					item: { count: 1, id: "tensura:ant_carapace_helmet" }
+					type: "item"
+				}
+				{
+					id: "66784AA4137B437A"
+					item: { count: 1, id: "tensura:ant_carapace_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7C51D14CDF24D1B3"
+					item: { count: 1, id: "tensura:ant_carapace_leggings" }
+					type: "item"
+				}
+				{
+					id: "153CEFE23C500410"
+					item: { count: 1, id: "tensura:ant_carapace_boots" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			hide_dependency_lines: true
+			id: "2F9A16CFA0549969"
+			shape: "square"
+			tasks: [{
+				entity: "tensura:tempest_serpent"
+				icon: {
+					id: "tensura:serpent_scale"
+				}
+				id: "650DB5C6154F3EC5"
+				type: "kill"
+				value: 3L
+			}]
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F9A16CFA0549969"]
+			icon: {
+				id: "tensura:serpent_scalemail_helmet"
+			}
+			id: "0B62BEC857573993"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D49F18F3CE8879F"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "566DF70798C2A119"
+					item: { count: 1, id: "tensura:serpent_scalemail_helmet" }
+					type: "item"
+				}
+				{
+					id: "476926CB476EFA2D"
+					item: { count: 1, id: "tensura:serpent_scalemail_chestplate" }
+					type: "item"
+				}
+				{
+					id: "236A6720D029287F"
+					item: { count: 1, id: "tensura:serpent_scalemail_leggings" }
+					type: "item"
+				}
+				{
+					id: "42182420E8BE80FF"
+					item: { count: 1, id: "tensura:serpent_scalemail_boots" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			hide_dependency_lines: true
+			id: "224308EA704F7F7E"
+			shape: "square"
+			tasks: [{
+				entity: "tensura:knight_spider"
+				icon: {
+					id: "tensura:knight_spider_leg"
+				}
+				id: "44D876EB3E17280B"
+				type: "kill"
+				value: 3L
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["224308EA704F7F7E"]
+			icon: {
+				id: "tensura:knight_spider_carapace_helmet"
+			}
+			id: "57EB4AAC9C405916"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A1CFD2F5F911122"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "12D1874A6F103050"
+					item: { count: 1, id: "tensura:knight_spider_carapace_helmet" }
+					type: "item"
+				}
+				{
+					id: "21C09CCED805936C"
+					item: { count: 1, id: "tensura:knight_spider_carapace_chestplate" }
+					type: "item"
+				}
+				{
+					id: "4469EB419849904B"
+					item: { count: 1, id: "tensura:knight_spider_carapace_leggings" }
+					type: "item"
+				}
+				{
+					id: "58E9072DC794960F"
+					item: { count: 1, id: "tensura:knight_spider_carapace_boots" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E173415DC087BC4"]
+			hide_dependency_lines: true
+			id: "7918A54B2D2DA0B7"
+			shape: "square"
+			tasks: [{
+				entity: "tensura:armorsaurus"
+				icon: {
+					id: "tensura:armorsaurus_scale"
+				}
+				id: "78C60468FD892EC7"
+				type: "kill"
+				value: 3L
+			}]
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7918A54B2D2DA0B7"]
+			icon: {
+				id: "tensura:armorsaurus_scalemail_helmet"
+			}
+			id: "7D37D1F479745B3C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "314B8561E622A193"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "3CEF0A63125F7BAC"
+					item: { count: 1, id: "tensura:armorsaurus_scalemail_helmet" }
+					type: "item"
+				}
+				{
+					id: "71C15EF963CB4E17"
+					item: { count: 1, id: "tensura:armorsaurus_scalemail_chestplate" }
+					type: "item"
+				}
+				{
+					id: "052C9B7DFAA5EBEE"
+					item: { count: 1, id: "tensura:armorsaurus_scalemail_leggings" }
+					type: "item"
+				}
+				{
+					id: "2CF51BD0D5FB055A"
+					item: { count: 1, id: "tensura:armorsaurus_scalemail_boots" }
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["15B40702B126BC7E"]
+			hide_dependency_lines: true
+			id: "3407EC8CA3F0C20F"
+			shape: "square"
+			tasks: [{
+				count: 24L
+				id: "1D5BB91A5C63B6A1"
+				item: { count: 1, id: "tensura:charybdis_scale" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3407EC8CA3F0C20F"]
+			icon: {
+				id: "tensura:charybdis_scalemail_helmet"
+			}
+			id: "2AFA42AFC1F22F78"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D0A7429D54D39AB"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "6A660EEC24C41D6B"
+					item: { count: 1, id: "tensura:charybdis_scalemail_helmet" }
+					type: "item"
+				}
+				{
+					id: "6F14905B5D393D90"
+					item: { count: 1, id: "tensura:charybdis_scalemail_chestplate" }
+					type: "item"
+				}
+				{
+					id: "19C49CDEEA734E0B"
+					item: { count: 1, id: "tensura:charybdis_scalemail_leggings" }
+					type: "item"
+				}
+				{
+					id: "12CA1CF4BCE15331"
+					item: { count: 1, id: "tensura:charybdis_scalemail_boots" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3091985C0E95C53F"]
+			id: "4766B37A82FE351D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FD653D7814F7BAF"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "427A00943106995D"
+				item: { count: 1, id: "tensura:anti_magic_mask" }
+				type: "item"
+			}]
+			x: 13.813392857142873d
+			y: -5.275463868298665d
+		}
+		{
+			dependencies: ["4454735A12F6DC87"]
+			id: "7B57FB93AA91033C"
+			shape: "hexagon"
+			tasks: [{
+				id: "48FECD5805079711"
+				item: { count: 1, id: "stextras:rimuru_katana" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5631F6ECD23395D2"]
+			id: "2E3BE90938EB4D75"
+			shape: "hexagon"
+			tasks: [{
+				id: "694E565F170F2449"
+				item: { count: 1, id: "tensura_neb:white_tiger_azure_dragon_halberd" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["658BA859C44C25BF"]
+			id: "3D22913B4FB369F3"
+			shape: "hexagon"
+			tasks: [{
+				id: "3248CEBBBDD5C188"
+				item: { count: 1, id: "tensura_neb:night_rose" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_until_deps_complete: true
+			id: "5180551280D4EDFF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "362D88A3B3B05F21"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			size: 1.2d
+			tasks: [{
+				id: "24EC3E2A3642690A"
+				item: { count: 1, id: "tensura:race_reset_scroll" }
+				type: "item"
+			}]
+			x: -5.3999999999999995d
+			y: -4.8d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_until_deps_complete: true
+			id: "202E93AE0D0A7848"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A930785739E7062"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			size: 1.2d
+			tasks: [{
+				id: "7275686063600F57"
+				item: { count: 1, id: "tensura:skill_reset_scroll" }
+				type: "item"
+			}]
+			x: -3.3999999999999977d
+			y: -4.8d
+		}
+		{
+			dependencies: ["3B5B1BFC34011F6C"]
+			hide_until_deps_complete: true
+			id: "4521C5CD54579EBA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "497D54320478CAC5"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "pentagon"
+			size: 1.2d
+			tasks: [{
+				id: "4728D4B8A819AF7B"
+				item: { count: 1, id: "tensura:character_reset_scroll" }
+				type: "item"
+			}]
+			x: -1.3999999999999977d
+			y: -4.8d
+		}
+		{
+			dependencies: ["7CD7FD7FA288E4E6"]
+			id: "7FDE968FE4BAE9AE"
+			rewards: [{
+				id: "4C5F72F1A16D98E3"
+				item: {
+					count: 1
+					id: "tensura_boss_structure:orc_disaster_temple_map"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "31E44F077274ECF3"
+				item: { count: 1, id: "tensura:gold_coin" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["101F636AC88EA48C"]
+			hide_dependency_lines: true
+			id: "1AA35C0479B67340"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "491F0C55B0E04AB0"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "minecraft:nether/netherite_armor"
+				criterion: ""
+				id: "516A4B01A87D3F14"
+				type: "advancement"
+			}]
+			x: 5.255654761904765d
+			y: 0.8515483215341533d
+		}
+		{
+			id: "6D0CA0984266A8E2"
+			rewards: [{
+				auto: "enabled"
+				description: "Currency used for trading!"
+				icon: {
+					id: "tensura:stellar_gold_coin"
+				}
+				id: "329A1B95B3AA13C8"
+				type: "toast"
+			}]
+			shape: "none"
+			size: 1.0d
+			tasks: [{
+				id: "520A3252502FE650"
+				item: { count: 1, id: "tensura:bronze_coin" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "0965ACAFAF2FD521"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73A278B20299055C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "4BC49878F4439410"
+				item: { count: 1, id: "tensura:zane_blood" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "23CADA6DEFB8211D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5186AE8F258AE191"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "3D55523490160642"
+				item: { count: 1, id: "tensura:dragon_essence" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			id: "743339616652364F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6108D20878C3305D"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "5E5D76EA322271A2"
+				item: { count: 1, id: "mysticism:cryptid_essence" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "27E25F9CD0680399"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F2A85D1867DEB19"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "79C80E2002F3CDF1"
+				item: { count: 1, id: "mysticism:flame_essence" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			id: "19F38BBF546A9466"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "50AC57F13757E79C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "6AC006988FF25BFE"
+				item: { count: 1, id: "mysticism:ice_essence" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			id: "72C175DAC08AC81C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CE6D763564EEF13"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "4D0AE2BE9796E9B1"
+				item: { count: 1, id: "tensura:elemental_essence" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			id: "6E2E44E1A62D3312"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "570F22BFEA0B9E15"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "0AA14B2DE06393F7"
+				item: { count: 1, id: "mysticism:lightning_essence" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			id: "465E337F99AEA94E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66E3A8DB7717822E"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "6F5C36E2E22A6E05"
+				item: { count: 1, id: "tennogamenolife:star_essence" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			id: "4CAB0E1CE150DBD9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41BA478B072023EC"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "37D7C18D076ED7C6"
+				item: { count: 1, id: "tensura:royal_blood" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "080F3F29AE3A1EDF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "039D82A7904BB4FE"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "706ABCBA2185DB13"
+				item: { count: 1, id: "tensura:daemon_essence" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A20976135887AD4"]
+			id: "29D96A1CE4910C8B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15AEBF0C409B00D8"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "2225F2B0B17E5628"
+				item: { count: 1, id: "foxablazeultimate:wisdom_crystal" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["413526DA9AF92A22"]
+			id: "60CAD3547CAF1AE2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "56331F17A4E02F14"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "28F85AA34E20CC8D"
+				item: { count: 1, id: "foxablazeultimate:covenant_crystal" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["17D5656DDF929E02"]
+			id: "1FA401913848D8B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FD1F12DF8BE8E15"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "4140F7E5A48D6163"
+				item: { count: 1, id: "foxablazeultimate:gluttony_crystal" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+	]
+}

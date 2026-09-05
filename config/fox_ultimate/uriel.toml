@@ -1,0 +1,71 @@
+[Uriel]
+	#Multiplier applied to all Uriel cooldowns when mastered (mastery >= 100). Default 0.7 (cooldowns shortened).
+	masteredCooldownMultiplier = 0.7
+	#Multiplier applied to damage / duration / barrier points / range when mastered. Default 1.5.
+	masteredPowerMultiplier = 1.5
+	#Magicule cost for Imprison.
+	magiculeCostImprison = 800.0
+	#Imprison range in blocks.
+	imprisonRange = 12.0
+	#Imprison duration in ticks (20 = 1 sec). Default 200 (10s); doubles when mastered.
+	imprisonDuration = 200
+	#Cooldown after a successful Imprison (seconds). Default 10s.
+	imprisonCooldown = 10
+	#Cooldown applied when an Imprison attempt fails because no target was found. Default 3 seconds.
+	imprisonFailCooldown = 3
+	#Imprison fails when target's max EP exceeds caster's max EP × this. 1.0 = exact parity. Higher → easier to imprison stronger foes.
+	imprisonEPGate = 1.0
+	#Magicule cost per damage point absorbed by Uriel's guard passive. Lower → more efficient. Default 8.
+	guardMagiculeCost = 8.0
+	#Guard fails when attacker's max EP exceeds owner's max EP × this. Default 1.5.
+	guardEPGate = 1.5
+	#Range to target an entity for Anomaly Cleanse (shift+press). Default 8.
+	cleanseRange = 8.0
+	#Cooldown for Anomaly Cleanse (ticks).
+	cleanseCooldown = 60
+	#Range to target an enemy projectile for Law Takeover. Default 32.
+	takeoverRange = 32.0
+	#Cooldown for Law Takeover (ticks).
+	takeoverCooldown = 100
+	#Cooldown applied to the taken-over magic on its original owner (ticks).
+	takeoverBrokenMagicCooldown = 600
+	#Takeover fails when target's max EP exceeds caster's max EP × this. Default 1.0.
+	takeoverEPGate = 1.0
+	#Self barrier points = caster's maxHP × this. Default 4.5 (multiplier).
+	barrierSelfMultiplier = 4.5
+	#Ally barrier points = ally's maxHP × this. Default 3.0.
+	barrierAllyMultiplier = 3.0
+	#Cooldown after applying / removing a barrier (ticks).
+	barrierCooldown = 80
+	#Magicule cost when applying a barrier.
+	barrierMagiculeCost = 300.0
+	#Damage of dimension ray per tick.
+	rayDamage = 8.0
+	#Range (blocks) of the dimension ray.
+	rayRange = 24.0
+	#Maximum hold duration in ticks.
+	rayDuration = 60.0
+	#Cooldown after the ray ends (seconds).
+	rayCooldown = 6
+	#Magicule cost per tick of the ray.
+	rayMagiculeCost = 15.0
+	#Number of rays in a Dimension Storm. Default 12 (doubles to 24 when mastered).
+	stormRayCount = 12
+	#Damage per ray in storm.
+	stormDamage = 25.0
+	#Range (blocks) for storm targeting.
+	stormRange = 32.0
+	#Cooldown after a storm cast (seconds).
+	stormCooldown = 10
+	#Magicule cost per storm cast.
+	stormMagiculeCost = 600.0
+	#Magicule cost per damage point absorbed by Uriel's fault-field passive. Default 6.
+	faultFieldMagiculeCost = 6.0
+	#Water capacity bonus on learn.
+	waterCapacity = 30.0
+	#Lava capacity bonus on learn.
+	lavaCapacity = 20.0
+	#Spatial storage size (slots). Default 90.
+	spatialStorageSize = 90
+	#Max stack size in spatial storage. Default 999.
+	spatialStorageMaxStackSize = 999

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:golden_shovel",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_shovel",
+  "maxEP": 4500,
+  "minEP": 3000
+}

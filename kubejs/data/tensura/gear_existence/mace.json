@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:mace",
+  "epGain": 0.004,
+  "maxEP": 100000,
+  "minEP": 5000
+}

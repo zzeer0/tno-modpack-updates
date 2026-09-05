@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:leather_leggings",
+  "epGain": 0.003,
+  "evolution": "tensura:monster_leather_leggings_d",
+  "maxEP": 1000,
+  "minEP": 0
+}

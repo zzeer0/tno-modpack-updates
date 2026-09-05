@@ -1,0 +1,288 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1D140D9D2A18ECED"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "kaleidoscope_cookery:borscht"
+	}
+	id: "1D140D9D2A18ECED"
+	images: [
+		{
+			alpha: 200
+			height: 7.0d
+			image: "kaleidoscope_cookery:item/steamer_no_items"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			alpha: 200
+			height: 7.0d
+			image: "kaleidoscope_cookery:item/fruit_basket"
+			rotation: 0.0d
+			width: 7.0d
+			x: 10.0d
+			y: 1.0d
+		}
+	]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1C2128869B7673D7"
+			tasks: [{
+				id: "2BB3B96E1FDDC37B"
+				item: { count: 1, id: "kaleidoscope_cookery:stove" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "0B625F1182B5E4A4"
+			tasks: [{
+				id: "75EC922EB8D8F10E"
+				item: { count: 1, id: "kaleidoscope_cookery:pot" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "1D870390E22D0E28"
+			rewards: [{
+				id: "2C1A46712B4AAE3C"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:stockpot_lid"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5955288AB366F371"
+				item: { count: 1, id: "kaleidoscope_cookery:stockpot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "24C114A78158BD9D"
+			tasks: [{
+				id: "0600001BB1E52681"
+				item: { count: 1, id: "kaleidoscope_cookery:chopping_board" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "69E8909EA9ECB1B9"
+			tasks: [{
+				id: "0E79BBF52AC24264"
+				item: { count: 1, id: "kaleidoscope_cookery:millstone" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "1A39147D2FC7AF3C"
+			tasks: [{
+				id: "1DFCBFE1755C8505"
+				item: { count: 1, id: "kaleidoscope_cookery:steamer" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B625F1182B5E4A4"]
+			id: "5614F7D4AC61BBB1"
+			tasks: [{
+				count: 8L
+				id: "1921F75CCC947762"
+				item: { count: 1, id: "kaleidoscope_cookery:oil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B625F1182B5E4A4"]
+			id: "346B9FB4CDBA827C"
+			tasks: [{
+				id: "6BF0177B1A2974F0"
+				item: { count: 1, id: "kaleidoscope_cookery:kitchen_shovel" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "0DA35A605FA9455A"
+			rewards: [{
+				count: 5
+				id: "732338D80A4AB6CF"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:tomato_seed"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C19FA05DE58D1F3"
+				item: { count: 1, id: "kaleidoscope_cookery:tomato" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			id: "4A76F5F9D0EFB531"
+			rewards: [{
+				count: 5
+				id: "32A422888212819F"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:chili_seed"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55C52350F1293044"
+					item: { count: 1, id: "kaleidoscope_cookery:red_chili" }
+					type: "item"
+				}
+				{
+					id: "1ED4BDEC9DFA13BE"
+					item: { count: 1, id: "kaleidoscope_cookery:green_chili" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			id: "22D6C72D0E86FA4B"
+			rewards: [{
+				count: 5
+				id: "11CA789D6B1ADD25"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:lettuce_seed"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EFD12C7F5BEB53E"
+				item: { count: 1, id: "kaleidoscope_cookery:lettuce" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			id: "2263117CFF8D4A8A"
+			tasks: [{
+				id: "3DE3B6C330B493FF"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_cow_offal" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			id: "0F7C0DEB70549623"
+			tasks: [{
+				id: "66DC0B906DDD1C83"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_pork_belly" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			id: "02C14C79A1E99B35"
+			rewards: [{
+				count: 15
+				id: "5A9B1A0D49A41FBD"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:oil"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A3B1194DE1E9AD4"
+				item: { count: 1, id: "kaleidoscope_cookery:caterpillar" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			id: "03FF7D6162C0A94E"
+			tasks: [{
+				id: "6D3D9E065BD69C8E"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_cut_small_meats" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			id: "27DD6A35C886B444"
+			tasks: [{
+				id: "0DB03DAABE77ACDA"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_lamb_chops" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			id: "584BAF7043424C0B"
+			tasks: [{
+				ability: "tensura:cook"
+				id: "52F44A61CA818704"
+				status: "LEARNT"
+				type: "tensura_ftb:ability"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "4F5077726DFAA2EC"
+			rewards: [{
+				id: "46FA3EBCBCFE864B"
+				item: {
+					count: 1
+					id: "kaleidoscope_cookery:scarecrow"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "49C20EBB225AD42A"
+				item: { count: 1, id: "kaleidoscope_cookery:straw_hat_flower" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C2128869B7673D7"]
+			id: "1046211A6B00FE3A"
+			tasks: [{
+				id: "56ED1B0BB5026771"
+				item: { count: 1, id: "tensura_tno:tno_stove" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+	]
+}

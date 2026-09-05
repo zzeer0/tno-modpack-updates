@@ -1,0 +1,14 @@
+{
+  "type": "block_factorys_bosses:underworld_knight",
+  "abilities": [
+    "tensura:darkness_attack_nullification",
+    "tensura:corrosion_resistance",
+    "tensura:physical_attack_resistance",
+    "tensura:pierce_resistance",
+    "tensura:poison_resistance",
+    "tensura:paralysis_resistance"
+  ],
+  "max_magicule": 50000,
+  "min_magicule": 35000,
+  "spiritualHealth": 1100
+}

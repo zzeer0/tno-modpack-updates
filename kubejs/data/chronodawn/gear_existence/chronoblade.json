@@ -1,0 +1,6 @@
+{
+  "type": "chronodawn:chronoblade",
+  "epGain": 0.0025,
+  "maxEP": 500000,
+  "minEP": 10000
+}

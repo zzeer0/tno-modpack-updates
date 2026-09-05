@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:iron_pickaxe",
+  "epGain": 0.003,
+  "evolution": "minecraft:golden_pickaxe",
+  "maxEP": 3000,
+  "minEP": 1500
+}

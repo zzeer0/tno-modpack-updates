@@ -1,0 +1,6 @@
+{
+  "loadingScreen": {
+    "enabled": false,
+    "animatedBackground": false
+  }
+}

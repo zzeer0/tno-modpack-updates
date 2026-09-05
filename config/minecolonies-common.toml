@@ -1,0 +1,9 @@
+#Todos os itens de configuração relacionados à jogabilidade principal
+[gameplay]
+	#Seja para gerar Navio de Suprimentos e Acampamentos em baús de saque. [Default: true]
+	generatesupplyloot = true
+
+#Todas as configurações relacionadas ao sistema de solicitações
+[requestsystem]
+	#O sistema de solicitação deve mostrar informações de depuração? Útil em caso de mau funcionamento. [Default: false]
+	enabledebuglogging = false

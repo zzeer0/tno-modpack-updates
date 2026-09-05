@@ -1,0 +1,18 @@
+{
+  "entity.tensura_neb.carrion": "卡利昂",
+  "entity.tensura_neb.luminous_valentine": "露米纳斯·瓦伦丁",
+  "entity.tensura_neb.rimuru_clone": "利姆鲁·分身",
+  "entity.tensura_neb.rimuru_ogre_fight": "利姆鲁·坦派斯特",
+  "item.tensura_neb.carrion_spawn_egg": "卡利昂刷怪蛋",
+  "item.tensura_neb.luminous_valentine_spawn_egg": "露米纳斯·瓦伦丁刷怪蛋",
+  "item.tensura_neb.night_rose": "夜之蔷薇",
+  "item.tensura_neb.rimuru_clone_spawn_egg": "利姆鲁·分身刷怪蛋",
+  "item.tensura_neb.rimuru_ogre_fight_spawn_egg": "利姆鲁·坦派斯特刷怪蛋",
+  "item.tensura_neb.white_tiger_azure_dragon_halberd": "白虎青龙戟",
+  "tensura.advancements.lion_king.description": "击败卡利昂。",
+  "tensura.advancements.lion_king.title": "狮王",
+  "tensura.advancements.monster_ruler.description": "击败利姆鲁。",
+  "tensura.advancements.monster_ruler.title": "魔物统治者",
+  "tensura.advancements.queen_of_nightmares.description": "击败露米纳斯·瓦伦丁。",
+  "tensura.advancements.queen_of_nightmares.title": "噩梦女王"
+}

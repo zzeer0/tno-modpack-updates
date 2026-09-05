@@ -1,0 +1,23 @@
+[startingRaces]
+	#Values STExtras has already injected into Tensura at least once.
+	applied = ["stextras:kobold", "stextras:wispfolk", "stextras:mystic_fox"]
+	#Values that were auto-added once, then manually removed from Tensura's config and should stay out until manually re-added.
+	optOut = ["stextras:kobold", "stextras:wispfolk", "stextras:mystic_fox"]
+
+[randomRaces]
+	#Values STExtras has already injected into Tensura at least once.
+	applied = ["stextras:kobold", "stextras:wispfolk", "stextras:mystic_fox"]
+	#Values that were auto-added once, then manually removed from Tensura's config and should stay out until manually re-added.
+	optOut = ["stextras:kobold", "stextras:wispfolk", "stextras:mystic_fox"]
+
+[startingSkills]
+	#Values STExtras has already injected into Tensura at least once.
+	applied = ["stextras:imitator"]
+	#Values that were auto-added once, then manually removed from Tensura's config and should stay out until manually re-added.
+	optOut = []
+
+[creatorUniqueSkills]
+	#Values STExtras has already injected into Tensura at least once.
+	applied = []
+	#Values that were auto-added once, then manually removed from Tensura's config and should stay out until manually re-added.
+	optOut = []

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stone_shovel",
+  "epGain": 0.003,
+  "evolution": "minecraft:iron_shovel",
+  "maxEP": 1500,
+  "minEP": 750
+}

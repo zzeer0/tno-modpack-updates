@@ -1,0 +1,8 @@
+{
+  "tooltip.tensura_better_subs.humanoid_menu.skill_button": "打开技能",
+  "tensura.skill.mode.thought_communication.skills": "状态菜单",
+  "tensura_better_subs.skill.subordinate_acquire_learning": "%s 通过学习获得了 %s。",
+  "tensura_better_subs.main_menu.health": "生命值: %s/%s",
+  "tensura_better_subs.main_menu.spiritual_health.short": "精神HP: %s/%s",
+  "tensura_better_subs.main_menu.spiritual_health": "精神生命值: %s/%s"
+}

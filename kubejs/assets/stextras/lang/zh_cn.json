@@ -1,0 +1,132 @@
+{
+  "stextras.skill.blacksmith": "铁匠",
+  "stextras.skill.blacksmith.description": "打开锻造台。",
+
+  "stextras.skill.keen_nose": "敏锐嗅觉",
+  "stextras.skill.keen_nose.description": "探测附近的贵重物品或稀有材料。",
+  "stextras.skill.keen_nose.duration_exceeded": "持续时间已结束。",
+
+  "stextras.skill.beast_recall": "兽性回溯",
+  "stextras.skill.beast_recall.description": "短暂唤醒因退化而失去的古老兽性本能。",
+
+  "stextras.skill.imitator": "模仿者",
+  "stextras.skill.imitator.description": "允许使用者使用其击败的 Boss 和异界者的独有技能。",
+
+  "item.stextras.rimuru_katana": "暴风之剑",
+
+  "stextras.race.kobold": "狗头人",
+  "stextras.race.kobold.notes": "一种起源于退化狼人族的兽性亚人种族。狗头人具有一定智慧，但战斗能力较弱。他们通常以游商的形式过着游牧生活，在魔王领地间穿行并与各族交易。",
+
+  "stextras.race.kobold_warrior": "狗头人战士",
+  "stextras.race.kobold_warrior.notes": "",
+
+  "stextras.race.kobold_trader": "狗头人商人",
+  "stextras.race.kobold_trader.notes": "",
+
+  "stextras.race.kobold_chieftain": "狗头人酋长",
+  "stextras.race.kobold_chieftain.notes": "",
+
+  "stextras.race.divine_kobold": "神圣狗头人",
+  "stextras.race.divine_kobold.notes": "",
+
+  "stextras.race.wispfolk": "灵火族",
+  "stextras.race.wispfolk.notes": "诞生于森林低语与逝者残留灵魂的种族，灵火族是体型娇小、散发微光的亚人。他们行动迅捷，擅长收集资源并维护自己的领地。",
+
+  "stextras.race.gale_wisp": "疾风灵火",
+  "stextras.race.gale_wisp.notes": "进化后的灵火族，拥有更高的速度与魔法潜力。能够操控风之力，并与精神能量有更深的联系。",
+
+  "stextras.race.zephyr_wisp": "微风灵火",
+  "stextras.race.zephyr_wisp.notes": "风与精神能量的大师，在敏捷与魔法力量上都极为强大。",
+
+  "stextras.race.divine_wisp": "神圣灵火",
+  "stextras.race.divine_wisp.notes": "灵火族进化的顶点，既是精神体也是神圣存在。",
+
+  "stextras.race.mystic_fox": "神秘狐",
+  "stextras.race.mystic_fox.notes": "一种难以捉摸的半灵体魔物，诞生于世界毁灭之龙伊瓦拉杰残留的魔素。作为隐秘种的亚种，它们兼具灵体的优雅与魔兽的原始狡黠。",
+
+  "stextras.race.soul_beast": "灵魂兽",
+  "stextras.race.soul_beast.notes": "",
+
+  "stextras.race.ninetail": "九尾",
+  "stextras.race.ninetail.notes": "",
+
+  "stextras.race.divine_fox": "神圣狐",
+  "stextras.race.divine_fox.notes": "",
+
+  "stextras.prestige_tab": "荣誉委托",
+  "stextras.prestige_menu": "转生菜单",
+  "stextras.main_menu.reincarnation_essence": "转生精华: %s",
+  "stextras.main_menu.reincarnation_essence_hover": "转生精华: %s",
+
+  "stextras.prestige_menu.needed_1": "最大进化",
+  "stextras.prestige_menu.needed_1_hover": "你是否已达到最大进化？",
+
+  "stextras.prestige_menu.needed_2": "已觉醒",
+  "stextras.prestige_menu.needed_2_hover": "你是否已觉醒为魔王或勇者？",
+
+  "stextras.prestige_menu.needed_3": "足够RE",
+  "stextras.prestige_menu.needed_3_hover": "你是否拥有 %s/%s 转生精华？",
+
+  "stextras.prestige_menu.needed_4": "击败Boss",
+  "stextras.prestige_menu.needed_4_hover": "你是否已击败 %s/%s 个Boss？",
+
+  "stextras.prestige_menu.needed_5": "完成任务",
+  "stextras.prestige_menu.needed_5_hover": "你是否完成了所有必要委托？",
+
+  "stextras.prestige_menu.progress_hover": "进度: %s%%",
+
+  "stextras.prestige_menu.quest_category_1": "每日委托",
+  "stextras.prestige_menu.quest_category_2": "每周委托",
+  "stextras.prestige_menu.quest_category_3": "重复委托",
+  "stextras.prestige_menu.quest_category_4": "必要委托",
+  "stextras.prestige_menu.quest_category_5": "§d种族信息",
+
+  "stextras.prestige_menu.quest_category_5_hover": "§e用于追踪你的种族转生进度",
+
+  "stextras.skill_lock_menu": "技能锁定菜单",
+
+  "stextras.skill_lock.cannot_lock.no_selection": "你必须选择一个技能才能锁定。",
+  "stextras.skill_lock.cannot_lock.generic": "无法锁定该技能。",
+  "stextras.skill_lock.cannot_unlock.no_selection": "你必须选择一个技能才能解锁。",
+  "stextras.skill_lock.cannot_unlock.generic": "无法解锁该技能。",
+
+  "stextras.ability_categories_screen.skill_lock": "技能锁定",
+
+  "stextras.main_menu.soul_grade": "灵魂等级: %s",
+  "stextras.soul_grade.low": "§f低",
+  "stextras.soul_grade.medium": "§a中",
+  "stextras.soul_grade.high": "§b高",
+  "stextras.soul_grade.greater": "§5更高",
+  "stextras.soul_grade.grand": "§6极高",
+  "stextras.soul_grade.supreme": "§4至高",
+  "stextras.soul_grade.none": "§7无等级",
+
+  "stextras.main_menu.soul_grade.hover": "你拥有 %s 灵魂点",
+
+  "stextras.quest.completed": "§r\n§b§l任务\n§7你已完成 %s\n§r",
+
+  "stextras.skill_lock.invalid_skill": "未找到该技能",
+  "stextras.skill_lock.already_locked": "技能已被锁定",
+  "stextras.skill_lock.cannot_lock.temporary": "无法锁定临时技能",
+  "stextras.skill_lock.no_slots": "你已经用完所有锁定位",
+  "stextras.skill_lock.not_locked": "只能解锁已锁定的技能",
+  "stextras.skill_lock.not_enough_soul_grade": "灵魂等级不足",
+  "stextras.skill_lock.not_enough_ep": "你需要 %s EP 才能解锁技能",
+  "stextras.skill_lock.not_enough_magicule": "MP 不足，无法解锁技能",
+
+  "subtitles.stextras.effect.skilllock.lock": "技能已锁定",
+  "subtitles.stextras.effect.skilllock.unlock": "技能已解锁",
+
+  "stextras.skill_imitator": "技能模仿者",
+  "stextras.skill_imitator.entity_apply": "模仿",
+  "stextras.skill_imitator.header.type": "类型",
+  "stextras.skill_imitator.header.uniques": "独有技能",
+  "stextras.skill_imitator.header.description": "描述",
+
+  "stextras.skill_imitator.need_kill": "你必须先击败 %s 才能模仿。",
+  "stextras.skill_imitator.no_skills": "实体 %s 没有可模仿的独有技能。",
+  "stextras.skill_imitator.on_cooldown": "模仿技能当前处于冷却中。",
+  "stextras.skill_imitator.nothing_to_apply": "没有可模仿的新技能。",
+  "stextras.skill_imitator.success": "成功模仿 %s 的独有技能！",
+  "stextras.skill_lock.admin.deny_unlock": "该技能无法被解锁。"
+}

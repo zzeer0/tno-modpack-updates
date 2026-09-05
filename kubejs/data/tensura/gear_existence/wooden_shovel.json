@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_shovel",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_shovel",
+  "maxEP": 750,
+  "minEP": 0
+}

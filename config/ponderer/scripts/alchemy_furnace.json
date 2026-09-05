@@ -1,0 +1,70 @@
+{
+  "id": "ponderer:alchemy_furnace",
+  "items": [
+    "mortal_cultivation:alchemy_furnace"
+  ],
+  "title": {
+    "en_us": "New Scene - alchemy_furnace",
+    "zh_cn": "炼丹炉的介绍"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "s_5c277",
+      "title": {
+        "zh_cn": ""
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:ldl"
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 20,
+          "degrees": -25.0
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "炼丹的材料摆放位置需要一样，有火焰特效即正在炼丹中",
+            "en_us": "The placement of the alchemy ing"
+          },
+          "point": [
+            2.0,
+            0.0,
+            1.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "通过丹经秘籍或者精炭可以提升炼制速度",
+            "en_us": "The refining speed can be increa"
+          },
+          "point": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "default": "outlined_sprite:tensura/undine.png",
+        "layersAllowed": true
+    }
+}

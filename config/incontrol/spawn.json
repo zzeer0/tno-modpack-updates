@@ -1,0 +1,29 @@
+[
+  {
+    "when": "position",
+    "mob": "tensura:direwolf",
+    "daycount": "lt(1)",
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "mob": [
+      "tensura:hover_lizard",
+      "tensura:leech_lizard",
+      "tensura:barghest",
+      "tensura:direwolf"
+    ],
+    "daycount": "lt(2)",
+    "random": 0.5,
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "mob": "iceandfire:pixie",
+    "mincount": {
+      "amount": 25,
+      "mob": "iceandfire:pixie"
+    },
+    "result": "deny"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "type": "block_factorys_bosses:infernal_dragon",
+  "abilities": [
+    "tensura:flame_attack_nullification",
+    "tensura:heat_nullification",
+    "tensura:physical_attack_resistance",
+    "tensura:magic_resistance",
+    "tensura:poison_resistance"
+  ],
+  "max_magicule": 50000,
+  "min_magicule": 30000,
+  "spiritualHealth": 1200
+}

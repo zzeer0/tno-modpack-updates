@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:bow",
+  "epGain": 0.003,
+  "evolution": "tensura:spider_bow",
+  "maxEP": 2000,
+  "minEP": 0
+}

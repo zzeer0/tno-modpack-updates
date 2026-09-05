@@ -1,0 +1,61 @@
+[LowMagisteel]
+	#The minimum EP requirement to possess the Golem.
+	EP = 6000.0
+	#The HP of the Golem.
+	HP = 100.0
+	#The Armor Point of the Golem.
+	Armor = 5.0
+	#The Knockback Resistance of the Golem.
+	Knockback = 0.3
+	#The Attack Damage of the Golem.
+	Attack = 5.0
+	#The Speed Multiplier of the Golem.
+	Speed = 1.0
+
+[HighMagisteel]
+	EP = 20000.0
+	HP = 200.0
+	Armor = 10.0
+	Knockback = 0.4
+	Attack = 7.0
+	Speed = 1.1
+
+[Mithril]
+	EP = 45000.0
+	HP = 400.0
+	Armor = 15.0
+	Knockback = 0.5
+	Attack = 9.0
+	Speed = 1.15
+
+[PureMagisteel]
+	EP = 60000.0
+	HP = 500.0
+	Armor = 20.0
+	Knockback = 0.6
+	Attack = 11.0
+	Speed = 1.2
+
+[Orichalcum]
+	EP = 75000.0
+	HP = 600.0
+	Armor = 25.0
+	Knockback = 0.7
+	Attack = 13.0
+	Speed = 1.25
+
+[Adamantite]
+	EP = 225000.0
+	HP = 800.0
+	Armor = 30.0
+	Knockback = 0.8
+	Attack = 15.0
+	Speed = 1.3
+
+[Hihiirokane]
+	EP = 750000.0
+	HP = 1200.0
+	Armor = 35.0
+	Knockback = 1.0
+	Attack = 20.0
+	Speed = 1.5

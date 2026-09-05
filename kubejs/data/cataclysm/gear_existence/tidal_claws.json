@@ -1,0 +1,6 @@
+{
+  "type": "cataclysm:tidal_claws",
+  "epGain": 0.005,
+  "maxEP": 5000,
+  "minEP": 0
+}

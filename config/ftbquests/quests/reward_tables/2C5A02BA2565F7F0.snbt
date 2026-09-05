@@ -1,0 +1,32 @@
+{
+	icon: {
+		components: {
+			"ftbquests:icon": "illagerinvasion:item/old/primal_essence"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "2C5A02BA2565F7F0"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "netherexp:block/drifting_soul"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4612617FF9D67C9B"
+			type: "tensura_tno:soul_grade"
+			value: 20
+		}
+		{
+			count: 64
+			id: "2279676DF8D9E23A"
+			item: {
+				count: 1
+				id: "tensura:gold_coin"
+			}
+		}
+	]
+}

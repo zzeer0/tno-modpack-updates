@@ -1,0 +1,503 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "26B4FAB11179804C"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/magic/summoning/summon_medium_elemental.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "26B4FAB11179804C"
+	images: [
+		{
+			alpha: 233
+			height: 6.0d
+			image: "ablazeaqzlcz:textures/ftb/akash.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 3.4976190476190183d
+			y: -1.089285714285758d
+		}
+		{
+			alpha: 233
+			height: 6.0d
+			image: "ablazeaqzlcz:textures/ftb/undine.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -1.8642857142857565d
+			y: -1.5107142857143288d
+		}
+		{
+			alpha: 233
+			height: 6.0d
+			image: "ablazeaqzlcz:textures/ftb/sylphide.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.8642857142857565d
+			y: -1.4630952380952849d
+		}
+		{
+			alpha: 233
+			height: 6.5d
+			image: "ablazeaqzlcz:textures/ftb/ifrit.png"
+			rotation: 0.0d
+			width: 6.5d
+			x: -11.03095238095245d
+			y: -1.463095238095292d
+		}
+		{
+			alpha: 233
+			height: 9.0d
+			image: "ablazeaqzlcz:textures/ftb/war_gnome.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: -16.09047619047628d
+			y: -1.5940476190476716d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "4E43FD0A283A89E5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1853AEE0F9CE3AF2"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "WIND"
+				icon: {
+					id: "tensura:element_core_wind"
+				}
+				id: "1A089F2BE092AA39"
+				level: "LESSER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "2E8290C05CD68FB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54EBDA522A29FF8C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "WATER"
+				icon: {
+					id: "tensura:element_core_water"
+				}
+				id: "50F849DFE70D4A2F"
+				level: "LESSER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "50EC45BAAA8183CB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D47282A180D55E3"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "SPACE"
+				icon: {
+					id: "tensura:element_core_space"
+				}
+				id: "339E88E515EFC2A1"
+				level: "LESSER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "693FB4CD082DEF0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "184901467EA161C4"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "FLAME"
+				icon: {
+					id: "tensura:element_core_fire"
+				}
+				id: "7B85879933ED0C4A"
+				level: "LESSER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "040A52B895B14119"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D01337C3577E4A8"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "EARTH"
+				icon: {
+					id: "tensura:element_core_earth"
+				}
+				id: "24FE14981FE4801F"
+				level: "LESSER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "3DAA0D096C085183"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "596BDF0A2224B03F"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "EARTH"
+				icon: {
+					id: "tensura:element_core_earth"
+				}
+				id: "487420506D6915D2"
+				level: "MEDIUM"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -19.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "7520ACD27D831180"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "674A4CB82E244BA6"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "FLAME"
+				icon: {
+					id: "tensura:element_core_fire"
+				}
+				id: "050426DFA287E00F"
+				level: "MEDIUM"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "52412C3C9CEF85D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E93EFCCCCDC7B1C"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "SPACE"
+				icon: {
+					id: "tensura:element_core_space"
+				}
+				id: "36346EE6CD297677"
+				level: "MEDIUM"
+				type: "tensura_ftb:spirit"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "553FAC18CEC86043"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "430F42B958BAA53E"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "WATER"
+				icon: {
+					id: "tensura:element_core_water"
+				}
+				id: "3C782749B5062AE4"
+				level: "MEDIUM"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "440CA931DFF4AB39"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3626ED0FB791227E"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "WIND"
+				icon: {
+					id: "tensura:element_core_wind"
+				}
+				id: "13B36CAD655342B4"
+				level: "MEDIUM"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "7E3DD7B636E813DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5763B510306ED252"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "EARTH"
+				icon: {
+					id: "tensura:element_core_earth"
+				}
+				id: "00AEB720B9131689"
+				level: "GREATER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -19.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "138625D83CAE9E7C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "080689AB9E068912"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "FLAME"
+				icon: {
+					id: "tensura:element_core_fire"
+				}
+				id: "520B11C2532D0D48"
+				level: "GREATER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "6CA53A7C9D542C77"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "650172D1FDF64305"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "SPACE"
+				icon: {
+					id: "tensura:element_core_space"
+				}
+				id: "0C261BF282EE71E6"
+				level: "GREATER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "5EE07D5D174D82F9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "226A13D9CE364E54"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			tasks: [{
+				element: "WATER"
+				icon: {
+					id: "tensura:element_core_water"
+				}
+				id: "3BA7D8683EBB32AE"
+				level: "GREATER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "129638DFCD29D823"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E38C0D7728F37C2"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "circle"
+			tasks: [{
+				element: "WIND"
+				icon: {
+					id: "tensura:element_core_wind"
+				}
+				id: "291461134C269DEC"
+				level: "GREATER"
+				type: "tensura_ftb:spirit"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4835EBAC6D933CDB"]
+			hide_dependent_lines: true
+			id: "21D64A9C2520E210"
+			rewards: [{
+				id: "33FD240A8F00B33F"
+				item: {
+					count: 1
+					id: "tensura_boss_structure:hinata_church_map"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "tensura:labyrinth"
+				icon: {
+					id: "iceandfire:pixie_dust_milky_tea"
+				}
+				id: "0733C7C1071A98EF"
+				type: "dimension"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "2DE2EA8E74C55722"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37E179529146606D"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				icon: {
+					id: "tensura:holy_armaments_chestplate"
+				}
+				id: "5BB6210D2DDF4642"
+				status: "HERO_EGG"
+				type: "tensura_ftb:awakening"
+			}]
+			x: -10.524659863945644d
+			y: 2.9627125850339624d
+		}
+		{
+			dependencies: ["2DE2EA8E74C55722"]
+			id: "23EA140A74800390"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57097B9B2DA1FD5A"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				icon: {
+					id: "tensura:hihiirokane_sword"
+				}
+				id: "07D7A3CD408E1C0C"
+				status: "HERO"
+				type: "tensura_ftb:awakening"
+			}]
+			x: -11.821938775510269d
+			y: 2.9783588435373645d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "6A183D91CE6AF375"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "185CEBD2941BCFC4"
+					table_id: 4631845433433211114L
+					type: "random"
+				}
+				{
+					id: "65CDC0571D3E45D7"
+					item: {
+						count: 1
+						id: "tensura:space_elemental_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "622A720384013B3A"
+					item: {
+						count: 1
+						id: "tensura:water_elemental_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				entity: "tensura:elemental_colossus"
+				icon: {
+					id: "tensura:magic_stone"
+				}
+				id: "6E2104B2C2F153E5"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.617857142857197d
+			y: 3.021237244897911d
+		}
+		{
+			dependencies: ["21D64A9C2520E210"]
+			id: "20A1657615E20F11"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "017992FA463CC418"
+				item: { count: 1, id: "tensuraenigmatic:ring_of_the_elves" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+  "ftbquests.reward.tensura_ftb.ability": "能力",
+  "ftbquests.task.tensura_ftb.ability": "能力获取",
+  "tensura_ftb.task.ability.status": "获取状态",
+  "tensura_ftb.task.ability.ability": "能力",
+  "tensura_ftb.task.ability.remove_time": "移除时间（秒）",
+
+  "ftbquests.reward.tensura_ftb.awakening": "觉醒",
+  "ftbquests.task.tensura_ftb.awakening": "觉醒状态",
+  "ftbquests.task.tensura_ftb.awakening.status": "觉醒状态",
+
+  "ftbquests.reward.tensura_ftb.existence_value": "存在值",
+  "ftbquests.task.tensura_ftb.existence_value": "存在值",
+  "tensura_ftb.task.existence_value.type": "存在类型",
+  "tensura_ftb.task.existence_value.value": "值",
+
+  "ftbquests.reward.tensura_ftb.spirit": "元素精灵",
+  "ftbquests.task.tensura_ftb.spirit": "元素精灵",
+  "tensura_ftb.task.spirit.element": "精灵元素",
+  "tensura_ftb.task.spirit.level": "精灵等级",
+
+  "ftbquests.reward.tensura_ftb.race": "种族",
+  "ftbquests.task.tensura_ftb.race": "种族",
+  "ftbquests.task.tensura_ftb.race.race": "种族",
+  
+  "ftbquests.reward.tensura_ftb.random_ability": "随机能力",
+  "tensura_ftb.reward.ability.random": "随机选项",
+  "tensura_ftb.reward.ability.new_ability": "仅检查新的能力"
+
+}

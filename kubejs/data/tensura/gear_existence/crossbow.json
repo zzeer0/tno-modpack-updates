@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crossbow",
+  "epGain": 0.003,
+  "evolution": "tensura:ant_crossbow",
+  "maxEP": 3000,
+  "minEP": 0
+}

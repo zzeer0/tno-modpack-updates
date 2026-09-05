@@ -1,0 +1,134 @@
+{
+  "id": "ponderer:smithing_bench",
+  "items": [
+    "tensura:smithing_bench"
+  ],
+  "title": {
+    "en_us": "Usage of the Smithing Bench",
+    "zh_cn": "锻造台的使用"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Purpose of Blueprints",
+        "zh_cn": "图纸的作用"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "tensura:smithing_bench",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            2,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": true,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "text",
+          "duration": 120,
+          "text": {
+            "zh_cn": "你要在这里进行合成则需要图纸解锁，图纸是通过得到某种材料获得的",
+            "en_us": "To craft here, you need to unlock the recipe with a blueprint. Blueprints are obtained by acquiring certain materials."
+          },
+          "point": [
+            3.0,
+            2.0,
+            4.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "show_controls",
+          "duration": 116,
+          "point": [
+            2.0,
+            2.5,
+            2.0
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "tensura:low_magisteel_gear_schematic"
+        }
+      ]
+    },
+    {
+      "id": "s_68477",
+      "title": {
+        "en_us": "GUI overview", "zh_cn": "GUI介绍"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.31649011246645387,
+            1.0,
+            0.9740475264725319
+          ],
+          "direction": "up",
+          "block": "tensura:smithing_bench",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 80,
+          "text": {
+            "en_us": "Everything unlocked by blueprints shows up in here", "zh_cn": "通过图纸解锁的内容都会在这里面显示出来"
+          },
+          "point": [
+            0.631,
+            0.519,
+            0.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Click what you want to craft and the materials fill in automatically", "zh_cn": "点击需要合成的内容材料会自动填充"
+          },
+          "point": [
+            0.381,
+            0.074,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

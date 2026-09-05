@@ -1,0 +1,9 @@
+["PlayerNBT Task Settings"]
+	#How often to check player NBT data (in ticks). 20 ticks = 1 second. Default: 60 (3 seconds)
+	# Default: 60
+	# Range: 1 ~ 1200
+	checkIntervalTicks = 60
+	#Enable debug logging for PlayerNBT task checks
+	enableDebugLogging = false
+	#Enable exact match mode (requires complete NBT structure match)
+	exactMatchMode = false

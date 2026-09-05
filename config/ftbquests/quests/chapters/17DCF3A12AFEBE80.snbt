@@ -1,0 +1,55 @@
+{
+	autofocus_id: "77224F3957EF8057"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "17DCF3A12AFEBE80"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "tensura:textures/battlewill/air_flight.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "17DCF3A12AFEBE80"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "iceandfire:pixie_wings"
+			}
+			id: "77224F3957EF8057"
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				dimension: "mysticism:elemental_realm"
+				id: "6FED5753B1B0E3A2"
+				type: "dimension"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77224F3957EF8057"]
+			id: "603A9A2A25A20537"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79C28991895F9F8A"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				entity: "mysticism:memoires"
+				icon: {
+					id: "mysticism:axiom"
+				}
+				id: "74D6AF48F371A816"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+}

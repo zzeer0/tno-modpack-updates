@@ -1,0 +1,82 @@
+# LambDynamicLights configuration.
+# The dynamic lights mode
+mode = "fast"
+
+# Light sources settings.
+[light_sources]
+	# Enables water-sensitive light sources check. This means that water-sensitive items will not light up when submerged in water.
+	water_sensitive_check = true
+	# Enable first-person player light source.
+	self = true
+	# TNT lighting mode. May be off, simple or fancy.
+	tnt = "off"
+	# Enable entities light source.
+	entities = false
+	# Creeper lighting mode. May be off, simple or fancy.
+	creeper = "simple"
+
+			[light_sources.settings.entities.minecraft]
+				zombie_horse = true
+				chicken = true
+				bee = true
+				arrow = true
+				donkey = true
+				cow = true
+				bogged = true
+				pig = true
+				iron_golem = true
+				skeleton = true
+				bat = true
+				frog = true
+				cat = true
+				zombie = true
+				sheep = true
+				experience_orb = true
+				player = true
+				item = true
+				villager = true
+				skeleton_horse = true
+				tnt_minecart = true
+				item_frame = true
+				horse = true
+				falling_block = true
+				glow_squid = true
+				witch = true
+				glow_item_frame = false
+				spider = true
+				creeper = true
+				enderman = true
+
+			[light_sources.settings.entities.mowziesmobs]
+				grottol = true
+				ferrous_wroughtnaut = true
+
+			[light_sources.settings.entities.friendsandfoes]
+				copper_golem = true
+				rascal = true
+
+			[light_sources.settings.entities.lootr]
+				lootr_minecart = true
+
+			[light_sources.settings.entities.iceandfire]
+				stymphalian_bird = true
+				hydra = true
+				lightning_dragon = true
+				troll = true
+				hydra_multipart = true
+				dragon_multipart = true
+				fire_dragon = true
+
+			[light_sources.settings.entities.tensura]
+				evil_centipede = true
+				barghest = true
+				leech_lizard = true
+				evil_centipede_body = true
+				direwolf = true
+				lizardman = true
+				predator_mist = true
+				cattledeer = true
+				slime = true
+
+			[light_sources.settings.entities.artifacts]
+				mimic = true

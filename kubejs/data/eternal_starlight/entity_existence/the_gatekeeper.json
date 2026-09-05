@@ -1,0 +1,10 @@
+{
+  "type": "eternal_starlight:the_gatekeeper",
+  "abilities": [
+      "tensura:cold_nullification",
+	  "tensura:magic_resistance"
+  ],
+  "max_magicule": 5500,
+  "min_magicule": 2000,
+  "spiritualHealth": 130
+}

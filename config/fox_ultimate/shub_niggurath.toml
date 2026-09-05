@@ -1,0 +1,43 @@
+[ShubNiggurath]
+	#Maximum EP required to evolve Raphael into Shub-Niggurath. This EP is not consumed.
+	requiredMaxEP = 2000000.0
+	#Current magicule required and consumed when Shub-Niggurath is acquired.
+	requiredMagicule = 1000000.0
+	#Number of currently owned mastered skills required for the evolution.
+	requiredMasteredSkillCount = 20
+	#Mastery granted to Shub-Niggurath after evolution.
+	acquisitionGrantMastery = 0
+	#Ticks between automatic scans that archive newly acquired eligible skills.
+	archiveScanIntervalTicks = 20
+	#Temporary duration in Tensura skill-system seconds when copying a Unique Skill.
+	uniqueCopyDurationSeconds = 120
+	#Temporary duration in Tensura skill-system seconds when gifting a Unique Skill.
+	uniqueGiftDurationSeconds = 120
+	#Legacy compatibility setting. Copy-to-self still excludes Unique and Ultimate Skills.
+	forbidUltimateSkillCopy = true
+	#Maximum distance in blocks for Ability Gift.
+	giftRange = 24.0
+	#Warehouse synthesis action cooldown in Tensura skill-system seconds.
+	creationCooldownSeconds = 10
+	#Warehouse copy-to-self action cooldown in Tensura skill-system seconds.
+	copyCooldownSeconds = 5
+	#Ability Gift cooldown in Tensura skill-system seconds.
+	giftCooldownSeconds = 10
+	#Lore-inspired Shub-Niggurath synthesis recipes formatted as input_a+input_b=output.
+	creationRecipes = ["tensura:ultraspeed_regeneration+tensura:pain_nullification=tensura:infinite_regeneration", "tensura:spatial_motion+tensura:multilayer_barrier=tensura:spatial_domination", "tensura:flame_manipulation+tensura:sense_heat_source=tensura:flame_domination", "tensura:self_regeneration+tensura:strengthen_body=tensura:ultraspeed_regeneration", "tensura:self_regeneration+tensura:ultraspeed_regeneration=tensura:infinite_regeneration", "tensura:ranged_barrier+tensura:body_armor=tensura:multilayer_barrier", "tensura:strength+tensura:strengthen_body=tensura:steel_strength", "tensura:thought_acceleration+tensura:analytical_appraisal=tensura:sage", "tensura:telepathy+tensura:voice_cannon=tensura:thought_communication", "tensura:coercion+tensura:magic_aura=tensura:haki", "tensura:coercion+tensura:haki=tensura:mortal_fear", "tensura:earth_transform+tensura:magic_earth_transform=tensura:earth_manipulation", "tensura:flame_transform+tensura:magic_flame_transform=tensura:flame_manipulation", "tensura:water_transform+tensura:magic_water_transform=tensura:water_manipulation", "tensura:wind_transform+tensura:magic_wind_transform=tensura:wind_manipulation", "tensura:space_transform+tensura:magic_space_transform=tensura:spatial_manipulation", "tensura:gravity_field+tensura:gravity_flight=tensura:gravity_manipulation", "tensura:voice_cannon+tensura:ultrasonic_waves=tensura:sound_manipulation", "tensura:thunder_breath+tensura:black_lightning=tensura:lightning_manipulation", "tensura:earth_manipulation+tensura:magic_earth_transform=tensura:earth_domination", "tensura:flame_manipulation+tensura:magic_flame_transform=tensura:flame_domination", "tensura:water_manipulation+tensura:magic_water_transform=tensura:water_domination", "tensura:wind_manipulation+tensura:magic_wind_transform=tensura:wind_domination", "tensura:spatial_manipulation+tensura:magic_space_transform=tensura:spatial_domination", "tensura:gravity_manipulation+tensura:gravity_field=tensura:gravity_domination", "tensura:lightning_manipulation+tensura:black_lightning=tensura:lightning_domination", "tensura:sound_manipulation+tensura:sense_soundwave=tensura:sound_domination"]
+	#Internal creation-recipe data version. Keep this value unchanged unless resetting defaults.
+	creationRecipeDataVersion = 1
+	#Permanent base EP percentage consumed after a successful self-copy.
+	copyPermanentEpCostPercent = 2.0
+	#Current magicule percentage consumed after a successful Ability Gift.
+	giftMagiculeCostPercent = 25.0
+	#Permanent base EP percentage consumed after successful synthesis.
+	synthesisPermanentEpCostPercent = 5.0
+	#Whether synthesis consumes both material skills after a successful synthesis.
+	synthesisConsumesMaterials = true
+	#Chance for a Harvest Crystal to drop when a player with Shub-Niggurath harvests a mature crop.
+	harvestCrystalDropChance = 0.01
+	#Whether a mastered Shub-Niggurath may gift archived Ultimate Skills to non-player subordinates.
+	enableMasteredUltimateSkillGifting = true
+	#Maximum Ultimate Skill instances allowed on a subordinate receiving an Ultimate Skill gift.
+	maxUltimateSkillsPerSubordinate = 1

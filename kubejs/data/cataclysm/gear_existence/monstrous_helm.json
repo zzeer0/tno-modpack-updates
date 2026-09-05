@@ -1,0 +1,7 @@
+{
+  "type": "cataclysm:monstrous_helm",
+  "epGain": 0.003,
+  "evolution": "tensura:low_magisteel_helmet",
+  "maxEP": 6000,
+  "minEP": 0
+}

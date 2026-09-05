@@ -1,0 +1,535 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_C48F1E97B320A65D"
+	group: "5B307D448551FC61"
+	id: "7FD6B458D4EA3E79"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3F72AD046B9E51C8"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "6734834C2B34B559"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:small_lesser_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F72AD046B9E51C8"]
+			id: "2044C4C68C16D667"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "4F07A92DB16CE358"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:small_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F72AD046B9E51C8"]
+			id: "6DEF83A9B2140C75"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "612C8CF9B4978E4C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:lesser_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2044C4C68C16D667"]
+			id: "4F9B17B386A84943"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "3C9AF02E517BD684"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2044C4C68C16D667"]
+			dependency_requirement: "one_completed"
+			id: "2C5E8B40A1F793D6"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "737364DFE0C86549"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:small_poison_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DEF83A9B2140C75"]
+			id: "4BD59DD261312BE6"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2A5F86D0193BE47C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:lesser_poison_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4F9B17B386A84943"
+				"3E49B5521C52354F"
+			]
+			dependency_requirement: "one_completed"
+			id: "71D9C2E34F085BA6"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "6BD94E10A38F2C75"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:great_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2C5E8B40A1F793D6"
+				"4BD59DD261312BE6"
+			]
+			dependency_requirement: "one_completed"
+			id: "4A8E0B51F7239CD6"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "0CF5138BE79A246D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:poison_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C5E8B40A1F793D6"]
+			dependency_requirement: "one_completed"
+			id: "3E49B5521C52354F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "43E9930FC7698A76"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:zoa_ele"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["71D9C2E34F085BA6"]
+			id: "6DC37E8F535F0396"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "5AEB27013D49FC86"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:greater_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A8E0B51F7239CD6"]
+			id: "1B49D7260FEC3A85"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "0E2B26AA599F415E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:great_poison_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3E49B5521C52354F"]
+			dependency_requirement: "one_completed"
+			id: "4BE26323EBBC3E2B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7E68D3B5F0A9C412"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:orthocadinaht"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E49B5521C52354F"]
+			id: "5E2C840A71F9BD36"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "600DDD7751F3210E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:ede_saine"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6DC37E8F535F0396"]
+			dependency_requirement: "one_completed"
+			id: "2C22296EF4521041"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "11B04A6B1020B634"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:arch_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E2C840A71F9BD36"]
+			id: "0D5E9B37A4F12C86"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "30FA8B6DC512E974"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:zana_horowa"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2C22296EF4521041"
+				"5E2C840A71F9BD36"
+			]
+			dependency_requirement: "one_completed"
+			id: "47AB8C6E291F30D5"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "6CF9A2E74B8D0153"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:queen_taratect"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0D5E9B37A4F12C86"]
+			id: "036D122C22A0DCBA"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "1C074FE08243874C"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:arachne"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 2.670238095238126d
+			y: -2.4523809523809845d
+		}
+		{
+			id: "3A3F0BBA9EC7226A"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "521CDC141BA7E757"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura:ogre"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A3F0BBA9EC7226A"]
+			id: "3C7A14F8B09D5E62"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2B85CD16473AF09E"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:ogre_shaman"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C7A14F8B09D5E62"]
+			id: "7F05CA218BD34E96"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "7A9E31BC0F4D5628"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:high_ogre"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F05CA218BD34E96"]
+			id: "5B8DE63140A79C2F"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "1D4C8A57BE23960F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:ogre_general"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B8DE63140A79C2F"]
+			id: "5E1A2D89983A0A6B"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "5F7B0D2491C3E86A"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:ogre_king"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5E1A2D89983A0A6B"]
+			id: "6D1843AEF02BC795"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "3EC51A78904DB6F2"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tensura_kumodesu:wrath_oni"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+	]
+}

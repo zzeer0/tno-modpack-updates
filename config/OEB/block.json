@@ -1,0 +1,14 @@
+[
+  {
+    "match": [
+      "iceandfire:silver_ore"
+    ],
+    "result": "tensura:silver_ore"
+  },
+  {
+    "match": [
+      "iceandfire:deepslate_silver_ore"
+    ],
+    "result": "tensura:deepslate_silver_ore"
+  }
+]

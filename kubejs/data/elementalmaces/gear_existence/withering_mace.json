@@ -1,0 +1,6 @@
+{
+  "type": "elementalmaces:withering_mace",
+  "epGain": 0.0025,
+  "maxEP": 15000,
+  "minEP": 15000
+}

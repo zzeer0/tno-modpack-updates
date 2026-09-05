@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:wooden_sword",
+  "epGain": 0.003,
+  "evolution": "minecraft:stone_sword",
+  "maxEP": 750,
+  "minEP": 0
+}

@@ -1,0 +1,121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_60A416580A6A4282"
+	group: "5B307D448551FC61"
+	id: "60A416580A6A4282"
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0310EB4EA74EF1B4"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "71B49518BB6D8C94"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tennogamenolife:dwarf"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0310EB4EA74EF1B4"]
+			id: "5ACE0B1A2C191006"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "204257744C0CE790"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tennogamenolife:nii_tiruvirugu"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5ACE0B1A2C191006"]
+			id: "56AA5B9E9263217D"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "2B946A6544C69DC5"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tennogamenolife:veigu_dorauvuniru"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56AA5B9E9263217D"]
+			id: "4C3EF8594CFF3FAA"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "674574F671FBFEBC"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tennogamenolife:roni_dorauvuniru"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4C3EF8594CFF3FAA"]
+			id: "4C4BDD82EE840E23"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "09B6135F1E99244F"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "tennogamenolife:ocain"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+	]
+}

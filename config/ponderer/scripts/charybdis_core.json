@@ -1,0 +1,89 @@
+{
+  "id": "ponderer:charybdis_core",
+  "items": [
+    "tensura:charybdis_core"
+  ],
+  "title": {
+    "zh_cn": "卡律布狄斯核心的介绍",
+    "en_us": "Introduction to the Charybdis Co"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "地底结构",
+        "en_us": "Underground Structure"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:fbhh",
+          "scale": 0.5,
+          "rotation": 120.0,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "zoom_scene",
+          "duration": 40,
+          "scale": 2.0
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 15,
+          "degrees": 10.0
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 70,
+          "text": {
+            "zh_cn": "卡律布狄斯核心是一种蛋状核心，用于召唤卡律布狄斯。",
+            "en_us": "The egg-like core used to summon"
+          },
+          "point": [
+            10.3,
+            4.0,
+            8.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 80,
+          "text": {
+            "en_us": "Place it within 16 blocks of mobs to absorb EP from creatures that die in range", "zh_cn": "放置在生物 16 格内可吸收范围内死亡生物的 EP"
+          },
+          "point": [
+            10.0,
+            3.0,
+            10.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 90,
+          "text": {
+            "zh_cn": "充满100K EP后激活，可消耗获取EP，或右键召唤Bos",
+            "en_us": "Activates when charged with 100K"
+          },
+          "point": [
+            11.5,
+            3.0,
+            11.5
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

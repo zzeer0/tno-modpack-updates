@@ -1,0 +1,11 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"minecraft:paper"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ftbquests:missing_item","components":{"ftbquests:missing_item":"tensura_tno:enchantment_stone"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mortal_cultivation:alchemy_furnace"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"sellingbin:selling_bin","components":{"sellingbin:bin_material":"diamond","sellingbin:bin_mode":"player_bound"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"sellingbin:selling_bin","components":{"sellingbin:bin_material":"iron","sellingbin:bin_mode":"player_bound"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"sellingbin:selling_bin","components":{"sellingbin:bin_material":"redstone","sellingbin:bin_mode":"block_bound"}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:diamond_axe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"variantsandventures:gelid_spawn_egg"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

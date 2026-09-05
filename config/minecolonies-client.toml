@@ -1,0 +1,20 @@
+#Todos os itens de configuração relacionados à jogabilidade principal
+[gameplay]
+	#minecolonies.config.enablecitizenvoices.comment [Default: true]
+	enablecitizenvoices = true
+	#Por padrão, ao colocar um esquemático próximo a outros edifícios, os edifícios já colocados serão exibidos como se estivessem no nível 5 e terão um contorno azul ao redor deles. Você pode desabilitar isso definindo isso como falso. [Default: true]
+	neighborbuildingrendering = true
+	#A que distância uma construção precisa estar de outra para ser considerada vizinha, em blocos. -1 = intersecção, 0 = tocando [Default: 4, min: -2, max: 16]
+	# Default: 4
+	# Range: -2 ~ 16
+	neighborbuildingrange = 4
+	#A que distância (em blocos) você precisa estar para ver as ordens de serviço enquanto usa os Óculos de Construção. [Default: 50, min: 1, max: 250]
+	# Default: 50
+	# Range: 1 ~ 250
+	buildgogglerange = 50
+	#Quando verdadeiro, as bordas da colônia mostradas ao segurar a ferramenta de construção estarão na cor da equipe da colônia. Quando falso, a colônia em que você está será branca e qualquer outra colônia será vermelha. [Default: true]
+	colonyteamborders = true
+	#O conteúdo de festivais especiais deve ser mostrado? [Default: true]
+	holidayfeatures = true
+	#Quando verdadeiro, itens de couro tingidos mostrarão uma dica para você saber qual cor usar. [Default: true]
+	showdyetooltips = true

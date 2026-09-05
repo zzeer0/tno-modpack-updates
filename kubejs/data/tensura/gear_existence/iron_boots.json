@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:iron_boots",
+  "epGain": 0.003,
+  "evolution": "minecraft:diamond_boots",
+  "maxEP": 4000,
+  "minEP": 3000
+}

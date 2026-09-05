@@ -1,0 +1,55 @@
+[Fortuna]
+	#Current magicules consumed when Mathematician and Usurper evolve into Fortuna.
+	acquisitionMagiculeCost = 500000.0
+	#Ticks between automatic Fortuna evolution checks.
+	acquisitionCheckIntervalTicks = 20
+	#Mastery granted when Fortuna is acquired.
+	acquisitionGrantMastery = 0
+	#Melee and projectile dodge chance supplied by Future Prediction. Values use percent units.
+	futurePredictionDodgeChance = 70.0
+	#Movement speed added by Fortuna's Thought Acceleration. Vanilla Thought Acceleration mastered is 0.02.
+	thoughtMovementSpeed = 0.04
+	#Attack speed added by Fortuna's Thought Acceleration. Vanilla Thought Acceleration mastered is 0.4.
+	thoughtAttackSpeed = 0.8
+	#Chant speed added by Fortuna's Thought Acceleration. Vanilla Thought Acceleration is 2.0.
+	thoughtChantSpeed = 4.0
+	#Dodge invulnerability added by Fortuna's Thought Acceleration.
+	thoughtDodgeInvulnerability = 2.0
+	#Presence Sense level supplied by Universal Perception.
+	universalPresenceSense = 3.0
+	#Presence and sound sensing radius supplied by Universal Perception.
+	universalPresenceRadius = 20.0
+	#Auditory-sense marker strength used by Tensura's Universal Perception renderer.
+	universalSoundSense = 0.1
+	#Heat sensing radius supplied by Universal Perception.
+	universalHeatRadius = 30.0
+	#Maximum Spacetime Operation range in blocks.
+	teleportRange = 40.0
+	#Distance behind a targeted entity used by Spacetime Operation.
+	teleportBehindDistance = 1.5
+	#Spacetime Operation cooldown in Tensura skill-system seconds.
+	teleportCooldownSeconds = 5
+	#Magicules consumed once per second while Multidimensional Barrier is active.
+	barrierMagiculeCostPerSecond = 2000.0
+	#Multidimensional Barrier cooldown after it closes, in Tensura skill-system seconds.
+	barrierCooldownSeconds = 60
+	#Initial reduction against the first hit of each damage type. 0.10 means 10 percent.
+	barrierInitialReduction = 0.1
+	#Extra reduction learned at each adaptation step. 0.01 means 1 percent.
+	barrierReductionPerStep = 0.01
+	#Hits of the same damage type required for each adaptation step after its first hit.
+	barrierHitsPerStep = 3
+	#Maximum reduction learned for one damage type. 0.80 means 80 percent.
+	barrierMaximumReduction = 0.8
+	#Maximum target range of All of Creation in blocks.
+	allOfCreationRange = 40.0
+	#Ticks between passive mastery gains while Fortuna is toggled on.
+	passiveMasteryIntervalTicks = 100
+	#Magicules consumed once per second while Fortuna's Universal Perception passive is enabled.
+	universalPerceptionMagiculeCostPerSecond = 25.0
+	#Multiplier applied to spatial damage while Fortuna is toggled. Spatial Domination takes precedence.
+	spatialDamageMultiplier = 6.0
+	#Magicules consumed by each equipped Fortuna Warp Shot projectile.
+	warpShotMagiculeCost = 30.0
+	#Warp Shot attribute strength while Fortuna is equipped. Set to 0 to disable the passive.
+	warpShotStrength = 0.5

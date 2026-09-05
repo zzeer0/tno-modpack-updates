@@ -1,0 +1,256 @@
+{
+  "id": "ponderer:magic_ore_shard",
+  "items": [
+    "tensura:magic_ore_shard"
+  ],
+  "title": {
+    "en_us": "Some uses of Magic Ore Shards.",
+    "zh_cn": "魔矿碎片的一些使用"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Usage 1: Twilight Portal.",
+        "zh_cn": "作用1：暮色传送门"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:grass_block",
+          "blockPos": [
+            1,
+            1,
+            1
+          ],
+          "blockPos2": [
+            1,
+            1,
+            3
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:pink_petals",
+          "blockPos": [
+            1,
+            2,
+            1
+          ],
+          "blockPos2": [
+            1,
+            2,
+            3
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:grass_block",
+          "blockPos": [
+            4,
+            1,
+            4
+          ],
+          "blockPos2": [
+            4,
+            1,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:pink_petals",
+          "blockPos": [
+            4,
+            2,
+            4
+          ],
+          "blockPos2": [
+            4,
+            2,
+            1
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:grass_block",
+          "blockPos": [
+            3,
+            1,
+            1
+          ],
+          "blockPos2": [
+            1,
+            1,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:pink_petals",
+          "blockPos": [
+            3,
+            2,
+            1
+          ],
+          "blockPos2": [
+            1,
+            2,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:grass_block",
+          "blockPos": [
+            1,
+            1,
+            4
+          ],
+          "blockPos2": [
+            3,
+            1,
+            4
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:pink_petals",
+          "blockPos": [
+            1,
+            2,
+            4
+          ],
+          "blockPos2": [
+            3,
+            2,
+            4
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:water",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            2,
+            1,
+            3
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "minecraft:water",
+          "blockPos": [
+            3,
+            1,
+            3
+          ],
+          "blockPos2": [
+            3,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Throw magic_ore_shard into water.",
+            "zh_cn": "将魔矿碎片丢入水中"
+          },
+          "point": [
+            3.0,
+            2.0,
+            3.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count": 1,
+          "item": "tensura:magic_ore_shard"
+        },
+        {
+          "type": "idle",
+          "duration": 15
+        },
+        {
+          "type": "replace_blocks",
+          "block": "minecraft:nether_portal",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            3,
+            1,
+            3
+          ],
+          "spawnParticles": false
+        }
+      ]
+    }
+  ]
+}

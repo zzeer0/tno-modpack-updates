@@ -1,0 +1,10 @@
+{
+  "shown": [
+    "ponderer:carrion_spawn_egg:subtitle"
+  ],
+  "read": [
+    "ponderer:carrion_spawn_egg:title",
+    "ponderer:carrion_spawn_egg:subtitle",
+    "ponderer:carrion_spawn_egg:auto"
+  ]
+}

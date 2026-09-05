@@ -1,0 +1,14 @@
+{
+  "type": "block_factorys_bosses:kraken",
+  "abilities": [
+    "tensura:water_attack_nullification",
+    "tensura:physical_attack_resistance",
+    "tensura:pierce_resistance",
+    "tensura:poison_resistance",
+    "tensura:paralysis_resistance",
+    "tensura:pain_resistance"
+  ],
+  "max_magicule": 50000,
+  "min_magicule": 30000,
+  "spiritualHealth": 1200
+}

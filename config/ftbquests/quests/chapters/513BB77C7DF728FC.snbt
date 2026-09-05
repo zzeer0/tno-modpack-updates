@@ -1,0 +1,262 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "513BB77C7DF728FC"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "chronodawn:eye_of_chronos"
+	}
+	id: "513BB77C7DF728FC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "34D8E3A129C8B3D9"
+			tasks: [{
+				icon: {
+					id: "chronodawn:clockstone_ore"
+				}
+				id: "55A81A28DC4CC213"
+				structure: "chronodawn:ancient_ruins"
+				type: "structure"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["34D8E3A129C8B3D9"]
+			id: "4A98230B150A9D9A"
+			tasks: [{
+				count: 10L
+				id: "7BDDECD951A42ACA"
+				item: { count: 1, id: "chronodawn:clockstone_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4A98230B150A9D9A"]
+			id: "637D5A89578A13C8"
+			tasks: [{
+				icon: {
+					id: "twilighttweaks:time_powder"
+				}
+				id: "0B5906B7E9E61FAD"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "chronodawn:time_keeper"
+				type: "observation"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "609C124E1EAD39BA"
+			tasks: [{
+				icon: {
+					id: "chronodawn:time_crystal_block"
+				}
+				id: "35058B23FF389031"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "chronodawn:time_crystal_block"
+				type: "observation"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"637D5A89578A13C8"
+				"6A590E454F0BCF51"
+			]
+			dependency_requirement: "one_completed"
+			id: "64F8DC0AD541359A"
+			tasks: [{
+				icon: {
+					id: "chronodawn:key_to_master_clock"
+				}
+				id: "46F47AB57B18B306"
+				structure: "chronodawn:desert_clock_tower"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4A98230B150A9D9A"]
+			hide_until_deps_complete: true
+			id: "236E81CDDEEA8615"
+			tasks: [{
+				dimension: "chronodawn:chronodawn"
+				icon: {
+					id: "chronodawn:clockwork_cookie"
+				}
+				id: "5C9636F4EAF00528"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["236E81CDDEEA8615"]
+			id: "6A590E454F0BCF51"
+			tasks: [{
+				icon: {
+					id: "minecraft:writable_book"
+				}
+				id: "2E2FFA206D51525B"
+				structure: "chronodawn:forgotten_library"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["64F8DC0AD541359A"]
+			id: "38BE2F3E7F5B1C5F"
+			tasks: [{
+				id: "2084D119EF24D22B"
+				item: { count: 1, id: "chronodawn:portal_stabilizer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64F8DC0AD541359A"]
+			id: "30FB66CFE70278AD"
+			tasks: [
+				{
+					icon: {
+						id: "chronodawn:guardian_stone"
+					}
+					id: "17F11CF220612859"
+					structure: "chronodawn:guardian_vault"
+					type: "structure"
+				}
+				{
+					advancement: "chronodawn:mobs/chronos_warden_defeated"
+					criterion: ""
+					id: "796802FD2BB6CBDC"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64F8DC0AD541359A"]
+			id: "2EF2C89BAEBD2D85"
+			tasks: [
+				{
+					icon: {
+						id: "chronodawn:colossus_gear"
+					}
+					id: "41BDF31B5EF3CFC2"
+					structure: "chronodawn:clockwork_depths"
+					type: "structure"
+				}
+				{
+					advancement: "chronodawn:mobs/clockwork_colossus_defeated"
+					criterion: ""
+					id: "3C39943CE06725FE"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64F8DC0AD541359A"]
+			id: "0717E965DDDDF44C"
+			tasks: [
+				{
+					icon: {
+						id: "chronodawn:phantom_essence"
+					}
+					id: "59AE3D23A25940C0"
+					structure: "chronodawn:phantom_catacombs"
+					type: "structure"
+				}
+				{
+					advancement: "chronodawn:mobs/temporal_phantom_defeated"
+					criterion: ""
+					id: "28A7E5807AEA8002"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64F8DC0AD541359A"]
+			id: "48653257AF7891C8"
+			tasks: [
+				{
+					icon: {
+						id: "chronodawn:entropy_core"
+					}
+					id: "39FA3543C43E2401"
+					structure: "chronodawn:entropy_crypt"
+					type: "structure"
+				}
+				{
+					advancement: "chronodawn:mobs/entropy_keeper_defeated"
+					criterion: ""
+					id: "37FF00581458993B"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EF2C89BAEBD2D85"
+				"0717E965DDDDF44C"
+				"48653257AF7891C8"
+				"30FB66CFE70278AD"
+				"64F8DC0AD541359A"
+			]
+			dependency_requirement: "one_completed"
+			id: "0C5CB0025C8F81AC"
+			tasks: [{
+				id: "38FF639B2ED869A6"
+				item: { count: 1, id: "chronodawn:chrono_aegis" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0C5CB0025C8F81AC"]
+			id: "5CAB6913DE075CEB"
+			tasks: [{
+				icon: {
+					id: "chronodawn:time_clock"
+				}
+				id: "53E4098C4CA9CD35"
+				structure: "chronodawn:master_clock"
+				type: "structure"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5CAB6913DE075CEB"]
+			id: "6A293EB1C0F6A25B"
+			tasks: [{
+				advancement: "chronodawn:story/us3/time_tyrant_defeat"
+				criterion: ""
+				id: "71ABDE3F0944110E"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+	]
+}

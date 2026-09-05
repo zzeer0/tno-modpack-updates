@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:fishing_rod",
+  "epGain": 0.003,
+  "maxEP": 500,
+  "minEP": 0
+}

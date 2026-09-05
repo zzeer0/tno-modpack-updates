@@ -1,0 +1,7 @@
+{
+  "type": "sophisticatedbackpacks:netherite_backpack",
+  "epGain": 0.0025,
+  "evolution": "tensura_tno:low_magisteel_backpack",
+  "maxEP": 13000,
+  "minEP": 9000
+}

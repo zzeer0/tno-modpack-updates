@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "default": "outlined_sprite:tensura/armordude.png",
+        "layersAllowed": true
+    }
+}

@@ -1,0 +1,121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_4946C75884CFAC6C"
+	group: "5B307D448551FC61"
+	id: "4946C75884CFAC6C"
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A4E82E015700EF1"
+			invisible: true
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "028B8EA7A8F7E814"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:kobold"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A4E82E015700EF1"]
+			id: "6DBE6DCFCE82D7D9"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "468FF22D4FCF122D"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:kobold_trader"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6DBE6DCFCE82D7D9"]
+			id: "2C9702D618AA6285"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "465404C27B6EFE26"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:kobold_warrior"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C9702D618AA6285"]
+			id: "2DAEFBBB09A4BBC1"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "1B56038A8D0266DB"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:kobold_chieftain"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DAEFBBB09A4BBC1"]
+			id: "7CAE60C40150CCBE"
+			tasks: [{
+				checkInterval: 60
+				exactMatch: false
+				id: "15C8CA4BEA9014CB"
+				nbt: {
+					ManasCoreStorage: {
+						manascore_registry_storage: [{
+							manascore_registry_storage_id: "manascore_race:race_storage"
+							race_key: {
+								race: "stextras:divine_kobold"
+							}
+						}]
+					}
+				}
+				type: "playernbtftb:player_nbt"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+}

@@ -1,0 +1,140 @@
+[*]
+background: ablazeaqzlcz:textures/default.png; tint=#CCdedcdc
+quest_view_border: white
+
+
+[2C04AFD8A4D7CF3A]
+background: ablazeaqzlcz:textures/background_main.png; tint=#CC919191
+
+[2BBC871DFBFF362A]
+background: ablazeaqzlcz:textures/background_main_2.png; tint=#CC919191
+
+[74DEA9135A46D849]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1C09D62FA4B93049]
+background: ablazeaqzlcz:textures/race/human.png; tint=#FFFFFF
+
+[54EF69944E329DA4]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[138AE138C110958A]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[30F7D2EF2A83E38B]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[48E816F891BBDE3E]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[2EE38870DA1945B2]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[14E5090A01AEC2FA]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[6F9C41A7DCE390E6]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[0C8723B2296CE37A]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[712F61A43FE01479]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[0C9F894912C1E393]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[3CA1011A043B899A]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[18768EDBAFB9A7AA]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1A00000000000004]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1A00000000000003]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1A00000000000001]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[45747C88D8F7018C]
+background: ablazeaqzlcz:textures/race/fox.png; tint=#FFFFFF
+
+[7FD6B458D4EA3E79]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1A00000000000002]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1A00000000000006]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[4CBE4048C2E3ECF6]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[4946C75884CFAC6C]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[1AB6CF1961BD16B4]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[7C62ED741699AF65]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+
+[09FB72D02BEBD3FF]
+background: ablazeaqzlcz:textures/ancient_city.png; tint=#CC919191
+
+[7009AB611A9B9695]
+background: ablazeaqzlcz:textures/eternal_starlight.png; tint=#CC919191
+
+[513BB77C7DF728FC]
+background: ablazeaqzlcz:textures/chrono_dawn.png; tint=#CC919191
+
+[17DCF3A12AFEBE80]
+background: ablazeaqzlcz:textures/elf.png; tint=#CC919191
+
+[26B4FAB11179804C]
+background: ablazeaqzlcz:textures/labyrinth.png; tint=#CC919191
+
+[38013966635D626A]
+background: ablazeaqzlcz:textures/twilight_b.png; tint=#CC919191
+
+[454912A0225B6F7D]
+background: ablazeaqzlcz:textures/background.png; tint=#CC919191
+
+[1CB35B8669DBFB31]
+background: ablazeaqzlcz:textures/hell.png; tint=#CC919191
+
+[6D1E113C31F1CFA9]
+background: ablazeaqzlcz:textures/nature.png; tint=#CC919191
+
+[14BF51BFB46DA4DD]
+background: ablazeaqzlcz:textures/fdboss.png; tint=#CC919191
+
+[375717A5BF4D8218]
+background: ablazeaqzlcz:textures/icefire.png; tint=#CC919191
+
+[63D77F4F95DC09D3]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[2683027D36DF5680]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[6A23E206B99A9E46]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[492E5646CDAF17C4]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[2247CAA96E890260]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[7E25CF6B004D20AC]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF
+
+[60A416580A6A4282]
+background: ablazeaqzlcz:textures/race/background.png; tint=#FFFFFF

@@ -1,0 +1,6 @@
+{
+  "type": "twilightforest:ice_sword",
+  "epGain": 0.0025,
+  "maxEP": 2000,
+  "minEP": 100
+}

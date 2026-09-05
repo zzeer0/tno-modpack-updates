@@ -1,0 +1,195 @@
+{
+  "id": "ponderer:mining_station",
+  "items": [
+    "tensura:mining_station"
+  ],
+  "title": {
+    "en_us": "New Scene - mining_station",
+    "zh_cn": "Usage of the Mining Station"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "采矿站的使用"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "minecraft:stone",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "blockPos2": [
+            5,
+            0,
+            5
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": true,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "tensura:mining_station",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            2,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": true,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Right-click to open and insert raw ore. Raw metal items are not accepted.",
+            "zh_cn": "右键打开放入原矿石，不能是粗矿"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "show_controls",
+          "duration": 80,
+          "point": [
+            2.0,
+            2.4,
+            2.0
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "tensura:deepslate_magic_ore"
+        }
+      ]
+    },
+    {
+      "id": "s_97530",
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.6068407149177801,
+            1.0,
+            0.33334500631917763
+          ],
+          "direction": "up",
+          "block": "tensura:mining_station",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "nbt": "{Items:[],x:0,y:0,z:0}",
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Put raw ore here", "zh_cn": "这里放入原矿"
+          },
+          "point": [
+            0.036,
+            0.815,
+            0.0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 0,
+              "slotX": 80,
+              "slotY": 7,
+              "ingredientId": "minecraft:deepslate_iron_ore",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 0,
+              "slotX": 80,
+              "slotY": 7,
+              "ingredientId": "minecraft:deepslate_iron_ore",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 1,
+              "slotX": 8,
+              "slotY": 55,
+              "ingredientId": "minecraft:raw_iron",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 2,
+              "slotX": 26,
+              "slotY": 55,
+              "ingredientId": "minecraft:raw_iron",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 3,
+              "slotX": 44,
+              "slotY": 55,
+              "ingredientId": "minecraft:cobblestone",
+              "ingredientKind": "item"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

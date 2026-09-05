@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:chainmail_helmet",
+  "epGain": 0.003,
+  "evolution": "minecraft:iron_helmet",
+  "maxEP": 3000,
+  "minEP": 1500
+}

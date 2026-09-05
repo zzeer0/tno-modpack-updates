@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "chronodawn:ancient_ruins",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20005897,
+    "spacing": 56,
+    "separation": 20
+  }
+}

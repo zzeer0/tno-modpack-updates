@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stone_sword",
+  "epGain": 0.003,
+  "evolution": "minecraft:iron_sword",
+  "maxEP": 1500,
+  "minEP": 750
+}

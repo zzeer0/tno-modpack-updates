@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:chainmail_chestplate",
+  "epGain": 0.003,
+  "evolution": "minecraft:iron_chestplate",
+  "maxEP": 3000,
+  "minEP": 1500
+}

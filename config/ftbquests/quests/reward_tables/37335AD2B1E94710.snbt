@@ -1,0 +1,30 @@
+{
+	icon: {
+		components: {
+			"ftbquests:icon": "iceandfire:item/dragon_meal"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "37335AD2B1E94710"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			id: "113126D246942525"
+			item: {
+				count: 1
+				id: "iceandfire:dragon_meal"
+			}
+			weight: 6.66f
+		}
+		{
+			count: 64
+			id: "78DF82448B412050"
+			item: {
+				count: 1
+				id: "iceandfire:dragon_meal"
+			}
+		}
+		{ id: "3C4E56A74FC7C229", item: { count: 1, id: "iceandfire:creative_dragon_meal" } }
+	]
+}

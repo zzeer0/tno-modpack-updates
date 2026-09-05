@@ -1,0 +1,44 @@
+[memory]
+	#Minimum recommended memory in MB (0 to disable)
+	# Default: 4096
+	# Range: 0 ~ 65536
+	minMemoryMB = 4096
+	#Maximum recommended memory in MB (0 to disable)
+	# Default: 16384
+	# Range: 0 ~ 65536
+	maxMemoryMB = 16384
+	#Minimum free system memory in MB (0 to disable)
+	# Default: 2048
+	# Range: 0 ~ 32768
+	minFreeSystemMemoryMB = 2048
+	#Enable memory checking
+	enabled = false
+
+[gc]
+	#Run full GC after game loads
+	onStartup = true
+
+[modpack]
+	#Modpack name
+	name = "Tensura Neo Otherworld"
+	#Modpack version
+	version = "1.1.0"
+	#Support URL for help
+	supportUrl = "https://ablazeaqzl.cn"
+	#First run flag (automatically set to false after first launch)
+	firstRun = false
+	#Custom welcome message title (leave empty to use default or disable welcome message)
+	welcomeTitle = "Welcome to Neo Otherworld - please read the notes below"
+	#Custom screen title displayed at the top
+	screenTitle = "Welcome to ⌈Tensura Neo Otherworld⌋"
+	#Enable modpack update notification check
+	updateCheckEnabled = true
+	#Remote update JSON URL templates or mirror base URLs. Supports {lang} and {file}.
+	#This must be a TOML string list, for example:
+	#updateRemoteUrls = ["https://raw.githubusercontent.com/AQZL/tno_modpack/main/cn_version.json"]
+	#or updateRemoteUrls = ["https://raw.githubusercontent.com/AQZL/tno_modpack/main/{file}"]
+	updateRemoteUrls = ["https://raw.githubusercontent.com/AQZL/tno_modpack/main/version.json", "https://gh.llkk.cc/https://raw.githubusercontent.com/AQZL/tno_modpack/main/version.json", "https://gh-proxy.com/https://raw.githubusercontent.com/AQZL/tno_modpack/main/version.json"]
+	#Maximum seconds to wait for remote update JSON before skipping
+	# Default: 10
+	# Range: 1 ~ 60
+	updateTimeoutSeconds = 10

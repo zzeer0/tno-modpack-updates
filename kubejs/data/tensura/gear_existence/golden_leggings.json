@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:golden_leggings",
+  "epGain": 0.003,
+  "evolution": "minecraft:chainmail_leggings",
+  "maxEP": 1500,
+  "minEP": 0
+}

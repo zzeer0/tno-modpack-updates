@@ -1,0 +1,241 @@
+[General]
+	#Play with badges
+	"Use Badges" = true
+	#Let the player pay back his skills
+	"Use Refund System" = true
+	#Initial price refund rate
+	# Default: 30
+	# Range: 1 ~ 100
+	"Refund percentage" = 30
+
+["XP requirement"]
+	#XP needed to complete level 1
+	# Default: 100
+	# Range: 1 ~ 100000
+	"Lvl 01 XP" = 100
+	#XP needed to complete level 2
+	# Default: 225
+	# Range: 1 ~ 100000
+	"Lvl 2 XP" = 225
+	#XP needed to complete level 3
+	# Default: 350
+	# Range: 1 ~ 100000
+	"Lvl 03 XP" = 350
+	#XP needed to complete level 4
+	# Default: 475
+	# Range: 1 ~ 100000
+	"Lvl 04 XP" = 475
+	#XP needed to complete level 5
+	# Default: 600
+	# Range: 1 ~ 100000
+	"Lvl 05 XP" = 600
+	#XP needed to complete level 6
+	# Default: 725
+	# Range: 1 ~ 100000
+	"Lvl 06 XP" = 725
+	#XP needed to complete level 7
+	# Default: 850
+	# Range: 1 ~ 100000
+	"Lvl 07 XP" = 850
+	#XP needed to complete level 8
+	# Default: 975
+	# Range: 1 ~ 100000
+	"Lvl 08 XP" = 975
+	#XP needed to complete level 9
+	# Default: 1100
+	# Range: 1 ~ 100000
+	"Lvl 09 XP" = 1100
+	#XP needed to complete level 10
+	# Default: 1225
+	# Range: 1 ~ 100000
+	"Lvl 10 XP" = 1225
+	#XP needed to complete level 11
+	# Default: 1475
+	# Range: 1 ~ 100000
+	"Lvl 11 XP" = 1475
+	#XP needed to complete level 12
+	# Default: 1725
+	# Range: 1 ~ 100000
+	"Lvl 12 XP" = 1725
+	#XP needed to complete level 13
+	# Default: 1975
+	# Range: 1 ~ 100000
+	"Lvl 13 XP" = 1975
+	#XP needed to complete level 14
+	# Default: 2225
+	# Range: 1 ~ 100000
+	"Lvl 14 XP" = 2225
+	#XP needed to complete level 15
+	# Default: 2475
+	# Range: 1 ~ 100000
+	"Lvl 15 XP" = 2475
+	#XP needed to complete level 16
+	# Default: 2725
+	# Range: 1 ~ 100000
+	"Lvl 16 XP" = 2725
+	#XP needed to complete level 17
+	# Default: 2975
+	# Range: 1 ~ 100000
+	"Lvl 17 XP" = 2975
+	#XP needed to complete level 18
+	# Default: 3225
+	# Range: 1 ~ 100000
+	"Lvl 18 XP" = 3225
+	#XP needed to complete level 19
+	# Default: 3475
+	# Range: 1 ~ 100000
+	"Lvl 19  XP" = 3475
+	#XP needed to complete level 20
+	# Default: 3750
+	# Range: 1 ~ 100000
+	"Lvl 20 XP" = 3750
+	#XP needed to complete level 21
+	# Default: 4275
+	# Range: 1 ~ 100000
+	"Lvl 21 XP" = 4275
+	#XP needed to complete level 22
+	# Default: 4800
+	# Range: 1 ~ 100000
+	"Lvl 22 XP" = 4800
+	#XP needed to complete level 23
+	# Default: 5325
+	# Range: 1 ~ 100000
+	"Lvl 23 XP" = 5325
+	#XP needed to complete level 24
+	# Default: 5850
+	# Range: 1 ~ 100000
+	"Lvl 24 XP" = 5850
+	#XP needed to complete level 25
+	# Default: 6375
+	# Range: 1 ~ 100000
+	"Lvl 25 XP" = 6375
+	#XP needed to complete level 26
+	# Default: 6900
+	# Range: 1 ~ 100000
+	"Lvl 26 XP" = 6900
+	#XP needed to complete level 27
+	# Default: 7425
+	# Range: 1 ~ 100000
+	"Lvl 27 XP" = 7425
+	#XP needed to complete level 28
+	# Default: 7950
+	# Range: 1 ~ 100000
+	"Lvl 28 XP" = 7950
+	#XP needed to complete level 29
+	# Default: 8475
+	# Range: 1 ~ 100000
+	"Lvl 29 XP" = 8475
+	#XP needed to complete level 30
+	# Default: 9000
+	# Range: 1 ~ 100000
+	"Lvl 30 XP" = 9000
+	#XP needed to complete level 31
+	# Default: 9600
+	# Range: 1 ~ 100000
+	"Lvl 31 XP" = 9600
+	#XP needed to complete level 32
+	# Default: 10200
+	# Range: 1 ~ 100000
+	"Lvl 32 XP" = 10200
+	#XP needed to complete level 33
+	# Default: 10800
+	# Range: 1 ~ 100000
+	"Lvl 33 XP" = 10800
+	#XP needed to complete level 34
+	# Default: 11400
+	# Range: 1 ~ 100000
+	"Lvl 34 XP" = 11400
+	#XP needed to complete level 35
+	# Default: 12000
+	# Range: 1 ~ 100000
+	"Lvl 35 XP" = 12000
+	#XP needed to complete level 36
+	# Default: 12600
+	# Range: 1 ~ 100000
+	"Lvl 36 XP" = 12600
+	#XP needed to complete level 37
+	# Default: 13200
+	# Range: 1 ~ 100000
+	"Lvl 37 XP" = 13200
+	#XP needed to complete level 38
+	# Default: 13800
+	# Range: 1 ~ 100000
+	"Lvl 38 XP" = 13800
+	#XP needed to complete level 39
+	# Default: 14400
+	# Range: 1 ~ 100000
+	"Lvl 39 XP" = 14400
+	#XP needed to reach max level
+	# Default: 16000
+	# Range: 1 ~ 100000
+	"Lvl MAX XP" = 16000
+
+["Skills prices"]
+	#Prices for max health skill
+	"Max health skill price" = [2, 2, 3, 3, 5, 5, 7, 7, 9, 9]
+	#Prices for reach skill
+	"Reach skill price" = [3, 5, 9, 13]
+	#Prices for resistance skill
+	"resistance skill prices" = [3, 5, 7, 9, 13]
+	#Prices for attack damage skill
+	"Attack damage skill prices" = [9, 14]
+	#Prices for speed skill
+	"Speed skill prices" = [2, 4, 6, 8, 11]
+	#Prices for step height skill
+	"Step height skill prices" = [3, 5]
+	#Prices for swim speed skill
+	"Swim speed skill prices" = [2, 4, 6, 8, 11]
+	#Prices for bloodlust skill
+	"Bloodlust skill prices" = [4, 7]
+	#Prices for deal damage skill
+	"Deal damage skill prices" = [3, 5, 7, 9, 13]
+	#Prices for critical hit skill
+	"Critical hit skill prices" = [4, 7, 9, 10, 15]
+	#Prices for venomous attack skill
+	"Venomous attack skill prices" = [3, 5, 7, 9, 13]
+	#Prices for skill xp boost skill
+	"Skill xp boost skill prices" = [5, 8, 12, 16]
+	#Prices for harvester skill
+	"Harvester skill prices" = [9, 14]
+	#Prices for nutrition boost skill
+	"Nutrition boost skill prices" = [2, 4, 6, 8, 11]
+	#Prices for xp boost skill
+	"Xp boost skill prices" = [3, 5, 7, 9]
+	#Price for second life skill
+	"Second life skill price" = [20]
+	#Price for villager bait skill
+	"Villager bait skill price" = [12]
+	#Price for night vision skill
+	"Night vision skill price" = [18]
+	#Price for fire resistance skill
+	"Fire resistance skill price" = [18]
+	#DISABLED WITH NEOFORGE
+	"Firendly piglins skill price" = [12]
+	#Price for edible rotten flesh skill
+	"Edible rotten flesh skill price" = [12]
+
+[Badges]
+	#=== BE CAREFUL WHEN MODIFYING THESE VALUES TO MAINTAIN CONSISTENCY WITH XP GAINS ===
+	#Nature destroyer xp goals
+	"Nature destroyer xp goals" = [2500, 10000, 18000, 35000]
+	#Meat collector xp goals
+	"Meat collector xp goals" = [850, 3500, 9000, 17000]
+	#Certified Gobbler xp goals
+	"Certified Gobbler xp goals" = [200, 850, 1750, 4500]
+	#Tinkerer's way xp goals
+	"Tinkerer' way xp goals" = [1500, 4000, 8500, 17500]
+
+["XP earnings"]
+	#=== BE CAREFUL WHEN MODIFYING THESE VALUES TO MAINTAIN CONSISTENCY WITH THE BADGE GOALS ===
+	#XP gains when you eat food
+	"Eating gains" = [1.0]
+	#XP gains when you craft an item
+	"Crafting gains" = [0.5]
+	#XP gains when you fish
+	"Fushing gains" = [5.0]
+	#XP gains when you turn dirt into farmlands
+	"Harvesting gains" = [2.0]
+	#XP gains when you block damage with a shield
+	"Blocking damamges gains" = [2.0]
+	#XP gains after sleeping
+	"Sleeping gains" = [2.0]
