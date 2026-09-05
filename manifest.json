@@ -5863,11 +5863,6 @@
                       "size":  732
                   },
                   {
-                      "path":  "config/openloader/packs/TNO-ItemCleaner.zip",
-                      "sha256":  "1f7fc05ff9f174291308467c64ccfdf70afd7fd81f678b0118b4f515256e9a8b",
-                      "size":  1324
-                  },
-                  {
                       "path":  "config/openloader/packs/TNO-OreVeinMiner-ModOres.zip",
                       "sha256":  "8059419d1ca44c329d3f08952fc14cfd479fb76a9197a6951ed0aa6ef4430e6f",
                       "size":  478
@@ -15141,6 +15136,11 @@
                       "path":  "mods/codxlib-1.5.1-neoforge+1.21.1.jar",
                       "sha256":  "36431429a0bb58ffba4eec3aac87f28b158b2ca4dae11f1520c7ea9e4d680985",
                       "size":  191680
+                  },
+                  {
+                      "path":  "mods/darktimer-neoforge-1.21-1.2.3.jar",
+                      "sha256":  "3011041a928f6127fc0667c7667adfca97d332fec980c4e720356e22fe53eda4",
+                      "size":  6690
                   },
                   {
                       "path":  "mods/DungeonsArise-1.21.1-2.1.68-release.jar",
