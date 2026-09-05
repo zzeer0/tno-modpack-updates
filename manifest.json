@@ -15203,6 +15203,11 @@
                       "size":  12617777
                   },
                   {
+                      "path":  "mods/SimplyTooltips-neoforge-0.1.5.jar",
+                      "sha256":  "fdac367da1c5243ac5225f00f831b786817452ee9fa6a7f4acd99ec819b0f2b7",
+                      "size":  5512986
+                  },
+                  {
                       "path":  "mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar",
                       "sha256":  "de05b15c04d04c95a3dc500b42737ea06e702d7e502868b21403ba724f582e34",
                       "size":  87823
