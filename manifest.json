@@ -15138,11 +15138,6 @@
                       "size":  20107711
                   },
                   {
-                      "path":  "mods/Beyond_Adventures-Neoforge-1.1.8.jar",
-                      "sha256":  "321754a10e0241c0d0315ac391e459f5750777469e66633f92694c7978e0901b",
-                      "size":  17661182
-                  },
-                  {
                       "path":  "mods/block_factorys_bosses-2.1.2-neo-1.21.1.jar",
                       "sha256":  "f7977248c2146bdc248bb50d62ce9ca67028a424064a191254bb256d8bde34c0",
                       "size":  23979875
@@ -15226,11 +15221,6 @@
                       "path":  "mods/minecolonies-1.1.1368-1.21.1.jar",
                       "sha256":  "c3a2542aaced85aabfc58b38415b70e6b095a16787056e07880fc94320f09a9b",
                       "size":  77945293
-                  },
-                  {
-                      "path":  "mods/mortal_cultivation-1.0.4.1.jar",
-                      "sha256":  "dcbc815402eebfb480fe92c6645bdfdef67151a527ade1f6381b885196718943",
-                      "size":  1407250
                   },
                   {
                       "path":  "mods/multipiston-1.2.58-1.21.1.jar",
@@ -15326,11 +15316,6 @@
                       "path":  "mods/tensura_skill_disabled-1.0.0.0.jar",
                       "sha256":  "cf2eec6495aa94df7c632cad080f9c1afe3b87252b1d71a585b9c26b40bdd5b4",
                       "size":  21492
-                  },
-                  {
-                      "path":  "mods/tensura_tno-1.0.4.8.jar",
-                      "sha256":  "57b77bd5cec9fb76de04c7b833155a166d0c63f82e0a5f805336561381ed589c",
-                      "size":  1377038
                   },
                   {
                       "path":  "mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar",
