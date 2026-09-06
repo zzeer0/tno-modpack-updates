@@ -15283,6 +15283,11 @@
                       "size":  5512986
                   },
                   {
+                      "path":  "mods/sombra-gabriel-tensura-addons-1.0.0.jar",
+                      "sha256":  "58395e23d1e7e014d08782ed0033263bef123636229991fb7041178a2f065e42",
+                      "size":  122379
+                  },
+                  {
                       "path":  "mods/structurize-1.0.832-1.21.1.jar",
                       "sha256":  "b6ede7635c63a80bd3d034c1ad3e74c648b8478f341f883d7d29c3dcf90b79ce",
                       "size":  1063849
@@ -15318,19 +15323,9 @@
                       "size":  21492
                   },
                   {
-                      "path":  "mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar",
-                      "sha256":  "8f475804213a8190c3ea6a05d5c44f8452dab17803674a104429d5319ecd6d95",
-                      "size":  88022
-                  },
-                  {
                       "path":  "mods/tensuraenigmatic-1.0.1.jar",
                       "sha256":  "3895ba174ee27db3ac5a33897c481c11797650cb6259bd8d19e489161ca8af7d",
                       "size":  60960
-                  },
-                  {
-                      "path":  "mods/tensuramagicfilter-1.2.0.jar",
-                      "sha256":  "4aa64bcb7b01631a715414a25e7d0c47af95afbf1e1d197489cb9f2ac081ffb6",
-                      "size":  34638
                   },
                   {
                       "path":  "mods/tensuramoreskills-0.0.4.8iwanttobelikeyoufix+purifier.jar",
