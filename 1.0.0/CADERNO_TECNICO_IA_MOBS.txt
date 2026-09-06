@@ -1,0 +1,2855 @@
+===============================================================================
+                    CADERNO TECNICO - IA DE COMBATE DOS MOBS
+              Tensura Neo Otherworld - registro da sessao com Claude
+             Minecraft 1.21.1 - NeoForge 21.1.244 (instalado) / .249 (alvo)
+                              2-3 de setembro de 2026
+===============================================================================
+
+Registro de tudo que foi investigado e alterado nesta sessao: por que mobs do
+Tensura nunca usavam magia/skill, o addon que fizemos pra corrigir isso, e a
+instalacao do pacote completo do sombra por cima da instancia. Com caminho de
+arquivo, numero real e o motivo encontrado - nao suposicao.
+
+Nada foi feito nesta sessao pelo GUI do jogo: toda mudanca de codigo foi
+decompilada, editada e recompilada por fora (sem Gradle, sem MDK), igual o
+sombra fez no dele.
+
+
+INDICE
+-------------------------------------------------------------------------------
+  REF   Mapa dos arquivos
+  01    TensuraUniqueMonsters (mob "unico") - o que e e como configurar
+  02    O addon original do sombra (TENSURA ZERO / tensuramagicfilter)
+  03    UniqueMonsterAbilities - sorteio de magia bonus pro mob unico
+  04    Aplicacao do TNO_MODPACK_COMPLETO.zip por cima da instancia
+  05    UniqueMonsterCombatAI - a parte longa: por que nada conjurava
+  06    Skills de TOGGLE (Regeneracao) e o custo de magiculo que faltava
+  07    Como recompilar sem Gradle (ferramentas e classpath)
+  PEND  Pendencias que ainda precisam de acao sua
+  MAN   Onde estao os arquivos-fonte pra editar de novo
+
+
+===============================================================================
+REF - MAPA DOS ARQUIVOS
+===============================================================================
+
+Config do addon novo (gerado automaticamente, edite direto)
+    config/tensurauniquemonsterskills.properties
+
+Config do mob unico (do mod TensuraUniqueMonsters em si)
+    config/tr_UniqueMonsters/base_config.toml
+
+Filtro de magia + efeitos de conjuracao (do sombra, original)
+    config/tensuramagicfilter.properties
+
+Jar que contem TUDO (filtro do sombra + nosso addon, mesma jar)
+    mods/tensuramagicfilter-1.2.0.jar
+
+Custo de magiculo de cada magia (usado pra decidir o que e "barato")
+    config/tensura/ability/magic/aspectual_config.toml
+    config/tensura/ability/magic/spiritual_config.toml
+    config/tensura/ability/magic/summoning_config.toml
+
+Custo de magiculo de skills comuns/extra (Self Regeneration etc.)
+    config/tensura/ability/skill/common_config.toml
+    config/tensura/ability/skill/extra_config.toml
+
+Regeneracao natural de magiculo/aura (identica pra mob e player)
+    config/tensura/energy_config.toml
+
+Sorteio de magia por mob no spawn (de outro mod, ainda ativo)
+    config/nightmareutils/spawn_profiles.json
+
+Mod que faz mobs conjurarem magia de ataque de verdade
+    mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar
+
+Sistema de IA de skill pra Subordinados (so donos jogadores, nao usado aqui)
+    mods/tensura_tno-1.0.4.8.jar
+      -> classe com.tensura_tno.ai.SubordinateSkillAiController
+
+
+===============================================================================
+01 - TENSURAUNIQUEMONSTERS (MOB "UNICO")
+===============================================================================
+
+Mod separado (tensurauniquemonsters-neoforge-1.0.2.jar) que da a qualquer mob,
+no spawn, uma chance de virar uma variante "unica": maior, com EP multiplicado
+(ate 10x por padrao) e a tag de entidade "tr_unique_monster".
+
+    config/tr_UniqueMonsters/base_config.toml
+
+      uniqueMonsterChance      - chance global (0.1% por padrao; esta em
+                                 100.0 agora, DE TESTE - ver secao PEND)
+      uniqueMonsterEntityOverrides - chance especifica por mob (blade_tiger,
+                                 spear_toro, hound_dog vem com override
+                                 proprio, ignoram o global)
+      uniqueMonsterBlacklist   - mobs que nunca viram unicos (bosses/NPCs)
+      uniqueMonsterTameable    - true agora (permite nomear/domesticar mob
+                                 unico - era false por padrao)
+
+A tag "tr_unique_monster" e o gatilho que o UniqueMonsterAbilities (secao 03)
+usa pra saber em quem mexer.
+
+
+===============================================================================
+02 - O ADDON ORIGINAL DO SOMBRA (TENSURA ZERO / tensuramagicfilter)
+===============================================================================
+
+Mod customizado (autor: sombra) que resolve um problema especifico: mobs do
+Tensura carregavam magia que nao tinham magiculo pra pagar (slime com 435 de
+magiculo carregando Wind Cutter, que custa 500). Em vez de inflar o magiculo,
+ele REMOVE do mob a magia que ele nao consegue pagar.
+
+    config/tensuramagicfilter.properties
+
+      enabled, pruneDelayTicks=20  - roda uma vez, 20 ticks apos o spawn
+      castSound, castCircle, castingSlowness - efeitos visuais/sonoros pra
+        mob conjurando (o Tensura so tinha isso pra Player por padrao)
+      debugLog=true - loga no console: "[TensuraMagicFilter] entity.X
+        magiculoMax=N | removidas=[...] | mantidas=[...]"
+
+Package das classes: com.sombra.tensuramagicfilter
+  TensuraMagicFilter.class, Config.class, CastEffects.class,
+  CastVisuals.class - decompilados com CFR pra confirmar a logica, mas nao
+  foram alterados.
+
+
+===============================================================================
+03 - UNIQUEMONSTERABILITIES (SORTEIO DE MAGIA BONUS)
+===============================================================================
+
+Classe nova: com.sombra.tensuramagicfilter.uniqueabilities.UniqueMonsterAbilities
+(+ UniqueMonsterAbilitiesConfig)
+
+Concede 1-2 Magics extras pra todo mob com a tag "tr_unique_monster", 30 ticks
+apos o spawn. Sorteio ponderado pelas 3 tags de raridade que o proprio Tensura
+usa pra Magic (nao Skill generica - so Magic e conjurada automaticamente):
+
+    aspectual_magic  (~78 magias, ex: Fire Ball, Wind Cutter) - peso 100
+    spiritual_magic  (~38 magias, ex: Megiddo, Hellfire)      - peso 15
+    summoning_magic  (6 magias, invoca criatura)               - peso 1
+
+DESCOBERTA IMPORTANTE: apos conceder, o codigo checa
+EnergyHelper.isOutOfEnergy(mob, instance, 0) e DEVOLVE a magia se o mob nao
+tiver magiculo suficiente pro custo dela (ex: Ice Breaker custa 70.000, um
+direwolf comum tem ~37.000 de maximo - nunca ia conseguir pagar mesmo unico).
+Sem essa checagem, o mob ficava preso segurando uma conjuracao que ia falhar
+silenciosamente no final.
+
+Log de sucesso:
+    [UniqueMonsterAbilities] tensura:direwolf e unico e recebeu: tensura:X
+Log de devolucao por falta de magiculo:
+    [UniqueMonsterAbilities] X nao pode pagar (magiculo insuficiente),
+    devolvidas: [...]
+
+
+===============================================================================
+04 - APLICACAO DO TNO_MODPACK_COMPLETO.ZIP
+===============================================================================
+
+No meio da sessao descobrimos que esta instancia estava DESATUALIZADA em
+relacao ao trabalho que o sombra ja tinha feito na maquina dele (documentado
+no CADERNO_TECNICO_TENSURA.txt dele, em Downloads). Itens que faltavam aqui
+e foram trazidos ao extrair o TNO_MODPACK_COMPLETO.zip por cima da instancia:
+
+    - NeoForge deveria ser 21.1.249 (o zip NAO controla isso - ver PEND)
+    - Traducao PT-BR completa (config/openloader/packs/TNO-PTBR.zip)
+    - Musica do menu trocada (bazelgeuse.ogg)
+    - tensura-alexs-compat-3.0.1 (o mod que realmente conjura magia - secao 05)
+    - Tensura core atualizado pra 2.0.1.3
+
+ARMADILHA: o zip do sombra tem "mods/tensuramagicfilter-1.2.0.jar", que e
+BYTE A BYTE IDENTICO ao nosso "TENSURA ZERO.jar" (confirmado por MD5:
+60cc32547167231a44805c7af38ac89e) - so o nome do arquivo mudava. Extrair o
+zip direto teria criado duas jars com o MESMO modId (erro de mod duplicado).
+Removemos o "TENSURA ZERO.jar" antigo e reaplicamos nossas classes
+(uniqueabilities) em cima do "tensuramagicfilter-1.2.0.jar" novo.
+
+
+===============================================================================
+05 - UNIQUEMONSTERCOMBATAI - POR QUE NADA CONJURAVA
+===============================================================================
+
+A parte mais longa da sessao. Quatro camadas de problema, cada uma escondendo
+a proxima.
+
+DESCOBERTA 1: MobSkillController existe e sorteia aleatorio
+-------------------------------------------------------------------------------
+Decompilado com CFR: mods/tensura-alexs-compat-*.jar
+    io/github/gabriel/tensuraalexscompat/TensuraAlexsCompat.java
+    io/github/gabriel/tensuraalexscompat/MobSkillController.java
+
+A cada 20 ticks, com 35% de chance, se o mob tem alvo vivo a ate 32 blocos:
+pega TODAS as skills ativas que ele sabe (sem distinguir ataque/cura/debuff),
+sorteia UMA aleatoria, tenta conjurar. So uma tentativa por ciclo.
+
+Bug encontrado no proprio codigo dele (inofensivo, so documentando):
+    SUPPORTED_ENTITY_PREFIXES = Set.of("", "entity.alexsmobs.", ...)
+A string vazia "" faz esse filtro nunca bloquear nada (startsWith("") e
+sempre true) - codigo morto, nao afeta o resultado final.
+
+DESCOBERTA 2 (A RAIZ DE TUDO): sistema de preset de habilidade
+-------------------------------------------------------------------------------
+    mods/tensura-neoforge-2.0.1.3.jar
+    io/github/manasmods/tensura/handler/AbilityHandler.java, linha ~228
+
+O AbilityHandler do proprio Tensura escuta SkillEvents.ACTIVATE_SKILL:
+
+    IAbility ability = TensuraStorages.getAbilityFrom(owner);
+    if (!Magic.isStaffCasting(instance, owner)
+            && !ability.isAbilityInActivePreset(keyNumber, instance.getSkill(), mode)) {
+        return EventResult.interruptFalse();  // CANCELA a ativacao
+    }
+
+Isso e o sistema de "preset" que jogadores usam pra equipar magia nas teclas
+1-9. Nenhum mob passa por essa UI, entao TODA ativacao de QUALQUER skill, por
+QUALQUER sistema (nosso ou o MobSkillController), sempre falhava aqui - sem
+erro nenhum no log, so retornava false silenciosamente.
+
+Confirmado testando na mao: replicamos os 4 checks internos do
+startHoldSkill (heldSkillsVazio, canInteractSkill, canActivateSkill, modes,
+emCooldown) - todos true, e mesmo assim nao conjurava. So descobrimos
+chamando SkillEvents.ACTIVATE_SKILL.invoker() diretamente no nosso codigo e
+vendo "eventoCancelado=true".
+
+FIX (em UniqueMonsterCombatAI.cast(), antes de conjurar):
+    IAbility ability = TensuraStorages.getAbilityFrom(mob);
+    ability.setAbilitySlot(0, instance.getSkill(), 0);
+
+"Equipa" a skill no slot 0 bem antes de segurar, satisfazendo a checagem.
+Isso destrava TUDO - nossa IA e, de quebra, o MobSkillController tambem (ele
+usa o mesmo startHoldSkill por baixo).
+
+DESCOBERTA 3: mira ruim (giro gradual em vez de exato)
+-------------------------------------------------------------------------------
+O MobSkillController vira o mob pro alvo com LookControl.setLookAt(alvo, 30,
+30) - velocidade de giro LIMITADA a 30 graus/tick. Alvo se movendo ou angulo
+ruim = projetil sai torto porque o corpo nao terminou de girar na hora do
+disparo.
+
+FIX: applyPreciseAim() calcula o angulo exato via trigonometria (atan2) e
+aplica direto (setYRot/setXRot/setYHeadRot/setYBodyRot), sem limite de
+velocidade, todo tick enquanto o mob estiver segurando qualquer skill.
+
+DESCOBERTA 4: sistema de rotacao substitui o sorteio puro
+-------------------------------------------------------------------------------
+Em vez de reaproveitar o sorteio aleatorio do MobSkillController (que faz
+skill rara "passar fome" enquanto outras saem toda hora, e nao prioriza
+cura), UniqueMonsterCombatAI decide por conta propria:
+
+  1. Se ferido (self ou aliado da mesma especie por perto) - prioriza cura
+  2. Se tem alvo - chance de debuff (config debuffChance)
+  3. Resto - rotacao "least recently used" entre tudo que sobrou (ofensivo)
+
+Elegibilidade real checada ANTES de tentar (nao so depois, como o
+MobSkillController faz): cooldown real (canInteractSkill/canActivateSkill),
+magiculo/aura (isOutOfEnergy), e MobSkillController.isActiveSkill() pra
+confirmar que a skill realmente tem efeito (onPressed/onHeld/onRelease).
+
+Ainda usa MobSkillController.prepareMobSkill/startMobSkill pra realmente
+comecar (mesma validacao do ataque original) e releaseReadySkills dele (ja
+roda pra qualquer entidade) pra soltar no tempo certo - nao reimplementamos
+essa parte.
+
+Cooldown geral anti-spam (actionCooldownTicks, 100 ticks = 5s, ajustado em
+03/09/2026 - era 60 ticks/3s): comeca a contar do FIM do cast (deteccao de
+held->vazio), nao do inicio - se pedido explicitamente pra evitar contar
+cast longo como "tempo de recarga" tambem.
+
+
+===============================================================================
+06 - SKILLS DE TOGGLE E O CUSTO DE MAGICULO QUE FALTAVA
+===============================================================================
+
+Skills como Regeneracao Ultravelocidade e Self Regeneration NAO sao
+hold/release (magia) - sao TOGGLE (liga/desliga), API diferente:
+    instance.setToggled(bool) + onToggleOn(entity) / onToggleOff(entity)
+
+manageToggles() liga automaticamente qualquer toggle que o mob souber
+(exceto os 8 que o proprio TensuraAlexsCompat.updateCombatToggles ja
+gerencia: strength, berserker, poison, etc.):
+    - Nome contem "regen" -> liga quando ferido (healThreshold), desliga
+      quando nao esta
+    - Qualquer outro toggle -> sempre ligado quando disponivel
+
+BUG DO PROPRIO TENSURA ENCONTRADO (decompilado
+io/github/manasmods/tensura/ability/skill/common/SelfRegenerationSkill.java
+e .../extra/UltraspeedRegenerationSkill.java):
+
+    Self Regeneration TEM custo real (100 de magiculo, ver common_config.toml)
+    mas o onTick so checa EnergyHelper.isOutOfEnergy(...) dentro de
+    "if (entity instanceof Player)" - pra mob, a checagem inteira e pulada,
+    o efeito de cura e aplicado de graca, sem custo nenhum.
+
+    Ultraspeed Regeneration nunca teve custo nenhum (nao sobrescreve
+    getMagiculeCost) - gratis por design, pra qualquer um.
+
+FIX: ao ligar uma skill de "regen", cobramos na mao (existence.setMagicule):
+    - Se a skill tem custo real definido (TensuraSkill.getMagiculeCost) -
+      usa esse valor (ex: Self Regeneration = 100)
+    - Se nao tem (Ultraspeed) - usa o padrao nosso, regenToggleMagiculeCost
+      (200 de magiculo)
+    - Sem magiculo suficiente no momento = a skill simplesmente nao liga
+
+
+===============================================================================
+07 - COMO RECOMPILAR SEM GRADLE
+===============================================================================
+
+Mesma tecnica do sombra: nao precisa de MDK do NeoForge nem Gradle. So:
+
+  1. AutoRenamingTool (ART) do proprio NeoForge, baixado de
+     maven.neoforged.net/releases/net/neoforged/AutoRenamingTool/2.0.18/
+     Remapeia o jar obfuscado do Minecraft (Install/versions/1.21.1/1.21.1.jar)
+     usando as mappings oficiais da Mojang (client.txt), com --reverse:
+
+       java -jar art.jar --input 1.21.1.jar --output client-mojmap.jar
+            --map client_mappings.txt --reverse
+
+  2. CFR 0.152 (decompilador), baixado do Maven Central
+     (repo1.maven.org/maven2/org/benf/cfr/0.152/cfr-0.152.jar) - usado so
+     pra LER o codigo de mods de terceiro (tensura-alexs-compat, tensura
+     core, manascore-skill), nunca pra editar.
+
+  3. JDK 21 encontrado na maquina em
+     C:\Users\zZeer\AppData\Roaming\.jornadascobblemon\runtime\x64\jdk-21.0.11+10
+     (runtime de OUTRO modpack instalado, emprestado so pra compilar).
+
+  4. Classpath do javac junta: client-mojmap.jar + bus-8.0.5.jar +
+     loader-4.0.44.jar + neoforge-*-universal.jar + slf4j-api +
+     datafixerupper + tensura-neoforge-2.0.1.3.jar + os 5 modulos internos
+     do manascore (skill/storage/race/network/architectury, extraidos de
+     dentro do manascore-neoforge-*.jar, que e jar-in-jar) +
+     tensura-alexs-compat-*.jar + architectury-13.0.8-neoforge.jar.
+
+  5. Empacotamento: "jar uf tensuramagicfilter-1.2.0.jar
+     com/sombra/tensuramagicfilter/uniqueabilities/*.class" - adiciona/
+     atualiza so as classes novas, sem mexer nas 4 originais do sombra.
+
+
+===============================================================================
+08 - REMOCAO DO SORTEIO ALEATORIO DO TENSURAALEXSCOMPAT (03/09/2026)
+===============================================================================
+
+CORRECAO DE UM ERRO DESTE PROPRIO CADERNO: a secao 05 (Descoberta 4) dava a
+entender que UniqueMonsterCombatAI so agia em mobs com a tag
+"tr_unique_monster". Decompilando de novo pra confirmar, isso e FALSO -
+UniqueMonsterCombatAI.onTick e um listener global de EntityTickEvent.Post,
+sem nenhum filtro de tag, sem checar unique. Ele SEMPRE rodou em todo Mob
+vivo do jogo (desde que combatAiEnabled=true), igual o TensuraAlexsCompat.
+
+Ou seja: os dois sistemas (o sorteio aleatorio do TensuraAlexsCompat, secao
+05/Descoberta 1, e o nosso UniqueMonsterCombatAI com prioridade de
+cura/debuff/rotacao LRU) SEMPRE rodaram em paralelo, no mesmo mob, todo
+tick. Isso e o motivo real do "uso de habilidade muito alto" - nao era falta
+de balanceamento de um sistema, era dois cerebros decidindo ao mesmo tempo.
+
+FIX: TensuraAlexsCompat.tickMobSkills() (mods/tensura-alexs-compat-3.0.1-
+NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar) teve o bloco de sorteio
+removido - o trecho que checava tickCount%20==0 + 35% de chance, montava a
+lista de skills ativas e fazia o round-robin com o mapa NEXT_USE (cooldowns
+fixos de 140/240/400 ticks por nome de skill) foi deletado inteiro.
+
+O que continua rodando dentro do tickMobSkills (nao mexemos):
+    - MobSkillController.releaseReadySkills(mob) - libera qualquer skill
+      que ja estava "segurada" no fim do tempo de conjuracao, seja ela
+      quem for que comecou a segurar (nosso sistema ou qualquer outro)
+    - updateCombatToggles(mob) a cada 10 ticks - liga/desliga os toggles de
+      combate do proprio TensuraAlexsCompat (strength, poison, berserker
+      etc.) - sistema separado do nosso manageToggles() (que cuida de regen)
+
+Resultado: agora so o UniqueMonsterCombatAI decide qual skill um mob tenta
+usar e quando (heal-priority, debuffChance, rotacao LRU,
+actionCooldownTicks=100 ticks/5s), pra QUALQUER mob - unico ou nao, ja que
+nunca foi exclusivo de unico mesmo.
+
+Processo tecnico (igual secao 07): decompilado TensuraAlexsCompat.java com
+CFR (usando cfr.jar e o classpath ja reconstruido de uma sessao anterior,
+cacheados em pastas temp/build_env), removido o bloco, recompilado so essa
+classe com javac contra o classpath (client-mojmap + 5 modulos manascore +
+tensura-neoforge-2.0.1.3 + architectury + tensura-alexs-compat original +
+bus/loader/neoforge-universal/slf4j/datafixerupper da 21.1.244), e
+reempacotado com "jar uf" so as 3 classes trocadas (TensuraAlexsCompat.class,
+$1.class do switch de enum, $PendingPlunder.class do record interno).
+
+BACKUP: o jar original (antes do patch) foi salvo como
+    mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar.bak-preAIpatch
+Pra reverter: apague o .jar patcheado, renomeie o .bak de volta pro nome
+original.
+
+Nao testado em jogo ainda nesta sessao - so verificado por decompilacao que
+o bytecode novo bate com a fonte editada.
+
+
+===============================================================================
+09 - MAGIA NAO ACERTA ALVO ACIMA (mira vertical) - 03/09/2026
+===============================================================================
+
+Relato: Lobo Temivel (mob de teste) acerta mordida em inimigo acima dele,
+mas magia nunca sai/acerta nessa situacao. Confirmado pelo usuario que so
+magia falha, melee funciona - isso descarta selecao de alvo (Mob.getTarget())
+como causa, ja que ela e a mesma pra ambos os tipos de ataque.
+
+CAUSA PROVAVEL: applyPreciseAim() (a funcao que gira o mob pro alvo via
+setYRot/setXRot direto, ignorando o LookControl vanilla que tem pitch
+limitado) so era chamada quando "bl" (mob ja esta segurando uma skill) era
+true:
+
+    if (uniqueMonsterAbilitiesConfig.preciseAimEnabled && bl) {
+        applyPreciseAim(mob);
+    }
+
+"bl" e calculado no INICIO do onTick(), antes de decidir se vai comecar uma
+skill nova. Ou seja: no exato tick em que act()/cast() decide comecar a
+conjurar, a mira ainda nao foi corrigida - o mob ainda esta com o pitch
+limitado da IA vanilla (que normalmente nao sobe muito, tipicamente <40
+graus). Se o proprio Tensura checa se o mob esta "olhando" pro alvo dentro
+de algum angulo antes de deixar a skill comecar (canActivateSkill ou
+similar), um alvo bem acima (perto de 90 graus) nunca passa nessa checagem
+- a magia simplesmente nunca inicia. Isso bate exatamente com o
+comportamento relatado.
+
+FIX (em UniqueMonsterCombatAI.onTick()):
+    if (uniqueMonsterAbilitiesConfig.preciseAimEnabled && (bl || mob.getTarget() != null)) {
+        applyPreciseAim(mob);
+    }
+
+Agora a mira e corrigida em TODO tick que o mob tiver um alvo vivo, mesmo
+antes de decidir conjurar - garante que, no momento em que act() avalia
+quais skills estao elegiveis e decide comecar uma, o mob ja esta olhando
+certo pro alvo (inclusive alvos diretamente acima, ja que applyPreciseAim
+calcula o angulo real via atan2 e so limita a -90/+90 graus, sem o teto de
+~40 graus do LookControl vanilla).
+
+Arquivo alterado: mods/tensuramagicfilter-1.2.0.jar
+    com/sombra/tensuramagicfilter/uniqueabilities/UniqueMonsterCombatAI.class
+Mesmo processo de sempre: decompilado com CFR, editada 1 condicao (e feito
+o ajuste de tipos que o CFR sempre confunde ao reusar variavel - aqui foi a
+variavel "entity" reaproveitada como SkillStorage, separada em duas
+variaveis pra compilar), recompilado com o classpath da secao 07, reempaco-
+tado com "jar uf" so as 2 classes trocadas.
+
+BACKUP: mods/tensuramagicfilter-1.2.0.jar.bak-preAimFix (antes desta
+mudanca especifica; o outro backup, .bak-preAIpatch, e de ANTES do patch da
+secao 08, mais antigo ainda).
+
+Nao testado em jogo ainda - so verificado que o bytecode novo tem a
+condicao corrigida.
+
+
+===============================================================================
+10 - MANAGETOGGLES LIGAVA QUALQUER TOGGLE PRA SEMPRE (vazamento de MP) - 03/09/2026
+===============================================================================
+
+Relato do usuario: o Lobo Temivel de teste estava consumindo ~1000
+magiculas/segundo PARADO, sem lutar. Log confirmou: nosso proprio
+manageToggles() (secao 06) tinha ligado tensura:water_current_control (um
+toggle utilitario, sem uso em combate) e nunca desligava:
+
+    [UniqueMonsterCombatAI] tensura:direwolf ligou toggle tensura:water_current_control
+
+CAUSA: o design original documentado na secao 06 ("Qualquer outro toggle ->
+sempre ligado quando disponivel") ligava de graca QUALQUER skill do tipo
+toggle que o mob soubesse (exceto os 8 do COMBAT_TOGGLES_HANDLED_ELSEWHERE
+e as de nome "regen", que tem tratamento proprio). Isso incluia toggles
+puramente utilitarios (deslocamento em agua, voo, etc.) sem custo cobrado
+por nos - mas o proprio Tensura pode drenar magiculo continuamente por tras
+enquanto o toggle fica ligado, e nosso codigo nunca desligava nada disso.
+
+Esse vazamento constante e o suspeito PRINCIPAL da lanca de gelo (secao 11)
+nao disparar: mesmo comecando o cast com magiculo de sobra, um dreno de
+~1000/s some com qualquer folga em menos de 1 segundo.
+
+FIX: manageToggles() agora SO gerencia toggles de nome "regen" (a intencao
+original da secao 06). Qualquer outro toggle nao e mais ligado nem
+desligado por nos - fica do jeito que o proprio jogo/spawn deixou.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar
+    com/sombra/tensuramagicfilter/uniqueabilities/UniqueMonsterCombatAI.class
+Backup: mods/tensuramagicfilter-1.2.0.jar.bak-preMPFix
+
+IMPORTANTE: esse fix so PARA DE LIGAR toggles novos daqui pra frente. Um
+mob que JA estava com um toggle indevido ligado (como o lobo de teste, com
+water_current_control ja ligado) continua com ele ligado - nosso codigo
+agora simplesmente nao mexe mais nele (nem liga nem desliga). Pra limpar o
+lobo de teste especificamente, respawne/retame ele, ou desligue o toggle
+manualmente se o Tensura tiver uma forma in-game de fazer isso.
+
+
+===============================================================================
+11 - ICICLE_LANCE NAO DISPARA (falha silenciosa no release por falta de MP)
+===============================================================================
+
+Relato: lobo faz a animacao de conjurar Lanca de Gelo (tensura:icicle_lance)
+mas o projetil nunca sai. So essa magia falhava - outras funcionavam.
+
+Decompilado io/github/manasmods/tensura/ability/magic/aspectual/ice/
+IcicleLanceMagic.class (mods/tensura-neoforge-2.0.1.3.jar) pra confirmar.
+Mecanica real da skill (mode 0, "carregar e soltar"):
+    onPressed()  - cria a entidade IceLanceProjectile (a lanca "carregando",
+                   parada, presa ao dono) e guarda o ID dela em NBT
+    onHeld()     - a cada tick mantem a lanca viva (setAge(0)) e cresce ela
+    onRelease()  - SO AQUI a lanca vira projetil de verdade
+                   (lance.noPhysics = false). MAS antes disso, o codigo
+                   checa:
+                       if (heldTicks < castingTime || EnergyHelper.isOutOfEnergy(...))
+                           { lance.discard(); toca som de "cast fail"; return; }
+                   Ou seja: se o mob nao tiver magiculo suficiente NO
+                   MOMENTO EXATO do release (nao no momento em que comecou
+                   a seguar), a lanca e descartada em silencio - sem
+                   excecao, sem log nosso (esse codigo e do Tensura, nao
+                   nosso), so o som de falha toca. Bate exatamente com "faz
+                   animacao mas nao sai".
+
+Nao foi possivel confirmar 100% que o vazamento de MP da secao 10 foi a
+causa exata deste caso (nao tem como inspecionar o valor de magiculo do
+lobo no exato tick do release sem estar no jogo), mas e a explicacao mais
+provavel e coerente com os dois sintomas relatados na mesma sessao de
+testes.
+
+FIX (mitigacao, complementar ao fix da secao 10): antes de COMECAR a segurar
+qualquer skill, exigimos uma margem de seguranca de magiculo acima do custo
+dela, nao so "tem o suficiente agora":
+
+    magiculeSafetyMargin=1.3   (config/tensurauniquemonsterskills.properties)
+
+collectEligible() agora chama hasEnergyWithMargin() em vez de so
+EnergyHelper.isOutOfEnergy(): exige magiculo atual >= custo * margem antes
+de deixar o mob comecar a segurar a skill. Nao impede 100% (se o dreno for
+maior que a margem, ainda pode falhar), mas evita comecar um cast caro
+"raspando" o que sobrou.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesmas classes da secao 10)
+
+
+===============================================================================
+12 - HAKI (E SKILLS CONTINUAS) LIGAVA E DESLIGAVA RAPIDO DEMAIS
+===============================================================================
+
+Pedido do usuario: Haki e uma skill de pressao/dano em area CONTINUA (nao
+um golpe unico) - decompilado io/github/manasmods/tensura/ability/skill/
+extra/HakiSkill.class confirma: onHeld() e chamado a CADA tick e mantem viva
+a entidade HakiField (o campo de area, que aplica o efeito de medo/pressao
+enquanto existir); onRelease() so define cooldown, nao faz nada de especial.
+Ou seja: o valor de Haki e proporcional a quanto tempo fica segurada, nao a
+um "disparo" no final (diferente de icicle_lance).
+
+Problema: MobSkillController.releaseReadySkills() (secao 05) sempre libera
+a skill assim que "duration >= castingTime" - o minimo tecnico permitido,
+sem segurar mais. Pra Haki isso significa: liga, mantem por pouquissimos
+ticks, solta de novo - "pisca" em vez de sustentar.
+
+FIX: novo mecanismo generico de "tempo extra de sustentacao" por skill.
+    MobSkillController.setSustainExtraTicks(Map<String,Integer>) - registra
+    ticks extras por skill ID; releaseReadySkills() soma esse extra ao
+    castingTime antes de decidir se libera.
+    UniqueMonsterCombatAI regista isso uma vez no startup, lendo:
+        SUSTAIN_SKILLS = {"haki"}  (hardcoded por enquanto - so o que foi
+                                     pedido; da pra adicionar mais nomes
+                                     direto no .java se quiser outras
+                                     skills continuas)
+        sustainExtraTicks=100   (5s extra de segurada, alem do castTime
+                                  normal da skill)
+    Esse mecanismo SO afeta mobs (releaseReadySkills nunca roda pra
+    Player - a liberacao do player e por input direto do jogador, entao
+    Haki de jogador continua normal).
+
+ATENCAO (tensao com a secao 10/11): segurar Haki por mais tempo consome
+MAIS magiculo do pool compartilhado do mob (o onHeld dela mesma reconfere
+energia a cada 20 ticks e se desliga sozinha se faltar). Se o lobo estiver
+usando Haki com frequencia, sobra menos magiculo pras outras skills (tipo
+icicle_lance) - o que a secao 10 corrigiu (parar o vazamento de toggle
+inutil) ajuda a compensar isso.
+
+Arquivos alterados:
+    mods/tensura-alexs-compat-...jar
+        io/github/gabriel/tensuraalexscompat/MobSkillController.class
+        (backup: .jar.bak-preSustainFix)
+    mods/tensuramagicfilter-1.2.0.jar
+        com/sombra/tensuramagicfilter/uniqueabilities/UniqueMonsterCombatAI.class
+        (mesmo backup da secao 10, .jar.bak-preMPFix)
+
+
+===============================================================================
+13 - CUSTO DE MAGICULO/AURA REDUZIDO A 1/3 PARA MOBS (nao pra player) - 03/09/2026
+===============================================================================
+
+Pedido do usuario: baratear o custo de skill/magia especificamente pra mobs
+(pra IA conseguir usar mais coisas), sem mexer no custo do player, e sem
+aplicar o desconto em skills de "regen".
+
+DESCOBERTA: em vez de editar centenas de classes de skill individualmente
+(o Tensura tem 394 classes em io/github/manasmods/tensura/ability/, sendo
+pelo menos ~258 implementacoes concretas de skill/magic), existe um UNICO
+ponto de estrangulamento onde TODA skill do jogo passa pra checar e
+descontar custo:
+
+    io/github/manasmods/tensura/util/EnergyHelper.java
+      isOutOfEnergy(entity, instance, mode)          <- usado em toda parte
+        -> isOutOfEnergy(entity, instance, mode, costMultiplier)
+             -> TensuraSkill.isOutOfEnergy(...) (decompilado, confirmado)
+                  -> multiplica AuraCost e MagiculeCost pelo costMultiplier
+                  -> EnergyHelper.isOutOfEnergy(entity, apCost, mpCost)
+                       -> AQUI desconta de verdade (existence.setMagicule(...))
+
+O parametro costMultiplier ja existia no motor do Tensura (usado por
+exemplo pra custo de "aprender" uma skill, ver getLearningCostMultiplier) -
+so nao tinha nada setando ele diferente de 1.0 pro caso normal de uso.
+
+FIX: alterado SO o metodo de 3 argumentos (o mais chamado, usado por toda
+skill e pelo nosso proprio addon):
+
+    public static boolean isOutOfEnergy(LivingEntity entity, ManasSkillInstance instance, int mode) {
+        float costMultiplier = 1.0f;
+        if (!(entity instanceof Player)) {
+            ResourceLocation skillId = instance.getSkillId();
+            boolean isRegen = skillId != null && skillId.getPath().contains("regen");
+            if (!isRegen) {
+                costMultiplier = MOB_COST_MULTIPLIER; // 0.33333334f
+            }
+        }
+        return EnergyHelper.isOutOfEnergy(entity, instance, mode, costMultiplier);
+    }
+
+Resultado: Player sempre paga o custo cheio (nunca mudou). Qualquer
+LivingEntity que NAO seja Player (ou seja, todo mob) paga 1/3 do custo
+normal - EXCETO skills com "regen" no nome (id path), que continuam
+custando o normal pra mob tambem, exatamente como pedido.
+
+Tambem ajustado UniqueMonsterCombatAI.hasEnergyWithMargin() (secao 11) pra
+usar esse mesmo desconto/excecao ao calcular a margem de seguranca - senao
+a IA ficaria recusando conjurar coisas que na verdade ja ficaram bem mais
+baratas.
+
+Arquivo alterado: mods/tensura-neoforge-2.0.1.3.jar (O MOD PRINCIPAL DO
+TENSURA, nao um addon nosso - primeira vez nesta sessao que mexemos nele
+diretamente. Cuidado: qualquer atualizacao futura do Tensura sobrescreve
+esse jar inteiro e desfaz o patch - precisaria reaplicar.)
+    io/github/manasmods/tensura/util/EnergyHelper.class
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preMobCostDiscount
+
+Tambem reaplicado com a excecao de regen:
+    mods/tensuramagicfilter-1.2.0.jar
+      com/sombra/tensuramagicfilter/uniqueabilities/UniqueMonsterCombatAI.class
+
+
+INCIDENTE DURANTE ESTE PATCH (registrado pra nao repetir): a primeira
+tentativa de atualizar o tensura-neoforge-2.0.1.3.jar (36MB, bem maior que
+os outros jars mexidos nesta sessao, que tem so dezenas/centenas de KB) via
+"jar uf" DIRETO NO ARQUIVO DENTRO DE mods/ apagou o arquivo original sem
+deixar o atualizado no lugar (exit code 0, sem erro visivel, mas o arquivo
+sumiu - so sobrou o .bak). Suspeita: antivirus ou algum outro processo
+segurando lock no arquivo grande durante a reescrita, atrapalhando o
+rename interno do "jar" tool no Windows. Restaurado do backup na hora.
+
+PROCESSO SEGURO adotado depois disso (usar sempre em jars grandes, ou se
+quiser ser cauteloso, em qualquer jar): copiar o jar pra uma pasta de
+trabalho FORA de mods/, rodar "jar uf" nessa copia, verificar (jar tf +
+descompilar a classe alterada) que ficou integro, e SO ENTAO copiar de
+volta pra mods/. Nunca fazer "jar uf" direto no arquivo dentro da pasta
+mods/ do jogo enquanto o launcher/instancia pode estar de olho nele.
+
+
+===============================================================================
+14 - CLASSIFICACAO DE TODAS AS SKILLS DO JOGO (03/09/2026)
+===============================================================================
+
+Pedido do usuario: descompilar todas as skills do jogo, identificar como
+cada uma funciona (projetil/suporte/debuff/continua/defesa/utilidade/
+ataque), e tornar a IA compativel com essa classificacao.
+
+ESCALA: 363 classes de skill/magic encontradas em
+io/github/manasmods/tensura/ability/ (skill: common 16, extra 62, unique
+59, intrinsic 32, resist 45; magic: aspectual 75, spiritual 42, summon 9;
+battlewill: melee 8, projectile 7, utility 8). Ler cada uma manualmente
+nao era viavel numa sessao so - o metodo foi automatizado.
+
+METODO:
+  1. Descompilado o jar INTEIRO do Tensura (tensura-neoforge-2.0.1.3.jar,
+     1937 classes) com CFR de uma vez.
+  2. Passos de grep em massa sobre as 363 classes pra coletar sinais de
+     codigo: chamada de dano (.hurt/DamageSource), spawn de projetil (new
+     XProjectile), cura (.heal/regainMagicule/REGENERATION), toggle
+     (canBeToggled/onToggleOn), onHeld ativo, barreira/escudo, efeito
+     negativo no alvo.
+  3. Classificacao por PALAVRA-CHAVE no nome da classe (mais confiavel,
+     nomes do Tensura sao bem descritivos: "IcicleLanceMagic",
+     "ConfusionMagic", "HealingRainMagic" etc.) com fallback pros sinais de
+     codigo quando o nome nao da pra decidir.
+  4. IMPORTANTE - ID REAL: a principio convertemos NomeDaClasse -> id
+     tentando remover sufixo (Skill/Magic/Art) e converter pra
+     snake_case. Isso guebrou em pelo menos 1 caso confirmado:
+     PossessionMagic e PossessionSkill teriam virado o MESMO id "possession"
+     por essa conversao, mas o id real (extraido dos arquivos de registro
+     io/github/manasmods/tensura/registry/skill/*.java e registry/magic/
+     *.java, que tem o padrao ".register(\"id_real\", Classe::new)") e
+     "possession_magic" pra magia e "possession" pra skill - diferentes.
+     CORRIGIDO: os ids finais vieram TODOS direto dos arquivos de registro
+     (fonte da verdade), nao da conversao de nome. 355 de 363 classes
+     bateram com um id registrado (98%); as ~8 sem match sao provavelmente
+     classes base/abstratas que nao sao skill de verdade.
+
+CONFIANCA: cada linha da classificacao tem um nivel:
+    keyword       - nome da classe bateu com palavra-chave clara (mais
+                    confiavel, 223 de 363)
+    signal_strong - sem palavra-chave, mas sinais de codigo fortes e
+                    combinados bateram (87 de 363)
+    signal_weak   - so 1 sinal fraco (ex: so "e toggle", sem mais nada) -
+                    ARRISCADO, foi exatamente esse tipo de sinal fraco que
+                    classificou tensura:water_current_control errado da
+                    primeira vez (31 de 363)
+    default       - nenhum sinal bateu, categoria "utilidade" por exclusao
+                    - MENOS confiavel ainda (22 de 363)
+
+skill/unique (59 skills tipo Predator, Gluttony, Chef, Sage etc.) foi
+EXCLUIDO da parte que a IA usa de verdade - sao skills muito especificas e
+com mecanicas proprias (geralmente misturam varias funcoes ao mesmo tempo,
+ex: Predator ataca E cura ao mesmo tempo), heuristica generica erra fácil
+nelas. Ficam classificadas no arquivo de referencia mas nao entraram nos
+Set.of() do codigo.
+
+ENTREGA: arquivo CLASSIFICACAO_SKILLS.csv na raiz da instancia - as 356
+linhas (355 skills + cabecalho) com caminho, classe, id real, categoria,
+confianca e quais sinais de codigo bateram. Abra num Excel/Sheets pra
+revisar - principalmente as linhas confidence=signal_weak ou default, que
+sao as menos confiaveis.
+
+O QUE FOI LIGADO DE VERDADE NO CODIGO (so entradas confidence=keyword ou
+signal_strong, fora skill/unique):
+    SUPPORT_SKILLS  (30, era 20) - prioridade de cura, expandido com
+      absorb_and_dissolve, body_double, doppelganger, infinite_regeneration,
+      majesty, self_regeneration, steel_strength, strength,
+      strength_aspectual (ja tinha), strengthen_body, ultraspeed_regeneration
+    DEBUFF_SKILLS   (34, era 16) - prioridade de debuff, expandido com toda
+      a familia de magias "*_domination" (earth/flame/gravity/lightning/
+      sound/spatial/water/weather), charm, curse, mental_crush,
+      mortal_fear, paralysing_breath, paralysis, possession,
+      solar_flare
+    SUSTAIN_SKILLS  (13, era so haki) - sustenta mais tempo (secao 12),
+      expandido com aura_slash, aura_sword, black_flame, corrosion,
+      demon_lord_haki, divine_ki_release, gravity_field, hero_haki,
+      magic_aura, magic_jamming, poison, sacred_haki
+    UTILITY_SKILLS  (59, NOVO) - skills puramente utilitarias (teleporte,
+      deteccao/visao, manipulacao de elemento sem dano, invocacao de
+      criatura, storage espacial etc.) - agora EXCLUIDAS da rotacao de
+      combate: um mob nunca vai "atacar" usando Warp Portal ou Spatial
+      Storage. Isso e o fix estrutural do bug que causou o vazamento de MP
+      do water_current_control (secao 10) - agora esse tipo de skill nunca
+      chega nem a ser cogitada pela IA de combate.
+
+Categorias "ataque" (20) e "projetil" (58) NAO tem lista propria no codigo
+- continuam caindo no bucket padrao "rotacao" (ofensivo, LRU) que ja existia,
+que e o comportamento certo pra elas. "defesa" (78, maioria skill/resist)
+tambem nao precisou de lista - sao quase todas skills PASSIVAS (resistencia/
+nulificacao), que nem aparecem em isActiveSkill() pra AI decidir nada, o
+jogo aplica sozinho.
+
+Arquivo alterado: mods/tensuramagicfilter-1.2.0.jar (mesmo jar, mesma
+classe UniqueMonsterCombatAI das secoes 09/11/12 - reaproveitado o backup
+.bak-preAimFix ja existente, nao criou backup novo).
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+15 - ICICLE_LANCE AINDA NAO DISPARA - segunda investigacao (03/09/2026)
+===============================================================================
+
+Depois dos fixes das secoes 10/11 (vazamento de toggle, margem de MP), o
+usuario testou de novo: lobo ainda faz a animacao do circulo, mas a lanca
+em si nunca aparece crescendo e nenhum projetil de dano sai. Log confirma
+que o "conjurando tensura:icicle_lance" AINDA acontece normalmente - ou
+seja, o problema nao e mais no inicio (isso os fixes anteriores resolveram
+pra outras coisas), e sim em algum ponto DEPOIS de comecar a segurar.
+
+BUG CONFIRMADO (mas talvez so cosmetico, nao a causa raiz completa):
+decompilado io/github/manasmods/tensura/ability/magic/Magic.java (classe
+base de TODA magic do Tensura) e comparado com IcicleLanceMagic:
+
+    Magic.java (base), metodo de 4 argumentos, chamado internamente por
+    onPressed/onHeld/onRelease de QUALQUER magic:
+        protected void applyCastingVisual(ManasSkillInstance instance, LivingEntity entity, int heldTicks, int mode) {
+            if (entity instanceof Player) {
+                Player player = (Player)entity;
+                ...
+                this.applyCastingVisual(instance, player, heldTicks, mode, cast);
+            }
+        }
+        // SEM "else" - se entity NAO for Player, o metodo nao faz NADA
+
+    IcicleLanceMagic so sobrescreve a versao de 5 argumentos (com o
+    parametro tipado como Player, nao LivingEntity):
+        protected void applyCastingVisual(ManasSkillInstance instance, Player entity, int heldTicks, int mode, int castTime) {
+            ... MagicCircle.castMagicCircle(..., MagicCircleVariant.ICE, ...) ...
+        }
+
+    Como onPressed/onHeld/onRelease chamam sempre a versao de 4 argumentos
+    (this.applyCastingVisual(instance, entity, heldTicks, mode), com
+    "entity" tipado LivingEntity no metodo que chama), o Java resolve pra
+    versao HERDADA (a de cima, generica) - NUNCA pra versao customizada de
+    gelo do IcicleLanceMagic. Resultado: pra um MOB (nunca e Player), essa
+    chamada e um no-op completo. O circulo magico de gelo especifico dessa
+    skill NUNCA e criado pra mob nenhum - so o efeito generico de "circulo
+    de conjuracao" que o proprio addon do sombra (secao 02, CastVisuals)
+    ja aplica por fora e que o usuario provavelmente esta vendo.
+
+Isso e um bug real do PROPRIO Tensura (nao criado por nos, o mod so nunca
+testou magic assim com mob conjurando) mas e cosmetico - a ENTIDADE
+IceLanceProjectile (a lanca em si) e criada direto em onPressed() por fora
+do applyCastingVisual, entao a falta desse metodo sozinha nao deveria
+impedir o projetil de existir. Nao ficou provado que isso e a causa raiz
+completa do "sem dano" - so confirmamos que o efeito visual de gelo
+especifico realmente nunca aparece pra mob, o que pelo menos explica
+"circulo aparece mas a lanca crescendo nao".
+
+DIAGNOSTICO ADICIONADO (nao e fix, e so instrumentacao pra proxima
+investigacao): UniqueMonsterCombatAI agora rastreia quantos ticks cada
+skill fica segurada antes de soltar, e loga isso quando debugLog=true:
+
+    [UniqueMonsterCombatAI] tensura:direwolf soltou tensura:icicle_lance apos N ticks segurando
+
+Isso vai dizer se o onHeld() do IcicleLanceMagic esta:
+    (a) falhando quase na hora (N bem baixo, tipo 1-3 ticks) - sugeriria
+        que o lookup do "LanceID" (level.getEntity(id) dentro do proprio
+        onHeld) esta falhando pra mob, cortando a segurada bem antes do
+        castTime - nesse caso onRelease() descarta silenciosamente porque
+        "heldTicks < castingTime"
+    (b) chegando perto do castTime configurado (ver
+        config/tensura/ability/magic/aspectual_config.toml, secao
+        [IcicleLance], campo castTime) e falhando so no final - sugeriria
+        que E o EnergyHelper.isOutOfEnergy() dentro do onRelease() que
+        ainda esta reprovando, apesar dos fixes de MP das secoes 10/11 (ou
+        seja, a margem configurada nao esta sendo suficiente pra esse caso
+        especifico)
+
+PROXIMO PASSO: usuario precisa testar de novo e mandar a linha
+"soltou tensura:icicle_lance apos N ticks" do log - com esse numero da pra
+saber com certeza qual das duas hipoteses (a ou b) e a certa e aplicar o
+fix certo, em vez de continuar tentando as cegas.
+
+Arquivo alterado: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo
+backup .bak-preAimFix das secoes anteriores - so instrumentacao, nenhuma
+mudanca de comportamento de jogo).
+
+
+===============================================================================
+16 - BUG GRAVE: UniqueMonsterCombatAI RODAVA NO CLIENTE TAMBEM (03/09/2026)
+===============================================================================
+
+Usando o log de diagnostico da secao 15, o usuario testou de novo (com o
+jogo reiniciado pra carregar o jar novo) e o resultado foi bizarro:
+
+    [Render thread/INFO] ... tensura:direwolf soltou tensura:icicle_lance apos -1 ticks segurando
+
+Repetido A CADA TICK (a cada ~50ms), dezenas de vezes seguidas, TODAS no
+"Render thread" - que e o thread do CLIENTE, nao do servidor.
+
+CAUSA RAIZ REAL (bem mais grave que tudo que investigamos antes):
+UniqueMonsterCombatAI.onTick() NUNCA teve uma checagem de
+"mob.level().isClientSide()". Isso significa que, desde que esse addon foi
+criado (sessao anterior a esta), a IA de combate inteira - decisao de
+qual skill usar, inicio de conjuracao (startHoldSkill), gerenciamento de
+toggles, TUDO - vinha rodando EM DOBRO: uma vez no servidor (autoritativo,
+o que realmente importa) e uma vez no cliente (em mundo singleplayer, que
+roda um servidor integrado E o cliente no mesmo processo).
+
+O lado cliente ficava tentando iniciar/segurar/soltar a MESMA skill
+independente do servidor, com sua propria copia local (nao-autoritativa)
+do SkillStorage. Pra skills tipo icicle_lance, que guardam o ID da
+entidade "lanca" numa tag NBT da propria instancia de skill (que E
+sincronizada entre cliente e servidor), isso e uma receita pra corrupcao:
+o cliente cria a SUA propria IceLanceProjectile (ou falha ao criar, ja que
+o lado cliente normalmente nao processa spawn de entidade da mesma forma),
+escreve o ID dela na tag, e essa escrita pode disputar com a escrita do
+servidor - se o cliente "vence" a corrida e a tag sincroniza de volta (ou
+o servidor le uma versao da tag que o cliente acabou de mexer), o servidor
+perde a referencia da SUA PROPRIA lanca e o onRelease() nem acha ela mais
+- descarta em silencio. Bate 100% com o sintoma (circulo aparece, lanca
+nao forma, sem dano, sem erro nenhum).
+
+Pra skills mais simples (Haki, Coercion, etc. - que nao dependem de uma
+entidade externa rastreada por ID, so aplicam efeito direto) essa
+duplicacao cliente/servidor provavelmente nao causava problema visivel -
+so trabalho duplicado sem efeito pratico (por isso o usuario via essas
+funcionando normalmente enquanto so a lanca quebrava).
+
+FIX: adicionada a checagem no topo de onTick(), logo apos confirmar que a
+entidade e um Mob:
+    if (mob.level().isClientSide()) {
+        return;
+    }
+Agora a IA de combate roda SO no servidor, como deveria desde o inicio.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix de sempre).
+
+ISSO PODE EXPLICAR RETROATIVAMENTE outros comportamentos estranhos vistos
+na sessao (nao so a lanca) - qualquer coisa que dependesse de estado
+sincronizado entre cliente/servidor podia estar sofrendo o mesmo tipo de
+corrida. Vale reobservar o comportamento geral da IA depois deste fix, nao
+só a lanca de gelo especificamente.
+
+TESTAR: reiniciar o jogo de novo (pra carregar esse jar) e tentar a lanca
+de gelo mais uma vez. Se ainda falhar, o log agora deve mostrar SO
+"[Server thread]" nas linhas de "soltou", com um numero de ticks
+sensato (nao mais -1 repetido) - aí sim da pra saber se e a hipotese (a)
+ou (b) da secao 15.
+
+
+===============================================================================
+17 - NAO USAR SKILL DE AREA SEM INIMIGO NO ALCANCE (03/09/2026)
+===============================================================================
+
+Pedido do usuario: evitar que o mob gaste magiculo com skill de area
+(tipo Haki) quando nao tem ninguem dentro do raio de efeito - so ter UM
+alvo (mob.getTarget() != null) nao garante que ele esteja perto o
+suficiente pra skill de area valer a pena.
+
+FIX: nova checagem em collectEligible() - pra skills marcadas como
+"de area" (AOE_SKILLS), so considera elegivel se o alvo atual do mob
+estiver dentro de um raio configuravel:
+
+    AOE_SKILLS = {"haki", "hero_haki", "sacred_haki", "demon_lord_haki",
+                  "gravity_field", "magic_aura", "magic_jamming",
+                  "earth_domination", "flame_domination",
+                  "gravity_domination", "lightning_domination",
+                  "sound_domination", "spatial_domination",
+                  "water_domination", "weather_domination",
+                  "wind_domination"}
+
+    aoeCheckRadius=15.0  (config/tensurauniquemonsterskills.properties)
+
+LIMITACAO CONHECIDA (documentando pra nao esquecer): usa a distancia ate
+mob.getTarget() (o alvo que o mob ja esta perseguindo), NAO um raio real
+de "tem QUALQUER inimigo por perto" nem o raio de efeito real e exato de
+cada skill (cada uma tem seu proprio hakiRadius/raio configurado no toml
+dela, que a gente nao le - usamos um valor unico aproximado pra todas).
+Cobre bem o caso comum (1 inimigo, tipo o boneco de treino que o usuario
+citou) mas nao cobre "tem um segundo inimigo diferente do alvo perto o
+suficiente" nem ajusta por skill.
+
+A lista AOE_SKILLS foi montada com base na secao 14 (skills continuas +
+familia "*_domination" dos debuffs) - sao as que, pelo nome e pela
+mecanica que ja confirmamos (Haki, secao "haki custa alguma coisa" da
+conversa), tem efeito de area ao redor do proprio mob, nao mirado direto
+no alvo. Se tiver outra skill de area que nao esta nessa lista, e so
+pedir pra adicionar.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix).
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+18 - REFINAMENTO DO CHECK DE AREA (secao 17) - 03/09/2026
+===============================================================================
+
+Usuario pediu pra refinar as 2 limitacoes documentadas na secao 17.
+
+REFINAMENTO 1 - raio real por skill em vez de valor unico aproximado:
+Decompilado e conferido contra os .toml de config de cada skill que
+estava na lista AOE_SKILLS da secao 17:
+
+    haki / hero_haki / sacred_haki / demon_lord_haki - CONFIRMADO: todas
+      as 4 chamam HakiSkill.summonHaki(...) e usam o MESMO
+      HakiSkill.CONFIG.hakiRadius (nenhuma tem raio proprio) = 15.0
+      (config/tensura/ability/skill/extra_config.toml, [Haki])
+    gravity_field - GravityFieldSkill.CONFIG.fieldRadius = 6
+      (fieldRadiusMastered = 10, mas mob nao gasta trabalho de mastery
+      como jogador, entao usamos o valor base)
+      (config/tensura/ability/skill/common_config.toml, [GravityField])
+    magic_jamming - MagicJammingSkill.CONFIG.jammingRadius = 10
+      (jammingRadiusMastered = 15, mesmo raciocinio acima)
+      (config/tensura/ability/skill/extra_config.toml, [MagicJamming])
+
+    magic_aura - REMOVIDO da lista: decompilando de verdade, essa skill
+      aplica o efeito em "entity" (o PROPRIO conjurador), nao no alvo -
+      e um buff de si mesmo, nao area ofensiva. Tinha entrado errado na
+      lista original por causa da classificacao automatica da secao 14
+      (sinal fraco, nunca foi verificado individualmente).
+
+    familia "*_domination" (earth/flame/gravity/lightning/sound/spatial/
+    water/weather/wind, 9 skills) - REMOVIDA da lista inteira: decompi-
+    lando cada uma, nenhuma tem o padrao simples "causa efeito em quem
+    estiver no raio X". Sao skills multi-modo de manipulacao de terreno
+    (cavar covas, erguer paredes, pilares etc, ex: EarthDominationSkill
+    reusa EarthManipulationSkill.CONFIG.pitRadius/breakRadius/wallRadius
+    - varios raios diferentes pra acoes diferentes, sem "dano em area"
+    direto). Forcar a checagem de "inimigo perto" nelas seria plausivel-
+    mente ERRADO (podem ser uteis pra controle de area mesmo sem inimigo
+    bem colado) - mais seguro deixar de fora do que arriscar outro bug
+    tipo o do water_current_control (secao 10).
+
+    AOE_SKILLS (Set) virou AOE_SKILL_RADIUS (Map<String,Double>) com o
+    raio real de cada uma. aoeCheckRadius (properties) agora so serve de
+    fallback se uma skill for adicionada na lista sem raio explicito no
+    codigo.
+
+REFINAMENTO 2 - nao depender so do alvo travado (mob.getTarget()):
+Antes so olhava a distancia ate o alvo atual do mob. Agora, alem disso,
+tambem escaneia por QUALQUER jogador (nao-espectador, nao-criativo)
+dentro do raio da skill, usando mob.level().getEntitiesOfClass(Player...)
+- igual ao padrao ja usado em hasHurtAllyNearby (secao original).
+
+LIMITACAO QUE CONTINUA (documentando, nao da pra resolver facil): so
+conta jogadores como "inimigo" pro scan extra, nao outros mobs hostis
+por perto (ex: dois mobs Tensura brigando entre si sem jogador envolvido
+nao seria pego pelo scan de Player - so pelo mob.getTarget(), que ainda
+funciona nesse caso). Uma deteccao de hostilidade 100% generica exigiria
+reimplementar a logica de faccao/alvo do proprio jogo, que e bem mais
+complexa - nao fizemos isso porque o ganho marginal nao parecia valer o
+risco de outro bug de classificacao errada.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix).
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+19 - LIMPEZA DE TOGGLES UTILITARIOS PRESOS LIGADOS (03/09/2026)
+===============================================================================
+
+Usuario reportou consumo de MP mesmo com o Lobo Temivel FORA de combate
+(confirmado: sem alvo, "sem skill elegivel... sem magiculo/aura" repetido,
+nenhum "conjurando" novo). Investigacao no log confirmou a causa: esse
+lobo (log arquivado 2026-09-03-1.log.gz, 09:13:47) teve
+"tensura:water_current_control" ligado 4x pelo BUG da secao 10 (a versao
+antiga do manageToggles, que ligava qualquer toggle nao-regen de graca).
+O fix da secao 10 parou de CRIAR esse problema em mobs novos, mas nunca
+desligou o que ja tinha ficado ligado nesse mob especifico - o toggle
+continuou preso ligado, drenando magiculo por tras (a propria logica
+interna do WaterCurrentControlSkill do Tensura, nao nossa) independente
+de combate.
+
+Usuario confirmou depois: NAO E SO ESSE LOBO - "todos os meus lobos estao
+com esse consumo de mp". Ou seja, o problema e sistemico: qualquer mob que
+existia (ou foi processado) antes do fix da secao 10 pode ter ficado com
+algum toggle utilitario preso ligado (nao necessariamente o mesmo em
+todos - cada um trava no que sabia).
+
+FIX: manageToggles() agora faz limpeza ativa, alem de gerenciar regen.
+Pra qualquer skill toggle que esteja na lista UTILITY_SKILLS (secao 14/17
+- teleporte, deteccao, manipulacao de elemento, storage espacial etc - a
+mesma lista que ja impede essas skills de serem ATIVADAS em combate, ver
+collectEligible()) e que esteja ATUALMENTE ligada, desliga na proxima vez
+que manageToggles rodar pra aquele mob (a cada combatAiIntervalTicks, 20
+ticks = 1s por padrao) - sem custo, sem select de novo, so desliga.
+
+Ou seja agora a lista UTILITY_SKILLS cobre os dois lados:
+    1. collectEligible() - nunca deixa a IA ESCOLHER usar uma dessas em
+       combate (ja existia desde a secao 17)
+    2. manageToggles() - se uma dessas ja estiver ligada (por bug antigo,
+       ou qualquer outro motivo), desliga automaticamente (NOVO)
+
+Isso deve corrigir TODOS os mobs afetados automaticamente, sem precisar
+respawnar/retamar nenhum - na proxima vez que o manageToggles rodar pra
+cada um (1x por segundo, silencioso a nao ser debugLog).
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix).
+
+TESTAR: reiniciar o jogo (carregar o jar novo) e ver se o consumo de MP
+fora de combate para sozinho em ate alguns segundos, em todos os lobos.
+
+
+===============================================================================
+20 - IMPEDIR QUE MOBS APRENDAM SKILLS DE UTILIDADE (parcial) - 03/09/2026
+===============================================================================
+
+Pedido do usuario: essas skills de utilidade nao deveriam nem ser
+aprendidas por mobs, ja que eles nao usam corretamente.
+
+INVESTIGACAO - de onde vem a skill que o mob "sabe":
+    1. data/tensura/entity_existence/direwolf.json - abilities INATAS da
+       especie (todo direwolf nasce sabendo). Pro direwolf: so
+       "tensura:coercion" e "tensura:thought_communication" (esse ultimo
+       ja esta na nossa UTILITY_SKILLS).
+    2. config/nightmareutils/spawn_profiles.json - DESATIVADO (enabled:
+       false), so oferecia 4 magias ofensivas mesmo, nada de utilidade.
+    3. UniqueMonsterAbilities (nosso addon, secao 03) - sorteia magia
+       bonus pra mob "unico" das tags aspectual_magic/spiritual_magic/
+       summoning_magic INTEIRAS, sem filtrar - podia sortear coisa de
+       utilidade tipo reincarnation/warp_portal/spatial_storage (essas
+       SAO Magic, entao entram no sorteio).
+    4. O usuario confirmou a causa real do water_current_control
+       especificamente: "ele ganhou water control por ter aumentado de
+       EP" / "existe uma mecanica dentro do jogo que da skills por EP" /
+       "deve ser do proprio tensura" - ou seja, o PROPRIO Tensura tem um
+       sistema de progressao de raca que concede skills automaticamente
+       conforme o EP do bicho sobe (evolucao/rank up). Isso e NUCLEO do
+       jogo, nao e nosso addon nem o nightmareutils.
+
+FIX APLICADO (so cobre o item 3, o unico que e nosso e seguro de mexer):
+UniqueMonsterAbilities.addTier() agora pula qualquer skill cujo id esteja
+em UniqueMonsterCombatAI.UTILITY_SKILLS ao montar o pool de sorteio -
+nunca mais oferece esse tipo de magia como bonus pra mob unico. (Pra isso,
+UTILITY_SKILLS deixou de ser "private" e virou "package-private" - visivel
+so dentro do pacote com.sombra.tensuramagicfilter.uniqueabilities, onde
+as duas classes vivem.)
+
+NAO DA PRA CORRIGIR NA FONTE (item 1 e item 4) SEM MEXER NO NUCLEO DO
+TENSURA:
+    - O JSON de abilities inatas por especie e dado base do jogo - editar
+      ele tiraria a skill "de lore" da especie inteira (afetaria TODO
+      direwolf do mundo, nao so os que a IA nossa controla).
+    - O sistema de "ganha skill por EP" e progressao de raca do proprio
+      Tensura, PARTILHADO com jogadores (jogador tambem ganha skill
+      conforme evolui). Mexer nisso pra impedir mobs de aprender certas
+      skills exigiria decompilar e patchear o sistema de evolucao/rank do
+      nucleo do jogo - mudanca bem maior e mais arriscada que qualquer
+      coisa feita ate agora nesta sessao (afeta progressao de jogador
+      tambem, nao so mob). NAO foi feito - precisa de decisao explicita
+      do usuario se quiser ir por esse caminho.
+
+NA PRATICA, O PROBLEMA JA ESTA RESOLVIDO DE OUTRO JEITO: mesmo que um mob
+"aprenda" uma skill de utilidade por essas vias que nao controlamos, ela
+NUNCA e usada de verdade gracas as secoes 17 e 19:
+    - collectEligible() nunca deixa a IA escolher usar (secao 17)
+    - manageToggles() desliga automaticamente se for do tipo toggle e
+      estiver ligada (secao 19)
+Entao o mob pode "saber" a skill (aparece na lista dele), mas ela nunca
+custa magiculo nem faz nada - efeito pratico e como se ele nao soubesse,
+mesmo sem conseguirmos impedir o aprendizado nas fontes 1 e 4.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe + a nova
+UniqueMonsterAbilities.class, mesmo backup .bak-preAimFix).
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+21 - LIMPEZA DE TOGGLE FUNCIONOU, MAS USUARIO AINDA VE GASTO DE MP -
+     diagnostico de magiculo adicionado (03/09/2026)
+===============================================================================
+
+Testado apos a secao 19/20: log confirmou a limpeza funcionando de
+verdade - varios direwolves diferentes tiveram
+"desligou toggle tensura:water_current_control" automaticamente ao
+carregar o mundo. Depois disso, nenhum toggle ligado, nenhum
+"conjurando" novo, so "sem skill elegivel... sem magiculo/aura" (ou seja,
+nem nosso codigo nem o TensuraAlexsCompat.updateCombatToggles pareciam
+estar gastando nada nesse momento).
+
+Mesmo assim usuario reportou que o lobo AINDA mostra consumo de MP. Como
+nao sobrou nenhuma pista nova no log (nada sendo ligado/conjurado), nao
+da pra saber a causa so olhando os logs de ACAO - precisa ver o proprio
+VALOR de magiculo mudando ao longo do tempo.
+
+DIAGNOSTICO ADICIONADO (nao e fix, so instrumentacao): UniqueMonsterCombatAI
+agora loga o magiculo atual do mob a cada combatAiIntervalTicks (1x por
+segundo por padrao), e quando ele mudar >= 1.0 desde a ultima checagem,
+registra:
+
+    [UniqueMonsterCombatAI] tensura:direwolf magiculo 12345.0 -> 12300.0 (-45.0 em 20 ticks)
+
+Isso vai mostrar COM CERTEZA se ainda esta caindo (e quanto/quao rapido)
+mesmo sem nenhum toggle nosso ligado e sem "conjurando" - se cair mesmo
+assim, a causa e ALGO FORA do nosso addon (ex: TensuraAlexsCompat.
+updateCombatToggles com algum toggle ainda ligado que a gente nao
+gerencia - strength/poison/drain/berserker/etc, o COMBAT_TOGGLES_
+HANDLED_ELSEWHERE - ou regeneracao natural configurada errada, ou algum
+efeito de status ativo tipo veneno que drena magiculo).
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix).
+
+PROXIMO PASSO: reiniciar o jogo, deixar o lobo parado fora de combate
+por uns 10-20s, e mandar as linhas "magiculo X -> Y" do log (ou a
+ausencia delas, o que tambem seria uma pista - significaria que o
+magiculo NAO esta de fato mudando e o "gasto" percebido pode ser outra
+coisa, tipo a barra de UI nao atualizando ou confundir magiculo com
+aura).
+
+
+===============================================================================
+22 - DUAS CAUSAS DE GASTO DE MP FORA DE COMBATE (03/09/2026)
+===============================================================================
+
+Com o diagnostico de toggles_ligados (secao 21) rodando, apareceram DUAS
+causas DIFERENTES de queda de magiculo fora de combate, em mobs de varias
+especies (nao so Tensura - alexsmobs, minecraft vanilla, iceandfire,
+irons_spellbooks - qualquer um com IExistence):
+
+CAUSA A - skills de "resistencia" (skill/resist, categoria "defesa" da
+secao 14, 44 skills tipo abnormal_condition_resistance,
+water_attack_resistance, poison_resistance etc.) SAO TOGGLE E TEM CUSTO
+DE MANUTENCAO continuo - confirmado no log, ex:
+    alexsmobs:cockroach com tensura:abnormal_condition_resistance ligado:
+    oscila +10/-6.67 por segundo (regen natural batendo contra o custo de
+    manter a resistencia ligada)
+    alexsmobs:catfish com tensura:water_attack_resistance +
+    tensura:water_breathing ligados: -328/segundo(!)
+Isso nunca foi gerenciado por ninguem - nem nosso manageToggles (so
+cuidava de regen), nem o TensuraAlexsCompat.updateCombatToggles (so cuida
+dos 8 combat toggles). Ficam ligados o tempo todo, gastando MP mesmo com
+o mob totalmente parado.
+
+FIX: RESIST_SKILLS (novo Set, as 44 skills de skill/resist) adicionado ao
+manageToggles() com o MESMO padrao que o TensuraAlexsCompat ja usa pros
+combat toggles - liga SO quando o mob tem alvo (esta em combate), desliga
+quando nao tem. Faz sentido: resistencia a status/dano so importa
+levando dano de verdade. Custo cobrado na hora de ligar usa
+safeMagiculeCost() normal (SEM o fallback de regenToggleMagiculeCost=200,
+que so faz sentido pra regen - a maioria das resistencias parece ter
+custo de ativacao 0, o gasto real e a manutencao interna do proprio
+Tensura, que a gente nao replica, so deixa acontecer enquanto ligado).
+
+Tambem corrigidas 2 skills mal classificadas na secao 14 (foram pro bucket
+errado por causa de palavra-chave enganosa) - foram pra UTILITY_SKILLS:
+    sense_soundwave (achou "wave" -> tinha ido pra "projetil", errado -
+      e deteccao/sensor, nao ataque)
+    water_breathing (achou "breath" -> tinha ido pra "projetil", errado -
+      e utilidade passiva, nao ataque de sopro)
+
+CAUSA B - "exceedMaxLost" (config/tensura/energy_config.toml): mecanismo
+NATIVO do Tensura, NAO E BUG NOSSO. Quando o magiculo ATUAL de uma
+criatura excede o magiculo MAXIMO (atributo), o jogo desconta uma parte a
+cada 10 ticks ate normalizar. Confirmado no log: um lobo com
+"toggles_ligados=[]" (nada ligado) continuava perdendo -6.67/s do mesmo
+jeito - prova que nao vem de toggle nenhum.
+
+Suspeita de causa raiz (NAO CONFIRMADA, precisa investigar mais se o
+usuario quiser): o mod TensuraUniqueMonsters multiplica EP de mob
+"unico" em ate 10x (secao 01). Se isso reflete no magiculo ATUAL do mob
+na hora do spawn mas o atributo de magiculo MAXIMO nao acompanha na mesma
+hora/formula, o mob nasce "acima do proprio teto" e o exceedMaxLost fica
+descontando ate acertar - e um comportamento AUTOCORRETIVO (para sozinho
+quando o valor cai pro nivel do maximo), nao um vazamento infinito.
+
+NAO MEXIDO: exceedMaxLost e config core do Tensura, mudar afetaria
+jogador tambem (nao e especifico de mob). Se quiser eliminar isso na
+raiz, precisa investigar o multiplicador de EP do TensuraUniqueMonsters
+(mod separado, nao e nosso addon) - pendente de decisao do usuario.
+
+DESCOBERTA A PARTE (nao aplicada ainda): existe um mod ja instalado no
+pack, tensura_skill_disabled-1.0.0.0.jar ("Tensura Skill Disabled"), que
+e uma blacklist GLOBAL de skills - intercepta o evento
+SkillEvents.UNLOCK_SKILL (o mesmo que nosso UniqueMonsterAbilities usa
+pra aprender skill, e provavelmente o mesmo que o sistema de evolucao por
+EP do proprio Tensura usa tambem). Configuravel via
+config/skill_blacklist.json (formato: {"disabledSkills": ["tensura:id",
+...]}) ou comando in-game (ver SkillBlacklistCommand). Colocar os ids de
+UTILITY_SKILLS la bloquearia o aprendizado na FONTE pra qualquer entidade
+(incluindo a via de evolucao por EP que a gente nao conseguia filtrar
+antes - secao 20) - PENDENTE, usuario pode escolher se quer configurar
+isso ou nao, e um mod de terceiro que a gente so descobriu, nao criamos.
+
+Arquivo alterado: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo
+backup .bak-preAimFix de sempre).
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+23 - BUG CRITICO: hasEnergyWithMargin() DESCONTAVA MP SO DE VERIFICAR
+     (a causa raiz de verdade) - 03/09/2026
+===============================================================================
+
+Usuario contestou a causa B da secao 22 (certo - o magiculo do lobo estava
+perto do PISO minimo, nao de um teto excedido, e continuava CAINDO ate
+zerar, o que exceedMaxLost nao explica: aquele mecanismo para assim que
+o valor volta pro maximo, nao continua drenando pra sempre). Usuario
+tambem reportou lobos recem invocados (/summon, fora de qualquer combate)
+ja perdendo ~300 magiculo, e uma mariposa infernal (invisible + paralysis)
+com o mesmo problema. Isso apontava pra algo generico, ligado a QUANTIDADE
+DE SKILLS aprendidas, nao a especie ou a um toggle especifico.
+
+CAUSA RAIZ REAL, CONFIRMADA NO CODIGO DECOMPILADO:
+    io/github/manasmods/tensura/util/EnergyHelper.java, metodo
+    isOutOfEnergy(LivingEntity entity, double apCost, double mpCost):
+
+        if (!enoughAP || !enoughMP) {
+            return true;  // sem energia - NAO desconta
+        }
+        existence.setAura(existence.getAura() - apCost);
+        existence.setMagicule(existence.getMagicule() - mpCost);  // <-- AQUI
+        existence.markDirty();
+        return false;  // TEM energia - MAS JA DESCONTOU antes de retornar
+
+Esse metodo NAO E uma checagem pura ("posso pagar?") - e um "verifica-E-
+cobra" (paga na hora se puder, senao recusa). Ele foi projetado pra ser
+chamado EXATAMENTE UMA VEZ, no momento exato em que a skill de fato vai
+ser usada (e o que o proprio Tensura faz - cada skill chama isso so
+quando esta realmente conjurando).
+
+O BUG NOSSO: UniqueMonsterCombatAI.hasEnergyWithMargin() (criado na secao
+11, pra resolver o problema da lanca de gelo) chamava
+"EnergyHelper.isOutOfEnergy(mob, instance, 0)" como um PRE-CHECK antes de
+decidir se a skill era elegivel - ACHANDO que era so leitura. Mas
+collectEligible() chama hasEnergyWithMargin() pra CADA skill aprendida do
+mob, TODA VEZ que verifica quem esta elegivel (a cada
+combatAiIntervalTicks, 1x/segundo por padrao) - MESMO que a skill nunca
+seja de fato escolhida/usada depois. Resultado: um mob com N skills
+aprendidas perdia magiculo de N skills diferentes, TODO SEGUNDO, so de
+"cotar preco" - nunca lançando spell nenhuma visivelmente, sem toggle
+ligado, sem "conjurando" no log. Pior ainda: logNothingEligible() (que so
+roda quando nada foi elegivel, com debugLog=true) chamava a MESMA funcao
+de novo pra logar o motivo - ou seja, quando o mob ja estava sem
+magiculo (que ESSE PROPRIO BUG causou), ele levava um SEGUNDO round de
+descontos tentando descobrir POR QUE nao tinha mais magiculo. Um ciclo
+vicioso que so parava quando o magiculo batia no piso (minMagicule=10) e
+ficava preso la (explicando exatamente o que o usuario via - MP indo pro
+fundo e ficando).
+
+Isso explica TUDO que foi observado nesta sessao a partir da secao 21:
+lobos, baratas, morcegos, bagres, mariposas - qualquer mob com varias
+skills aprendidas, gastando MP fora de combate, sem toggle, sem cast
+visivel, incluindo mobs RECEM invocados (que ja tem magiculo baixo por
+mera existir com skills aprendidas por 1-2 segundos).
+
+MESMO BUG, MENOR IMPACTO: UniqueMonsterAbilities.assignRandomAbilities()
+tambem chamava esse mesmo metodo (uma vez por skill CONCEDIDA, so no
+spawn - nao repetido) pra verificar se o mob "unico" podia pagar a magia
+bonus antes de manter ela. Isso descontava o custo da skill IMEDIATAMENTE
+ao ganhar, mesmo que o mob nunca chegasse a lançar - explica parte do
+"lobo recem invocado ja perde ~300 magiculo" (grant de skill bonus, ja
+que uniqueMonsterChance ainda esta em 100.0 de teste - PEND antiga).
+
+FIX (nos dois lugares): parar de chamar EnergyHelper.isOutOfEnergy(...)
+pra "so verificar". Em vez disso, calcular o custo da skill via
+getMagiculeCost() (que so LE o valor, nao desconta nada) e comparar
+direto contra o magiculo atual do mob - leitura pura, sem efeito
+colateral nenhum.
+
+    UniqueMonsterCombatAI.safeMagiculeCost() virou "static" (era
+    "private static") e trocou o parametro de "Mob mob" pra
+    "LivingEntity entity", pra poder ser reaproveitado por
+    UniqueMonsterAbilities tambem (mesmo pacote).
+
+    hasEnergyWithMargin() no removeu a chamada de isOutOfEnergy() e so
+    usa comparacao direta: magiculo atual >= custo * margem.
+
+    UniqueMonsterAbilities.assignRandomAbilities() trocou a mesma
+    checagem por: custo <= 0 || magiculo atual >= custo (sem desconto).
+
+IMPORTANTE: o verdadeiro desconto de magiculo continua acontecendo
+NORMALMENTE quando uma skill e REALMENTE usada (isso acontece dentro do
+proprio Tensura, no momento do cast de verdade - onPressed/onHeld/
+onRelease chamando isOutOfEnergy la dentro, ou no toggle-management
+nosso que ja usava setMagicule direto, sem passar por isOutOfEnergy). O
+fix so tira o desconto INDEVIDO que rolava so de "checar se dava".
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesmas classes das secoes
+anteriores, mesmo backup .bak-preAimFix).
+
+Nao testado em jogo ainda - mas essa e a explicacao mais solida e
+completa encontrada ate agora, bate com TODOS os sintomas relatados
+(especies variadas, sem toggle, mobs recem-invocados, queda ate o piso e
+nao ate um teto).
+
+
+===============================================================================
+24 - LAG/SLOWMOTION APOS SECAO 21 - DIAGNOSTICO REMOVIDO (03/09/2026)
+===============================================================================
+
+Depois do diagnostico de magiculo+toggles+efeitos da secao 21 (rodando
+por mob, por segundo, pra TODO mob do mundo, sempre que debugLog=true -
+que estava true), usuario reportou o jogo inteiro travando: mobs caindo
+em "slow motion", andando devagar - sintoma classico de TPS do servidor
+despencando, nao um lag qualquer.
+
+CAUSA: o bloco de diagnostico (secao 21) rodava, pra CADA mob, TODO
+segundo (a cada combatAiIntervalTicks=20 ticks): um loop por TODAS as
+skills aprendidas chamando isToggled(), um loop por TODOS os efeitos
+ativos chamando toString(), montagem de 2 ArrayList novos, e uma chamada
+de log formatando tudo isso - E essa condicao (delta de magiculo >= 1.0)
+praticamente SEMPRE era verdadeira pra QUALQUER mob (a regeneracao
+natural de +10/20ticks sozinha ja garante isso) - ou seja, rodava pra
+essencialmente 100% dos mobs carregados, todo segundo, sem excecao. Com
+o pack tendo dezenas de mods que adicionam mob (alexsmobs, iceandfire,
+irons_spellbooks etc.), isso e MUITOS mobs de uma vez.
+
+FIX: removido TODO o codigo de diagnostico que nao e mais necessario -
+ja achamos e corrigimos a causa raiz de verdade (secao 23). Removidos:
+    - o bloco de "magiculo X -> Y ... toggles_ligados=... efeitos=..."
+      (secao 21)
+    - o bloco de "soltou X apos N ticks segurando" (secao 15/16)
+    - os 4 campos WeakHashMap que so existiam pra sustentar esses dois
+      diagnosticos (HOLD_START, HOLD_SKILL_ID, LAST_MAGICULE,
+      LAST_MAGICULE_CHECK)
+O fix real da secao 23 (hasEnergyWithMargin sem chamar isOutOfEnergy) foi
+mantido intacto - so o instrumental temporario saiu.
+
+TAMBEM DESLIGADO: debugLog=false em
+config/tensurauniquemonsterskills.properties (estava true - ja tinha
+cumprido o papel de ajudar a investigar, e o log de "sem skill elegivel"
+que ele tambem liga roda por mob/por segundo do mesmo jeito, entao vale
+desligar agora que o bug real foi achado). NAO mexi no debugLog de
+config/tensuramagicfilter.properties (o do filtro do sombra, secao 02) -
+esse so loga uma vez por mob NO SPAWN, nao repete por tick, entao nao e
+suspeito de causar lag continuo - deixei como estava.
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar (mesma classe, mesmo backup
+.bak-preAimFix - o jar ficou MENOR que a versao anterior, 34320 bytes
+contra 35465, confirmando que codigo foi removido de verdade).
+
+Aplicado com o jogo FECHADO (o usuario fechou antes de eu mexer) -
+mais seguro, sem risco da corrupcao de arquivo que ja rolou uma vez
+(secao 13) quando o launcher/instancia estava com o jar aberto.
+
+TESTAR: abrir o jogo de novo e ver se o TPS volta ao normal (sem mais
+slowmotion). Se ainda tiver lag, pode ser outra coisa - nesse caso,
+convem tambem checar se algum OUTRO mod do pack (secao 20 listou varios:
+tensuramoreskills, tensuraenigmatic, tensura_iron_spells etc.) esta
+gerando log ou processamento pesado, ja que nunca foram auditados nesta
+sessao.
+
+
+===============================================================================
+25 - LAG CONTINUAVA APOS REMOVER DIAGNOSTICO - CAUSA REAL:
+     uniqueMonsterChance=100 + fix da secao 23 juntos (03/09/2026)
+===============================================================================
+
+Usuario reportou que remover o diagnostico (secao 24) NAO resolveu o
+slowmotion, e notou corretamente que o lag comecou DEPOIS do fix do
+vazamento de MP (secao 23). Analise:
+
+O fix da secao 23 parou hasEnergyWithMargin() de descontar magiculo so
+de VERIFICAR elegibilidade. Efeito colateral nao previsto: antes do fix,
+esse desconto indevido (repetido por skill, por segundo) ACABAVA
+FUNCIONANDO COMO UM LIMITADOR ACIDENTAL - os mobs ficavam sempre com
+pouco magiculo de sobra, entao raramente conseguiam de fato PAGAR e
+CONJURAR uma skill de verdade. Com o fix, os mobs agora RETEM o magiculo
+que antes sumia a toa - e conseguem realmente lancar skills com muito
+mais frequencia.
+
+Isso por si so seria uma melhoria (skills finalmente funcionando como
+deveriam) - o problema e que uniqueMonsterChance ainda estava em 100.0
+(secao 01, PEND desde o INICIO desta sessao - "e DE TESTE"). Com 100%,
+literalmente TODO mob do mapa vira "unico" e ganha 1-2 magias bonus via
+UniqueMonsterAbilities. Antes do fix da secao 23, esses mobs unicos
+raramente conseguiam pagar as proprias magias (o proprio bug os mantinha
+"pobres"). Depois do fix, cada um desses mobs "unicos" (ou seja,
+CADA MOB DO MAPA) passou a conseguir conjurar de verdade, gerando
+entidades de circulo magico, projeteis, particulas etc. - para
+essencialmente toda criatura carregada ao mesmo tempo. Isso e o tipo de
+carga que derruba TPS.
+
+FIX: config/tr_UniqueMonsters/base_config.toml
+    uniqueMonsterChance = 100.0  ->  0.1
+(valor documentado pelo proprio mod como a faixa normal: "0.1% - 100%",
+0.1 sendo o padrao de fabrica)
+
+IMPORTANTE - NAO RETROATIVO: essa mudanca so afeta mobs que spawnarem
+DAQUI PRA FRENTE. Os que ja existem no mundo (a sessao inteira rodou
+com 100%) ja estao com a tag tr_unique_monster e ja aprenderam a magia
+bonus - a correcao nao desfaz isso neles. O alivio de performance deve
+vir aos poucos, conforme esses mobs antigos morrem/despawnam e sao
+substituidos por spawns normais. Se o usuario quiser alivio imediato,
+precisa limpar/matar os mobs unicos existentes manualmente (nao fizemos
+isso - e uma acao destrutiva, fica a criterio do usuario).
+
+Nao alterado nesta secao: nenhum codigo, so config. O fix da secao 23
+(nao descontar MP so de checar) continua correto e deve ser mantido -
+o "vazamento" que ele impedia de fato acontecer nunca foi um recurso
+intencional, so um bug escondendo o efeito de outro bug (uniqueMonsterChance
+alto) atras dele.
+
+
+===============================================================================
+26 - MANTER uniqueMonsterChance=100 - FIX PELO CASTCIRCLE EM VEZ DA TAXA
+     DE SPAWN (03/09/2026)
+===============================================================================
+
+Usuario esclareceu: precisa de uniqueMonsterChance=100 pra testar as
+mudancas de verdade (nao da pra reduzir a taxa de spawn). Revertido de
+volta pra 100.0 (secao 25 tinha colocado 0.1 - desfeito).
+
+Tambem esclareceu o timing: o lag comecou com o jogo JA ABERTO, durante o
+processo de implementar o fix da secao 23 - reforca que e o fix de MP
+(mobs finalmente CONSEGUINDO pagar e conjurar) + 100% de mobs unicos
+gerando carga demais ao mesmo tempo, nao um problema de spawn novo per se.
+
+FIX ALTERNATIVO: decompilado com.sombra.tensuramagicfilter.CastVisuals
+(secao 02, o efeito visual de circulo magico que o sombra adicionou pra
+mob, ja que o Tensura so faz isso pra Player). Achado: CADA mob
+conjurando gera uma ENTIDADE MagicCircle propria (girando, seguindo o
+mob, com particulas), que fica viva durante todo o tempo do cast. Com
+uniqueMonsterChance=100 + fix da secao 23, isso significa potencialmente
+CENTENAS de entidades MagicCircle simultaneas, cada uma ticando - exatamente
+o tipo de carga que derruba TPS.
+
+Essa entidade e PURAMENTE VISUAL/decorativa - nao afeta em nada a logica
+real de skill (se o mob consegue pagar, conjurar, o dano, etc.) que o
+usuario quer testar. Desligar ela nao muda o comportamento da IA nem do
+sistema de mob unico, so tira a animacao do circulo.
+
+FIX: config/tensuramagicfilter.properties
+    castCircle = true  ->  false
+uniqueMonsterChance MANTIDO em 100.0 (nao mexido de novo).
+
+Se ainda tiver lag depois disso, proximos passos possiveis (nao
+aplicados ainda, dependem de teste):
+    - aumentar actionCooldownTicks (100 -> algo maior, ex 150-200) pra
+      reduzir a DENSIDADE de mobs conjurando ao mesmo tempo, sem parar
+      de testar - so espaca mais os casts no tempo
+    - desligar castSound tambem (efeito colateral bem menor que
+      castCircle, mas e outra fonte de processamento por cast)
+    - castingSlowness (aplica MobEffectInstance por tick em todo mob
+      conjurando - custo pequeno mas nao-zero, multiplicado por muitos
+      mobs)
+
+Nao alterado nesta secao: nenhum codigo, so config (2 arquivos: base_config.toml
+revertido, tensuramagicfilter.properties com castCircle=false).
+
+TESTAR: reiniciar e ver se o TPS normaliza com uniqueMonsterChance=100 +
+castCircle=false. Lembrar que mobs unicos que ja existiam no mundo (de
+sessoes anteriores) continuam existindo - isso e esperado e normal agora,
+diferente da secao 25 onde a preocupacao era so newspawns.
+
+CORRECAO (ver secao 27): castCircle=false NAO resolveu o lag reportado
+depois - a causa era outra, sem nenhuma relacao com o Tensura. Revertido
+de volta pra castCircle=true, ja que desligar o efeito visual nao tinha
+motivo pra continuar sem a causa real confirmada.
+
+
+===============================================================================
+27 - LAG "DO MAPA INTEIRO" NAO ERA O TENSURA: LOOP DE CLONAGEM DO ARS NOUVEAU
+     (03/09/2026)
+===============================================================================
+
+Depois da secao 26 (castCircle=false), usuario reportou que o lag CONTINUOU
+- "o mapa esta totalmente lagado, demorando muito pra renderizar" - e pediu
+analise real em vez de mais hipotese. Investigado log em vez de arquivo de
+codigo desta vez.
+
+METODO: comprimidos os logs da sessao (logs/2026-09-03-*.log.gz) e contados
+por logger de origem (campo entre colchetes do meio de cada linha) pra achar
+o que estava gerando mais volume. "net.minecraft.world.entity.LivingEntity"
+apareceu 751x so no ultimo log (2026-09-03-7.log.gz) - bem mais que qualquer
+coisa do Tensura ou do nosso addon (nosso debugLog estava desligado, zero
+linhas nossas nesse log - confirma que a seção 24 realmente parou de gerar
+log).
+
+CAUSA REAL ENCONTRADA: uma entidade chamada CloneEntity['Zumbi'/N, ...] -
+essa e a entidade do glifo "Clone" do ARS NOUVEAU (mod de magia separado,
+NAO tem nada a ver com Tensura nem com nosso addon), presa num loop de
+autoduplicacao numa coordenada fixa embaixo do mapa:
+    x entre -1017 e -1024, y=-35 (subterraneo/masmorra), z entre 1471 e 1476
+
+Provas:
+    - CloneEntity NUNCA apareceu em nenhum log de 01/09 ou 02/09 (checado
+      todos os .log.gz desses dois dias, 0 ocorrencias) - so comecou as
+      12:10:30 do dia 03/09, no log 2026-09-03-5.log.gz, exatamente na
+      mesma sessao de jogo onde o lag foi reportado.
+    - Em ~11 minutos (12:10 as 12:16 do log -5) os IDs de entidade do mundo
+      pularam de ~2979 pra ~6567 - e no log -7 (ultimo antes do usuario
+      fechar o jogo) o ID de entidade mais alto visto foi 12409. Ou seja,
+      MILHARES de entidades criadas numa unica masmorra/spawner em minutos.
+    - As mortes ("Zumbi sufocou-se numa parede" / "Uma horda esmagou Zumbi
+      com muita forca") sao zumbis se esmagando uns aos outros por
+      superlotacao no mesmo bloco - efeito colateral classico de excesso de
+      entidades empilhadas.
+    - "Can't keep up! Is the server overloaded?" apareceu no mesmo log,
+      pico de "Running 46967ms or 939 ticks behind" as 12:29:21 - bate
+      exatamente com a janela de tempo da clonagem.
+    - Usuario confirmou: "ja consegui resolver me afastando" - se afastar
+      da coordenada resolveu na hora. Isso descarta qualquer coisa do
+      addon (UniqueMonsterCombatAI roda GLOBAL, pro mapa inteiro, nao
+      pararia de causar lag so por sair de uma area especifica). Confirma
+      que e um problema LOCAL, preso aquela masmorra/spawner.
+
+CONCLUSAO: o lag do "mapa inteiro"/"demorando pra renderizar" nao tinha
+NENHUMA relacao com as mudancas desta sessao (Tensura/tensuramagicfilter).
+Era um loop de duplicacao de zumbi do Ars Nouveau rodando havia minutos
+numa masmorra especifica, gerando milhares de entidades que o servidor
+nao conseguia processar a tempo - isso sim derruba TPS/renderizacao do
+mapa inteiro (nao so daquela area), porque o servidor fica ocupado demais
+processando a masmorra pra processar mais nada.
+
+REVERTIDO: castCircle voltou pra true em
+config/tensuramagicfilter.properties (secao 26 tinha desligado ele
+tentando aliviar o que parecia ser lag de mob unico - nao era a causa,
+entao nao tinha motivo pra manter desligado).
+
+NAO MEXIDO (fora do escopo do addon Tensura, e do proprio Ars Nouveau, mod
+de terceiro que nao foi tocado nesta sessao): o loop de clone em si
+continua existindo naquela coordenada se ninguem foi la limpar. Se
+acontecer de novo, ir ate x=-1020, y=-35, z=1473 (aprox., dimensao
+overworld) e:
+    - matar os zumbis clonados acumulados (/kill ou area de efeito)
+    - achar e remover/desativar o que esta disparando o glifo Clone
+      repetidamente (spawner, redstone, ritual do Ars Nouveau preso em
+      loop) - sem isso, o loop pode recomecar
+
+Arquivos alterados: so config/tensuramagicfilter.properties (castCircle).
+Nenhum codigo do addon foi tocado nesta secao - a investigacao usou os
+logs do jogo (logs/2026-09-03-*.log.gz), nao decompilacao.
+
+
+===============================================================================
+28 - BUFF/BARREIRA PASSOU A EXIGIR COMBATE (cura continua liberada fora dele)
+     (03/09/2026)
+===============================================================================
+
+Pedido do usuario, depois de observar fadas (iceandfire:pixie, mob "fairy"
+do mod Ice and Fire, que ganha skills do Tensura via addon de compat
+tensura_iaf) conjurando fora de combate: nao ha problema a fada curar fora
+de combate, mas buff e barreira deveriam exigir combate, pra nao virar spam
+pelo mapa (o mesmo tipo de preocupacao de performance da secao 27).
+
+INVESTIGACAO - por que a cura disparava sem combate: decompilado de novo o
+UniqueMonsterCombatAI.class ATUAL (nao o caderno, o bytecode que estava
+rodando) pra confirmar contra o codigo de verdade. Em act():
+
+    boolean selfHurt = health < maxHealth * healThreshold;
+    boolean allyHurt = !selfHurt && hasHurtAllyNearby(mob, config);
+    if ((selfHurt || allyHurt) && candidate in SUPPORT_SKILLS) {
+        cast(...);
+        return;                    // <-- sai ANTES do check de alvo
+    }
+    if (mob.getTarget() == null) { return; }   // so daqui pra baixo exige alvo
+
+O antigo SUPPORT_SKILLS (secao 05/14) misturava cura de verdade (healing,
+recovery, full_recovery, self_regeneration...) com buff (strength,
+agility, majesty...) e barreira (barrier, magic_barrier, protection...)
+no MESMO set - e esse branch de "ferido, cura logo" nunca checava alvo,
+entao QUALQUER skill do set (inclusive buff/barreira) podia disparar so
+por o mob estar ferido, sem inimigo nenhum por perto. Fadas sao frageis e
+tomam dano a toa (queda, espinho etc.), entao acionavam isso com frequencia.
+
+CAUSA CONFIRMADA (separada, sobre por que fada nao ataca mob): listadas as
+classes de IA da PixieEntity dentro de IceAndFireCE-2.0-beta.15 -
+PixieAIEnterHouseGoal, PixieAIFleeGoal, PixieAIFollowOwnerGoal,
+PixieAIMoveRandomGoal, PixieAIPickupItemGoal, PixieAIStealGoal. Nenhum
+goal de ataque/alvo contra mob hostil - e assim por design do proprio Ice
+and Fire (fada foge, rouba item, entra em casa, nao luta). Nosso addon so
+dispara skill quando ja existe mob.getTarget(); como a fada nunca adquire
+esse alvo contra mob (falta o goal), nunca teria motivo pra conjurar
+ofensivo mesmo. PEDIDO DO USUARIO: nao mexer nisso (deixar passivo como o
+Ice and Fire projetou) - mudar exigiria patchear a IA de um mod terceiro
+(nunca fizemos isso nesta sessao, so mexemos no nosso addon e 1 metodo do
+Tensura) e tenderia a AUMENTAR conjuracao/carga, o oposto do que se queria
+aqui.
+
+FIX (so no branch sem-alvo): SUPPORT_SKILLS renomeado pra HEALING_SKILLS e
+reduzido pra so cura de verdade, conferido item a item contra
+CLASSIFICACAO_SKILLS.csv (secao 14):
+
+    HEALING_SKILLS (10, fica liberado fora de combate) = absorb_and_dissolve,
+      antidote, full_recovery, healing, healing_rain, healthcare,
+      infinite_regeneration, recovery, self_regeneration,
+      ultraspeed_regeneration
+
+    Removidos do set sem-alvo (20 - agora so conjuram com mob.getTarget()
+    != null, via o balde "rotacao" que ja existia): agility,
+    anti_magic_area, anti_shock_area, barrier, body_double, doppelganger,
+    float, invisible, lighten, magic_barrier, magic_wall, majesty,
+    protection, reinforced_barrier, reinforcement, steel_strength,
+    strength, strength_aspectual, strengthen_body, wind_protection
+
+Nao precisou criar bucket novo nem mexer em mais nada: como esses 20 ja
+eram elegiveis via collectEligible(), so deixaram de ser reconhecidos pelo
+branch de cura-sem-alvo - agora so chegam no cast() atraves do balde
+generico de rotacao (pickLeastRecentlyUsed(mob, list, null)), que fica
+DEPOIS do "if (mob.getTarget() == null) return;". Ou seja: cura continua
+podendo disparar parado, buff/barreira agora exige alvo vivo, exatamente
+como pedido.
+
+PROCESSO: decompilado o .class ATUAL do jar (nao o caderno) com CFR pra
+pegar o codigo de verdade, editado o .java (2 mudancas: set renomeado e
+reduzido, uma linha trocando a referencia), recompilado com javac contra
+o mesmo classpath da secao 07 - reaproveitando client-mojmap.jar/cfr.jar/
+manascore-*.jar cacheados de sessao anterior (scratch), regerados so os
+que faltavam. 2 problemas do CFR encontrados e corrigidos na mao durante a
+recompilacao (documentando pra proxima vez):
+    - Set.of((Object[])new String[]{...}) nao compila de volta (conflito
+      de inferencia de tipo E=String vs E=Object) - o CFR insere esse cast
+      pra representar bytecode-varargs-array, mas ele quebra a compilacao;
+      solucao e so remover o "(Object[])"/"(Object)" desses Set.of/Map.of.
+    - reuso de variavel de novo (igual secao 15): a variavel que guardava
+      Entity/SkillStorage tava compartilhando slot com outros tipos
+      (String, Map bruto) por causa de como o bytecode original reaproveita
+      slots - reescrito onTick(), pickLeastRecentlyUsed() e
+      manageToggles() com variaveis proprias e tipos genericos corretos
+      (Map<String,Long> em vez de Map bruto, etc.), sem mudar nenhuma
+      logica, so tipagem. Aproveitei pra também simplificar um trecho de
+      manageToggles() que o CFR tinha decompilado errado (uma variavel
+      "bl8" calculada e nunca usada, escondendo que o ternario deveria
+      atribuir o resultado inteiro numa unica variavel "shouldBeOn") -
+      comportamento final identico, so ficou compilavel e legivel.
+
+PROCESSO DE JAR (igual secao 13, o seguro): copiada tensuramagicfilter-
+1.2.0.jar pra pasta de trabalho fora de mods/, "jar uf" so nas 2 classes
+trocadas (UniqueMonsterCombatAI.class e UniqueMonsterCombatAI$Candidate
+.class - UniqueMonsterAbilitiesConfig.class NAO foi tocada, so precisou
+ser recompilada localmente pra resolver a dependencia, o .class antigo
+dela continua no jar), verificado com "jar tf" + decompilacao antes de
+copiar de volta pra mods/.
+
+BACKUP: mods/tensuramagicfilter-1.2.0.jar.bak-preBuffCombatGate
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+29 - MAO DE LAMA (mud_hand) NAO SAIA - MIRA DE MOB MUITO ESTREITA (03/09/2026)
+===============================================================================
+
+Relato do usuario: lobo faz a animacao de mao de lama mas ela nunca sai
+("nao ta funcionando"). Pedido: ligar debugLog e tentar resolver o
+problema de "nao estar no campo de visao".
+
+INVESTIGACAO: decompilado io/github/manasmods/tensura/ability/magic/
+aspectual/earth/MudHandMagic.class (mods/tensura-neoforge-2.0.1.3.jar) pra
+ver o mecanismo real. Diferente da maioria das magias, mud_hand NAO usa
+mob.getTarget() - no tick exato em que o cast completa (heldTicks ==
+castTime) ela chama:
+
+    LivingEntity target = ObjectSelectionHelper.getTargetingEntity(entity,
+        MudHandMagic.CONFIG.range, false, true);
+
+Isso e um RAYCAST de mira (nao "tem alvo perto"): projeta uma linha da
+posicao dos olhos na direcao que a entidade esta olhando, e so acerta se
+essa linha cruzar a hitbox do alvo inflada em apenas 0.2 BLOCO (visto em
+io/github/manasmods/tensura/util/ObjectSelectionHelper.java, metodo
+getTargetingEntity de 4 argumentos -> chama a versao completa com
+radius=0.2 fixo, alem de exigir hasLineOfSight). Esse valor foi calibrado
+pra jogador (mira do mouse, presumivelmente bem precisa) - pra um mob,
+mesmo com nosso applyPreciseAim() (secao 09) calculando o angulo exato via
+atan2 todo tick, 0.2 bloco de tolerancia e demais: qualquer movimento do
+alvo ou pequena imprecisao no instante exato do release faz o raycast
+errar e a magia falha em silencio (sem log nenhum, isso e codigo do
+proprio Tensura) - bate com "faz a animacao e nao sai nada".
+
+Segunda exigencia (nao mexida agora, documentando): isTargetNearGround(
+target) - alvo precisa estar no chao ou ter bloco solido ate 3 abaixo. Se
+o lobo brigar com algo no ar (pulando, voando) no tick exato, tambem
+falha. Fora do escopo pedido desta vez (o pedido foi especificamente sobre
+"campo de visao"/mira), mas fica registrado como outra causa possivel se o
+problema persistir.
+
+FIX: diferenciar Player de mob no proprio MudHandMagic, igual ao padrao ja
+usado na secao 13 (EnergyHelper, custo de mob vs player) - jogador mantem
+a mira apertada de 0.2 (design original, controle fino do mouse), mob
+passa a usar radius=1.0 (5x mais tolerante, ~1 bloco de folga em vez de um
+tiro quase no centro exato):
+
+    LivingEntity target = entity instanceof Player
+        ? ObjectSelectionHelper.getTargetingEntity(entity, CONFIG.range, false, true)
+        : ObjectSelectionHelper.getTargetingEntity(LivingEntity.class, entity,
+              CONFIG.range, 1.0, false, true, true);
+
+Continua exigindo hasLineOfSight (sem parede no meio) e requirePhysics
+(nao acerta fantasma/entidade sem colisao) - so a tolerancia de mira
+aumentou pra mob. Nao mexe em nada do lado do jogador.
+
+PROCESSO: decompilado MudHandMagic.class FRESCO do jar atualmente instalado
+(nao usado cache de sessao anterior sem checar - comparado com diff, bateu
+identico, cache ainda valido). Editado o .java (1 import novo de Player, 1
+linha trocada, mais 2 limpezas de cast (Object)/(Pair<Double,Double>) que o
+CFR insere e que nao compilam de volta - mesmo tipo de problema da secao
+28, resolvido removendo os casts espurios e deixando os literais double
+inferirem o tipo genérico direto). Compilado contra o classpath da secao
+07 + 3 dependencias que faltavam pra essa classe especifica (nao
+precisavam pra UniqueMonsterCombatAI): brigadier-1.3.10.jar (usado por
+Component.translatable/mensagem de chat), geckolib-neoforge-1.21.1-4.9.2
+.jar (AreaField/MudHands sao GeoEntity), e manascore-config (modulo
+"config" do manascore, extraido de dentro de manascore-neoforge-4.0.0.2
+.jar em META-INF/jars/ - not e um dos 5 modulos que ja tinhamos em cache
+da secao 07/08, e o unico usado pra ConfigRegistry).
+
+PROCESSO DE JAR (igual secao 13, ainda mais importante aqui - esse jar tem
+36MB, o mesmo que corrompeu uma vez na secao 13 ao editar direto dentro de
+mods/): copiado tensura-neoforge-2.0.1.3.jar pra pasta de trabalho fora de
+mods/, "jar uf" so na MudHandMagic.class, verificado com "jar tf" (14336
+entradas, contagem batendo) + decompilacao da classe de volta confirmando
+o "instanceof Player" no lugar certo, e SO ENTAO copiado de volta pra
+mods/ (com o jogo ainda ABERTO - diferente da secao 13, dessa vez nao
+fechamos o jogo antes; usado "cp" simples por cima do arquivo, nao "jar uf"
+direto nele, que foi o que causou o problema da vez passada - ainda assim,
+o arquivo so e realmente lido de novo quando o jogo reiniciar).
+
+TAMBEM LIGADO A PEDIDO: debugLog=true em
+config/tensurauniquemonsterskills.properties (estava false desde a secao
+24). Vai voltar a logar "conjurando X (motivo)" e "sem skill elegivel..."
+por mob que tentar agir - util pra confirmar se mud_hand esta sendo
+sorteada e iniciada pelo nosso lado (ela e 1 de 34 skills no balde de
+debuff, entao pode demorar a sair so por chance/rotacao LRU, sem ser bug
+nenhum). NAO vai mostrar se o proprio Tensura abortou por causa da mira/
+chao DEPOIS de iniciar - esse log e so do nosso addon, o abort interno do
+MudHandMagic e silencioso mesmo. Lembrar de desligar de novo quando
+terminar de testar (mesmo aviso da secao PEND de sempre).
+
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preMudHandAimFix
+
+PRECISA REINICIAR O JOGO pra carregar o jar novo e o config novo - o jogo
+estava aberto durante esse patch, ele so le esses arquivos nesse momento.
+
+Nao testado em jogo ainda.
+
+CRASH CAUSADO POR ISSO (mesmo dia, poucos minutos depois): trocar o jar
+com o jogo ABERTO nao so exige restart pra valer - pode derrubar a sessao
+atual antes mesmo do restart. Ver secao 30 pra detalhe completo. Resumo:
+NoClassDefFoundError numa classe (BarrierPart$1) sem nenhuma relacao com
+o que foi editado, porque o processo vivo tinha o jar ANTIGO em cache no
+momento em que precisou carregar uma classe nova - trocar o arquivo por
+baixo enquanto ainda esta rodando desalinha isso. LICAO: daqui pra frente,
+SEMPRE fechar o jogo antes de copiar um jar novo pra mods/ (nao so evitar
+"jar uf" direto no arquivo - a secao 13 ja cobria isso -, mas evitar
+qualquer troca de arquivo, mesmo por "cp" simples, com o processo aberto).
+
+
+===============================================================================
+30 - CRASH: TROCAR JAR COM O JOGO ABERTO DESALINHA O CLASSLOADER AO VIVO
+     (03/09/2026)
+===============================================================================
+
+Poucos minutos depois do patch da secao 29 (tensura-neoforge-2.0.1.3.jar
+trocado com o jogo aberto - avisado explicitamente no proprio texto da
+secao 29, mas nao evitado), o jogo crashou. Crash reports:
+    crash-reports/crash-2026-09-03_13.28.19-server.txt
+    crash-reports/crash-2026-09-03_13.28.21-client.txt
+
+ERRO:
+    java.lang.NoClassDefFoundError:
+        io/github/manasmods/tensura/entity/magic/barrier/BarrierPart$1
+        em BarrierPart.setPositionOnDirection (BarrierPart.java:95)
+        chamado de BarrierEntity.tick (BarrierEntity.java:191)
+    Description: Ticking entity
+
+CAUSA: BarrierPart/BarrierEntity NAO FORAM TOCADOS por nenhum patch desta
+sessao - a classe que faltou (BarrierPart$1, uma classe sintetica gerada
+pelo compilador pra um switch sobre enum dentro de BarrierPart) e prova de
+que o jar em si NAO esta corrompido (ja tinha sido verificado com "jar tf"
++ decompilacao antes de instalar - continha 14336 entradas, contagem
+batendo com o jar anterior). O problema e OUTRO: o processo do jogo
+JA ESTAVA RODANDO com o tensura-neoforge-2.0.1.3.jar ANTIGO aberto/mapeado
+havia mais de 1 hora (varias classes ja carregadas, cacheadas na JVM). Ao
+copiar o jar NOVO por cima (tamanho diferente do antigo: 36222617 bytes
+contra 36222175, ou seja, os offsets internos de TODAS as entradas do zip
+mudaram), o processo continuou vivo usando handles/indices que apontavam
+pro layout do arquivo ANTIGO. Quando alguma coisa no jogo pediu pra
+carregar BarrierPart$1 PELA PRIMEIRA VEZ nesta sessao (skill Barrier sendo
+usada por algum mob, provavelmente), o classloader foi buscar no arquivo
+fisico (que ja era o NOVO) usando informacao de posicao do ZIP ANTIGO -
+nao achou, deu NoClassDefFoundError, e a entidade travou o tick do
+servidor (crash inteiro, nao so aquele mob).
+
+DIFERENCA IMPORTANTE DA SECAO 13: aquela secao ja documentava risco de
+"jar uf" DIRETO no arquivo dentro de mods/ (escrita simultanea com
+launcher/instancia de olho no arquivo -> arquivo pode sumir/corromper).
+O processo seguro adotado desde entao (editar uma COPIA fora de mods/,
+verificar, e SO ENTAO copiar de volta) resolve ESSE risco - o arquivo em
+si nunca fica corrompido. MAS esse processo nao protege contra um risco
+DIFERENTE: trocar o arquivo enquanto o JOGO ESTA ABERTO E RODANDO. A
+escrita em si (o "cp" de volta) foi limpa (arquivo integro, confirmado) -
+o problema e a JVM ja em execucao ficar com estado desalinhado em relacao
+ao arquivo novo no disco.
+
+REGRA NOVA (daqui pra frente, adicionar ao processo da secao 13): SEMPRE
+fechar o jogo/instancia completamente ANTES de copiar qualquer jar novo
+pra dentro de mods/ - nao importa se foi editado numa copia segura fora de
+mods/ e verificado. A verificacao de integridade do ARQUIVO nao substitui
+fechar o processo que vai LER esse arquivo. Reabrir o jogo depois carrega
+tudo do zero, do jar novo, sem esse problema (o jar em si esta correto,
+so nao pode ser trocado com o consumidor dele ainda vivo).
+
+Nenhum patch desta sessao precisou ser revertido - o crash e sintoma de
+timing (arquivo trocado com processo vivo), nao de conteudo errado no
+patch. Reiniciar o jogo resolve.
+
+
+===============================================================================
+31 - MIRA DE PROJETIL "OTIMIZADA" PRA TODO O SISTEMA DE MAGIA (03/09/2026)
+===============================================================================
+
+Pedido do usuario: pesquisar formas de deixar TODO o sistema de mira de
+magia automatica mais otimizado (nao so remendar skill por skill), porque
+"o projetil sempre sai torto".
+
+PESQUISA (web): o padrao usado por mob de ataque a distancia no proprio
+Minecraft vanilla (RangedAttackGoal/RangedBowAttackGoal, ex: Esqueleto) e
+calcular um vetor de velocidade mirado na posicao real do alvo e aplicar
+direto no projetil - SEM depender da rotacao do mob estar exata. Achados
+similares em mods de spellcasting (Ace's Spell Utils).
+
+DESCOBERTA (decompilacao): o Tensura JA TEM esse exato mecanismo, so que
+ligado em algumas magias e desligado em outras. Classe-base de quase todo
+projetil magico:
+    io/github/manasmods/tensura/entity/projectile/TensuraFlyingProjectile
+    .java, metodo updateShootVector() (chamado todo tick durante os
+    "delay ticks" via tickHandler()):
+
+    LivingEntity target = entity instanceof Mob && mob.getTarget() != null
+        ? mob.getTarget()
+        : ObjectSelectionHelper.getTargetingEntity(owner, lookDistance, false, true);
+    ...
+    setDelayVec(pos.subtract(this.position()).normalize().scale(speed));
+
+Ou seja: SE o mob tiver alvo, a direcao do tiro e recalculada TODO TICK
+direto pra posicao REAL do alvo - ignora rotacao completamente. Isso so
+roda se getLookDistance() > 0 (setLookDistance foi chamado na hora de
+criar o projetil) E getDelayTick() > 0 (senao a janela de correcao nunca
+abre). Confirmado o padrao exato nas magias que ja funcionam bem
+(FireLanceMagic, StoneShotMagic e as outras 8 que ja tinham isso):
+
+    lance.setLookDistance(20.0f);   // ou 40.0f pra algumas
+    lance.setDelayTick(10);         // 10 ticks de "trava" recalculando
+    lance.updateDelayPosition();    // dispara o primeiro calculo
+    // (SEM chamar shootFromRot/shoot - a correcao cuida disso sozinha)
+
+AUDITORIA: das ~25 magias de projetil do jogo, 10 ja tinham isso (Icicle
+Lance, Icicle Rain, Ice Breaker, Fire Lance, Thunder Lance, Thunder Orb,
+Stone Shot, Acid Shell, Lightning Lance, Blizzard). As outras 15
+NAO TINHAM - voavam reto na rotacao exata do instante do disparo, sem
+nenhuma correcao depois. Essas 15 sao as candidatas reais a "sai torto":
+
+FIX A (13 magias) - liguei o mecanismo que ja existe, removendo a chamada
+shootFromRot/shoot antiga e adicionando setLookDistance(20.0f) +
+setDelayTick(10) + updateDelayPosition() antes do addFreshEntity, exato
+mesmo padrao das 10 que ja funcionavam:
+    FireBallMagic, FireMagic (multishot - perde o padrao de leque
+      angular, os tiros passam a convergir pro alvo real em vez de se
+      espalhar; troca aceitavel dado que a queixa era "sempre erra"),
+      BurdenMagic, DimensionCutterMagic, WaterCutterMagic (aspectual),
+      TornadoBladeMagic, WindCutterMagic, MagmaSurgeMagic (perde parte
+      do espalhamento aleatorio dos 4 tiros pelo mesmo motivo),
+      FireBoltMagic, SolarWaveMagic, WaterCutterMagic (spiritual),
+      WindBladeMagic (11 nomes, 13 arquivos contando os 2 WaterCutter
+      duplicados por pacote)
+
+FIX B (2 magias) - essas nao usam projetil homing, usam raycast direto
+(igual Mao de Lama, secao 29) pra decidir uma posicao FIXA de impacto -
+apliquei o mesmo padrao de diferenciar Player/mob, mas reaproveitando
+mob.getTarget() diretamente quando existe (ainda melhor que so alargar
+o raio, e o mesmo padrao que updateShootVector() ja usa):
+    ThunderMagic (aspectual, e um raio instantaneo numa posicao fixa,
+      nao um projetil voador - a unica coisa que importava era acertar
+      a posicao certa no onPressed)
+    SolarRainMagic (chuva de flechas de luz mirada numa posicao fixa
+      calculada no onRelease)
+
+CASO ESPECIAL - FloatMagic: usa metodos injetados por Mixin do proprio
+Tensura (levitation.tensura$getSource()/tensura$getSourceAbility(), da
+classe io/github/manasmods/tensura/mixin/MixinMobEffectInstance.class)
+que nao existem na classe MobEffectInstance de verdade em tempo de
+compilacao (so em tempo de execucao, via transformacao do Mixin). Achada
+a interface "duck" que o mixin injeta
+(io.github.manasmods.tensura.effect.template.TensuraMobEffectInstance) e
+feito um cast explicito pra ela em vez de chamar direto - compila normal
+e funciona em tempo de execucao porque o Mixin realmente aplica essa
+interface na classe de verdade quando o jogo roda.
+
+PROCESSO DE COMPILACAO - 2 dependencias novas que nenhuma classe anterior
+desta sessao tinha usado:
+    org/joml/joml/1.10.5/joml-1.10.5.jar (FireMagic usa Quaternionf pro
+      calculo antigo de leque, que ficou so residual/sem efeito pratico
+      mas ainda compila junto)
+    META-INF/jars/manascore-config-neoforge-4.0.0.2.jar (extraido de
+      dentro de manascore-neoforge-4.0.0.2.jar, mesmo esquema jar-in-jar
+      da secao 07 - so que o modulo "config" nunca tinha sido extraido
+      antes, so os 5 modulos que UniqueMonsterCombatAI usa)
+    org/jetbrains geckolib e brigadier ja tinham sido resolvidos na
+      secao 29 (Mao de Lama), reaproveitados aqui.
+
+Mesmos 2 problemas de CFR de sempre (cast (Object)/(Object[]) que nao
+compila de volta em Pair.of, e nada de reuso de variavel dessa vez -
+essas classes sao simples o bastante que o CFR nao confundiu tipos).
+
+PROCESSO DE JAR: mesmo processo seguro das secoes 13/29 - copiado
+tensura-neoforge-2.0.1.3.jar pra fora de mods/, "jar uf" nas 15 classes
+de uma vez so, verificado "jar tf" (14336 entradas, contagem igual a
+antes) + decompilacao de volta confirmando os 15 patches, e SO ENTAO
+copiado pra mods/ - streamlined agora com uma lição a mais aprendida na
+secao 30: o jogo estava CONFIRMADAMENTE FECHADO antes desse copy final
+(perguntei antes de instalar), pra nao repetir o crash da secao 30.
+
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preAimOptimization
+
+TRADE-OFF CONHECIDO: as 13 magias do FIX A ganham um atraso de ate 10
+ticks (0.5s) antes do projetil realmente sair voando pra valer (fica
+"seguindo" o conjurador primeiro, igual as lancas ja fazem) - antes
+saiam instantaneos na hora do release. Pra magia sem fase de carregar
+visivel (a maioria dessas 13 e instant-release), isso pode ser percebido
+como um pequeno delay a mais antes do "tiro sair de verdade" tanto pra
+mob quanto pra jogador (o codigo e compartilhado, os dois usam a mesma
+classe). Vale observar em jogo se isso incomoda - se sim, da pra reduzir
+o setDelayTick de 10 pra um valor menor (ex: 3-5), perde um pouco de
+precisao mas quase elimina o atraso perceptivel.
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+32 - RAJADA DE VENTO (wind_gust) - MIRA ESTILO COERCAO, PILOTO (03/09/2026)
+===============================================================================
+
+Pedido do usuario: reaproveitar a logica da skill Coercao (inata do
+direwolf) pra skills de projetil, comecando so por Rajada de Vento
+(tensura:wind_gust) como piloto, antes de decidir se estende pra mais.
+
+POR QUE COERCAO E DIFERENTE: decompilado CoercionSkill.onPressed()
+(mods/tensura-neoforge-2.0.1.3.jar,
+io/github/manasmods/tensura/ability/skill/common/CoercionSkill.class).
+Ela NUNCA tenta acertar um ponto exato - anda em passos ao longo de uma
+linha na direcao que o dono esta olhando (do CONFIG.roarRange) e, em
+CADA passo, faz uma checagem de area (AABB inflado em 4 blocos) buscando
+qualquer LivingEntity por perto; a primeira entidade achada em qualquer
+ponto da linha e afetada. Muito mais tolerante que raycast estreito
+(Mao de Lama, secao 29) ou que depender da fisica de colisao de um
+projetil de verdade.
+
+POR QUE wind_gust PRECISAVA DE ALGO DIFERENTE DO QUE JA FOI FEITO NA
+SECAO 31: WindGustMagic (modo 0, "rajada unica") nao cria uma entidade
+TensuraFlyingProjectile (a classe-base que a secao 31 usa) - ela cria um
+WindCharge, entidade NATIVA do Minecraft (a mesma do ataque da Brisa/
+Breeze). WindCharge nao tem LOOK_DISTANCE nem updateShootVector() -
+o mecanismo da secao 31 simplesmente nao existe nela. Precisava de outra
+solucao.
+
+FIX: adicionado o metodo findTargetLikeCoercion(entity, range) em
+WindGustMagic, copiando o MESMO algoritmo do CoercionSkill.onPressed()
+(anda na linha de visao, AABB de 4 blocos por passo, primeiro achado
+ganha) - com um atalho a mais: se quem conjura for um Mob com
+mob.getTarget() != null, usa esse alvo direto (mais barato, mesma logica
+ja usada nos fixes anteriores). Se achar alguem, calcula o vetor real
+ate ele e usa windCharge.shoot(dx, dy, dz, 1.5f, 1.0f) em vez de
+shootFromRotation(...) baseado so na rotacao da cabeca. Se nao achar
+ninguem (nem mob.getTarget(), nem ninguem na linha), cai no comportamento
+ORIGINAL (shootFromRotation na rotacao pura) - preserva o "atirar livre
+pra frente" de quando nao ha alvo, sem regressao.
+
+Isso NAO MUDA o efeito do vento em si (continua sendo o WindCharge
+vanilla, mesmo empurrao/explosao de sempre) - so garante que ele SAIA
+na direcao certa quando existe um alvo real por perto, em vez de confiar
+cegamente na rotacao do mob no instante do release.
+
+Arquivo alterado: mods/tensura-neoforge-2.0.1.3.jar
+    io/github/manasmods/tensura/ability/magic/aspectual/wind/WindGustMagic.class
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preWindGustCoercion
+
+INCIDENTE REPETIDO (secao 30 de novo): instalei esse jar com o jogo JA
+ABERTO sem checar antes - so percebi depois, checando se o log ainda
+estava crescendo em tempo real (estava, +20 linhas em 3 segundos). O
+arquivo do jar esta integro (verificado por decompilacao antes de
+copiar), mas o risco de NoClassDefFoundError da secao 30 se repete se o
+jogo tentar carregar uma classe nova (WindGustMagic ou qualquer uma das
+15 da secao 31, se ainda nao tiver sido usada nesta sessao) sem
+reiniciar. Avisado o usuario na hora pra fechar o jogo assim que possivel.
+LICAO REFORCADA: SEMPRE checar se o jogo esta aberto (ex: log crescendo)
+ANTES de copiar um jar pra mods/, nao so perguntar uma vez no inicio de
+uma sequencia de patches - cada instalacao individual precisa da mesma
+checagem, principalmente se algum tempo real passou entre perguntar e
+instalar.
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+33 - MIRA CORRIGIDA EM TODAS AS SKILLS SIMILARES (Battlewill/unicas) (03/09/2026)
+===============================================================================
+
+Pedido do usuario apos confirmar que a Rajada de Vento (secao 32) funcionou:
+estender a mesma logica pra "todas as skills similares".
+
+AUDITORIA: alem das ~25 magias ja cobertas na secao 31, procurado em TODO o
+pacote io/github/manasmods/tensura/ability (nao so magic/ - tambem
+battlewill/ e skill/) por chamadas de disparo de projetil
+(.shoot(/.shootFromRot(/.shootFromRotation(). Achados 11 arquivos fora do
+escopo da secao 31 (Battlewill "Arts" e Skills unicas/extra, categorias
+que a secao 31 nunca tinha olhado). Cada um foi lido e classificado antes
+de mexer - nem todo "shootFromRot" e um bug de mira:
+
+NAO MEXIDOS (teem motivo pra nao usar mira convergente):
+    ElephantStampedeArt - dispara em circulo de 360 graus ao redor do
+      proprio conjurador de proposito (um "pisao" de area, nao e mirado
+      em nada) - aplicar correcao ia FAZER TODAS AS BOLAS CONVERGIREM NO
+      MESMO PONTO, quebrando o padrao radial. Deixado como esta.
+    WindMagic ("Vento", nao confundir com wind_gust) - e uma explosao
+      centrada no PROPRIO conjurador (level.explode no proprio entity.getX/
+      Y/Z), nunca teve mira nenhuma pra corrigir.
+    DeathMarchDanceArt - ja tinha setLookDistance + setDelayTick +
+      setHomingTarget(target) desde antes - mais completo que qualquer
+      coisa que a gente tinha feito ate agora. Nao mexido.
+    ThrowerSkill, StickySteelThreadSkill - mecanicas diferentes (arremesso
+      de item do inventario, puxão de fio) - fora do escopo de "projetil
+      de dano simples", nao mexidos por ora.
+
+CORRIGIDOS (mesmo padrao da secao 31/29 - setLookDistance+setDelayTick
++updateDelayPosition pras que so tinham shootFromRot puro, ou diferenciar
+Player/mob nas que ja usavam raycast tipo Mao de Lama):
+
+    battlewill/melee/AuraSlashArt.java - 2 pontos (golpe principal e de
+      mao secundaria), setDelayTick=5 (mais curto que o padrao 10 da
+      secao 31 - e um golpe de espada instantaneo, nao uma magia
+      carregada, entao um atraso menor fica mais natural)
+    battlewill/projectile/OgreSwordCannonArt.java - setDelayTick=5
+      (mesmo motivo - ja tinha uma fase de carregar poder segurando o
+      botao, mas o disparo em si e instantaneo)
+    battlewill/projectile/MagicBulletArt.java - setDelayTick=10 (essa
+      SIM ja tem uma bolinha "carregando" visivel bem antes do disparo,
+      mesmo padrao das magias de lanca da secao 31)
+    battlewill/projectile/MaximumMagicBulletArt.java - identico ao
+      MagicBulletArt (e a versao evoluida/masterizada dela)
+    battlewill/projectile/DarkEightPalmsArt.java - dois fixes: (1) o
+      raycast inicial que decide o "pos" de convergencia agora usa
+      mob.getTarget() direto ou radius=1.0 pra mob (era so 0.2 fixo,
+      mesmo problema da Mao de Lama); (2) cada bala do leque agora tambem
+      tem setLookDistance/setDelayTick, entao alem de mirar no pos inicial
+      elas se autocorrigem durante o curto voo
+    skill/unique/BerserkSkill.java (metodo shootOrbs, mode "Mad Ogre") -
+      setDelayTick=5
+    skill/unique/TravelerSkill.java - dois fixes: modo 3 (flecha espacial
+      unica) ganhou setLookDistance+setDelayTick=5 no lugar do
+      shoot(viewVector) puro; modo 4 (chuva de flechas) teve o raycast
+      inicial trocado pra usar mob.getTarget() direto ou radius=1.0
+
+PROBLEMA NOVO ACHADO NO COMPILE: BerserkSkill.java (metodos onDamageEntity/
+onTakenDamage, SEM RELACAO com o fix de shootOrbs, mas no mesmo arquivo)
+chamava metodos tensura$setMagicType/tensura$setElement/tensura$
+getBarrierBypassLevel/etc DIRETO em variaveis do tipo DamageSource -
+mesmo problema de metodo injetado por Mixin da secao 31 (FloatMagic),
+mas agora numa interface diferente:
+    io/github/manasmods/tensura/mixin/MixinDamageSource.class implementa
+    io/github/manasmods/tensura/damage/TensuraDamageSource (a interface
+    "pata de pato" com os metodos tensura$*)
+Resolvido com cast pra TensuraDamageSource antes de cada chamada -
+igual ao padrao usado no FloatMagic da secao 31. Detalhe a mais: os
+setters dessa interface retornam DamageSource simples (nao
+TensuraDamageSource), entao NAO DA pra encadear
+".tensura$setX(...).tensura$setY(...)" direto (cada chamada intermediaria
+perde o tipo TensuraDamageSource) - teve que quebrar em variaveis
+separadas com cast a cada passo.
+
+PROCESSO: mesmo de sempre - decompilado, editado, compilado (mesmo
+classpath da secao 31), verificado "jar tf" (14336 entradas) + decompilacao
+de volta confirmando os 7 patches, SO ENTAO copiado pra mods/. Checado
+DUAS VEZES se o jogo estava fechado antes de instalar (log parado de
+crescer) - lição da secao 32 aplicada de verdade desta vez.
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preBattlewillAim
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+34 - A CAUSA RAIZ DE VERDADE DO "CONJURA E NAO SAI" (icicle_lance,
+     thunder_lance etc.) - LIMITE DE 20 TICKS PRA SKILL "FORA DO SLOT"
+     (03/09/2026)
+===============================================================================
+
+Pedido do usuario: resolver de vez o "conjura e o projetil nao sai" pra
+icicle_lance, thunder_lance/lightning_lance e parecidas - problema visto
+repetidas vezes nesta sessao (secoes 11, 15, 16, 23) e que os fixes
+anteriores (vazamento de MP, IA rodando no cliente) nao resolveram de
+verdade sozinhos.
+
+INVESTIGACAO NOVA: em vez de continuar no ciclo de "corrigir e torcer",
+usado o log real da sessao atual (debugLog ligado desde a secao 29) pra
+achar um caso de verdade: direwolf conjurando icicle_lance as 15:23:20,
+confirmado o som/circulo de gelo aparecendo, e nenhuma evidencia de dano/
+projetil depois. Isso levou a procurar o mecanismo que decide QUANDO uma
+skill "segurada" e liberada de verdade - nunca tinha sido olhado
+diretamente nesta sessao (sempre assumimos que era so o onRelease() da
+propria Magic, dentro do Tensura).
+
+ACHADO: o sistema generico de "segurar skill" e do proprio MANASCORE (a
+biblioteca por baixo do Tensura), no io/github/manasmods/manascore/skill/
+impl/TickingSkill.class. A CADA TICK que uma skill esta segurada, ele
+chama:
+
+    if (this.reachedMaxDuration(instance, entity)
+            || !instance.canActivateSkill(entity, this.mode)) {
+        if (instance.shouldTriggerReleaseOnHeldInterrupt(...)) {
+            storage.handleSkillRelease(instance, keyNumber, mode, true);
+        }
+        return false;  // solta a skill AQUI, interrompendo a segurada
+    }
+    return instance.onHeld(entity, this.duration++, this.mode);
+
+E TensuraSkill.getMaxHeldTime() (io/github/manasmods/tensura/ability/
+TensuraSkill.class), usado por reachedMaxDuration():
+
+    public int getMaxHeldTime(ManasSkillInstance instance, LivingEntity entity) {
+        if (!this.isInSlot(entity, instance)) {
+            if (Magic.isStaffCasting(instance, entity)) {
+                return 7200;
+            }
+            return 20;                    // <-- SO 20 TICKS (1 SEGUNDO)!
+        }
+        return 72000;
+    }
+
+Ou seja: se a skill NAO estiver "equipada" (isInSlot - a mesma checagem
+de preset da secao 05) NAQUELE TICK ESPECIFICO, o tempo maximo de segurada
+cai de 72000 ticks pra so 20 - e ao bater esse limite, a segurada e
+FORCADA A TERMINAR, chamando onRelease() com heldTicks=20,
+INDEPENDENTE DO CASTTIME REAL DA MAGIA. Conferido em
+config/tensura/ability/magic/aspectual_config.toml:
+
+    IcicleLance.castTime = 50    (2.5s)
+    ThunderLance.castTime = 80   (4s)
+
+Ambos MUITO maiores que 20. E o proprio onRelease() de cada uma
+(IcicleLanceMagic, ThunderLanceMagic, LightningLanceMagic - todas do
+mesmo formato, secoes 11/anterior) tem exatamente:
+
+    if (heldTick < cast || EnergyHelper.isOutOfEnergy(...)) {
+        lance.discard();  // <-- descarta em silencio
+        ...
+        return;
+    }
+
+heldTick=20 < cast=50 (ou 80) -> SEMPRE cai nesse discard, TODA VEZ que
+a skill "sair do slot" antes do castTime completar. Bate 100% com o
+sintoma: som + circulo de conjuracao aparecem (isso acontece dentro de
+onHeld, que roda normalmente ate o corte), mas o projetil de dano
+(criado em onPressed, so "ativado" em onRelease) nunca sai porque
+onRelease roda cedo demais e descarta.
+
+POR QUE A SKILL "SAI DO SLOT": nossa propria cast() (secao 05) ja
+equipava a skill com ability.setAbilitySlot(0, skill, 0) - MAS SO UMA
+VEZ, no instante de iniciar a segurada. Isso resolvia a checagem INICIAL
+de ativacao (SkillEvents.ACTIVATE_SKILL, secao 05), mas nao garantia que
+a skill continuasse "no slot" durante TODOS os ticks seguintes da
+segurada (50-80 ticks pras lancas) - qualquer coisa que reordene/limpe
+esse slot no meio do caminho (nao foi possivel confirmar a causa exata
+de QUE mexe nele durante a segurada, mas a evidencia do log e o codigo
+da checagem juntos ja sao conclusivos o bastante pra saber ONDE o
+problema esta e como blindar contra ele, mesmo sem achar o "quem
+mexeu"). Skills com castTime curto (<=20 ticks) nunca mostravam esse
+sintoma por acidente - sempre terminavam antes do limite de 20 bater.
+
+FIX: em vez de tentar achar exatamente quem desequipa o slot, blindar
+contra o problema TODO TICK enquanto a skill estiver segurada -
+reafirmar o slot 0 = skill atual, nao so uma vez no inicio:
+
+    if (isHoldingSkill) {
+        IAbility ability = TensuraStorages.getAbilityFrom((LivingEntity)mob);
+        for (TickingSkill heldSkill : skillStorage.getHeldSkills()) {
+            ability.setAbilitySlot(0, heldSkill.getSkill(), heldSkill.getMode());
+        }
+    }
+
+Isso roda em UniqueMonsterCombatAI.onTick(), ANTES do bloco de mira
+precisa, pra QUALQUER mob segurando QUALQUER skill - garante que
+isInSlot() nunca falhe durante uma segurada iniciada pela nossa IA,
+eliminando o gatilho do limite de 20 ticks pra qualquer magia, nao so
+as lancas. Custo desprezivel: so roda pra mobs que JA estao segurando
+algo (subconjunto pequeno a qualquer momento), e e so um set numa lista,
+nao uma varredura pesada.
+
+PROCESSO: decompilado TickingSkill.class e ManasSkill/ManasSkillInstance
+(manascore-skill.jar, ja no classpath da secao 07) e TensuraSkill.class
+pra confirmar a cadeia completa antes de escrever qualquer linha - dessa
+vez com leitura de codigo de ponta a ponta em vez de tentativa e erro.
+Editado UniqueMonsterCombatAI.java (1 import novo, 1 bloco de 5 linhas),
+compilado, "jar tf" verificado, decompilado de volta confirmando o
+patch, e SO ENTAO instalado com o jogo CONFIRMADAMENTE fechado (checado
+antes e depois de compilar, log parado de crescer nas duas vezes).
+
+Arquivo: mods/tensuramagicfilter-1.2.0.jar
+Backup: mods/tensuramagicfilter-1.2.0.jar.bak-preSlotRefresh
+
+Nao testado em jogo ainda - mas essa e a explicacao mais completa e
+mecanicamente confirmada (nao especulada) encontrada pra esse sintoma
+em toda a sessao.
+
+
+===============================================================================
+35 - CONFIRMADO: FIX DA SECAO 34 FUNCIONOU (segurada roda o tempo todo) -
+     DIAGNOSTICO ADICIONADO NO PROPRIO ONRELEASE PRA ACHAR O QUE FALTA
+     (03/09/2026)
+===============================================================================
+
+Usuario testou ao vivo com debugLog ligado enquanto eu monitorava o log
+em tempo real (tail -f com timeout, sem precisar reiniciar o jogo pra
+analisar). Capturado 5 ciclos completos de conjuracao de tensura:direwolf:
+
+    15:37:55.945 conjurando icicle_lance -> 15:38:03.943 proxima acao (coercion)
+    15:38:15.945 conjurando icicle_lance -> 15:38:23.945 proxima acao
+    15:38:42.095 conjurando icicle_lance -> 15:38:50.094 proxima acao
+    15:38:51.095 conjurando icicle_lance -> 15:39:00.744 proxima acao
+
+Intervalo entre inicio do cast e proxima acao: ~8s em todos os casos =
+2.5s (IcicleLance.castTime=50 ticks) + 5s (actionCooldownTicks=100).
+CONCLUSAO: a segurada agora roda o TEMPO COMPLETO configurado, nao mais
+cortada aos 20 ticks (1s) como antes do fix da secao 34. O fix funcionou
+pro que ele se propos a resolver.
+
+MESMO ASSIM O PROJETIL AINDA NAO SAI (relato do usuario, confirmado sem
+conseguir ver dano/impacto no log). Com o corte de 20 ticks eliminado,
+so sobra a checagem interna do proprio onRelease() de cada lanca:
+
+    if (heldTick < cast || EnergyHelper.isOutOfEnergy(entity, instance, mode)) {
+        lance.discard();  // sem log nenhum - nao da pra saber qual dos dois motivos
+    }
+
+Como heldTick agora deve bater o cast normalmente (confirmado pelo
+timing acima), sobra hipotese de EnergyHelper.isOutOfEnergy(...) reprovar
+NO INSTANTE EXATO do release - possivel porque o lobo intercala
+icicle_lance com coercion/haki com bastante frequencia, e a margem de
+1.3x (secao 11) so garante energia suficiente NO INICIO do cast, nao que
+sobra o bastante se outra coisa consumir durante os 2.5s de segurada.
+Ainda e hipotese, nao confirmada - por isso o diagnostico abaixo.
+
+FIX (instrumentacao, nao correcao ainda): adicionado log ONE-SHOT (so na
+hora da falha, nao por tick) dentro do onRelease() de tensura:icicle_lance,
+tensura:thunder_lance e tensura:lightning_lance (as 3 magias desse
+formato "lanca rastreada por ID" que a sessao toda vem investigando).
+Reescrito pra separar os dois motivos SEM mudar a ordem de avaliacao
+original (importante: o codigo original usa curto-circuito "||" - se
+heldTick<cast ja for verdade, isOutOfEnergy() NUNCA e chamado, e como
+esse metodo tem efeito colateral de descontar energia se aprovar, isso
+teve que ser preservado exatamente, senao o diagnostico ia introduzir um
+desconto indevido novo):
+
+    boolean heldTooShort = heldTick < castTime;
+    boolean outOfEnergy = false;
+    if (!heldTooShort) {
+        outOfEnergy = EnergyHelper.isOutOfEnergy(...);  // so chama se precisar, igual antes
+    }
+    if (heldTooShort || outOfEnergy) {
+        if (!(entity instanceof Player)) {
+            Tensura.LOG.info("[DIAG icicle_lance] {} descartada no release: heldTicks={} castTime={} heldTooShort={} semEnergia={}", ...);
+        }
+        lance.discard();
+        ...
+    }
+
+Tambem logado o OUTRO caminho de falha silenciosa que existe no mesmo
+metodo (a lanca rastreada por ID nao foi encontrada no mundo - ex: se
+por algum motivo ela ja tinha sido descartada ou o ID nao bate):
+
+    if (!(idEntity instanceof IceLanceProjectile)) {
+        Tensura.LOG.info("[DIAG icicle_lance] {} lanca nao encontrada no release (id={}, entidade={})", ...);
+        ...
+    }
+
+Log restrito a "!(entity instanceof Player)" - so loga pra mob, nunca
+pra jogador (mesma logica de manter debugLog fora do fluxo normal de
+jogador que ja usamos a sessao toda).
+
+PROCESSO: decompilado IcicleLanceMagic/ThunderLanceMagic/LightningLanceMagic
+frescos do jar atual (confirmado identico ao cache via diff antes de usar
+o cache pros outros dois), editado, limpo os casts (Object)/(Pair<...>)
+de sempre, compilado (mesmo classpath da secao 31/33, reaproveitando
+geckolib/brigadier/joml/manascore-config ja resolvidos), "jar tf"
+verificado (14336 entradas), decompilado de volta confirmando os 3
+patches, e SO ENTAO instalado - com o jogo CONFIRMADAMENTE fechado
+(chequei 2x, log parado de crescer nas duas vezes, mesmo tendo acabado
+de usar "tail -f" pra monitorar o log ao vivo pouco antes - conferido
+de novo antes do jar uf, pra nao repetir o incidente da secao 30/32).
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar
+Backup: mods/tensura-neoforge-2.0.1.3.jar.bak-preLanceDiag
+
+PROXIMO PASSO: reiniciar o jogo, tentar de novo com o lobo (ou qualquer
+mob) usando icicle_lance/thunder_lance/lightning_lance, e mandar a linha
+"[DIAG ...]" do log quando a lanca falhar. Isso vai dizer com CERTEZA
+absoluta se e heldTooShort=true (improvavel dado o timing ja confirmado,
+mas serve de contraprova), semEnergia=true (a hipotese mais provavel -
+nesse caso o fix real e aumentar magiculeSafetyMargin ou impedir outras
+skills de consumirem energia durante a segurada de uma lanca), ou "lanca
+nao encontrada" (um problema de sincronia de ID, hipotese diferente que
+exigiria investigar de novo).
+
+Nao e um fix ainda - e o proximo passo pra achar o fix certo com prova,
+nao chute.
+
+
+===============================================================================
+36 - DIAGNOSTICO DA SECAO 35 NAO PEGOU NADA - ACHADO UM TERCEIRO CAMINHO
+     DE FALHA SILENCIOSA (onHeld pode matar a segurada SEM CHAMAR onRelease)
+     (03/09/2026)
+===============================================================================
+
+Usuario testou com o diagnostico da secao 35 instalado: icicle_lance
+falhou de novo (3 tentativas, confirmado pelo log "conjurando
+tensura:icicle_lance" 3x), mas NENHUMA linha "[DIAG icicle_lance]"
+apareceu. Ou seja: o onRelease() nem chegou a rodar (nem o caminho de
+"lanca nao encontrada" nem o de "heldTooShort/semEnergia" foi acionado) -
+prova de que a falha acontece ANTES do onRelease, em algum lugar que a
+secao 35 nao cobria.
+
+INVESTIGACAO: decompilado io/github/manasmods/manascore/skill/impl/
+SkillStorage.class, metodo handleSkillHeldTick() - o loop que roda TODA
+skill "segurada" todo tick:
+
+    for (TickingSkill skill : List.copyOf(storage.heldSkills)) {
+        if (!skill.tick(storage, livingEntity)) {
+            ...
+            storage.heldSkills.remove(skill);   // so remove, SEM chamar onRelease
+            continue;
+        }
+        ...
+    }
+
+E TickingSkill.tick():
+    return instance.onHeld(entity, this.duration++, this.mode);
+
+Ou seja: se o proprio onHeld() da magia retornar FALSE por qualquer
+motivo interno dele (nao pelo limite de 20 ticks da secao 34, que e um
+caminho DIFERENTE e ja coberto), a segurada e removida da lista
+SILENCIOSAMENTE - onRelease() NUNCA E CHAMADO. A lanca (ainda com
+noPhysics=true, "carregando") fica abandonada, sem nunca virar projetil
+de verdade, sem nenhum log, sem nenhum som de falha (o som de "cast
+fail" so toca dentro do onRelease, que nunca roda nesse caminho).
+
+E o proprio onHeld() de IcicleLanceMagic (e ThunderLance/LightningLance,
+mesmo formato) tem 3 pontos que retornam false direto:
+    1. instance.onCoolDown(mode) && !canIgnoreCoolDown -> cooldown
+    2. heldTicks==0 && isCastingBlocked -> bloqueio no primeiro tick
+    3. !(entity2 instanceof IceLanceProjectile) -> A LANCA RASTREADA
+       POR ID SUMIU NO MEIO DA SEGURADA (o candidato mais provavel -
+       entidade despareceu/desincronizou antes do cast terminar)
+
+FIX (ainda diagnostico, nao correcao definitiva): adicionado log nos 3
+pontos de onHeld() das 3 magias (icicle_lance, thunder_lance,
+lightning_lance), mesmo padrao "so pra mob" de sempre. Agora QUALQUER
+dos 6 caminhos de falha (3 em onHeld + 2 em onRelease da secao 35 + o
+de heldTooShort) vai deixar rastro no log.
+
+PEDIDO DO USUARIO (registrado pra nao esquecer): esse mesmo formato de
+bug ("rastreia entidade por ID, onHeld retorna false em silencio se ela
+sumir") existe em TODA magia que usa esse padrao de carregar-e-soltar
+com entidade rastreada - nao so as 3 lancas. Uma vez confirmada a causa
+exata com esse teste, o fix (seja lá qual for exatamente - provavelmente
+alguma forma de recuperar/tolerar a entidade sumida em vez de so
+desistir) precisa ser aplicado tambem em:
+    fire_lance, icicle_rain, ice_breaker, thunder_orb, stone_shot,
+    acid_shell, blizzard, mud_hand
+(a lista completa de magias que ja usavam TensuraFlyingProjectile com
+tracking por ID desde antes da secao 31 - todas compartilham a mesma
+estrutura de onHeld/onRelease de IcicleLanceMagic).
+
+PROCESSO: mesmo de sempre - editado, casts (Object) limpos (nenhum
+extra dessa vez, so as chamadas de log novas), compilado, "jar tf"
+verificado (14336), decompilado de volta confirmando os 3 novos DIAG
+por arquivo, instalado com o jogo CONFIRMADAMENTE fechado.
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar (mesmo backup da secao 35,
+mods/tensura-neoforge-2.0.1.3.jar.bak-preLanceDiag - ainda e o estado
+ANTES de qualquer diagnostico, ponto de retorno seguro se precisar).
+
+PROXIMO PASSO: reiniciar o jogo, testar de novo, mandar a linha
+"[DIAG icicle_lance] ... onHeld abortou (...)" que aparecer - vai dizer
+exatamente qual dos 3 motivos de onHeld esta matando a segurada.
+
+Nao testado em jogo ainda.
+
+
+===============================================================================
+37 - DIAGNOSTICO DA SECAO 36 TAMBEM NAO PEGOU NADA - MAIS UMA CAMADA
+     ESCONDIDA (MobSkillController.releaseReadySkills/handleSkillRelease)
+     + LOG DE ENTRADA/SUCESSO ADICIONADO (03/09/2026)
+===============================================================================
+
+Usuario testou de novo com o diagnostico da secao 36 (onHeld + onRelease
+instrumentados): 4 tentativas de icicle_lance, NENHUMA linha "[DIAG"
+apareceu de novo - nem as de onHeld, nem as de onRelease. Confirmado que
+o jar realmente tinha o codigo novo (extraido a classe do jar instalado e
+conferido as 5 mensagens de log presentes no bytecode - o problema nao
+era jar desatualizado).
+
+Checado tambem se MobSkillController.releaseReadySkills() (secao 08)
+engolia uma excecao em silencio via try/catch(Throwable) + System.err
+("[TensuraAlexsCompat] Disabled unsafe active mob skill...") - procurado
+no log incluindo linhas [STDERR] (confirmado que esse prefixo aparece
+normalmente pra outros erros nesta sessao, entao apareceria se
+acontecesse) - NADA encontrado. Esse caminho especifico foi descartado.
+
+DECOMPILADO SkillStorage.handleSkillRelease() (manascore) e achado MAIS
+UM ponto de retorno silencioso, ANTES de onRelease ser chamado:
+
+    public void handleSkillRelease(ManasSkillInstance skillInstance, int keyNumber, int mode, boolean heldInterrupt) {
+        ...
+        if (RELEASE_SKILL event cancelado) return;      // <- silencioso
+        if (skill == null) return;                       // <- silencioso
+        if ((heldInterrupt || skill.canActivateSkill(...)) && mode < skill.getModes()
+                && (!skill.onCoolDown(mode) || skill.canIgnoreCoolDown(...))) {
+            skill.onRelease(...);   // SO CHAMA onRelease SE essa condicao bater
+        }
+        // se a condicao for falsa, onRelease() e pulado - SEM log, SEM excecao
+        ...
+    }
+
+Ou seja: existe ainda um QUARTO portao (alem dos 3 do onHeld + os 2 do
+onRelease ja instrumentados) que pode pular onRelease() completamente,
+ANTES mesmo do metodo comecar - e nosso codigo de diagnostico, por estar
+DENTRO de onRelease(), nunca teria como pegar isso, porque nesse caso
+onRelease nunca chega a executar UMA UNICA LINHA sequer.
+
+FIX (instrumentacao): adicionado log de ENTRADA logo na primeira linha
+de onRelease() das 3 magias ("onRelease CHAMADO heldTicks=X mode=Y") e
+log de SUCESSO logo antes de lance.noPhysics=false (a unica saida que
+significa "realmente vai virar projetil de verdade", com posicao e
+vetor de velocidade da lanca nesse momento). Isso cobre os 2 extremos:
+
+    - Se "onRelease CHAMADO" NUNCA aparecer: a falha esta no tal quarto
+      portao do handleSkillRelease() (ou em releaseReadySkills() nem
+      chegando a chamar handleSkillRelease de jeito nenhum - proximo
+      lugar a olhar se for isso).
+    - Se "onRelease CHAMADO" aparecer mas nenhum dos logs de discard/
+      "lanca nao encontrada" tambem aparecer, e MUITO menos o de
+      SUCESSO: sobra so a possibilidade de "mode != 0" (retorno mudo
+      logo na segunda linha do metodo, sem log - facil de checar depois
+      se for esse o caso, ja que sabemos que mode SEMPRE deveria ser 0
+      pro jeito que a nossa IA chama a skill).
+    - Se SUCESSO aparecer: o codigo completa direitinho e o problema
+      real e outra coisa TOTALMENTE diferente (visual/render, mira
+      errada fazendo o projetil sair fora de vista, ou o mob mirando em
+      alvo nenhum) - nesse caso paramos de mexer em codigo de skill e
+      vamos investigar por outro angulo (talvez o proprio
+      applyCastingVisual so-pra-Player da secao 15, ou visualizar o
+      IceLanceProjectile em si).
+
+PROCESSO: mesmo de sempre, mesmo classpath, "jar tf" (14336) + decompilacao
+de volta confirmando as 2 mensagens novas por arquivo, jogo confirmado
+fechado antes de instalar (2x, como sempre desde a secao 32).
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar (mesmo backup
+.bak-preLanceDiag da secao 35 - ainda o estado limpo pre-diagnostico).
+
+Ainda nao testado com essa versao. Proxima mensagem do usuario deve
+trazer a resposta definitiva de qual das 3 hipoteses acima e a certa.
+
+
+===============================================================================
+38 - CAUSA RAIZ DE VERDADE ACHADA COM PROVA: LANCA FICA PRESA EM (0,0,0)
+     PRA MOB - MagicCircle Player-only + noPhysics travando updateDelayPosition
+     (03/09/2026)
+===============================================================================
+
+Usuario testou com o diagnostico de entrada/sucesso da secao 37. O log
+finalmente deu a resposta definitiva - 4 tentativas, todas identicas:
+
+    [DIAG icicle_lance] entity.tensura.direwolf onRelease CHAMADO heldTicks=50 mode=0
+    [DIAG icicle_lance] entity.tensura.direwolf SUCESSO no release: heldTicks=50
+        castTime=50 pos=(0.0, 0.0, 0.0) deltaMovement=(0.0, 0.0, 0.0)
+
+onRelease E CHAMADO. O release "funciona" (nao cai em nenhum discard).
+MAS a posicao da lanca no momento do release e EXATAMENTE (0,0,0) - o
+centro absoluto do mundo, nao perto do lobo de jeito nenhum. A lanca
+passou o cast INTEIRO (2.5s) parada na origem do mundo, invisivel,
+sem nunca ter sido posicionada perto do lobo - so por coincidencia o
+codigo "funciona" logicamente (nao ha erro, nao ha discard) mas o
+projetil nunca teve chance de aparecer nem acertar nada.
+
+CAUSA RAIZ (2 bugs que so causam problema JUNTOS):
+
+1) IcicleLanceMagic.applyCastingVisual() (e igual em ThunderLance/
+   LightningLance) SO tem override pra Player (5 argumentos). A versao
+   base de 4 argumentos (LivingEntity, herdada de Magic.java) e um
+   NO-OP pra quem nao e Player (ja documentado como bug "cosmetico" na
+   secao 15 - so que NAO e so cosmetico). Resultado: pra mob, NENHUM
+   MagicCircle de verdade e criado (o "circulo magico: ICE" que
+   aparece no log e do addon do sombra, CastVisuals, sistema
+   completamente separado).
+
+2) TensuraFlyingProjectile.updateDelayPosition() (a classe-base
+   compartilhada por quase todo projetil, secao 31) tem 2 jeitos de
+   posicionar a lanca perto do dono:
+       - via MagicCircle (se existir) - NAO EXIGE noPhysics==false
+       - via owner.getEyePosition() direto (se NAO tiver circulo) -
+         MAS SO SE noPhysics==false:
+             else if (!this.noPhysics && ownerOffset != ZERO && owner != null) { ... }
+
+   Durante a carga, TODA lanca desse tipo comeca com noPhysics=TRUE
+   (onPressed seta isso de proposito, pra nao colidir com bloco
+   enquanto "flutua" perto do dono). Pra JOGADOR isso nunca importa
+   porque o circulo (bug 1) sempre existe e cobre o caminho 1. Pra MOB,
+   sem circulo (bug 1) E com noPhysics=true (trava o caminho 2), NENHUM
+   dos dois jeitos de posicionar a lanca funciona - ela fica
+   literalmente onde foi construida (0,0,0, a posicao padrao de uma
+   entidade nova antes de qualquer setPos), a segurada inteira, e so
+   comeca a se mover (do lugar errado) depois do release.
+
+Os dois bugs sao pre-existentes do proprio Tensura (nao criados por
+nos) - so nunca deram problema porque SEMPRE foi testado com jogador,
+onde o bug 1 nunca deixa o bug 2 aparecer.
+
+FIX: adicionado um setPos() explicito, direto na posicao do dono (olhos
++ direcao do olhar), condicionado a "nao e Player E nao tem
+MagicCircle" - ou seja, SO ativa pro caso quebrado (mob sem circulo),
+sem mudar nada do comportamento de jogador. Aplicado em 2 lugares por
+magia (mesmo padrao usado nas 13 magias da secao 31):
+    - onPressed() - posiciona a lanca na hora que ela e criada
+    - onHeld() (mode 0 e mode 1/rain do ThunderLance) - reposiciona TODO
+      TICK durante a segurada, pra seguir o mob se ele se mover
+
+    if (!(entity instanceof Player) && lance.getMagicCircle() == null) {
+        lance.setPos(entity.getEyePosition().add(0.0, -0.25, 0.0).add(entity.getLookAngle().normalize()));
+    }
+
+Aplicado nas 3 magias ja em teste: icicle_lance, thunder_lance (os 2
+modos - unico e chuva), lightning_lance.
+
+PROCESSO: mesmo de sempre, mesmo classpath, "jar tf" (14336 entradas) +
+decompilacao de volta confirmando as posicoes exatas de cada patch (2 em
+icicle_lance, 4 em thunder_lance - dobro por causa do modo chuva, 2 em
+lightning_lance), jogo confirmado fechado (2x, com folga de 5s na
+segunda checagem por seguranca) antes de instalar.
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar (mesmo backup .bak-preLanceDiag)
+
+PROXIMO PASSO - PEDIDO DO USUARIO JA REGISTRADO NA SECAO 36: com a causa
+CONFIRMADA agora (nao mais hipotese), aplicar esse MESMO fix (setPos
+explicito condicionado a "nao Player + sem MagicCircle", em onPressed e
+onHeld) nas outras 7 magias que compartilham a mesma estrutura Player-
+only applyCastingVisual + tracking por ID:
+    fire_lance, icicle_rain, ice_breaker, thunder_orb, stone_shot,
+    acid_shell, blizzard
+(mud_hand NAO se aplica - usa AreaField, mecanismo totalmente diferente,
+ja resolvido separadamente na secao 29). Cada uma precisa ser conferida
+individualmente (algumas tem modos diferentes, alguns onPressed/onHeld
+podem ja ter algum setPos parcial) antes de aplicar - nao copiar cego.
+
+Nao testado em jogo ainda com esse fix especifico - aguardando confirmacao
+do usuario que a lanca finalmente sai e acerta.
+
+
+===============================================================================
+39 - MESMO FIX DE POSICAO APLICADO AS OUTRAS 6 MAGIAS (03/09/2026)
+===============================================================================
+
+Usuario confirmou pedido explicito: "entao pode aplicar pra essas magias
+tbm", autorizando estender o fix da secao 38 (setPos explicito condicionado
+a "nao e Player E sem MagicCircle") pra lista de 7 candidatas ja registrada
+nas secoes 36/38.
+
+Antes de aplicar cego, cada uma das 7 foi lida individualmente:
+
+  - blizzard: NAO precisa. Estrutura completamente diferente das outras -
+    e cast instantaneo (sem hold/charge de projetil rastreado por ID), ja
+    chama setPos() explicito em tudo que cria (BlizzardEntity, area de
+    efeito) por conta propria. Excluida da lista.
+
+  - fire_lance, icicle_rain, ice_breaker, thunder_orb, stone_shot,
+    acid_shell: as 6 restantes SIM compartilham a mesma estrutura quebrada
+    (Player-only applyCastingVisual + tracking por ID + noPhysics=true) -
+    fix aplicado em todas.
+
+Particularidades por arquivo (por isso "nao copiar cego" foi levado a
+serio):
+    - fire_lance: tem 2 modos (single/repeat). Fix em 3 lugares -
+      onPressed() modo 0, onHeld() modo 0, E onHeld() modo 1 (criacao de
+      nova lanca a cada "castTimeRepeat" ticks durante o repeat-fire).
+    - stone_shot: cria MULTIPLAS entidades por vez (loop de "stoneNumber"
+      pedras). Fix dentro do loop, tanto em onPressed() quanto em onHeld()
+      (onHeld() nem tinha reposicionamento nenhum antes).
+    - icicle_rain: a mais complexa - loop de multiplas lancas (config
+      "lanceNumber") MAIS um metodo privado shootLance() que cria lancas
+      adicionais no meio da segurada (modo 1/repeat). Fix em 3 lugares:
+      loop do onPressed(), loop do onHeld(), e dentro do proprio
+      shootLance().
+    - ice_breaker, thunder_orb, acid_shell: padrao simples, 1 entidade so,
+      igual ao icicle_lance da secao 38 - fix nos 2 lugares de sempre
+      (onPressed + onHeld).
+
+Mesmo padrao de sempre, ajustado pro nome de variavel de cada projetil
+(lance/sphere/ball conforme o arquivo):
+
+    if (!(entity instanceof Player) && X.getMagicCircle() == null) {
+        X.setPos(entity.getEyePosition().add(0.0, -0.25, 0.0).add(entity.getLookAngle().normalize()));
+    }
+
+PROCESSO TECNICO - problema novo encontrado: o classpath usado nas secoes
+anteriores (client-mojmap + 5 modulos manascore + tensura-neoforge +
+architectury-manascore + tensura-alexs-compat + bus/loader/neoforge-
+universal/slf4j/datafixerupper) nao foi suficiente dessa vez porque essas
+6 magias tocam em mais dependencias transitivas do que icicle/thunder/
+lightning_lance (ConfigRegistry vem de um modulo manascore separado -
+"manascore-config", nao o "architectury" que ja estava no classpath;
+GeoEntity vem do geckolib; RegistrySupplier vem do architectury-api de
+verdade, nao o shaded do manascore; Message vem do brigadier). Resolvido
+extraindo manascore-config-neoforge-4.0.0.2.jar de dentro do jar-in-jar do
+manascore-neoforge-4.0.0.2.jar (mods/) e adicionando ao classpath:
+architectury-13.0.8-neoforge.jar, geckolib-neoforge-1.21.1-4.9.2.jar e
+brigadier-1.3.10.jar (versao confirmada batendo com a 1.21.1.json vanilla).
+
+Compilado limpo (0 erros) contra esse classpath expandido. Verificado:
+decompilacao de volta com CFR confirmando os pontos de fix no bytecode
+(ex.: 3 ocorrencias de setPos em fire_lance, batendo com os 3 pontos
+editados na fonte). "jar tf" no jar final: 14336 entradas (mesmo total de
+sempre - so 6 classes trocadas, nenhuma adicionada/removida). Jogo
+confirmado fechado (debug.log com contagem de linhas estatica em 2
+checagens, 5s de intervalo) antes de instalar.
+
+INCIDENTE DURANTE A INSTALACAO: um "jar uf" rodado direto em cima do jar
+JA instalado em mods/ (fora do protocolo padrao) fez o arquivo sumir da
+pasta entre um comando e o seguinte (bytecode nunca chegou a ser gravado
+de volta - hipotese mais provavel e antivirus/proteção em tempo real do
+Windows reagindo a escrita em arquivo dentro da pasta de mods de um jogo
+em execucao pelo launcher, mas nao confirmado). Resolvido restaurando na
+hora o backup .bak-preLancePosfixBatch (criado segundos antes, mesmo
+tamanho/hash do jar pre-patch) - nenhum dado perdido. Dai em diante,
+protocolo seguido a risca: jar copiado pra fora de mods/, editado e
+verificado 100% ali, e SO ENTAO copiado (nao "jar uf" direto) por cima do
+arquivo em mods/. Recomendacao pra proximas secoes: NUNCA rodar "jar uf"
+apontando direto pra dentro de mods/ - sempre editar uma copia em scratch
+e so substituir o arquivo final inteiro no final.
+
+Arquivo: mods/tensura-neoforge-2.0.1.3.jar
+BACKUP: mods/tensura-neoforge-2.0.1.3.jar.bak-preLancePosfixBatch (criado
+imediatamente antes desta instalacao - reverte so este batch de 6 magias,
+mantendo o fix de icicle/thunder/lightning_lance da secao 38. Pra reverter
+so a secao 38 tambem, tem o .bak-preLanceDiag, mais antigo).
+
+Nao testado em jogo ainda - aguardando confirmacao do usuario que
+fire_lance, icicle_rain, ice_breaker, thunder_orb, stone_shot e
+acid_shell agora saem e acertam quando conjuradas por mob.
+
+
+===============================================================================
+PEND - PENDENCIAS QUE AINDA PRECISAM DE ACAO SUA
+===============================================================================
+
+  >>> TESTAR EM JOGO o patch da secao 31 (mira por posicao ligada em 13
+      magias que voavam reto sem correcao, mob.getTarget() direto em
+      2 magias de raycast). Se algum tiro instantaneo (Fire Ball, Wind
+      Cutter etc.) parecer "hesitar" meio segundo antes de sair, e o
+      trade-off do setDelayTick=10 documentado na propria secao 31 -
+      da pra reduzir se incomodar.
+
+  >>> TESTAR EM JOGO o patch da secao 32 (Rajada de Vento com mira estilo
+      Coercao) - se funcionar bem, avaliar estender pra outras skills de
+      projetil que ainda tem problema de mira (ex: as que nao usam
+      TensuraFlyingProjectile e por isso nao puderam ser cobertas pela
+      secao 31).
+
+  >>> TESTAR EM JOGO o patch da secao 33 (7 skills de Battlewill/unicas
+      com mira corrigida - Aura Slash, Ogre Sword Cannon, Magic Bullet,
+      Maximum Magic Bullet, Dark Eight Palms, Berserk (Mad Ogre orbs),
+      Traveler). Provavel que so mobs "unicos"/avançados/bosses cheguem
+      a ter essas skills, teste como der.
+
+  >>> REINICIAR O JOGO e testar icicle_lance/thunder_lance/
+      lightning_lance de novo - agora com o FIX de posicao de verdade
+      (secao 38), nao mais so diagnostico. Confirmar que a lanca
+      aparece perto do mob e realmente sai/acerta.
+
+  >>> [FEITO na secao 39] TESTAR EM JOGO fire_lance, icicle_rain,
+      ice_breaker, thunder_orb, stone_shot e acid_shell - fix de posicao
+      ja aplicado e instalado, so falta confirmar em jogo que as lancas/
+      esferas/pedras saem e acertam quando conjuradas por mob (mesmo teste
+      pedido pra icicle/thunder/lightning_lance da secao 38). blizzard NAO
+      precisou (ja setava posicao propria). mud_hand NAO se aplica (usa
+      AreaField, resolvido na secao 29).
+
+  >>> TESTAR EM JOGO o patch da secao 34 (reafirma o slot da skill todo
+      tick durante a segurada) - esse e o candidato mais forte pra
+      finalmente resolver icicle_lance/thunder_lance/lightning_lance de
+      vez. Testar especificamente magias de castTime longo (>20 ticks:
+      icicle_lance=50, thunder_lance=80, mud_hand, thunder=ver config) e
+      confirmar que o projetil realmente sai agora.
+
+  >>> REINICIAR O JOGO - patches das secoes 28, 29, 31, 32, 33 e 34 (buff/barreira exige
+      alvo, mira de mud_hand mais tolerante pra mob, debugLog ligado de
+      novo) foram aplicados com o jogo ABERTO. So valem depois de sair e
+      abrir de novo.
+
+  >>> TESTAR EM JOGO o patch da secao 29 (mao de lama com mira mais larga
+      pra mob) - ver se o lobo consegue prender o alvo agora. Se ainda
+      falhar, proximo suspeito e isTargetNearGround (alvo no ar no
+      momento do release) - documentado na propria secao 29 mas nao
+      mexido ainda.
+
+  >>> TESTAR EM JOGO o patch da secao 28 (buff/barreira exige alvo, cura
+      continua liberada fora de combate) - testado so por decompilacao ate
+      agora. Ir perto de fadas feridas (ou qualquer mob ferido sem alvo) e
+      confirmar que so cura dispara, nunca buff/barreira, enquanto sem
+      inimigo por perto.
+
+  >>> TESTAR EM JOGO os patches das secoes 08-12 (remocao do sorteio do
+      TensuraAlexsCompat, fix de mira vertical, fix do vazamento de MP por
+      toggle, margem de seguranca de magiculo, sustain de Haki). So foram
+      verificados por decompilacao/leitura de bytecode, nao rodados no jogo
+      ainda. Backups em mods/:
+        tensura-alexs-compat-...jar.bak-preAIpatch      (antes da secao 08)
+        tensura-alexs-compat-...jar.bak-preSustainFix   (antes da secao 12)
+        tensuramagicfilter-1.2.0.jar.bak-preAimFix      (antes da secao 09)
+        tensuramagicfilter-1.2.0.jar.bak-preMPFix       (antes das secoes 10/11)
+
+  >>> O lobo de teste especifico desta sessao continua com
+      water_current_control ligado (vazamento antigo, de antes do fix da
+      secao 10). Respawne/retame ele pra testar limpo, ou verifique se o
+      consumo de MP parado volta ao normal mesmo assim (o vazamento pode
+      ter sido so daquele toggle especifico, ja "preso" ligado).
+
+  >>> Se icicle_lance CONTINUAR falhando mesmo depois do fix de toggle +
+      margem: o proximo passo e testar com debugLog e comparar o valor de
+      magiculo do lobo logo antes e logo depois de um cast de icicle_lance
+      (nao tem log nosso disso ainda - precisaria adicionar um log temporario
+      no momento do "conjurando" pra registrar o magiculo atual).
+
+  >>> Lista de skills continuas (SUSTAIN_SKILLS) tem so "haki" por enquanto.
+      Se tiver outras skills do tipo "ligar e segurar pra manter efeito de
+      area" que o usuario queira sustentar mais tempo, e so pedir pra
+      adicionar o nome na lista. [Nota: apos a secao 14 essa lista ja foi
+      expandida pra 13 entradas - texto acima ficou desatualizado, ver
+      secao 14 pra lista atual.]
+
+  >>> REVISAR CLASSIFICACAO_SKILLS.csv (secao 14), principalmente linhas
+      com confidence=signal_weak ou default (53 no total) - foram
+      classificadas por heuristica automatica sem confirmacao manual.
+      skill/unique (59 skills) ficou de fora do que a IA usa de verdade
+      de proposito - sao skills bespoke demais pra heuristica generica.
+
+  >>> NeoForge ainda esta em 21.1.244, precisa ser 21.1.249
+      O zip nao controla isso (nao tem manifest.json de modpack). Precisa
+      trocar manualmente: CurseForge -> configuracoes da instancia ->
+      modloader -> NeoForge 21.1.249 (ja esta baixado no seu PC, so nao
+      selecionado). Sem isso, conexao com o servidor da exaroton falha com
+      "wrong NeoForge version".
+
+  >>> [FEITO 03/09/2026] uniqueMonsterChance revertido de 100.0 (teste,
+      secoes 25/26) de volta pro padrao de fabrica 0.1 - pedido explicito
+      do usuario. NAO RETROATIVO: mobs que ja spawnaram como unicos durante
+      os testes com 100% continuam unicos (ja aprenderam a magia bonus via
+      UniqueMonsterAbilities) - so spawns novos daqui pra frente respeitam
+      os 0.1%. uniqueMonsterTameable NAO foi mexido (continua true, nao e
+      configuracao de spawn).
+      Arquivo: config/tr_UniqueMonsters/base_config.toml
+
+  >>> debugLog=true em ambos os properties (tensuramagicfilter.properties e
+      tensurauniquemonsterskills.properties) - gera bastante log. Desligue
+      quando terminar de testar.
+
+  >>> config/nightmareutils/spawn_profiles.json continua com o perfil
+      coringa "tensura:*" ativo (sorteia magia pra todo mob do namespace
+      sem checar custo). Nao desativamos - agora que a conjuracao e o
+      filtro de acessibilidade funcionam de verdade, faz sentido deixar
+      ligado (mobs comuns tambem ganham alguma magia usavel).
+
+
+===============================================================================
+MAN - ONDE ESTAO OS ARQUIVOS-FONTE
+===============================================================================
+
+As 4 classes do addon (3 nossas + config) ficam so como .class dentro do
+jar - o .java fonte foi mantido na pasta de scratch da sessao do Claude, que
+e temporaria e pode nao existir mais depois. Se precisar editar de novo, o
+caminho mais seguro e pedir pro Claude reconstruir a partir da explicacao
+deste caderno (ele sabe a API real usada: SkillHelper, EnergyHelper,
+SkillAPI, IAbility, MobSkillController, TensuraStorages) em vez de tentar
+extrair o .java de dentro do .class compilado.
+
+Arquivos de config (esses sim ficam pra sempre, edite direto e recarregue o
+mundo - nao precisa recompilar nada):
+    config/tensurauniquemonsterskills.properties
+    config/tensuramagicfilter.properties
+    config/tr_UniqueMonsters/base_config.toml
+
+
+===============================================================================
+NOTA FINAL
+===============================================================================
+
+Todos os numeros e trechos de codigo citados aqui vieram de decompilacao real
+(CFR) dos jars instalados, ou de testes feitos no jogo rodando (log
+diagnostico proprio, adicionado e removido ao longo da sessao conforme cada
+duvida era resolvida). Nada foi assumido sem checar - inclusive dois
+"achados" que pareciam ser a causa (o filtro de prefixo do
+MobSkillController, o sistema separado do tensura_tno pra Subordinados)
+acabaram sendo pistas falsas descartadas na propria investigacao.
+
+Ressalva: testado em singleplayer, nao em producao no servidor com varios
+jogadores/mobs simultaneos. Comportamento sob carga (muitos mobs unicos
+conjurando ao mesmo tempo) ainda e desconhecido.
+
+===============================================================================

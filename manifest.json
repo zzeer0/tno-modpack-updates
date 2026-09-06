@@ -15366,6 +15366,11 @@
                       "path":  "mods/ymktn-1.1.0.jar",
                       "sha256":  "3f57015093f50658e4a2e94a08b0f0220f8a927a5d5738d77569573905e1114e",
                       "size":  1122679
+                  },
+                  {
+                      "path":  "CADERNO_TECNICO_IA_MOBS.txt",
+                      "sha256":  "026161fb946b978b2b010f2c8014371d5c5a1dc204c29f5d4e51e73b66e32c9f",
+                      "size":  152847
                   }
               ]
 }
