@@ -4974,8 +4974,8 @@
                   },
                   {
                       "path":  "config/mortal_cultivation/general.toml",
-                      "sha256":  "c00ca1cf7b1fef2c66b15d5b9e91ca66caddb5fcd612c1908e2b8ed77ae3cad2",
-                      "size":  124
+                      "sha256":  "b1a104766012ac227c008fc5bb9b8b7a49b09b140be2344e2e4633e3c14b2b42",
+                      "size":  123
                   },
                   {
                       "path":  "config/mortal_cultivation-alchemy_furnace.toml",
@@ -6184,8 +6184,8 @@
                   },
                   {
                       "path":  "config/tensura_kumodesu/general.toml",
-                      "sha256":  "15ab80975f38a22de58caf9b02bc1d44df82dbe21d934c400554862741ec328e",
-                      "size":  29
+                      "sha256":  "9a3836105409e0e4c20d781d3ff907a787045457885f5d4a6cab92ca2d93b72c",
+                      "size":  28
                   },
                   {
                       "path":  "config/tensura_kumodesu/race/ogre_config.toml",
@@ -6214,8 +6214,8 @@
                   },
                   {
                       "path":  "config/tensura_tno/general.toml",
-                      "sha256":  "ec2a9cda698000ab50994659b893836bb1237f0b731de30aa388b3703382f03c",
-                      "size":  117
+                      "sha256":  "7b7b0703016250c31c3bc4c658a88ef60ffd447028dc2eac814f53ac9d9fd7a1",
+                      "size":  116
                   },
                   {
                       "path":  "config/tensura_tno-browser.properties",
@@ -6924,8 +6924,8 @@
                   },
                   {
                       "path":  "config/traddon/general.toml",
-                      "sha256":  "b825d1beca29cb0f68680853750474a2183d41e3bb995bd72579c432cae5a43e",
-                      "size":  120
+                      "sha256":  "9be300fe38153a5e0e3e0428472b37b4083c3b6e44ee7b1f235869033bbb0bd5",
+                      "size":  119
                   },
                   {
                       "path":  "config/traddon/race/shardling_config.toml",
