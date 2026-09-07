@@ -15391,6 +15391,21 @@
                       "path":  "mods/cupboard-1.21-2.9.jar",
                       "sha256":  "0d7093deae83d223674e3bf0fc37943658f3f028e655df6f9e25209c32f41668",
                       "size":  23509
+                  },
+                  {
+                      "path":  "mods/bountiful-neoforge-8.0.0-beta.2.jar",
+                      "sha256":  "dca5e0af724e3076b3d950b7ec88cf63c509435cf41371a6e1c7c306cb6a7e51",
+                      "size":  721006
+                  },
+                  {
+                      "path":  "mods/Aquaculture-1.21.1-2.7.21.jar",
+                      "sha256":  "45f00f9059838b2fecc988861111d8b3d4613a5f1b3688a8dbfa8655751b85bb",
+                      "size":  605949
+                  },
+                  {
+                      "path":  "mods/tno_bounty_data-1.0.0.jar",
+                      "sha256":  "a50c4371e9333ea8984b5f6d3a48d2581c2d5e2f2838e5e6383a1b23922643b6",
+                      "size":  6839
                   }
               ]
 }
