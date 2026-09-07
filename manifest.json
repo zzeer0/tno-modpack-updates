@@ -15371,6 +15371,26 @@
                       "path":  "CADERNO_TECNICO_IA_MOBS.txt",
                       "sha256":  "026161fb946b978b2b010f2c8014371d5c5a1dc204c29f5d4e51e73b66e32c9f",
                       "size":  152847
+                  },
+                  {
+                      "path":  "mods/GlitchCore-neoforge-1.21.1-2.1.0.0.jar",
+                      "sha256":  "9362e2faacc6c864a91c5d0f452305fe7a496aa6c91131af63d021f1baa773a7",
+                      "size":  90918
+                  },
+                  {
+                      "path":  "mods/HammerLib-1.21-21.0.14.jar",
+                      "sha256":  "486f37766fe62b64f7e4fb94848ca4b811325d1a9a43d17e8573cfc258d2e685",
+                      "size":  2209084
+                  },
+                  {
+                      "path":  "mods/baguettelib-1.21.1-NeoForge-1.1.0.jar",
+                      "sha256":  "529381ee9ab23e3d06075296a3b978e95b13cab92390243a7f9690a91195cf5a",
+                      "size":  49063
+                  },
+                  {
+                      "path":  "mods/cupboard-1.21-2.9.jar",
+                      "sha256":  "0d7093deae83d223674e3bf0fc37943658f3f028e655df6f9e25209c32f41668",
+                      "size":  23509
                   }
               ]
 }
