@@ -5029,8 +5029,8 @@
                   },
                   {
                       "path":  "config/mysticism/general.toml",
-                      "sha256":  "94c25526813669acfb6a6171fb301105e64e6e239f7184f813d4fc16bb7006be",
-                      "size":  318
+                      "sha256":  "a78feaf5da965a9b64ec5e19e67726018748f4c84fb69dad66c6ed3b7a56324d",
+                      "size":  317
                   },
                   {
                       "path":  "config/mysticism/race/angel_config.toml",
@@ -5904,8 +5904,8 @@
                   },
                   {
                       "path":  "config/tennogamenolife/general.toml",
-                      "sha256":  "72ca571fb1657355fe5160d41019e2008746b518f9666b633e8b97472f76b48d",
-                      "size":  121
+                      "sha256":  "bba51b8a7a7804ff49f5d1b9530a85db4232641ee10af7de650e8664fa80c7fd",
+                      "size":  120
                   },
                   {
                       "path":  "config/tennogamenolife-common.toml",
