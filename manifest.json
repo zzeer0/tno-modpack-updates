@@ -15406,6 +15406,11 @@
                       "path":  "mods/tno_bounty_data-1.0.0.jar",
                       "sha256":  "a50c4371e9333ea8984b5f6d3a48d2581c2d5e2f2838e5e6383a1b23922643b6",
                       "size":  6839
+                  },
+                  {
+                      "path":  "mods/kambrik-neoforge-8.0.0-beta.2.jar",
+                      "sha256":  "a9b14170f2eeb323261c14bf40137ae78920ce2d61d52c85cdccc45bd9f37c2c",
+                      "size":  436428
                   }
               ]
 }
