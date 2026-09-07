@@ -6914,7 +6914,7 @@
                   },
                   {
                       "path":  "config/tr_UniqueMonsters/base_config.toml",
-                      "sha256":  "ed8566658cc611130ccf9502672b6d67f3115c40a64a2f1e23b22d35716763a4",
+                      "sha256":  "667748e98f4c70595cfd98bbed1b291180922ecef5ceb8a8e1409e0ac7fd4b44",
                       "size":  939
                   },
                   {
@@ -15319,8 +15319,8 @@
                   },
                   {
                       "path":  "mods/tensura-alexs-compat-3.0.1-NOO-2.0.1.3-UNIVERSAL-MOB-CASTER-VERIFY-FIX.jar",
-                      "sha256":  "8553ceac08f0a4d38d671e5cb1ef38466f6cd947a87c58474da634582550e29a",
-                      "size":  87882
+                      "sha256":  "ba86b276837a7b7fee6556cfaa8b7c315df764a6ae2f1311677d03246f92cf0b",
+                      "size":  88288
                   },
                   {
                       "path":  "mods/tensuraenigmatic-1.0.1.jar",
