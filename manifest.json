@@ -4464,8 +4464,8 @@
                   },
                   {
                       "path":  "config/iceandfire/iaf-common.json",
-                      "sha256":  "414362558f36550d84ed1facfe6b70d97a8bd80be5857f9db03e98a11cb0b4f3",
-                      "size":  7410
+                      "sha256":  "0f2b16e744d80793e54573da88d52d19e0d7f6ca6e5bff0c685c2bd17203d104",
+                      "size":  7405
                   },
                   {
                       "path":  "config/illagerinvasion-server.toml",

@@ -1,6 +1,6 @@
 {
     "dragon":  {
-                   "maxHealth":  1400,
+                   "maxHealth":  2100,
                    "eggBornTime":  7200,
                    "maxPathingNodes":  4500,
                    "villagersFear":  true,
@@ -13,10 +13,10 @@
                    "tamedGriefing":  true,
                    "flapNoiseDistance":  4,
                    "fluteDistance":  8,
-                   "attackDamage":  26,
-                   "attackDamageFire":  3,
-                   "attackDamageIce":  3.75,
-                   "attackDamageLightning":  5.25,
+                   "attackDamage":  34,
+                   "attackDamageFire":  4,
+                   "attackDamageIce":  5,
+                   "attackDamageLightning":  7,
                    "maxFlight":  256,
                    "goldSearchLength":  30,
                    "canHealFromBiting":  false,
@@ -53,24 +53,24 @@
     "cyclops":  {
                     "spawnWanderingChance":  0.0011111111111111111,
                     "sheepSearchLength":  17,
-                    "maxHealth":  300,
-                    "attackDamage":  22,
-                    "biteDamage":  60,
+                    "maxHealth":  450,
+                    "attackDamage":  30,
+                    "biteDamage":  80,
                     "griefing":  true
                 },
     "siren":  {
-                  "maxHealth":  100,
+                  "maxHealth":  150,
                   "maxSingTime":  12000,
                   "timeBetweenSongs":  2000
               },
     "gorgon":  {
-                   "maxHealth":  200
+                   "maxHealth":  300
                },
     "deathworm":  {
                       "spawnChance":  0.03333333333333333,
                       "targetSearchLength":  48,
-                      "maxHealth":  20,
-                      "attackDamage":  4,
+                      "maxHealth":  30,
+                      "attackDamage":  6,
                       "attackMonsters":  true
                   },
     "cockatrice":  {
@@ -78,7 +78,7 @@
                        "spawnWeight":  4,
                        "chickenSearchLength":  32,
                        "eggChance":  0.03333333333333333,
-                       "maxHealth":  80,
+                       "maxHealth":  120,
                        "chickensLayRottenEggs":  true
                    },
     "bird":  {
@@ -94,8 +94,8 @@
                   "spawn":  true,
                   "spawnWeight":  60,
                   "dropWeapon":  true,
-                  "maxHealth":  100,
-                  "attackDamage":  15
+                  "maxHealth":  150,
+                  "attackDamage":  20
               },
     "amphithere":  {
                        "spawn":  true,
@@ -103,14 +103,14 @@
                        "villagerSearchLength":  48.0,
                        "tameTime":  400,
                        "flightSpeed":  1.75,
-                       "maxHealth":  100,
-                       "attackDamage":  10
+                       "maxHealth":  150,
+                       "attackDamage":  14
                    },
     "seaSerpent":  {
                        "spawnChance":  0.004,
                        "griefing":  true,
-                       "baseHealth":  40,
-                       "attackDamage":  6
+                       "baseHealth":  60,
+                       "attackDamage":  8
                    },
     "lich":  {
                  "spawn":  true,
@@ -118,15 +118,15 @@
                  "spawnChance":  0.03333333333333333
              },
     "hydra":  {
-                  "maxHealth":  500
+                  "maxHealth":  750
               },
     "hippocampus":  {
                         "spawnChance":  0.025,
                         "swimSpeedMod":  1.0
                     },
     "ghost":  {
-                  "maxHealth":  60,
-                  "attackDamage":  4,
+                  "maxHealth":  90,
+                  "attackDamage":  6,
                   "fromPlayerDeaths":  true,
                   "alwaysSpawnFromChest":  false
               },
@@ -176,6 +176,6 @@
                  },
     "misc":  {
                  "enableDragonSeeker":  true,
-                 "dreadQueenMaxHealth":  1500
+                 "dreadQueenMaxHealth":  2250
              }
 }
