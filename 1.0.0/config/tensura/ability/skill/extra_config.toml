@@ -312,13 +312,13 @@
 	#EP Requirement for Learning.
 	epAcquirement = 2000000.0
 	#Magicule Cost per HP regenerated.
-	magiculeCost = 300.0
+	magiculeCost = 150.0
 	#Magicule Cost per HP regenerated when mastered.
-	magiculeCostMastered = 180.0
+	magiculeCostMastered = 90.0
 	#Magicule Cost per SHP regenerated.
-	shpMagiculeCost = 360.0
+	shpMagiculeCost = 180.0
 	#Magicule Cost per SHP regenerated when mastered.
-	shpMagiculeCostMastered = 240.0
+	shpMagiculeCostMastered = 120.0
 
 [LawManipulation]
 	#EP Requirement for Learning.

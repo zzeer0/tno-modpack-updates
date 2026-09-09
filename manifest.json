@@ -5949,8 +5949,8 @@
                   },
                   {
                       "path":  "config/tensura/ability/skill/extra_config.toml",
-                      "sha256":  "92bc32c5694b95c183ba2f406e589a998232bfeeec397468155903c437767ba5",
-                      "size":  27328
+                      "sha256":  "5f82bb805657a0b41c3f6dc4edb94186fc5458946fb6e9772ef36bd3b8ca79f0",
+                      "size":  27327
                   },
                   {
                       "path":  "config/tensura/ability/skill/intrinsic_config.toml",
@@ -15324,8 +15324,8 @@
                   },
                   {
                       "path":  "mods/tensuramagicfilter-1.2.0.jar",
-                      "sha256":  "48f4700028d99d87dc460376b880ad062725a33f48df2a844f399e94b820eb11",
-                      "size":  37272
+                      "sha256":  "07b0e83dcf1c4c20c072f98b13f0f9629d98c4ea515afb808457f95d170368f8",
+                      "size":  37497
                   },
                   {
                       "path":  "mods/tensuramoreskills-0.0.4.8iwanttobelikeyoufix+purifier.jar",
