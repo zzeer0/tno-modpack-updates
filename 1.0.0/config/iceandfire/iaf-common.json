@@ -1,6 +1,6 @@
 {
     "dragon":  {
-                   "maxHealth":  2100,
+                   "maxHealth":  700,
                    "eggBornTime":  7200,
                    "maxPathingNodes":  4500,
                    "villagersFear":  true,
@@ -53,23 +53,23 @@
     "cyclops":  {
                     "spawnWanderingChance":  0.0011111111111111111,
                     "sheepSearchLength":  17,
-                    "maxHealth":  450,
+                    "maxHealth":  150,
                     "attackDamage":  30,
                     "biteDamage":  80,
                     "griefing":  true
                 },
     "siren":  {
-                  "maxHealth":  150,
+                  "maxHealth":  50,
                   "maxSingTime":  12000,
                   "timeBetweenSongs":  2000
               },
     "gorgon":  {
-                   "maxHealth":  300
+                   "maxHealth":  100
                },
     "deathworm":  {
                       "spawnChance":  0.03333333333333333,
                       "targetSearchLength":  48,
-                      "maxHealth":  30,
+                      "maxHealth":  10,
                       "attackDamage":  6,
                       "attackMonsters":  true
                   },
@@ -78,7 +78,7 @@
                        "spawnWeight":  4,
                        "chickenSearchLength":  32,
                        "eggChance":  0.03333333333333333,
-                       "maxHealth":  120,
+                       "maxHealth":  40,
                        "chickensLayRottenEggs":  true
                    },
     "bird":  {
@@ -94,7 +94,7 @@
                   "spawn":  true,
                   "spawnWeight":  60,
                   "dropWeapon":  true,
-                  "maxHealth":  150,
+                  "maxHealth":  50,
                   "attackDamage":  20
               },
     "amphithere":  {
@@ -103,13 +103,13 @@
                        "villagerSearchLength":  48.0,
                        "tameTime":  400,
                        "flightSpeed":  1.75,
-                       "maxHealth":  150,
+                       "maxHealth":  50,
                        "attackDamage":  14
                    },
     "seaSerpent":  {
                        "spawnChance":  0.004,
                        "griefing":  true,
-                       "baseHealth":  60,
+                       "baseHealth":  20,
                        "attackDamage":  8
                    },
     "lich":  {
@@ -118,14 +118,14 @@
                  "spawnChance":  0.03333333333333333
              },
     "hydra":  {
-                  "maxHealth":  750
+                  "maxHealth":  250
               },
     "hippocampus":  {
                         "spawnChance":  0.025,
                         "swimSpeedMod":  1.0
                     },
     "ghost":  {
-                  "maxHealth":  90,
+                  "maxHealth":  30,
                   "attackDamage":  6,
                   "fromPlayerDeaths":  true,
                   "alwaysSpawnFromChest":  false
@@ -176,6 +176,6 @@
                  },
     "misc":  {
                  "enableDragonSeeker":  true,
-                 "dreadQueenMaxHealth":  2250
+                 "dreadQueenMaxHealth":  750
              }
 }
