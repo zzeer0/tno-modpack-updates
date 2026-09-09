@@ -15183,11 +15183,6 @@
                       "size":  1585287
                   },
                   {
-                      "path":  "mods/gearevolution-1.2.5.jar",
-                      "sha256":  "b14c451fa6227c5a3421bbd4507dea4fdd5acd93e7a5504ec02b7fabafd89965",
-                      "size":  1449845
-                  },
-                  {
                       "path":  "mods/GeophilicBackported-v1.3.2 1.21.1.jar",
                       "sha256":  "9a19917119cfb3501aa49ddfb9319b0e625cdaad1c8fc471f5ce7b43802015d8",
                       "size":  87564
