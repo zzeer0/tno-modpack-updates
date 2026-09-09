@@ -15411,6 +15411,11 @@
                       "path":  "mods/kambrik-neoforge-8.0.0-beta.2.jar",
                       "sha256":  "a9b14170f2eeb323261c14bf40137ae78920ce2d61d52c85cdccc45bd9f37c2c",
                       "size":  436428
+                  },
+                  {
+                      "path":  "mods/tno_mob_existence-1.0.0.jar",
+                      "sha256":  "4a693a4e74ef949dc2ee69d280be0c5649b5bdf9dfb06c1e4a9123b823985e7c",
+                      "size":  7685
                   }
               ]
 }
