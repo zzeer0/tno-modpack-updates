@@ -5949,8 +5949,8 @@
                   },
                   {
                       "path":  "config/tensura/ability/skill/extra_config.toml",
-                      "sha256":  "851c19b504e39b5555d1f4e41391035e38cc1bc01bea498c4bfb7441fa7cb12c",
-                      "size":  28083
+                      "sha256":  "92bc32c5694b95c183ba2f406e589a998232bfeeec397468155903c437767ba5",
+                      "size":  27328
                   },
                   {
                       "path":  "config/tensura/ability/skill/intrinsic_config.toml",
