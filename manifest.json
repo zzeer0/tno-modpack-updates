@@ -4464,8 +4464,8 @@
                   },
                   {
                       "path":  "config/iceandfire/iaf-common.json",
-                      "sha256":  "2778b3ef388ac333a3d3afc488ec574f74ed985e04538cfe0c61ccf2f07e592f",
-                      "size":  4610
+                      "sha256":  "414362558f36550d84ed1facfe6b70d97a8bd80be5857f9db03e98a11cb0b4f3",
+                      "size":  7410
                   },
                   {
                       "path":  "config/illagerinvasion-server.toml",
@@ -15411,6 +15411,11 @@
                       "path":  "mods/tno_mob_existence-1.0.0.jar",
                       "sha256":  "34a7bc29c4e14c6dce8715c55b69f90237bcbb567e1f43bebe1017b4af700fde",
                       "size":  81792
+                  },
+                  {
+                      "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",
+                      "sha256":  "7ae4f004aa3e4b72832c37a27b48e773244cea202b4d97364c6d6cf6b60ec802",
+                      "size":  140597
                   }
               ]
 }
