@@ -5959,8 +5959,8 @@
                   },
                   {
                       "path":  "config/tensura/ability/skill/resistance_config.toml",
-                      "sha256":  "e1928a69aa2917a90b181079c3511b887df33b0bf92865e39bdb9b457309b8ac",
-                      "size":  2693
+                      "sha256":  "6b37d793a34ad7deebcc10a625e8a27429747af279cd8fd04f6b169108be0e59",
+                      "size":  2660
                   },
                   {
                       "path":  "config/tensura/ability/skill/unique_config.toml",

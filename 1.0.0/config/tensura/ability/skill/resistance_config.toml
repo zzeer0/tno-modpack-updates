@@ -1,6 +1,6 @@
 #How many times of current HP that incoming damage value needs to be higher to deal damage to the user with Resistances
 #-1 = always applied regardless of HP
-hpDamageBypassResistance = 0.5
+hpDamageBypassResistance = 0.0001
 #The multiplier that will be applied on incoming damage when the damage went through Resistances
 resistanceDamageMultiplier = 0.5
 #How many times of current HP that incoming damage value needs to be higher to deal damage to the user with Nullifications
