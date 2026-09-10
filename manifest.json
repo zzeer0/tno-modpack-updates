@@ -6269,8 +6269,8 @@
                   },
                   {
                       "path":  "config/tensuramoreskills-grand.toml",
-                      "sha256":  "f6b1e1bf01bd690ad6fa7b64a6f73cc7c366218a203e34a9df03e2be0f9eed0c",
-                      "size":  297521
+                      "sha256":  "ae776eec9441de65239b92920a7ae4d4210029653099d591ae807cb25b002caa",
+                      "size":  297522
                   },
                   {
                       "path":  "config/tensuramoreskills-races.toml",
@@ -15334,8 +15334,8 @@
                   },
                   {
                       "path":  "mods/tensuramoreskills-0.0.4.8iwanttobelikeyoufix+purifier.jar",
-                      "sha256":  "d9393c7ed56c0ddf88cce4de89bae943381ec3a7d2c705fe62740c4357e5608d",
-                      "size":  7044526
+                      "sha256":  "ddeba2cc3b8fc142d9ec2633dd670f4e971d305e0d464afef342f21733462d4a",
+                      "size":  7044453
                   },
                   {
                       "path":  "mods/tensura-neoforge-2.0.1.3.jar",

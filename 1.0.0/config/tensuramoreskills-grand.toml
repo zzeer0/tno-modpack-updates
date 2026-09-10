@@ -5944,7 +5944,7 @@
 		#Cooldown after summoning Extermination Blade. 20 ticks = 1 second.
 		# Default: 500
 		# Range: 0 ~ 72000
-		bladeCooldownTicks = 500
+		bladeCooldownTicks = 1200
 
 	[Adaptability."Damage Adaptation"]
 		#Damage reduction gained per incoming hit stack. 0.007142857 is about 0.714% per stack.
@@ -6014,11 +6014,11 @@
 		#EP consumed per blade hit before severance immunity is obtained.
 		# Default: 180.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		bladeHitCost = 180.0
+		bladeHitCost = 600.0
 		#EP consumed per blade hit after severance immunity is obtained.
 		# Default: 240.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		bladeHitCostAdapted = 240.0
+		bladeHitCostAdapted = 800.0
 
 	[Adaptability."Extermination Blade Damage"]
 		#Flat bonus damage dealt by Extermination Blade when it has enough EP.
@@ -6050,19 +6050,19 @@
 		#Severance enchantment level on normal Extermination Blade.
 		# Default: 2
 		# Range: 0 ~ 255
-		bladeSeveranceLevel = 2
+		bladeSeveranceLevel = 0
 		#Severance enchantment level on mastered Extermination Blade.
 		# Default: 3
 		# Range: 0 ~ 255
-		bladeSeveranceLevelMastered = 3
+		bladeSeveranceLevelMastered = 0
 		#Tsukumogami enchantment level on normal Extermination Blade.
 		# Default: 1
 		# Range: 0 ~ 255
-		bladeTsukumogamiLevel = 1
+		bladeTsukumogamiLevel = 0
 		#Tsukumogami enchantment level on mastered Extermination Blade.
 		# Default: 2
 		# Range: 0 ~ 255
-		bladeTsukumogamiLevelMastered = 2
+		bladeTsukumogamiLevelMastered = 1
 		#Unbreaking enchantment level on Extermination Blade.
 		# Default: 3
 		# Range: 0 ~ 255
@@ -6070,11 +6070,11 @@
 		#Sharpness enchantment level on normal Extermination Blade.
 		# Default: 2
 		# Range: 0 ~ 255
-		bladeSharpnessLevel = 2
+		bladeSharpnessLevel = 0
 		#Sharpness enchantment level on mastered Extermination Blade.
 		# Default: 3
 		# Range: 0 ~ 255
-		bladeSharpnessLevelMastered = 3
+		bladeSharpnessLevelMastered = 1
 
 	[authority_of_greed.Lionheart]
 		#Ticks the player must hold before Lionheart actually arms. 20 ticks = 1 second.
