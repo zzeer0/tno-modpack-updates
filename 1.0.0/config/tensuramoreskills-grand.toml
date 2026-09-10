@@ -6238,21 +6238,21 @@
 		#Magicule cost for activating or deactivating the domain mode.
 		# Default: 3000.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		domainCost = 3000.0
+		domainCost = 25000.0
 		#Magicule cost for Divine Burst.
 		# Default: 5000.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		burstCost = 5000.0
+		burstCost = 15000.0
 
 	[domain_of_negation."Domain Shape"]
 		#Radius of the black concrete domain sphere.
 		# Default: 12
 		# Range: 1 ~ 128
-		domainRadius = 12
+		domainRadius = 10
 		#How long the domain lasts before auto-collapsing. 900 ticks = 45 seconds.
 		# Default: 900
 		# Range: 1 ~ 1728000
-		domainDurationTicks = 900
+		domainDurationTicks = 400
 		#Block update flags used when placing/removing the shell. 3 updates clients and neighbors.
 		# Default: 3
 		# Range: 1 ~ 32
@@ -6266,19 +6266,19 @@
 		#Strength amplifier for the owner while inside the domain. 3 means Strength IV.
 		# Default: 3
 		# Range: 0 ~ 255
-		ownerStrengthAmplifier = 3
+		ownerStrengthAmplifier = 1
 		#Resistance amplifier for the owner while inside the domain. 2 means Resistance III.
 		# Default: 2
 		# Range: 0 ~ 255
-		ownerResistanceAmplifier = 2
+		ownerResistanceAmplifier = 1
 		#Speed amplifier for the owner while inside the domain. 2 means Speed III.
 		# Default: 2
 		# Range: 0 ~ 255
-		ownerSpeedAmplifier = 2
+		ownerSpeedAmplifier = 1
 		#Regeneration amplifier for the owner while inside the domain. 1 means Regeneration II.
 		# Default: 1
 		# Range: 0 ~ 255
-		ownerRegenerationAmplifier = 1
+		ownerRegenerationAmplifier = 0
 		#Anti-Skill amplifier applied to the owner while inside the domain.
 		# Default: 0
 		# Range: 0 ~ 255
@@ -6292,15 +6292,15 @@
 		#Anti-Skill amplifier applied to enemies inside the domain.
 		# Default: 1
 		# Range: 0 ~ 255
-		targetAntiSkillAmplifier = 1
+		targetAntiSkillAmplifier = 0
 		#Slowness amplifier applied to enemies inside the domain.
 		# Default: 2
 		# Range: 0 ~ 255
-		targetSlownessAmplifier = 2
+		targetSlownessAmplifier = 1
 		#Weakness amplifier applied to enemies inside the domain.
 		# Default: 1
 		# Range: 0 ~ 255
-		targetWeaknessAmplifier = 1
+		targetWeaknessAmplifier = 0
 		#How often the domain passively damages enemies. 20 ticks = 1 second.
 		# Default: 20
 		# Range: 1 ~ 72000
@@ -6312,7 +6312,7 @@
 		#Horizontal pull strength toward the domain center during passive suppression.
 		# Default: 0.22
 		# Range: 0.0 ~ 64.0
-		passivePullStrength = 0.22
+		passivePullStrength = 0.12
 		#Vertical push added during passive suppression pull.
 		# Default: 0.04
 		# Range: -64.0 ~ 64.0
@@ -6330,27 +6330,27 @@
 		#Damage dealt by Divine Burst while empowered by an active domain.
 		# Default: 70.0
 		# Range: 0.0 ~ 1000000.0
-		burstDamageInsideDomain = 70.0
+		burstDamageInsideDomain = 55.0
 		#Duration of Divine Burst debuffs. 240 ticks = 12 seconds.
 		# Default: 240
 		# Range: 1 ~ 72000
-		burstEffectTicks = 240
+		burstEffectTicks = 120
 		#Anti-Skill amplifier applied by Divine Burst.
 		# Default: 1
 		# Range: 0 ~ 255
-		burstAntiSkillAmplifier = 1
+		burstAntiSkillAmplifier = 0
 		#Slowness amplifier applied by Divine Burst.
 		# Default: 4
 		# Range: 0 ~ 255
-		burstSlownessAmplifier = 4
+		burstSlownessAmplifier = 2
 		#Weakness amplifier applied by Divine Burst.
 		# Default: 3
 		# Range: 0 ~ 255
-		burstWeaknessAmplifier = 3
+		burstWeaknessAmplifier = 1
 		#Horizontal pull strength toward burst center.
 		# Default: 1.15
 		# Range: 0.0 ~ 64.0
-		burstPullStrength = 1.15
+		burstPullStrength = 0.6
 		#Vertical push added by Divine Burst pull.
 		# Default: 0.25
 		# Range: -64.0 ~ 64.0
@@ -6360,17 +6360,17 @@
 		#Cooldown after toggling domain mode.
 		# Default: 20
 		# Range: 0 ~ 72000
-		domainCooldownTicks = 20
+		domainCooldownTicks = 600
 		#Cooldown after Divine Burst. 300 ticks = 15 seconds.
 		# Default: 300
 		# Range: 0 ~ 72000
-		burstCooldownTicks = 300
+		burstCooldownTicks = 400
 
 	[domain_of_negation."Negated Servants"]
 		#Maximum servants created by kills inside one domain.
 		# Default: 8
 		# Range: 0 ~ 256
-		maxSummons = 8
+		maxSummons = 4
 		#Health multiplier applied to spawned negated servants. 0.6 means 60% health.
 		# Default: 0.6
 		# Range: 0.01 ~ 1000.0

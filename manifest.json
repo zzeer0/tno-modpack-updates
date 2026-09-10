@@ -6269,8 +6269,8 @@
                   },
                   {
                       "path":  "config/tensuramoreskills-grand.toml",
-                      "sha256":  "410e6e7f22897bc14a7632b87c86862ff648368e8b8ca2ec0f700d102891d601",
-                      "size":  307427
+                      "sha256":  "c06512c82276371eb7dafef4b54c86db01debe4da5c38c59c3a8ff94ab34422f",
+                      "size":  297513
                   },
                   {
                       "path":  "config/tensuramoreskills-races.toml",
@@ -15221,6 +15221,11 @@
                       "path":  "mods/multipiston-1.2.58-1.21.1.jar",
                       "sha256":  "7ca26db4648589b7f76694c249d5096c0c0afb7615fe6adf9f638c6c825c15e7",
                       "size":  34139
+                  },
+                  {
+                      "path":  "mods/mortal_cultivation-1.0.4.2.jar",
+                      "sha256":  "4d26b788831e43fbce9326f430f95176bc8e594f35f4981dc0199e7e59f6a41c",
+                      "size":  1455499
                   },
                   {
                       "path":  "mods/mysticism-neoforge-2.1.2.jar",
