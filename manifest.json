@@ -4568,12 +4568,12 @@
                       "size":  5970
                   },
                   {
-                      "path":  "config/inventoryprofilesnext/æ–°çš„ä¸–ç•Œ/prev-villager-trading-config-v2.json",
+                      "path":  "config/inventoryprofilesnext/Ã¦â€“Â°Ã§Å¡â€žÃ¤Â¸â€“Ã§â€¢Å’/prev-villager-trading-config-v2.json",
                       "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
                       "size":  1177
                   },
                   {
-                      "path":  "config/inventoryprofilesnext/æ–°çš„ä¸–ç•Œ/villager-trading-config-v2.json",
+                      "path":  "config/inventoryprofilesnext/Ã¦â€“Â°Ã§Å¡â€žÃ¤Â¸â€“Ã§â€¢Å’/villager-trading-config-v2.json",
                       "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
                       "size":  1177
                   },
@@ -4853,12 +4853,12 @@
                       "size":  10685
                   },
                   {
-                      "path":  "config/litematica/litematica_è¶…å¹³å¦.json",
+                      "path":  "config/litematica/litematica_Ã¨Â¶â€¦Ã¥Â¹Â³Ã¥ÂÂ¦.json",
                       "sha256":  "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a",
                       "size":  95
                   },
                   {
-                      "path":  "config/litematica/litematica_è¶…å¹³å¦_dim_minecraft_overworld.json",
+                      "path":  "config/litematica/litematica_Ã¨Â¶â€¦Ã¥Â¹Â³Ã¥ÂÂ¦_dim_minecraft_overworld.json",
                       "sha256":  "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582",
                       "size":  758
                   },
@@ -9128,22 +9128,22 @@
                       "size":  245647
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/æ˜Ÿå±‘æµ·èžº.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/Ã¦ËœÅ¸Ã¥Â±â€˜Ã¦ÂµÂ·Ã¨Å¾Âº.avif",
                       "sha256":  "1d9f457907e33a8aedf1186a98506ec02e09afaffe2cd72dcfd046880e173742",
                       "size":  5390
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/çº¸æ¿.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/Ã§ÂºÂ¸Ã¦ÂÂ¿.avif",
                       "sha256":  "91e16853e16bdfae6d5db2c381f2f92da2651ddb0875b79582a862eba3229b55",
                       "size":  4718
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/ç™½å¸†å°å–µ.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/Ã§â„¢Â½Ã¥Â¸â€ Ã¥Â°ÂÃ¥â€“Âµ.avif",
                       "sha256":  "99f81f37640e1f89bae26d7124213622201f793b361de2fae1e2853c4c57463d",
                       "size":  5291
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/é›’ä».avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/Ã©â€ºâ€™Ã¤Â»Â.avif",
                       "sha256":  "087dcd5da9ef2479eedd52979959acf5061fa7f04bdfed854201deb7f3dd8cfa",
                       "size":  2961
                   },
@@ -9198,7 +9198,7 @@
                       "size":  281854
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/avatar/ç‹±é™…æ˜ŸèŠ’.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/avatar/Ã§â€¹Â±Ã©â„¢â€¦Ã¦ËœÅ¸Ã¨Å â€™.avif",
                       "sha256":  "e7458e13d325d4b7aa428ba787e988fec26ce72804e0fd8e757d4543c8633455",
                       "size":  3628
                   },
@@ -9543,42 +9543,42 @@
                       "size":  14642
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ä¸»åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¤Â¸Â»Ã¥Å Â¨Ã§â€Â».json",
                       "sha256":  "af4b1fa6be1008d060b969b4d5372f4268096a3c19480b5c627d577ebaa73288",
                       "size":  385414
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/å¥³ä»†åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¥Â¥Â³Ã¤Â»â€ Ã¥Å Â¨Ã§â€Â».json",
                       "sha256":  "8859f79700a143627a6aa58ec2f27958f08167f03ab4124706db8ee6d8383cdf",
                       "size":  67078
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/æ‰‹è‡‚åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¦â€°â€¹Ã¨â€¡â€šÃ¥Å Â¨Ã§â€Â».json",
                       "sha256":  "9305eadbb87fa59436b4f435bfc16535f2c6f7c1aff9312a19c564550489049f",
                       "size":  158423
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/æ¬è¿åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¦ÂÂ¬Ã¨Â¿ÂÃ¥Å Â¨Ã§â€Â».json",
                       "sha256":  "dc45059b4b65ef05da967c54c2f2d084fc3e532c1adb4e4633fc82c60ae04818",
                       "size":  5379
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/é©¬æœ¯åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã©Â©Â¬Ã¦Å“Â¯Ã¥Å Â¨Ã§â€Â».json",
                       "sha256":  "b0018f5a7e88c21f78b75ff18c98966428ac691c46f716950d2a8f2a0815abb3",
                       "size":  42814
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/è·‘é…·åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¨Â·â€˜Ã©â€¦Â·Ã¥Å Â¨Ã§â€Â».json",
                       "sha256":  "e18daf135fbff6ba53630bbf7c3fe9251574fe5b693e7946f09682ef9a6e5134",
                       "size":  178001
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/è½®ç›˜åŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/Ã¨Â½Â®Ã§â€ºËœÃ¥Å Â¨Ã§â€Â».json",
                       "sha256":  "0f1fd23ffb3365d886239eb49000eea182675fbd80a775c834405d6d81640486",
                       "size":  243233
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/TACåŠ¨ç”».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/TACÃ¥Å Â¨Ã§â€Â».json",
                       "sha256":  "c28a0fcb86feb91f87f9b80ac3d79fb8a3110d5e26456263ce3752a5a3b75f90",
                       "size":  321954
                   },
@@ -9588,17 +9588,17 @@
                       "size":  4660
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/å’–å•¡é±¼.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Ã¥â€™â€“Ã¥â€¢Â¡Ã©Â±Â¼.avif",
                       "sha256":  "e9b34a0e5eaea1f48aba2cc3d20be3fc80b19df0d1333ce6cf80e24c139bd818",
                       "size":  3220
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/æ˜Ÿå±‘æµ·èžº.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Ã¦ËœÅ¸Ã¥Â±â€˜Ã¦ÂµÂ·Ã¨Å¾Âº.avif",
                       "sha256":  "c8a05d54046f102db8f97ade841a971e23845a18a825bf41589259bc3d497a17",
                       "size":  4524
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/ç§‹é£Ž.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Ã§Â§â€¹Ã©Â£Å½.avif",
                       "sha256":  "36a4be0008d7d90e8079e09c8d9d24448e105fc929b94b7bdfe2b96193c91d5a",
                       "size":  6499
                   },
@@ -9608,12 +9608,12 @@
                       "size":  3389
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/è‡ªåŠ¨æœåŠ¡ç½‘ç»œ.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Ã¨â€¡ÂªÃ¥Å Â¨Ã¦Å“ÂÃ¥Å Â¡Ã§Â½â€˜Ã§Â»Å“.avif",
                       "sha256":  "def6a918cab63c71aad1753a39bfbc45219696f74a0e6b95b9c71c67cbc0c19d",
                       "size":  4656
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Maksæ€œæ‚¯.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/MaksÃ¦â‚¬Å“Ã¦â€šÂ¯.avif",
                       "sha256":  "4909706e5432337f71cc93e410716d6280dba4f51f954ba9058162515d63adc7",
                       "size":  3885
                   },
@@ -9643,17 +9643,17 @@
                       "size":  3883
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/ä¸»åŠ¨ç”»ä¿®æ”¹.json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/Ã¤Â¸Â»Ã¥Å Â¨Ã§â€Â»Ã¤Â¿Â®Ã¦â€Â¹.json",
                       "sha256":  "172bbae987b9f13bd3ff73e871cb94557c597c85ffd93e7c3a0c40679c8c857e",
                       "size":  2530
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/å¹¶è¡ŒåŠ¨ç”»ä¿®æ”¹.json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/Ã¥Â¹Â¶Ã¨Â¡Å’Ã¥Å Â¨Ã§â€Â»Ã¤Â¿Â®Ã¦â€Â¹.json",
                       "sha256":  "ac49b424e38e6d1fe6a03cb448eec28359c47d947f1843f88b446193de121e2c",
                       "size":  1536
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/è½¦è¾†åŠ¨ç”»ç›¸å…³.json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/Ã¨Â½Â¦Ã¨Â¾â€ Ã¥Å Â¨Ã§â€Â»Ã§â€ºÂ¸Ã¥â€¦Â³.json",
                       "sha256":  "6c8ca7826196df84cd0c4f7aa18140e0bde87fcdac9994b27b36158c20a80077",
                       "size":  3494
                   },
@@ -9708,7 +9708,7 @@
                       "size":  600220
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/èèŽ‰æ‘‡.ogg",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/Ã¨ÂÂÃ¨Å½â€°Ã¦â€˜â€¡.ogg",
                       "sha256":  "04b434156b56d9ca78a46638a1ede723a82998d3c0a60008ede387424be59880",
                       "size":  158066
                   },
@@ -10098,37 +10098,37 @@
                       "size":  8728
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/å°åº¦æ ¼æŒ¡ï¼ˆæ ¼æŒ¡è¿žæ‹›æŽ§åˆ¶å™¨ï¼‰@player_ctrl_use.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã¥ÂÂ°Ã¥ÂºÂ¦Ã¦Â Â¼Ã¦Å’Â¡Ã¯Â¼Ë†Ã¦Â Â¼Ã¦Å’Â¡Ã¨Â¿Å¾Ã¦â€¹â€ºÃ¦Å½Â§Ã¥Ë†Â¶Ã¥â„¢Â¨Ã¯Â¼â€°@player_ctrl_use.molang",
                       "sha256":  "287e76d51e6901a4ce4c1cf8fa6fc2e3e07e9c1423dfcc5138ec0fffc9142f84",
                       "size":  4991
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/æ›´éšæœºçš„çœ¨çœ¼@player_ctrl_pre_parallel_3.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã¦â€ºÂ´Ã©Å¡ÂÃ¦Å“ÂºÃ§Å¡â€žÃ§Å“Â¨Ã§Å“Â¼@player_ctrl_pre_parallel_3.molang",
                       "sha256":  "989a3db45e6daed822843eaeaeb12e6e8f40432ecf81c4938f5897a943a9a67f",
                       "size":  1475
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ç¢°å¢™æŠ¬æ‰‹@player_ctrl_parallel_5.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã§Â¢Â°Ã¥Â¢â„¢Ã¦Å Â¬Ã¦â€°â€¹@player_ctrl_parallel_5.molang",
                       "sha256":  "60069e35da5fff1db55e015cf8176a33586d7f65ee59fd71837025e1734e0bbb",
                       "size":  2080
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ç¢°å¢™æŠ¬æ‰‹åˆå§‹åŒ–@player_init.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã§Â¢Â°Ã¥Â¢â„¢Ã¦Å Â¬Ã¦â€°â€¹Ã¥Ë†ÂÃ¥Â§â€¹Ã¥Å’â€“@player_init.molang",
                       "sha256":  "4573500d302338f37850a9a90f52c397c5ec56b10bfc355bfa757fe2a13165e1",
                       "size":  85
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ç®€å•ä¸‡ç”¨BCåŠ¨ç”»æŽ§åˆ¶å™¨@player_ctrl_swing.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã§Â®â‚¬Ã¥Ââ€¢Ã¤Â¸â€¡Ã§â€Â¨BCÃ¥Å Â¨Ã§â€Â»Ã¦Å½Â§Ã¥Ë†Â¶Ã¥â„¢Â¨@player_ctrl_swing.molang",
                       "sha256":  "517d22218e9e7bedb1a4388a2e5ade95b106b617a7c15733adb8ffc8b3f12dd1",
                       "size":  1540
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ç®€å•å€’èµ°åŠ¨ç”»@player_ctrl_main.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã§Â®â‚¬Ã¥Ââ€¢Ã¥â‚¬â€™Ã¨ÂµÂ°Ã¥Å Â¨Ã§â€Â»@player_ctrl_main.molang",
                       "sha256":  "3716ccaaaa7cf4d99549d57e80e2181a56fb4077e5276ee28e83afb0c25b9dde",
                       "size":  1057
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/éšæœºçœ¨çœ¼åˆå§‹åŒ–@player_init.molang",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/Ã©Å¡ÂÃ¦Å“ÂºÃ§Å“Â¨Ã§Å“Â¼Ã¥Ë†ÂÃ¥Â§â€¹Ã¥Å’â€“@player_init.molang",
                       "sha256":  "f4dcb64304efa986f9ca7936c9d12c4258af53d9c824afa5859036d00c2a74b1",
                       "size":  37
                   },
@@ -10683,12 +10683,12 @@
                       "size":  760
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/å‰æ™¯.png",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/Ã¥â€°ÂÃ¦â„¢Â¯.png",
                       "sha256":  "289bf77a7a8ed825f3fb1239566b53ce4612c59120af600a08115652293e3778",
                       "size":  755
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/èƒŒæ™¯.png",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/Ã¨Æ’Å’Ã¦â„¢Â¯.png",
                       "sha256":  "c7f5f9525cc3b335a0be3bc934656fdee83545927c9292ebc5b40fad75e45f8f",
                       "size":  239306
                   },
@@ -15301,11 +15301,6 @@
                       "path":  "mods/ponderer-1.21.1-neoforge-1.8.2.jar",
                       "sha256":  "ec8276101c67cf03f2274895f6f763ccd8a27bc1061f2153f0c2410306efefca",
                       "size":  2554865
-                  },
-                  {
-                      "path":  "mods/quality_food-1.21.1-2.3.6.jar",
-                      "sha256":  "43e283e36bad4ca02b9efc21384236c5882bcff160f8e192c12dc736a595ffa5",
-                      "size":  224398
                   },
                   {
                       "path":  "mods/RPG_Style_More_Bosses_1.0.3_NeoForge_1.21.1.jar",
