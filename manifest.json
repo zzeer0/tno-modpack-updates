@@ -8,11 +8,6 @@
              },
     "files":  [
                   {
-                      "path":  "CADERNO_TECNICO_IA_MOBS.txt",
-                      "sha256":  "026161fb946b978b2b010f2c8014371d5c5a1dc204c29f5d4e51e73b66e32c9f",
-                      "size":  152847
-                  },
-                  {
                       "path":  "config/acceleratedrendering-client.toml",
                       "sha256":  "a2cf343e1db888f004c108f963d998fff46bd9885618a736f2c2f2d3f0379ecb",
                       "size":  14674
@@ -4568,16 +4563,6 @@
                       "size":  5970
                   },
                   {
-                      "path":  "config/inventoryprofilesnext/ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ¤Ã‚Â¸Ã¢â‚¬â€œÃƒÂ§Ã¢â‚¬Â¢Ã…â€™/prev-villager-trading-config-v2.json",
-                      "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
-                      "size":  1177
-                  },
-                  {
-                      "path":  "config/inventoryprofilesnext/ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ¤Ã‚Â¸Ã¢â‚¬â€œÃƒÂ§Ã¢â‚¬Â¢Ã…â€™/villager-trading-config-v2.json",
-                      "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
-                      "size":  1177
-                  },
-                  {
                       "path":  "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json",
                       "sha256":  "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a",
                       "size":  1450
@@ -4596,6 +4581,16 @@
                       "path":  "config/inventoryprofilesnext/inventoryprofiles.json",
                       "sha256":  "dbb8d8bb159f1a0d908ac28438e770863b73938eefaa13971b3f2253d7eddbf1",
                       "size":  1832
+                  },
+                  {
+                      "path":  "config/inventoryprofilesnext/新的世界/prev-villager-trading-config-v2.json",
+                      "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
+                      "size":  1177
+                  },
+                  {
+                      "path":  "config/inventoryprofilesnext/新的世界/villager-trading-config-v2.json",
+                      "sha256":  "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef",
+                      "size":  1177
                   },
                   {
                       "path":  "config/iris.properties",
@@ -4853,12 +4848,12 @@
                       "size":  10685
                   },
                   {
-                      "path":  "config/litematica/litematica_ÃƒÂ¨Ã‚Â¶Ã¢â‚¬Â¦ÃƒÂ¥Ã‚Â¹Ã‚Â³ÃƒÂ¥Ã‚ÂÃ‚Â¦.json",
+                      "path":  "config/litematica/litematica_超平坦.json",
                       "sha256":  "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a",
                       "size":  95
                   },
                   {
-                      "path":  "config/litematica/litematica_ÃƒÂ¨Ã‚Â¶Ã¢â‚¬Â¦ÃƒÂ¥Ã‚Â¹Ã‚Â³ÃƒÂ¥Ã‚ÂÃ‚Â¦_dim_minecraft_overworld.json",
+                      "path":  "config/litematica/litematica_超平坦_dim_minecraft_overworld.json",
                       "sha256":  "adcadb841e38244e0121845e5c11366cb7fca48d1e6518db75eb8369eb9cc582",
                       "size":  758
                   },
@@ -9128,29 +9123,29 @@
                       "size":  245647
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/ÃƒÂ¦Ã‹Å“Ã…Â¸ÃƒÂ¥Ã‚Â±Ã¢â‚¬ËœÃƒÂ¦Ã‚ÂµÃ‚Â·ÃƒÂ¨Ã…Â¾Ã‚Âº.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/zb.avif",
+                      "sha256":  "3eca1f6d9da6ae80a8dd798b0c8a84df363c39281ed51aae770d015487c51ce7",
+                      "size":  4569
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/星屑海螺.avif",
                       "sha256":  "1d9f457907e33a8aedf1186a98506ec02e09afaffe2cd72dcfd046880e173742",
                       "size":  5390
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/ÃƒÂ§Ã‚ÂºÃ‚Â¸ÃƒÂ¦Ã‚ÂÃ‚Â¿.avif",
-                      "sha256":  "91e16853e16bdfae6d5db2c381f2f92da2651ddb0875b79582a862eba3229b55",
-                      "size":  4718
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/ÃƒÂ§Ã¢â€žÂ¢Ã‚Â½ÃƒÂ¥Ã‚Â¸Ã¢â‚¬Â ÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¥Ã¢â‚¬â€œÃ‚Âµ.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/白帆小喵.avif",
                       "sha256":  "99f81f37640e1f89bae26d7124213622201f793b361de2fae1e2853c4c57463d",
                       "size":  5291
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/ÃƒÂ©Ã¢â‚¬ÂºÃ¢â‚¬â„¢ÃƒÂ¤Ã‚Â»Ã‚Â.avif",
-                      "sha256":  "087dcd5da9ef2479eedd52979959acf5061fa7f04bdfed854201deb7f3dd8cfa",
-                      "size":  2961
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/纸板.avif",
+                      "sha256":  "91e16853e16bdfae6d5db2c381f2f92da2651ddb0875b79582a862eba3229b55",
+                      "size":  4718
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/zb.avif",
-                      "sha256":  "3eca1f6d9da6ae80a8dd798b0c8a84df363c39281ed51aae770d015487c51ce7",
-                      "size":  4569
+                      "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/avatar/雒仁.avif",
+                      "sha256":  "087dcd5da9ef2479eedd52979959acf5061fa7f04bdfed854201deb7f3dd8cfa",
+                      "size":  2961
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/09_hailuo/lang/en_us.json",
@@ -9198,14 +9193,14 @@
                       "size":  281854
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/avatar/ÃƒÂ§Ã¢â‚¬Â¹Ã‚Â±ÃƒÂ©Ã¢â€žÂ¢Ã¢â‚¬Â¦ÃƒÂ¦Ã‹Å“Ã…Â¸ÃƒÂ¨Ã…Â Ã¢â‚¬â„¢.avif",
-                      "sha256":  "e7458e13d325d4b7aa428ba787e988fec26ce72804e0fd8e757d4543c8633455",
-                      "size":  3628
-                  },
-                  {
                       "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/avatar/zb.avif",
                       "sha256":  "3eca1f6d9da6ae80a8dd798b0c8a84df363c39281ed51aae770d015487c51ce7",
                       "size":  4569
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/avatar/狱际星芒.avif",
+                      "sha256":  "e7458e13d325d4b7aa428ba787e988fec26ce72804e0fd8e757d4543c8633455",
+                      "size":  3628
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/10_zhiban/lang/en_us.json",
@@ -9543,44 +9538,44 @@
                       "size":  14642
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¦Ã‚ÂÃ‚Â¬ÃƒÂ¨Ã‚Â¿Ã‚ÂÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "dc45059b4b65ef05da967c54c2f2d084fc3e532c1adb4e4633fc82c60ae04818",
-                      "size":  5379
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/TAC动画.json",
+                      "sha256":  "c28a0fcb86feb91f87f9b80ac3d79fb8a3110d5e26456263ce3752a5a3b75f90",
+                      "size":  321954
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ¨Ã¢â‚¬Â¡Ã¢â‚¬Å¡ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "9305eadbb87fa59436b4f435bfc16535f2c6f7c1aff9312a19c564550489049f",
-                      "size":  158423
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¨Ã‚Â·Ã¢â‚¬ËœÃƒÂ©Ã¢â‚¬Â¦Ã‚Â·ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "e18daf135fbff6ba53630bbf7c3fe9251574fe5b693e7946f09682ef9a6e5134",
-                      "size":  178001
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¨Ã‚Â½Ã‚Â®ÃƒÂ§Ã¢â‚¬ÂºÃ‹Å“ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "0f1fd23ffb3365d886239eb49000eea182675fbd80a775c834405d6d81640486",
-                      "size":  243233
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¤Ã‚Â¸Ã‚Â»ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/主动画.json",
                       "sha256":  "af4b1fa6be1008d060b969b4d5372f4268096a3c19480b5c627d577ebaa73288",
                       "size":  385414
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ¥Ã‚Â¥Ã‚Â³ÃƒÂ¤Ã‚Â»Ã¢â‚¬Â ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/女仆动画.json",
                       "sha256":  "8859f79700a143627a6aa58ec2f27958f08167f03ab4124706db8ee6d8383cdf",
                       "size":  67078
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/ÃƒÂ©Ã‚Â©Ã‚Â¬ÃƒÂ¦Ã…â€œÃ‚Â¯ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "b0018f5a7e88c21f78b75ff18c98966428ac691c46f716950d2a8f2a0815abb3",
-                      "size":  42814
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/手臂动画.json",
+                      "sha256":  "9305eadbb87fa59436b4f435bfc16535f2c6f7c1aff9312a19c564550489049f",
+                      "size":  158423
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/TACÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â».json",
-                      "sha256":  "c28a0fcb86feb91f87f9b80ac3d79fb8a3110d5e26456263ce3752a5a3b75f90",
-                      "size":  321954
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/搬运动画.json",
+                      "sha256":  "dc45059b4b65ef05da967c54c2f2d084fc3e532c1adb4e4633fc82c60ae04818",
+                      "size":  5379
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/跑酷动画.json",
+                      "sha256":  "e18daf135fbff6ba53630bbf7c3fe9251574fe5b693e7946f09682ef9a6e5134",
+                      "size":  178001
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/轮盘动画.json",
+                      "sha256":  "0f1fd23ffb3365d886239eb49000eea182675fbd80a775c834405d6d81640486",
+                      "size":  243233
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/animations/马术动画.json",
+                      "sha256":  "b0018f5a7e88c21f78b75ff18c98966428ac691c46f716950d2a8f2a0815abb3",
+                      "size":  42814
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/12ssssss.avif",
@@ -9588,32 +9583,12 @@
                       "size":  4660
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/ÃƒÂ¦Ã‹Å“Ã…Â¸ÃƒÂ¥Ã‚Â±Ã¢â‚¬ËœÃƒÂ¦Ã‚ÂµÃ‚Â·ÃƒÂ¨Ã…Â¾Ã‚Âº.avif",
-                      "sha256":  "c8a05d54046f102db8f97ade841a971e23845a18a825bf41589259bc3d497a17",
-                      "size":  4524
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/ÃƒÂ¨Ã¢â‚¬Â¡Ã‚ÂªÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ¦Ã…â€œÃ‚ÂÃƒÂ¥Ã…Â Ã‚Â¡ÃƒÂ§Ã‚Â½Ã¢â‚¬ËœÃƒÂ§Ã‚Â»Ã…â€œ.avif",
-                      "sha256":  "def6a918cab63c71aad1753a39bfbc45219696f74a0e6b95b9c71c67cbc0c19d",
-                      "size":  4656
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/ÃƒÂ¥Ã¢â‚¬â„¢Ã¢â‚¬â€œÃƒÂ¥Ã¢â‚¬Â¢Ã‚Â¡ÃƒÂ©Ã‚Â±Ã‚Â¼.avif",
-                      "sha256":  "e9b34a0e5eaea1f48aba2cc3d20be3fc80b19df0d1333ce6cf80e24c139bd818",
-                      "size":  3220
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/ÃƒÂ§Ã‚Â§Ã¢â‚¬Â¹ÃƒÂ©Ã‚Â£Ã…Â½.avif",
-                      "sha256":  "36a4be0008d7d90e8079e09c8d9d24448e105fc929b94b7bdfe2b96193c91d5a",
-                      "size":  6499
-                  },
-                  {
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Dumnheint.avif",
                       "sha256":  "801729562ddcf13efaa0f917720078bc2be56a7cda2d405f29d2d856566f363d",
                       "size":  3389
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/MaksÃƒÂ¦Ã¢â€šÂ¬Ã…â€œÃƒÂ¦Ã¢â‚¬Å¡Ã‚Â¯.avif",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/Maks怜悯.avif",
                       "sha256":  "4909706e5432337f71cc93e410716d6280dba4f51f954ba9058162515d63adc7",
                       "size":  3885
                   },
@@ -9643,19 +9618,39 @@
                       "size":  3883
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/ÃƒÂ¨Ã‚Â½Ã‚Â¦ÃƒÂ¨Ã‚Â¾Ã¢â‚¬Â ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â»ÃƒÂ§Ã¢â‚¬ÂºÃ‚Â¸ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â³.json",
-                      "sha256":  "6c8ca7826196df84cd0c4f7aa18140e0bde87fcdac9994b27b36158c20a80077",
-                      "size":  3494
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/咖啡鱼.avif",
+                      "sha256":  "e9b34a0e5eaea1f48aba2cc3d20be3fc80b19df0d1333ce6cf80e24c139bd818",
+                      "size":  3220
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/ÃƒÂ¤Ã‚Â¸Ã‚Â»ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â»ÃƒÂ¤Ã‚Â¿Ã‚Â®ÃƒÂ¦Ã¢â‚¬ÂÃ‚Â¹.json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/星屑海螺.avif",
+                      "sha256":  "c8a05d54046f102db8f97ade841a971e23845a18a825bf41589259bc3d497a17",
+                      "size":  4524
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/秋风.avif",
+                      "sha256":  "36a4be0008d7d90e8079e09c8d9d24448e105fc929b94b7bdfe2b96193c91d5a",
+                      "size":  6499
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/avatar/自动服务网络.avif",
+                      "sha256":  "def6a918cab63c71aad1753a39bfbc45219696f74a0e6b95b9c71c67cbc0c19d",
+                      "size":  4656
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/主动画修改.json",
                       "sha256":  "172bbae987b9f13bd3ff73e871cb94557c597c85ffd93e7c3a0c40679c8c857e",
                       "size":  2530
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/ÃƒÂ¥Ã‚Â¹Ã‚Â¶ÃƒÂ¨Ã‚Â¡Ã…â€™ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â»ÃƒÂ¤Ã‚Â¿Ã‚Â®ÃƒÂ¦Ã¢â‚¬ÂÃ‚Â¹.json",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/并行动画修改.json",
                       "sha256":  "ac49b424e38e6d1fe6a03cb448eec28359c47d947f1843f88b446193de121e2c",
                       "size":  1536
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/controller/车辆动画相关.json",
+                      "sha256":  "6c8ca7826196df84cd0c4f7aa18140e0bde87fcdac9994b27b36158c20a80077",
+                      "size":  3494
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/functions/@player_ctrl_pre_main.molang",
@@ -9708,11 +9703,6 @@
                       "size":  600220
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/ÃƒÂ¨Ã‚ÂÃ‚ÂÃƒÂ¨Ã…Â½Ã¢â‚¬Â°ÃƒÂ¦Ã¢â‚¬ËœÃ¢â‚¬Â¡.ogg",
-                      "sha256":  "04b434156b56d9ca78a46638a1ede723a82998d3c0a60008ede387424be59880",
-                      "size":  158066
-                  },
-                  {
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/horn.ogg",
                       "sha256":  "a053609bfd5f7adf7ff9bc32d914deb1ab977ce14596450cf04277353c75662f",
                       "size":  8099
@@ -9721,6 +9711,11 @@
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/horn_long.ogg",
                       "sha256":  "0814c97bcfbf1f0bc187ab0c8a5b4a871375c2fc78c5e2b9ce9c18a2c3013766",
                       "size":  63811
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/sounds/萝莉摇.ogg",
+                      "sha256":  "04b434156b56d9ca78a46638a1ede723a82998d3c0a60008ede387424be59880",
+                      "size":  158066
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/15_kluonoa/textures/pbr/blue_s.png",
@@ -10098,41 +10093,6 @@
                       "size":  8728
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ©Ã…Â¡Ã‚ÂÃƒÂ¦Ã…â€œÃ‚ÂºÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ§Ã…â€œÃ‚Â¨ÃƒÂ§Ã…â€œÃ‚Â¼@player_ctrl_pre_parallel_3.molang",
-                      "sha256":  "989a3db45e6daed822843eaeaeb12e6e8f40432ecf81c4938f5897a943a9a67f",
-                      "size":  1475
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ¥Ã‚ÂÃ‚Â°ÃƒÂ¥Ã‚ÂºÃ‚Â¦ÃƒÂ¦Ã‚Â Ã‚Â¼ÃƒÂ¦Ã…â€™Ã‚Â¡ÃƒÂ¯Ã‚Â¼Ã‹â€ ÃƒÂ¦Ã‚Â Ã‚Â¼ÃƒÂ¦Ã…â€™Ã‚Â¡ÃƒÂ¨Ã‚Â¿Ã…Â¾ÃƒÂ¦Ã¢â‚¬Â¹Ã¢â‚¬ÂºÃƒÂ¦Ã…Â½Ã‚Â§ÃƒÂ¥Ã‹â€ Ã‚Â¶ÃƒÂ¥Ã¢â€žÂ¢Ã‚Â¨ÃƒÂ¯Ã‚Â¼Ã¢â‚¬Â°@player_ctrl_use.molang",
-                      "sha256":  "287e76d51e6901a4ce4c1cf8fa6fc2e3e07e9c1423dfcc5138ec0fffc9142f84",
-                      "size":  4991
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ§Ã‚Â¢Ã‚Â°ÃƒÂ¥Ã‚Â¢Ã¢â€žÂ¢ÃƒÂ¦Ã…Â Ã‚Â¬ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹@player_ctrl_parallel_5.molang",
-                      "sha256":  "60069e35da5fff1db55e015cf8176a33586d7f65ee59fd71837025e1734e0bbb",
-                      "size":  2080
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ§Ã‚Â¢Ã‚Â°ÃƒÂ¥Ã‚Â¢Ã¢â€žÂ¢ÃƒÂ¦Ã…Â Ã‚Â¬ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ¥Ã‹â€ Ã‚ÂÃƒÂ¥Ã‚Â§Ã¢â‚¬Â¹ÃƒÂ¥Ã…â€™Ã¢â‚¬â€œ@player_init.molang",
-                      "sha256":  "4573500d302338f37850a9a90f52c397c5ec56b10bfc355bfa757fe2a13165e1",
-                      "size":  85
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ§Ã‚Â®Ã¢â€šÂ¬ÃƒÂ¥Ã‚ÂÃ¢â‚¬Â¢ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¡ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨BCÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â»ÃƒÂ¦Ã…Â½Ã‚Â§ÃƒÂ¥Ã‹â€ Ã‚Â¶ÃƒÂ¥Ã¢â€žÂ¢Ã‚Â¨@player_ctrl_swing.molang",
-                      "sha256":  "517d22218e9e7bedb1a4388a2e5ade95b106b617a7c15733adb8ffc8b3f12dd1",
-                      "size":  1540
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ§Ã‚Â®Ã¢â€šÂ¬ÃƒÂ¥Ã‚ÂÃ¢â‚¬Â¢ÃƒÂ¥Ã¢â€šÂ¬Ã¢â‚¬â„¢ÃƒÂ¨Ã‚ÂµÃ‚Â°ÃƒÂ¥Ã…Â Ã‚Â¨ÃƒÂ§Ã¢â‚¬ÂÃ‚Â»@player_ctrl_main.molang",
-                      "sha256":  "3716ccaaaa7cf4d99549d57e80e2181a56fb4077e5276ee28e83afb0c25b9dde",
-                      "size":  1057
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/ÃƒÂ©Ã…Â¡Ã‚ÂÃƒÂ¦Ã…â€œÃ‚ÂºÃƒÂ§Ã…â€œÃ‚Â¨ÃƒÂ§Ã…â€œÃ‚Â¼ÃƒÂ¥Ã‹â€ Ã‚ÂÃƒÂ¥Ã‚Â§Ã¢â‚¬Â¹ÃƒÂ¥Ã…â€™Ã¢â‚¬â€œ@player_init.molang",
-                      "sha256":  "f4dcb64304efa986f9ca7936c9d12c4258af53d9c824afa5859036d00c2a74b1",
-                      "size":  37
-                  },
-                  {
                       "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/motorSynth.molang",
                       "sha256":  "e55cb4b20611a2f1b5707b5aabdb270f610869e6ec038faa95ae780ca0f51763",
                       "size":  1708
@@ -10141,6 +10101,41 @@
                       "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/move@player_update.molang",
                       "sha256":  "05f3e397e9f992c29569053f659e0911d49da69e3cd6188138f3fbaf1af52ccf",
                       "size":  128
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/印度格挡（格挡连招控制器）@player_ctrl_use.molang",
+                      "sha256":  "287e76d51e6901a4ce4c1cf8fa6fc2e3e07e9c1423dfcc5138ec0fffc9142f84",
+                      "size":  4991
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/更随机的眨眼@player_ctrl_pre_parallel_3.molang",
+                      "sha256":  "989a3db45e6daed822843eaeaeb12e6e8f40432ecf81c4938f5897a943a9a67f",
+                      "size":  1475
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/碰墙抬手@player_ctrl_parallel_5.molang",
+                      "sha256":  "60069e35da5fff1db55e015cf8176a33586d7f65ee59fd71837025e1734e0bbb",
+                      "size":  2080
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/碰墙抬手初始化@player_init.molang",
+                      "sha256":  "4573500d302338f37850a9a90f52c397c5ec56b10bfc355bfa757fe2a13165e1",
+                      "size":  85
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/简单万用BC动画控制器@player_ctrl_swing.molang",
+                      "sha256":  "517d22218e9e7bedb1a4388a2e5ade95b106b617a7c15733adb8ffc8b3f12dd1",
+                      "size":  1540
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/简单倒走动画@player_ctrl_main.molang",
+                      "sha256":  "3716ccaaaa7cf4d99549d57e80e2181a56fb4077e5276ee28e83afb0c25b9dde",
+                      "size":  1057
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/functions/随机眨眼初始化@player_init.molang",
+                      "sha256":  "f4dcb64304efa986f9ca7936c9d12c4258af53d9c824afa5859036d00c2a74b1",
+                      "size":  37
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/18_wedding/lang/en_us.json",
@@ -10683,14 +10678,14 @@
                       "size":  760
                   },
                   {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/ÃƒÂ¨Ã†â€™Ã…â€™ÃƒÂ¦Ã¢â€žÂ¢Ã‚Â¯.png",
-                      "sha256":  "c7f5f9525cc3b335a0be3bc934656fdee83545927c9292ebc5b40fad75e45f8f",
-                      "size":  239306
-                  },
-                  {
-                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/ÃƒÂ¥Ã¢â‚¬Â°Ã‚ÂÃƒÂ¦Ã¢â€žÂ¢Ã‚Â¯.png",
+                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/前景.png",
                       "sha256":  "289bf77a7a8ed825f3fb1239566b53ce4612c59120af600a08115652293e3778",
                       "size":  755
+                  },
+                  {
+                      "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/gui/背景.png",
+                      "sha256":  "c7f5f9525cc3b335a0be3bc934656fdee83545927c9292ebc5b40fad75e45f8f",
+                      "size":  239306
                   },
                   {
                       "path":  "config/yes_steve_model/builtin/wine_fox/21_saint/textures/pbr/arrow_mer.png",
@@ -15133,19 +15128,9 @@
                       "size":  27443718
                   },
                   {
-                      "path":  "mods/Aquaculture-1.21.1-2.7.21.jar",
-                      "sha256":  "45f00f9059838b2fecc988861111d8b3d4613a5f1b3688a8dbfa8655751b85bb",
-                      "size":  605949
-                  },
-                  {
                       "path":  "mods/ars_nouveau-1.21.1-5.13.1.jar",
                       "sha256":  "99dff85e8778f7ae21dfd51cdedadf20f555a834fc757c0afe5f03c10eea96f2",
                       "size":  20107711
-                  },
-                  {
-                      "path":  "mods/baguettelib-1.21.1-NeoForge-1.1.0.jar",
-                      "sha256":  "529381ee9ab23e3d06075296a3b978e95b13cab92390243a7f9690a91195cf5a",
-                      "size":  49063
                   },
                   {
                       "path":  "mods/block_factorys_bosses-2.1.2-neo-1.21.1.jar",
@@ -15158,11 +15143,6 @@
                       "size":  468001
                   },
                   {
-                      "path":  "mods/bountiful-neoforge-8.0.0-beta.2.jar",
-                      "sha256":  "dca5e0af724e3076b3d950b7ec88cf63c509435cf41371a6e1c7c306cb6a7e51",
-                      "size":  721006
-                  },
-                  {
                       "path":  "mods/codxlib-1.5.1-neoforge+1.21.1.jar",
                       "sha256":  "36431429a0bb58ffba4eec3aac87f28b158b2ca4dae11f1520c7ea9e4d680985",
                       "size":  191680
@@ -15171,11 +15151,6 @@
                       "path":  "mods/craft_config-1.1.12+1.21.1-neoforge.jar",
                       "sha256":  "2b1ba9e42c04d125ac66aeb88608b14ee2ed8c9a188b078871ce36c58706717c",
                       "size":  269297
-                  },
-                  {
-                      "path":  "mods/cupboard-1.21-2.9.jar",
-                      "sha256":  "0d7093deae83d223674e3bf0fc37943658f3f028e655df6f9e25209c32f41668",
-                      "size":  23509
                   },
                   {
                       "path":  "mods/darktimer-neoforge-1.21-1.2.3.jar",
@@ -15213,19 +15188,9 @@
                       "size":  87564
                   },
                   {
-                      "path":  "mods/GlitchCore-neoforge-1.21.1-2.1.0.0.jar",
-                      "sha256":  "9362e2faacc6c864a91c5d0f452305fe7a496aa6c91131af63d021f1baa773a7",
-                      "size":  90918
-                  },
-                  {
                       "path":  "mods/greatsage-0.0.4.jar",
                       "sha256":  "cacf736fb0818a35f09ca1278a7f30a8e32915e01f4d65230de08ca34241d9d9",
                       "size":  14035921
-                  },
-                  {
-                      "path":  "mods/HammerLib-1.21-21.0.14.jar",
-                      "sha256":  "486f37766fe62b64f7e4fb94848ca4b811325d1a9a43d17e8573cfc258d2e685",
-                      "size":  2209084
                   },
                   {
                       "path":  "mods/holo_damage_indicator-1.3.1+1.21.1-neoforge.jar",
@@ -15253,24 +15218,19 @@
                       "size":  13890046
                   },
                   {
-                      "path":  "mods/kambrik-neoforge-8.0.0-beta.2.jar",
-                      "sha256":  "a9b14170f2eeb323261c14bf40137ae78920ce2d61d52c85cdccc45bd9f37c2c",
-                      "size":  436428
-                  },
-                  {
                       "path":  "mods/minecolonies-1.1.1368-1.21.1.jar",
                       "sha256":  "c3a2542aaced85aabfc58b38415b70e6b095a16787056e07880fc94320f09a9b",
                       "size":  77945293
                   },
                   {
-                      "path":  "mods/mortal_cultivation-1.0.4.2.jar",
-                      "sha256":  "4d26b788831e43fbce9326f430f95176bc8e594f35f4981dc0199e7e59f6a41c",
-                      "size":  1455499
-                  },
-                  {
                       "path":  "mods/multipiston-1.2.58-1.21.1.jar",
                       "sha256":  "7ca26db4648589b7f76694c249d5096c0c0afb7615fe6adf9f638c6c825c15e7",
                       "size":  34139
+                  },
+                  {
+                      "path":  "mods/mortal_cultivation-1.0.4.2.jar",
+                      "sha256":  "4d26b788831e43fbce9326f430f95176bc8e594f35f4981dc0199e7e59f6a41c",
+                      "size":  1455499
                   },
                   {
                       "path":  "mods/mysticism-neoforge-2.1.2.jar",
@@ -15303,14 +15263,14 @@
                       "size":  2554865
                   },
                   {
-                      "path":  "mods/quality_food-1.21.1-2.3.6.jar",
-                      "sha256":  "bd78b6f2a92d3c1f4bc173b979dfcd267c2bfcfbfdd82b7bd88c1f56340870be",
-                      "size":  220427
-                  },
-                  {
                       "path":  "mods/RPG_Style_More_Bosses_1.0.3_NeoForge_1.21.1.jar",
                       "sha256":  "09f64e8392c861a99a6902ab5ed9909a090c79d8c8b772d4b1828149c8a40b57",
                       "size":  5746288
+                  },
+                  {
+                      "path":  "mods/quality_food-1.21.1-2.3.6.jar",
+                      "sha256":  "bd78b6f2a92d3c1f4bc173b979dfcd267c2bfcfbfdd82b7bd88c1f56340870be",
+                      "size":  220427
                   },
                   {
                       "path":  "mods/servercore-neoforge-1.5.5+1.21.1.jar",
@@ -15351,11 +15311,6 @@
                       "path":  "mods/tensura_boss_structure-1.0.3.3.jar",
                       "sha256":  "c5c8f4c9791c28eb51f74fc3137eb8da6cccc32e5f43bab40bbf8448d66325f6",
                       "size":  906653
-                  },
-                  {
-                      "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",
-                      "sha256":  "7ae4f004aa3e4b72832c37a27b48e773244cea202b4d97364c6d6cf6b60ec802",
-                      "size":  140597
                   },
                   {
                       "path":  "mods/tensura_iron_spells-neoforge-2.0.0.0.jar",
@@ -15408,21 +15363,6 @@
                       "size":  2814865
                   },
                   {
-                      "path":  "mods/tno_bounty_data-1.0.0.jar",
-                      "sha256":  "090a0d3e0b1259305d12149cb96e8f41d9f87f8a1625064195d6b2d072705c0f",
-                      "size":  7274
-                  },
-                  {
-                      "path":  "mods/tno_gear_existence-1.0.0.jar",
-                      "sha256":  "3f78fcb697108eb83d9e58034479b6a7f126d1daedbd33657e4a7eac7f3ffa7a",
-                      "size":  140055
-                  },
-                  {
-                      "path":  "mods/tno_mob_existence-1.0.0.jar",
-                      "sha256":  "34a7bc29c4e14c6dce8715c55b69f90237bcbb567e1f43bebe1017b4af700fde",
-                      "size":  81792
-                  },
-                  {
                       "path":  "mods/toms_storage_star_optimized-0.9.2.jar",
                       "sha256":  "f85684e3106f7f081f892ed86629c03c8d93e89cf3e18016e18a4a50638c9d10",
                       "size":  106559
@@ -15436,6 +15376,66 @@
                       "path":  "mods/ymktn-1.1.0.jar",
                       "sha256":  "3f57015093f50658e4a2e94a08b0f0220f8a927a5d5738d77569573905e1114e",
                       "size":  1122679
+                  },
+                  {
+                      "path":  "CADERNO_TECNICO_IA_MOBS.txt",
+                      "sha256":  "026161fb946b978b2b010f2c8014371d5c5a1dc204c29f5d4e51e73b66e32c9f",
+                      "size":  152847
+                  },
+                  {
+                      "path":  "mods/GlitchCore-neoforge-1.21.1-2.1.0.0.jar",
+                      "sha256":  "9362e2faacc6c864a91c5d0f452305fe7a496aa6c91131af63d021f1baa773a7",
+                      "size":  90918
+                  },
+                  {
+                      "path":  "mods/HammerLib-1.21-21.0.14.jar",
+                      "sha256":  "486f37766fe62b64f7e4fb94848ca4b811325d1a9a43d17e8573cfc258d2e685",
+                      "size":  2209084
+                  },
+                  {
+                      "path":  "mods/baguettelib-1.21.1-NeoForge-1.1.0.jar",
+                      "sha256":  "529381ee9ab23e3d06075296a3b978e95b13cab92390243a7f9690a91195cf5a",
+                      "size":  49063
+                  },
+                  {
+                      "path":  "mods/cupboard-1.21-2.9.jar",
+                      "sha256":  "0d7093deae83d223674e3bf0fc37943658f3f028e655df6f9e25209c32f41668",
+                      "size":  23509
+                  },
+                  {
+                      "path":  "mods/bountiful-neoforge-8.0.0-beta.2.jar",
+                      "sha256":  "dca5e0af724e3076b3d950b7ec88cf63c509435cf41371a6e1c7c306cb6a7e51",
+                      "size":  721006
+                  },
+                  {
+                      "path":  "mods/Aquaculture-1.21.1-2.7.21.jar",
+                      "sha256":  "45f00f9059838b2fecc988861111d8b3d4613a5f1b3688a8dbfa8655751b85bb",
+                      "size":  605949
+                  },
+                  {
+                      "path":  "mods/tno_bounty_data-1.0.0.jar",
+                      "sha256":  "090a0d3e0b1259305d12149cb96e8f41d9f87f8a1625064195d6b2d072705c0f",
+                      "size":  7274
+                  },
+                  {
+                      "path":  "mods/kambrik-neoforge-8.0.0-beta.2.jar",
+                      "sha256":  "a9b14170f2eeb323261c14bf40137ae78920ce2d61d52c85cdccc45bd9f37c2c",
+                      "size":  436428
+                  },
+                  {
+                      "path":  "mods/tno_mob_existence-1.0.0.jar",
+                      "sha256":  "34a7bc29c4e14c6dce8715c55b69f90237bcbb567e1f43bebe1017b4af700fde",
+                      "size":  81792
+                  },
+                  {
+                      "path":  "mods/tno_gear_existence-1.0.0.jar",
+                      "sha256":  "3f78fcb697108eb83d9e58034479b6a7f126d1daedbd33657e4a7eac7f3ffa7a",
+                      "size":  140055
+                  },
+                  {
+                      "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",
+                      "sha256":  "7ae4f004aa3e4b72832c37a27b48e773244cea202b4d97364c6d6cf6b60ec802",
+                      "size":  140597
                   }
               ]
 }
