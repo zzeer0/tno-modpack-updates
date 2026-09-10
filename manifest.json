@@ -5634,8 +5634,8 @@
                   },
                   {
                       "path":  "config/skill_blacklist.json",
-                      "sha256":  "2e1aa8ebdf5b04d3d66ab9d5b1273eae154eb0fe4acb68a55682eb551e7ff7fc",
-                      "size":  749
+                      "sha256":  "88d0f7119c4cc12f06773a63d341c4d1e0d68a907a9b0434e35d58bdbe47f176",
+                      "size":  894
                   },
                   {
                       "path":  "config/slashblade-common.toml",
