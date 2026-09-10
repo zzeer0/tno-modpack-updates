@@ -5962,23 +5962,23 @@
 		#Lowest incoming damage multiplier after adaptation. 0.75 means damage cannot be reduced below 75%.
 		# Default: 0.75
 		# Range: 0.0 ~ 1.0
-		minimumDamageMultiplier = 0.75
+		minimumDamageMultiplier = 0.88
 
 	[Adaptability."Resistance Learning"]
 		#Multiplier applied to resistance-skill learning progress while Adaptability is toggled.
 		# Default: 3.45
 		# Range: 0.0 ~ 100000.0
-		resistanceLearningMultiplier = 3.45
+		resistanceLearningMultiplier = 1.5
 		#Multiplier applied to resistance-skill learning progress while Adaptability is mastered.
 		# Default: 5.85
 		# Range: 0.0 ~ 100000.0
-		resistanceLearningMultiplierMastered = 5.85
+		resistanceLearningMultiplierMastered = 2.0
 
 	[Adaptability."Severance Adaptation"]
 		#Number of severance hits needed before Adaptability clears and blocks severance damage.
 		# Default: 12
 		# Range: 1 ~ 100000
-		severanceHitsForImmunity = 12
+		severanceHitsForImmunity = 100000
 
 	[Adaptability."Mastery Gain"]
 		#How often Adaptability gives mastery to learned skills while toggled. 100 ticks = 5 seconds.
@@ -5988,11 +5988,11 @@
 		#Mastery points given to each learned skill every global mastery interval.
 		# Default: 1.0
 		# Range: 0.0 ~ 100000.0
-		globalMasteryBonus = 1.0
+		globalMasteryBonus = 0.0
 		#Mastery points given to each learned skill every global mastery interval after Adaptability is mastered.
 		# Default: 2.0
 		# Range: 0.0 ~ 100000.0
-		globalMasteryBonusMastered = 2.0
+		globalMasteryBonusMastered = 0.0
 		#Base mastery bonus Adaptability gives itself when it adapts.
 		# Default: 1.0
 		# Range: 0.0 ~ 100000.0
@@ -6164,15 +6164,15 @@
 		#Minecraft Strength amplifier while toggled. 4 means Strength V.
 		# Default: 4
 		# Range: 0 ~ 255
-		strengthAmplifier = 4
+		strengthAmplifier = 1
 		#Minecraft Resistance amplifier while toggled. 4 means Resistance V.
 		# Default: 4
 		# Range: 0 ~ 255
-		resistanceAmplifier = 4
+		resistanceAmplifier = 1
 		#Speed amplifier after mastery. 1 means Speed II.
 		# Default: 1
 		# Range: 0 ~ 255
-		masteredSpeedAmplifier = 1
+		masteredSpeedAmplifier = 0
 
 	[boogie_woogie."Swap VFX"]
 		#Portal particles spawned at each swapped entity.
@@ -6464,11 +6464,11 @@
 		#Radius of the toggled infection aura.
 		# Default: 10.0
 		# Range: 0.0 ~ 256.0
-		auraRadius = 10.0
+		auraRadius = 8.0
 		#Paralysis duration applied by the passive aura.
 		# Default: 80
 		# Range: 1 ~ 72000
-		auraParalysisTicks = 80
+		auraParalysisTicks = 40
 		#Paralysis amplifier applied by the passive aura. 0 means level I.
 		# Default: 0
 		# Range: 0 ~ 255
@@ -9817,7 +9817,7 @@
 [godly_scientist]
 	# Default: 0.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	acquirementMagiculeCost = 0.0
+	acquirementMagiculeCost = 300000.0
 	# Default: 0
 	# Range: > 0
 	acquirementMastery = 0
@@ -9828,7 +9828,7 @@
 	requiredSkillMustBeMastered = true
 	# Default: 10000.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	requiredEp = 10000.0
+	requiredEp = 2000000.0
 	# Default: 5
 	# Range: > 0
 	elementalEssenceRequired = 5
@@ -9849,7 +9849,7 @@
 	presenceSenseRadius = 256.0
 	# Default: 3.0
 	# Range: 1.0 ~ 1024.0
-	masteryMultiplier = 3.0
+	masteryMultiplier = 1.5
 	# Default: 80
 	# Range: > 1
 	spellMasteryRefreshTicks = 80

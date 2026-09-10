@@ -5634,8 +5634,8 @@
                   },
                   {
                       "path":  "config/skill_blacklist.json",
-                      "sha256":  "66bbc3ada025ca61aacebfc9590d0b6dc7fd453ae803434f932a72947eca1d04",
-                      "size":  590
+                      "sha256":  "d4f7cbf5080e9534778425e826b39c235f743ee269c77579b4420c9b19b98346",
+                      "size":  708
                   },
                   {
                       "path":  "config/slashblade-common.toml",
@@ -6269,8 +6269,8 @@
                   },
                   {
                       "path":  "config/tensuramoreskills-grand.toml",
-                      "sha256":  "c06512c82276371eb7dafef4b54c86db01debe4da5c38c59c3a8ff94ab34422f",
-                      "size":  297513
+                      "sha256":  "f6b1e1bf01bd690ad6fa7b64a6f73cc7c366218a203e34a9df03e2be0f9eed0c",
+                      "size":  297521
                   },
                   {
                       "path":  "config/tensuramoreskills-races.toml",
