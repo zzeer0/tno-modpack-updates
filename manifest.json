@@ -15413,6 +15413,11 @@
                       "size":  81792
                   },
                   {
+                      "path":  "mods/tno_gear_existence-1.0.0.jar",
+                      "sha256":  "53333a74e1ea18ec0d7137d8784f6ba9a23e51978ed46abf288350b69dd57a2f",
+                      "size":  201496
+                  },
+                  {
                       "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",
                       "sha256":  "7ae4f004aa3e4b72832c37a27b48e773244cea202b4d97364c6d6cf6b60ec802",
                       "size":  140597
