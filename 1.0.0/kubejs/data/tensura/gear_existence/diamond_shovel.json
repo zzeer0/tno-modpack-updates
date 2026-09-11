@@ -1,7 +1,6 @@
 {
   "type": "minecraft:diamond_shovel",
   "epGain": 0.003,
-  "evolution": "minecraft:netherite_shovel",
   "maxEP": 5500,
   "minEP": 4500
 }

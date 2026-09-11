@@ -13574,8 +13574,8 @@
                   },
                   {
                       "path":  "kubejs/data/cataclysm/gear_existence/monstrous_helm.json",
-                      "sha256":  "c00492b6802ad2e8e8db7ec0ecd095ebac6ef570183e7fcf7517e1303d205162",
-                      "size":  137
+                      "sha256":  "ce529224f39732ca1bb5a67a8cc36ce44e49579de9f45f0979f2a6f60608481c",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/cataclysm/gear_existence/soul_render.json",
@@ -14109,18 +14109,18 @@
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/diamond_spear.json",
-                      "sha256":  "363a3b55b907fe746360cc2e54ad362b73c7b629c07487a4720aa6c5ea3ba9a7",
-                      "size":  136
+                      "sha256":  "5b3edab964c9b52658203c32c6b475679b193dc5fe435cc01e9e209752e3c745",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/golden_spear.json",
-                      "sha256":  "b12464ad8b4435ab11c863aa05969b1a215dd5ee8b1953ed1b82c205e57a74a1",
-                      "size":  133
+                      "sha256":  "fdb6d0cc5dca6cc3afcf2739412b1b2d4c4a56b03cb3ed6a2a104c9fc6fd0c28",
+                      "size":  92
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/iron_spear.json",
-                      "sha256":  "d79ba24b26484734e536df7944f250d7db3c5c8dc932f20bebd6cc0f79642bf2",
-                      "size":  130
+                      "sha256":  "cda23952805c45ff1fc098bb9fbeecb6a364b937615c6c76c2208634c01e670e",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/netherite_spear.json",
@@ -14129,13 +14129,13 @@
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/stone_spear.json",
-                      "sha256":  "3a4becc5fd00d608e2335dad7398f3f10fdcbac2aa0b8e9c79ddffe3c6e69f65",
-                      "size":  128
+                      "sha256":  "8d9c208df3b9446691e8ff2fdf9467055c97b5b58fbf115578ff5681d385e903",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/minecraft/gear_existence/wooden_spear.json",
-                      "sha256":  "2f1e4d59b42fe3c8d5df992c59bd9a4fa97e86a2f1cffe220c08d3be612cc11b",
-                      "size":  127
+                      "sha256":  "c3b1432594ca6dc15fde4f0c1e5ea4c6a4a743fadbd40cd72e028aaabd7413ec",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/minecraft/worldgen/structure_set/pillager_outposts.json",
@@ -14239,78 +14239,78 @@
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/bow.json",
-                      "sha256":  "061ce6007c61fe67c153f21858f84305d8069db859770f7fcdae27016bf01370",
-                      "size":  117
+                      "sha256":  "c2d9010dd56d854081adaf0060a0435e47b2cb43d5abe033712d9ff7499a82e4",
+                      "size":  80
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/chainmail_boots.json",
-                      "sha256":  "f693c8e80d7980494fe2d8e74ffee1b743df807dab59be75e6105cc74eacdb3d",
-                      "size":  134
+                      "sha256":  "786add53399ac7609c203be00749007a2fba149aa2ad21313602495f0dd5fd3f",
+                      "size":  95
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/chainmail_chestplate.json",
-                      "sha256":  "acb024c426bd7f4940304c78236a57ece1270a4eda07ef34cecce8f85c55125e",
-                      "size":  144
+                      "sha256":  "c89e6cde8ea1c49385f38f5a427eb5d68fd3603b9c576f8764f53596d537060f",
+                      "size":  100
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/chainmail_helmet.json",
-                      "sha256":  "147c421934d0c855e1be85ec2285a2f9edeb9199569410c9838b3a2b259eb2bc",
-                      "size":  136
+                      "sha256":  "25f3f8baa2b177e37f94794930b33813f5d6088d754441236969ee46e7bfcbdc",
+                      "size":  96
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/chainmail_leggings.json",
-                      "sha256":  "1b5d3d283665883a81bd71507b79bd74426424476d59a0936c3121cdf14d71d7",
-                      "size":  140
+                      "sha256":  "a4dac1c3e73a883ae42511784ff0b60a08cf9f39da3abe076c6da909cfb2561e",
+                      "size":  98
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/crossbow.json",
-                      "sha256":  "e36d33742570720f19e9379114dfdd88dadb08b1d5d0a90323c0b6b83940ef32",
-                      "size":  124
+                      "sha256":  "d58f2c9efdebbae16761b62c552a8716b718e8c8ca88b5cb91184f983bce3fb9",
+                      "size":  85
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_axe.json",
-                      "sha256":  "6464b43977c71cfa6247a4f100b8a617487912afaaba4560c54f877ae85f2fc6",
-                      "size":  133
+                      "sha256":  "16f06bd6842321f23e29f9cac3e7713a3f1d3ad5af3d228c9aaf5c8e6c71c041",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_boots.json",
-                      "sha256":  "21b58caad5081f2885444a06feb9df4cc31b44a7ff4156c51d3fd57cf0d3d0dc",
-                      "size":  137
+                      "sha256":  "417939f0e8befe62171c2db28cefe1ce8af0fa8ee04cc3d8bdd1eb50a7f7f5af",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_chestplate.json",
-                      "sha256":  "ae921db7e327e507848c052217fef6c4f1acf90143ca62f5b2bf1db73cd1d3f3",
-                      "size":  147
+                      "sha256":  "773bdc84de45942afbbd68f8d08352007491391b5638ae82c4865b5d688226d6",
+                      "size":  98
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_helmet.json",
-                      "sha256":  "5092cdea217f9095515f00035e87cdd3dfb153c3f3821dde663bf5ec03405eb8",
-                      "size":  139
+                      "sha256":  "064910ab6a1c99b5b2122078b10b95790a39555a84d97531c9dddcc9d5f8b607",
+                      "size":  94
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_hoe.json",
-                      "sha256":  "27f91c7126f57b74a523a64bed34b634cdfc99a126a7a789e0c1275686796822",
-                      "size":  133
+                      "sha256":  "4b1c5fcb74e26168c2e09b75f721ddac86468153664eadd3b563122475cb5399",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_leggings.json",
-                      "sha256":  "45dc036e9afb959f8813cc67d44a1ccd4946685764c1dbdb84d6af4a1a73b9b6",
-                      "size":  143
+                      "sha256":  "265f9a0fed6daef9edbf381b4a5b83db39db0ab270925f4db175cff8fe77336f",
+                      "size":  96
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_pickaxe.json",
-                      "sha256":  "ccb61daaa710f1a5c57defca617784f02f4878bc05c769da638646ed6cbe908a",
-                      "size":  141
+                      "sha256":  "f8e938407dfdb9306538e6505805ece5bdb8b1cc8b4fc6b4d7bf86e118441714",
+                      "size":  95
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_shovel.json",
-                      "sha256":  "c47b5515c9c20b6da3460c07eb8758e2a2b428e2917d8c849b378f58b8319cdc",
-                      "size":  139
+                      "sha256":  "eda31e7ab3eec06831fa16975212bc8e60ef27ed5a0f747911029dc0c391b27f",
+                      "size":  94
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/diamond_sword.json",
-                      "sha256":  "98ba43fa716f8ad1e4ec2b4322165eb8fb38f005a581a3a9d55cba83b58c7497",
-                      "size":  137
+                      "sha256":  "fc1a34fa1fb1ff4c7d967f8a64b30461579122a8ed947911c525cb9cb44aeb37",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/fishing_rod.json",
@@ -14324,113 +14324,113 @@
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_axe.json",
-                      "sha256":  "08091da369b5bbef2855c30c81e01f15ededaaa78976b692ffe0af6ab014cc04",
-                      "size":  130
+                      "sha256":  "e10893fd7de90539234e9a236226a103d8971b0a9501be4aa4e99efd20fdc2b1",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_boots.json",
-                      "sha256":  "e3d30cca7789adda5507c293f93a7bfa23685b779feb0d07b052fe7ccefd6c15",
-                      "size":  133
+                      "sha256":  "c43f22d57f057188e408c903cc95ec51d4592863afe90cac3b4551773bcd6b6b",
+                      "size":  89
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_chestplate.json",
-                      "sha256":  "5afd15ea7d138193c609c6a82f50128d6fc8423fae279e4f6cc284671a4f381e",
-                      "size":  143
+                      "sha256":  "4a218a5d055fb6a5075572696cda5bd911151bb1e671a65cc30706eb8d99a995",
+                      "size":  94
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_helmet.json",
-                      "sha256":  "5bb755dc41036eff6babba095f290a5ef8df2493e5b0f172669213095cb80b34",
-                      "size":  135
+                      "sha256":  "745a6f0cd95a21de2fcbf59b2b44cfa30495301629bfc7405b6ec8f3f5b8c05f",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_hoe.json",
-                      "sha256":  "72c2f24a60924e4c9d31ee386b7b79f781976033a7b2dd5626ad364f1cc62d67",
-                      "size":  130
+                      "sha256":  "eeeb5cd1eee2d33d7abdb50b91782279b63fc88e5b0a0251509c5b4cdb791b66",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_leggings.json",
-                      "sha256":  "389b3c7144012b9979473e93a67565c2924d3002ff853990c989645422709fd9",
-                      "size":  139
+                      "sha256":  "e496461ba4876a4c0cf520a6a18a11eda8d4d6bc102228096aab9d1a277c9e93",
+                      "size":  92
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_pickaxe.json",
-                      "sha256":  "9d2f4f66ffcb7453c6fecf1677ee460488ee5e4ced50e15a0f2af2de4cafa6b8",
-                      "size":  138
+                      "sha256":  "fb9b921737d9edefbc1f65605b300c068362c54a023fc6c38b6d92a86d7edef6",
+                      "size":  94
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_shovel.json",
-                      "sha256":  "6c72cad7bdaeffd1e4c05e4cfdec41fe406fbf71b75e502d21686db3ad28aff5",
-                      "size":  136
+                      "sha256":  "f69fa87cc888e6d0c4e1fb6e3618bef712ebab0415df886db7a23e56319416a3",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/golden_sword.json",
-                      "sha256":  "4fb952db49f400cb4c6ab92925b7c8e4a0dcb8e9d8e27d14533b9b25b5b6128e",
-                      "size":  134
+                      "sha256":  "d152bf5f7b46c0713475693305937ffbc32705d8c24e22db8c4345771e753dd1",
+                      "size":  92
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_axe.json",
-                      "sha256":  "c05bcb6377f00121d8d0da69af6215d3e63198df7a1b5e7b701087391165f3f5",
-                      "size":  127
+                      "sha256":  "bbc30c29c162c28f288a994bd2639de464d4d2271fb409c0114203800673b38a",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_boots.json",
-                      "sha256":  "ff69df9cce41f1cce501896100d42608293ee6c61d7a973efc47aaafcb2b39b0",
-                      "size":  132
+                      "sha256":  "120935f83abe66c63d0684c5e7d3814f7d6fcaea2cabbcb743894fa13489d8f8",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_chestplate.json",
-                      "sha256":  "eebee872fd1b26470513bc6819b39584ec1dae0616def1e34f5734fa43eddc88",
-                      "size":  142
+                      "sha256":  "a05e87cfb8d84c0ef8b2cd57da57f9f61041324ec026c750dde980a87d099321",
+                      "size":  95
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_helmet.json",
-                      "sha256":  "3e92b727656b33bf8894e37e4adcb753b14651c4f6b2714b4095baf44097ad62",
-                      "size":  134
+                      "sha256":  "24ad8e3044f1fe79d971f545979e5d6ad605bc4ba0798fe7b7018f4918ed6534",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_hoe.json",
-                      "sha256":  "ee8682a179c5c702184f5a5ef9df64ecb16662260eece7c8ef5c439a02db2785",
-                      "size":  127
+                      "sha256":  "956e2e628af560b57610bf1e66dda2933873ac3166b18120e8f0ee52a6d2f29d",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_leggings.json",
-                      "sha256":  "0171daf07701147c7599fda40f7952abb1a63406e452d974575326fd20bf98ba",
-                      "size":  138
+                      "sha256":  "8f64816b99143dde661fbb284c8d4bca36fdec0ef728263e7dddd166c72397dc",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_pickaxe.json",
-                      "sha256":  "2ed3ef266cd35bd0b7cdadc38371b34f6c11e244413221efa56565ec459ed061",
-                      "size":  135
+                      "sha256":  "bd844a4aba809fea692bc867d0148c28a86ce66b982bda1da611e8bf59e33463",
+                      "size":  92
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_shovel.json",
-                      "sha256":  "ecfa66a6c60d22ea97704b0dd846c201c7eefd833d30d56c59e8cd83703ec10f",
-                      "size":  133
+                      "sha256":  "71526b006e388fe1ed4452caeba1ce6b8e86946e5c190453af39f03c6439826c",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/iron_sword.json",
-                      "sha256":  "c225cf4956952557d63962251c0de0008e641565edf159609f83f33be7f9bded",
-                      "size":  131
+                      "sha256":  "1b6b50c24c2b975aad4d628219833becb3d2390c650ec9c346a37c5a03316425",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/leather_boots.json",
-                      "sha256":  "dcd1a769d8d35e28c79606fa442211ee437c5202cc887edd08c0a39f76c44d63",
-                      "size":  140
+                      "sha256":  "b15b431fee0cfa7643da7d715123583de427ea6ee2e41688037364c8743bcb23",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/leather_chestplate.json",
-                      "sha256":  "57afa3dcc32b1f20f75c7f29125055f5c8a295add112ddb892f874b17810e2b3",
-                      "size":  150
+                      "sha256":  "6b1dcbb02ea343527aa7b994e064d2d4032faf84e31110bdffc277f629f246e3",
+                      "size":  95
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/leather_helmet.json",
-                      "sha256":  "bb94c01ffe78e086074dcac8029b405ce75be3eb95a9298c605ce552109bd816",
-                      "size":  142
+                      "sha256":  "d38716ed726308a45efee793fde85522d46230a01bf1b6b2b1563dfc93cd2d09",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/leather_leggings.json",
-                      "sha256":  "616826ebc27520bbc4b945967a41689e1b75dda3ea2c5f883b934967ae8fa1eb",
-                      "size":  146
+                      "sha256":  "91159e2c8def88fae015d59b37e9723274c0376e8180a235d9b0381ce2769ddf",
+                      "size":  93
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/mace.json",
@@ -14489,33 +14489,33 @@
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/shield.json",
-                      "sha256":  "cc7eef8b2cd3a4f60f0529d48c57dd6d9b6524484818cf603f23b48334c61134",
-                      "size":  129
+                      "sha256":  "9a0dc170e29d89c203b429be7a0b060b16e572275870a383465b14fcf8a569d7",
+                      "size":  83
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/stone_axe.json",
-                      "sha256":  "5eae315e203741bc91ed62d01ca023a90ab8214305182cbd0188dd9cbb341b73",
-                      "size":  125
+                      "sha256":  "3fef0cdf9c93885e8fdc8521ba3a101d56895e0849816607b2bed663da7234ec",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/stone_hoe.json",
-                      "sha256":  "c4456612684ae7724506f85d778fcd9b673edd436580853e6831c55c183652f2",
-                      "size":  125
+                      "sha256":  "147457a7899e0fb324d3d4ad9f62e61eba02cfb28905af648fb2539757da0b19",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/stone_pickaxe.json",
-                      "sha256":  "a68aacfb99b3d5b64195e6a3b10f0b89f715e090392efd4b257dabe280cc0ba9",
-                      "size":  133
+                      "sha256":  "0a70902021a73e8054d546f63f79fb7819eac743bea960e1ae1efedcb0b3efd7",
+                      "size":  92
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/stone_shovel.json",
-                      "sha256":  "7ebeb1eb5b3166faff109f418c1d125ad1330ae5f163648ddfa8e5e6365f6564",
-                      "size":  131
+                      "sha256":  "abd202ebadd875e655878fb641609e4d6978ef3fb3dbe85091d3081adbd65733",
+                      "size":  91
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/stone_sword.json",
-                      "sha256":  "a49ff6391f3c3eeb34946d0f1654d3499441cab0fb9d05d0697e68abff576460",
-                      "size":  129
+                      "sha256":  "347411af31dda97c1d102cfc2e86d2966a71d0e603829d758a6d51ce41961123",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/trident.json",
@@ -14524,28 +14524,28 @@
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/wooden_axe.json",
-                      "sha256":  "6b1af3b60646800a61c0d9daaa4a1185472c98c2fec35d980f00cca95aafd619",
-                      "size":  124
+                      "sha256":  "bddcf37bd4823923256a99db6ba38d2505f51ea96e3c1a1948da18f8bd5f71e9",
+                      "size":  86
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/wooden_hoe.json",
-                      "sha256":  "c1b2eca95c5cbf73ecea648f1f522392e3efc0b61db67e7a1595e1c50f1dcee3",
-                      "size":  124
+                      "sha256":  "18becd18cda863731ec849d057b5581f45de7258aaf41566a716ed5a6b59afa7",
+                      "size":  86
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/wooden_pickaxe.json",
-                      "sha256":  "eaf81a6ccf3fdf3854d6a4ed493192f86af20f663a3415b985caaa33aab44f46",
-                      "size":  132
+                      "sha256":  "a22fd1026ed592bf7e0d191f56e687cb3585473311efad83426b5798d7bbab10",
+                      "size":  90
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/wooden_shovel.json",
-                      "sha256":  "e56d49249131ce80f5624e306eb4e3d13a336721ef110b1e872f3728fa68af49",
-                      "size":  130
+                      "sha256":  "b77142e1dcbcf48afe273f816a186cd36aa6e9f42ce0895ebae44c1b2aa9773b",
+                      "size":  89
                   },
                   {
                       "path":  "kubejs/data/tensura/gear_existence/wooden_sword.json",
-                      "sha256":  "9e068652595191b4246b30b4321b06d8eb7b28f4230589581a22bcb153d17d2c",
-                      "size":  128
+                      "sha256":  "7af557fa50457b2983ec648205b76d21f3880e4383f19ab24cc8b24ea90a2c6f",
+                      "size":  88
                   },
                   {
                       "path":  "kubejs/data/tensura/tags/entity_type/boss_for_hero.json",

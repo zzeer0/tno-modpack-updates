@@ -1,7 +1,6 @@
 {
   "type": "minecraft:diamond_axe",
   "epGain": 0.003,
-  "evolution": "minecraft:netherite_axe",
   "maxEP": 5500,
   "minEP": 4500
 }
