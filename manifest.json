@@ -5964,8 +5964,8 @@
                   },
                   {
                       "path":  "config/tensura/ability/skill/unique_config.toml",
-                      "sha256":  "ea151a59aa494e8e86845800ff258636626ec16391f1b20e7114c66b9d43dd78",
-                      "size":  69794
+                      "sha256":  "d3d9b4d1dc2478f6d80d1f247fe83397562ce88fe50cc2af54502aaaca6f2780",
+                      "size":  69840
                   },
                   {
                       "path":  "config/tensura/ability/skill_config.toml",
@@ -14549,8 +14549,8 @@
                   },
                   {
                       "path":  "kubejs/data/tensura/tags/entity_type/boss_for_hero.json",
-                      "sha256":  "48a44fd80dfd38255b463fabb8d8102a77dc3ab9556375b229fe8ac71289c156",
-                      "size":  1056
+                      "sha256":  "12b3735230611d9d1b1abaf182235b6c9f3c9d3b0f11365987c1a96cf41bf6cc",
+                      "size":  2038
                   },
                   {
                       "path":  "kubejs/data/twilightforest/entity_existence/adherent.json",
@@ -15113,6 +15113,16 @@
                       "size":  684
                   },
                   {
+                      "path":  "kubejs/server_scripts/tno_carryon_blacklist.js",
+                      "sha256":  "a58aae911f32bc94950248a6cf96856c6424172638e8b2305c150c9b989baa19",
+                      "size":  1114
+                  },
+                  {
+                      "path":  "kubejs/server_scripts/tno_chosen_one_charisma.js",
+                      "sha256":  "ac6aef66cd8586a3a3b6831a25e7ef5805d8812979c468a7a9fd0adc1a4f1235",
+                      "size":  2676
+                  },
+                  {
                       "path":  "kubejs/startup_scripts/main.js",
                       "sha256":  "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe",
                       "size":  117
@@ -15431,6 +15441,16 @@
                       "path":  "mods/tno_gear_existence-1.0.0.jar",
                       "sha256":  "3f78fcb697108eb83d9e58034479b6a7f126d1daedbd33657e4a7eac7f3ffa7a",
                       "size":  140055
+                  },
+                  {
+                      "path":  "mods/tno_subordinates-1.1.0.jar",
+                      "sha256":  "e23ab5d37d53dfe744848f46b4fe727e9c4dc78990ad41f4ef484760a232640e",
+                      "size":  25382
+                  },
+                  {
+                      "path":  "mods/carryon-neoforge-1.21.1-2.2.6.13.jar",
+                      "sha256":  "d4f9576b6593db9486a89d35c1d84c31ee89141d99dbae2aa470350ab53c4e09",
+                      "size":  361486
                   },
                   {
                       "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",

@@ -193,9 +193,9 @@
 	#The radius in block of the Hero's Charisma's effect.
 	controlRadius = 10
 	#The duration in tick of the Mind Control effect when activating Hero's Charisma (-1 = permanent).
-	controlDuration = 2400
+	controlDuration = -1
 	#The duration in tick of the Mind Control effect when activating Hero's Charisma while the target has Spiritual Attack Resistance (-1 = permanent).
-	controlResistedDuration = 1200
+	controlResistedDuration = -1
 	#The multiplier of Max Health when an entity is revived as Ally with Hero's Charisma.
 	hpMultiplier = 0.5
 	#The multiplier of Max Spiritual Health when an entity is revived as Ally with Hero's Charisma.
@@ -253,7 +253,7 @@
 	#The multiplier for mastery point gaining when created a Skill.
 	masteryGainMultiplier = 5.0
 	#List of Unique skills that can be created by Creator.
-	uniqueSkills = ["tensura:anti_skill", "tensura:analyst", "tensura:absolute_severance", "tensura:berserk", "tensura:berserker", "tensura:bewilder", "tensura:chef", "tensura:commander", "tensura:cook", "tensura:falsifier", "tensura:fighter", "tensura:fusionist", "tensura:gourmand", "tensura:guardian", "tensura:healer", "tensura:martial_master", "tensura:mathematician", "tensura:murderer", "tensura:musician", "tensura:observer", "tensura:oppressor", "tensura:reflector", "tensura:researcher", "tensura:royal_beast", "tensura:reaper", "tensura:reverser", "tensura:seeker", "tensura:seer", "tensura:severer", "tensura:shadow_striker", "tensura:sniper", "tensura:spearhead", "tensura:suppressor", "tensura:survivor", "tensura:traveler", "tensura:thrower", "tensura:tuner", "tensura:usurper", "tensura:villain", "mysticism:captivator", "mysticism:constant", "mysticism:corroder", "mysticism:crasher", "mysticism:cultivator", "mysticism:dreamer", "mysticism:gardener", "mysticism:hidden_ruler", "mysticism:kyurem", "mysticism:malleable", "mysticism:phaser", "mysticism:repeater", "mysticism:reshiram", "mysticism:scholar", "mysticism:spiritualist", "mysticism:stagnator", "mysticism:victorious_harbinger", "mysticism:zekrom"]
+	uniqueSkills = ["tensura:anti_skill", "tensura:analyst", "tensura:absolute_severance", "tensura:berserk", "tensura:berserker", "tensura:bewilder", "tensura:chef", "tensura:commander", "tensura:cook", "tensura:falsifier", "tensura:fighter", "tensura:fusionist", "tensura:gourmand", "tensura:guardian", "tensura:healer", "tensura:martial_master", "tensura:mathematician", "tensura:murderer", "tensura:musician", "tensura:observer", "tensura:oppressor", "tensura:reflector", "tensura:researcher", "tensura:royal_beast", "tensura:reaper", "tensura:reverser", "tensura:seeker", "tensura:seer", "tensura:severer", "tensura:shadow_striker", "tensura:sniper", "tensura:spearhead", "tensura:suppressor", "tensura:survivor", "tensura:traveler", "tensura:thrower", "tensura:tuner", "tensura:usurper", "tensura:villain", "mysticism:captivator", "mysticism:constant", "mysticism:corroder", "mysticism:crasher", "mysticism:cultivator", "mysticism:dreamer", "mysticism:gardener", "mysticism:hidden_ruler", "mysticism:kyurem", "mysticism:malleable", "mysticism:phaser", "mysticism:repeater", "mysticism:reshiram", "mysticism:scholar", "mysticism:spiritualist", "mysticism:stagnator", "mysticism:victorious_harbinger", "mysticism:zekrom", "traddon:total_reflection", "traddon:devastator"]
 
 [Degenerate]
 	#Magicule Acquirement Cost.
