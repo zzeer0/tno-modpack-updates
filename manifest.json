@@ -4464,8 +4464,8 @@
                   },
                   {
                       "path":  "config/iceandfire/iaf-common.json",
-                      "sha256":  "2c6c3f476e0a1c561cf9f55e5478b5d39f6760d0bddc039fcb8b3fc6fb02ec64",
-                      "size":  7399
+                      "sha256":  "f13aefda3a225cca4f50b0b8b5e3fe1d68f84049e720b8f449c82a793dd84441",
+                      "size":  7225
                   },
                   {
                       "path":  "config/illagerinvasion-server.toml",
@@ -4994,8 +4994,8 @@
                   },
                   {
                       "path":  "config/mowziesmobs-common.toml",
-                      "sha256":  "edd6aa7858b4838f20a4f4a3a928a97f55b3198b8ae27e94ee0f9c6b22afe0df",
-                      "size":  37854
+                      "sha256":  "55984be8a03604dd95446a84769854c5a42b064146db05dafa16c2ecba7a0971",
+                      "size":  36941
                   },
                   {
                       "path":  "config/mysticism/ability/magic/spiritual_config.toml",
@@ -13704,8 +13704,8 @@
                   },
                   {
                       "path":  "mods/tno_mob_existence-1.0.1.jar",
-                      "sha256":  "5128e5e6b2a4bdd42e7585f0ab918283b32f7f06d1cd39357b1e90fceb14803d",
-                      "size":  77848
+                      "sha256":  "7fbf73a0e7380627565f989875a6d21347d331319fa7522d8d2484c980143ac3",
+                      "size":  78220
                   },
                   {
                       "path":  "mods/tno_gear_existence-1.0.1.jar",
@@ -13726,6 +13726,181 @@
                       "path":  "mods/tensura_iaf-neoforge-2.0.0.1.jar",
                       "sha256":  "7ae4f004aa3e4b72832c37a27b48e773244cea202b4d97364c6d6cf6b60ec802",
                       "size":  140597
+                  },
+                  {
+                      "path":  "kubejs/server_scripts/tno_boss_scaling.js",
+                      "sha256":  "e5012ac450074cfe242b4484be8a0370945cf8c6a18ae7b77ab84c40aab7b3eb",
+                      "size":  16066
+                  },
+                  {
+                      "path":  "kubejs/server_scripts/tno_bosses_rise_dragon_damage_fix.js",
+                      "sha256":  "12b56162d5747e54f14c21755e4763d20b777227c0f84f013f39580dd7f056bb",
+                      "size":  1607
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/dread_lich.json",
+                      "sha256":  "1201993c12c32a702484c98c22bb3091368b5353d8605bbeac4cedca0d1e58ba",
+                      "size":  164
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/fire_dragon.json",
+                      "sha256":  "852facd4a6568a9092dcc3488a756ce6f1dfff04398a5f86bee947b6abac9f02",
+                      "size":  271
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/gorgon.json",
+                      "sha256":  "ea2c882a32305a1840b66c77e4fd356444624cb4470227b3f4e7e7aa6caac42b",
+                      "size":  163
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/hydra.json",
+                      "sha256":  "473a3e15116445c44e29d44a488c00d2dd07a9c92ecea3edd0dfd04943d400c2",
+                      "size":  248
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/ice_dragon.json",
+                      "sha256":  "38e06626423b6476aa8b06e161481b55db68e4f15b2e519644071974f1f7dbd4",
+                      "size":  294
+                  },
+                  {
+                      "path":  "kubejs/data/iceandfire/entity_existence/lightning_dragon.json",
+                      "sha256":  "50b7884c6be5c831071e4988741774a3c3bbefb5f3b8002e5c5882e0bcf5a75a",
+                      "size":  310
+                  },
+                  {
+                      "path":  "kubejs/data/irons_spellbooks/entity_existence/dead_king.json",
+                      "sha256":  "2c1a13478131ad002c74a9df1d3fcc5f7a694864ec9c44fd89a242dd647093ef",
+                      "size":  472
+                  },
+                  {
+                      "path":  "kubejs/data/irons_spellbooks/entity_existence/fire_boss.json",
+                      "sha256":  "c78052a1f5e32dbb3bf6c56e1ad309a1a715fbfadb522aca681651f149f8645a",
+                      "size":  430
+                  },
+                  {
+                      "path":  "kubejs/data/minecraft/entity_existence/ender_dragon.json",
+                      "sha256":  "0af927ea0d69fd183fe309a006ca83b15860ca384a1d74189f904811fdb0d325",
+                      "size":  168
+                  },
+                  {
+                      "path":  "kubejs/data/minecraft/entity_existence/wither.json",
+                      "sha256":  "feef28841c1fac79ae3376f682b3df39322c62497c0c9c3adb10090102fffe84",
+                      "size":  207
+                  },
+                  {
+                      "path":  "kubejs/data/mysticism/entity_existence/memoires.json",
+                      "sha256":  "581036843727c0aa935bfd1d3a80ca93d9c610f9e4783fe7053dbb4851749730",
+                      "size":  764
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_atlatitan.json",
+                      "sha256":  "14c56a0be2fff60161e263faf3a9b95f50b998691d7f7d855dd4c3f3b3908779",
+                      "size":  270
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_forsaken.json",
+                      "sha256":  "3b73741ebce0933b161318dc3d9c9e8a9910fa0ff60de6eb39242c4b273f8588",
+                      "size":  229
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_gum_worm.json",
+                      "sha256":  "c1fc43a18485c141c10ea2fe42577cb01e2040b35b2c078423fb14e23b25180c",
+                      "size":  253
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_hullbreaker.json",
+                      "sha256":  "2a1d54ef1b18aa1296d78862d1c4c048118cf29a296fe3df8ff5ac567c17f4b0",
+                      "size":  324
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_licowitch.json",
+                      "sha256":  "2da8cf7184e8046d67f86de1c3c6c65149581744abf2eaa6d354d6fc6f4bb357",
+                      "size":  259
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_luxtructosaurus.json",
+                      "sha256":  "6193fca4531e3e25edb48e930524094b681fb995c0de32f3ef1d34857307b3bc",
+                      "size":  366
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_tremorsaurus.json",
+                      "sha256":  "65d443905d2b134e720890c1751377b5b56f75fe43732b20cfe824dc5dfdfb9f",
+                      "size":  268
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexscaves_tremorzilla.json",
+                      "sha256":  "e99f233e6c7f451bd4fdf65f1a61f5e9424e5b69b905090463f7a3d2d60cc3a2",
+                      "size":  418
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_cosmaw.json",
+                      "sha256":  "5d45bbe9fd4b54d15b7a0feecba7c7a746d2fddaa4adbb9b4c16da4ccc9b3a54",
+                      "size":  254
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_farseer.json",
+                      "sha256":  "00f8a4f72239a26d7952c8dcd71e5ff8f9784fc51dade86464c3b54c9fb3996c",
+                      "size":  290
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_laviathan.json",
+                      "sha256":  "6cbc1fba7c628faff473423703b45f18b4bddfd3cf9149d4aceb5c1770c399cd",
+                      "size":  291
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_murmur.json",
+                      "sha256":  "00b164f6426bea890698bcfbc3b3eb4a45360c8ed63ee567de602114eaced240",
+                      "size":  223
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_skreecher.json",
+                      "sha256":  "ba54f80e5ce50d425833cd065d600345dd0baca5dc2889d83b93ed5a7bd38d40",
+                      "size":  226
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_sunbird.json",
+                      "sha256":  "41956c8d169453c5a0b563dd9314442de1f70c5124b0fcb316e08c7f5d50a58a",
+                      "size":  275
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_underminer.json",
+                      "sha256":  "3643b1b11bcc4c40abbf8df70f69fa94cb74f7aaa770b526f43e3006f16e8f04",
+                      "size":  216
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_void_worm.json",
+                      "sha256":  "736162a3930bc707b779ee08b91f40930546013334fbbe7e43f45f029924bfd8",
+                      "size":  329
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/alexsmobs_warped_mosco.json",
+                      "sha256":  "901b4c3a25126f047b4ce3d3626bd71b55a2d6b8c5c0933d56f58ac2dbc182e5",
+                      "size":  377
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/ars_nouveau_wilden_boss.json",
+                      "sha256":  "aa39e01aefe51384cc1212eb2ec46920f7af4abcca3f1fd63b8b7398852a7fa8",
+                      "size":  416
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/mowziesmobs_ferrous_wroughtnaut.json",
+                      "sha256":  "ebed559fcd636f569d1b433fb6b7a1e57c5750c6b11e4c66e4f5deea9e3b2e94",
+                      "size":  273
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/mowziesmobs_frostmaw.json",
+                      "sha256":  "7feb87a9203a27570084f5952a60933bda2dc892a3b2c6467b227fc4aab7da8d",
+                      "size":  335
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/mowziesmobs_sculptor.json",
+                      "sha256":  "7ec58c0220f9ac7574019d552f383f90266025520e618dc68182c3f58429931d",
+                      "size":  317
+                  },
+                  {
+                      "path":  "kubejs/data/tensura_alexs_compat/entity_existence/mowziesmobs_umvuthi.json",
+                      "sha256":  "ae82696cb42d089d7ad23438742232600c2e738b5a595b05483c089a2387236e",
+                      "size":  330
                   }
               ]
 }
