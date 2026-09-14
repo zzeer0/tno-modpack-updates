@@ -13713,6 +13713,16 @@
                       "size":  199468
                   },
                   {
+                      "path":  "mods/tensura_authorities-0.1.0.jar",
+                      "sha256":  "520ed53b4291a660dab75e5672aa9b04232564ede638f36ce57a298fa2788e37",
+                      "size":  230091
+                  },
+                  {
+                      "path":  "mods/Tensura_Horizons_Expanded-0.24.jar",
+                      "sha256":  "a538db3238aa51fd4a5765d6bebc42867df898f5a4232b62618f2af5e7c6c0e8",
+                      "size":  13118674
+                  },
+                  {
                       "path":  "mods/tno_subordinates-1.2.2.jar",
                       "sha256":  "e942f49e048ba63bba3e52f38107db8845ca9905ecf178991581165166090138",
                       "size":  29517
