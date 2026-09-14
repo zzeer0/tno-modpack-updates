@@ -2853,3 +2853,96 @@ jogadores/mobs simultaneos. Comportamento sob carga (muitos mobs unicos
 conjurando ao mesmo tempo) ainda e desconhecido.
 
 ===============================================================================
+
+
+===============================================================================
+SESSAO 2026-09-13/14 - EP UNICO, BOSSES NO NIVEL DO TENSURA, LIVRO DE UNICAS
+===============================================================================
+
+1) EP DE MOB/GEAR COM UMA FONTE SO (commit e433bfc)
+   - kubejs/data/*/entity_existence (100 arquivos) e gear_existence (246) foram
+     REMOVIDOS. 91 duplicavam o tno_mob_existence com valores diferentes (ate
+     12x), 5 duplicavam o alexs-compat, illusioner duplicava o Tensura e o
+     yeti.json declarava alpha_yeti. Com IDs de recurso diferentes nenhum
+     sobrescreve o outro: o EP que valia era aleatorio.
+   - tno_mob_existence-1.0.1 e tno_gear_existence-1.0.1 sao a unica fonte.
+     Piglin Hunter (4650) e Rookfish (300) recalibrados pela forca.
+   - Checagem obrigatoria antes de mexer em EP:
+         powershell -File C:\tnorepo\tools\check_existence_dupes.ps1
+     (sai com codigo 1 se o mesmo "type" aparecer em dois IDs de recurso).
+   - Formula de EP: (HP + ATK*15 + ARMOR*10) * 214 boss, *100 elite, *30 comum.
+   - Override de EP de jar alheio: mesmo caminho em kubejs/data/<ns>/... (KubeJS
+     carrega por ultimo). Mesmo ID = override, nao duplicata.
+
+2) BOSSES DE OUTROS MODS NO NIVEL DO TENSURA (commit 3e29080)
+   - Base medida no Tensura: Luminous 8000/100, Carrion 4000/80/30,
+     Charybdis 3000/100, Gazel 3000/80/60, Orc Disaster 700/60,
+     Ifrit/Sylphide/Undine/War Gnome 400/40. Tensura sobe o teto de armadura
+     para 1024.
+   - Niveis: A 3000 HP/80 ATK/40 arm | B 700/60/20 | C 400/40/10.
+   - kubejs/server_scripts/tno_boss_scaling.js e o UNICO lugar de buff:
+     vida/armadura via modificador transitorio (so sobe), dano multiplicado
+     por ATK_do_nivel / golpe_nativo seguindo projeteis, partes, invocacoes,
+     entidades de ataque do mesmo mod e dano de area sem atacante. Dano de
+     habilidade do Tensura fica de fora.
+   - Substituiu: tno_bosses_rise_x3.js (backup em backup_scripts_20260913),
+     attack_multiplier do Mowzie's (voltou 1.0), dano dos dragoes do IAF
+     (voltou 17). tno_bosses_rise_dragon_damage_fix.js continua.
+   - Golpes nativos marcados "(est.)" sao estimativa: IAF dread lich/gorgon/
+     hydra, TF lich/minoshroom/knight phantom. Ajustar com DEBUG = true.
+   - EP dos bosses: A 984.400, B 385.200, C 235.400.
+
+3) LIVRO DE HABILIDADES UNICAS DAS QUESTS (c5da187, 3ec99f5, 3bcadfb)
+   - Tabela config/ftbquests/quests/reward_tables/5100281D136ABF44.snbt.
+   - Regra: so SkillType.UNIQUE (nunca Ultimate), menos skill_blacklist.json,
+     menos unicas que se ganham por outras skills. Total: 105.
+   - Tipo real vem do construtor super(Skill.SkillType.X). Tag e nome de
+     pacote enganam (mortal_cultivation "unique" e EXTRA).
+   - Fora por caminho alternativo: gluttony (Faminto + Predador dominado),
+     godly_craftsman (Pesquisador dominado), mysticism melancholy, reshiram,
+     zekrom, kyurem.
+   - Motivo dos banimentos do moreskills: godly_smithery (encanto nivel 255,
+     maldicao 0%), godly_scientist (Anti-Skill dominada sem custo),
+     authority_of_greed e satella (imunidade/anulacao gratis).
+
+4) tno_subordinates 1.3.0 - MODO FORNECER (NAO TESTADO, NAO INSTALADO)
+   - Jar em tno_subordinates_src\. O modo "Fornecer" de Faminto/Gula/Gourmet
+     so dizia "em breve" no Tensura.
+   - ProvideStockMixin redireciona SkillHelper.learnSkill(entity, skill, int)
+     no Receber e na Corrosao: cada skill copiada vai para um estoque FIFO no
+     PlayerPersisted do jogador (max 64). So Extra/Intrinseca/Comum.
+   - Cada Fornecer passa UMA skill do estoque ao subordinado mirado (5 blocos),
+     a mais antiga que ele nao tem, e gasta a entrada. Maestria 0, 1000 de
+     magicula, 30 s de espera.
+   - Build: javac em %APPDATA%\.jornadascobblemon\runtime\x64\jdk-21.0.11+10,
+     classpath_win3.txt + sponge-mixin 0.15.2 + brigadier 1.3.10, via @argfile.
+
+5) ACHADOS DE MECANICA (confirmados no codigo)
+   - Blessed: 5% ao reencarnar (so raca nao-MAJIN), 100% ao aprender Chosen One.
+   - Ovo de Heroi: 5 Espiritos Maiores comuns + 1 Luz/Trevas; perde se evoluir
+     para raca MAJIN. Heroi Verdadeiro: vida < 25%, boss de boss_for_hero sem
+     dono, vida do boss < 50% e EP max >= 400.000, checado ao tomar dano.
+   - Magic Ore Sense (tensura_tno) so e dada no instante em que a ultima das 3
+     skills de sentido chega na maestria maxima; quem ja tinha precisa de
+     /tensura edit ability grant <jogador> tensura_tno:magic_ore_sense.
+   - Raphael (foxablazeultimate): Grande Sabio + Degenerador dominados + Ovo
+     de Heroi/Semente de Lorde; consome as duas, vem com maestria 0.
+     A Analise do addon Great Sage esta desativada no codigo (ANALYSIS_DISABLED).
+   - Grande Sabio ligado: +9 ganho de aprendizado e de maestria.
+     Resistencia: 350/500/700 pontos (facil/media/dificil), golpe >= 5/15/20.
+   - Orc Disaster selvagem so persegue jogador, aldeao, illager, animal e
+     golem de ferro; so revida o resto.
+   - Esquema de Cajado Magico so sai do acordo "Fires of Industry" (Dwargon,
+     tensura_minecolonies).
+
+6) LANCAMENTO
+   - Push feito em 2026-09-14 (origin/main = 3bcadfb); clientes atualizam.
+   - Server: PARA_UPLOAD_SERVIDOR conferida (42 arquivos iguais ao repo).
+     Falta manual: parar, apagar mob/gear_existence 1.0.0, subordinates
+     1.1.0, tno_bosses_rise_x3.js e as pastas antigas de EP no kubejs/data,
+     enviar a pasta e ligar.
+   - Upload pelo navegador nao funciona (botao abre janela do Windows).
+     Via API so com token em variavel de ambiente EXAROTON_TOKEN, nunca colado
+     no chat.
+
+===============================================================================
