@@ -31,7 +31,7 @@ epForHaki = 100000.0
 
 [SkillGranting]
 	#Ability granting cooldown
-	skillGrantCooldown = 1200
+	skillGrantCooldown = 600
 	#Multiplier of the acquisition cost subtracted from owner's current Magicules
 	ownerCostMultiplier = 10.0
 	#Default cost for abilities without a cost. Granting abilities without a default cost needs to be allowed for this to take effect.

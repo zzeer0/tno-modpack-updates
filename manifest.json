@@ -5269,8 +5269,8 @@
                   },
                   {
                       "path":  "config/openloader/packs/TNO-PTBR.zip",
-                      "sha256":  "46cdc4c9f462b473f8f17646e0aeff043e010ff7003889e47fb0ac2adf915b86",
-                      "size":  272384
+                      "sha256":  "58ef5d255ccfa210f4b218c6bd64d0a4bc8b2276b7a63324475f532ffff4f18a",
+                      "size":  272954
                   },
                   {
                       "path":  "config/packetfixer.properties",
@@ -6154,8 +6154,8 @@
                   },
                   {
                       "path":  "config/tensura_better_subs.toml",
-                      "sha256":  "68152b2e186f23d25ca58144b05f7d5600ade89ba8cd119bc576bb05784d60a6",
-                      "size":  2121
+                      "sha256":  "e7c0fcc3c2629d8d3992a76d00df602c42118a3b943ff0573fe0aec5980e08eb",
+                      "size":  2120
                   },
                   {
                       "path":  "config/tensura_boss_structure-common.toml",
