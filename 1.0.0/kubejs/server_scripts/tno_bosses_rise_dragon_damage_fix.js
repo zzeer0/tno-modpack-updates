@@ -7,7 +7,8 @@
 // ATTACK_DAMAGE, so setting the attribute from the config fixes those attacks.
 // Fire breath and fireballs are hardcoded and are not affected.
 
-const $Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
+// KubeJS shares one scope across server scripts: tno_boss_scaling.js already declares $Attributes.
+const $DragonFixAttributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
 const DRAGON_ID = 'block_factorys_bosses:infernal_dragon'
 const FALLBACK_ATK = 15.0
 
@@ -30,7 +31,7 @@ function configuredDragonAtk() {
 }
 
 EntityEvents.spawned(DRAGON_ID, event => {
-    const attribute = event.entity.getAttribute($Attributes.ATTACK_DAMAGE)
+    const attribute = event.entity.getAttribute($DragonFixAttributes.ATTACK_DAMAGE)
     if (attribute == null) return
 
     const atk = configuredDragonAtk()

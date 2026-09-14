@@ -208,7 +208,8 @@ Object.keys(BOSSES).forEach(id => {
 const active = {}
 
 function track(entity) {
-    active[String(entity.getStringUUID())] = entity
+    // KubeJS renames some vanilla methods for scripts: getStringUUID is getStringUuid here.
+    active[String(entity.getStringUuid())] = entity
 }
 
 function isOwned(entity) {
@@ -331,7 +332,7 @@ function nearestBoss(victim, namespace, radius, mustTarget) {
         const type = typeOf(boss)
         if (namespace != null && namespaceOf(type) != namespace) return
         if (mustTarget && !victim.equals(boss.getTarget())) return
-        const distance = boss.distanceTo(victim)
+        const distance = boss.distanceToEntity(victim)
         if (distance <= bestDistance) {
             best = type
             bestDistance = distance
@@ -360,7 +361,7 @@ function bossOf(victim, source, attacker, direct) {
         }
     }
 
-    if (attacker == null && direct == null && AREA_DAMAGE_TYPES[String(source.getMsgId())]) {
+    if (attacker == null && direct == null && AREA_DAMAGE_TYPES[String(source.getType())]) {
         return nearestBoss(victim, null, AREA_RADIUS, true)
     }
     return null
@@ -370,8 +371,9 @@ EntityEvents.beforeHurt(event => {
     const victim = event.entity
     const victimType = typeOf(victim)
     const source = event.source
-    const attacker = source.getEntity()
-    const direct = source.getDirectEntity()
+    // KubeJS names: getEntity -> getActual, getDirectEntity -> getImmediate, getMsgId -> getType.
+    const attacker = source.getActual()
+    const direct = source.getImmediate()
     const attackerType = typeOf(attacker)
     const directType = typeOf(direct)
 
@@ -395,6 +397,6 @@ EntityEvents.beforeHurt(event => {
     if (namespaceOf(victimType) == namespaceOf(boss) && !victim.isPlayer()) return
 
     const scaled = event.damage * MULTIPLIERS[boss]
-    if (DEBUG) console.info(`[tno_boss_scaling] ${boss} -> ${victimType} ${String(source.getMsgId())}: ${event.damage} x${MULTIPLIERS[boss].toFixed(2)} = ${scaled.toFixed(1)}`)
+    if (DEBUG) console.info(`[tno_boss_scaling] ${boss} -> ${victimType} ${String(source.getType())}: ${event.damage} x${MULTIPLIERS[boss].toFixed(2)} = ${scaled.toFixed(1)}`)
     event.setDamage(scaled)
 })

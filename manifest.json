@@ -13729,13 +13729,13 @@
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_boss_scaling.js",
-                      "sha256":  "e5012ac450074cfe242b4484be8a0370945cf8c6a18ae7b77ab84c40aab7b3eb",
-                      "size":  16066
+                      "sha256":  "d2576253e36d01327f9938d20937da654945f97f10375ce4d08734278b518cf3",
+                      "size":  16259
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_bosses_rise_dragon_damage_fix.js",
-                      "sha256":  "12b56162d5747e54f14c21755e4763d20b777227c0f84f013f39580dd7f056bb",
-                      "size":  1607
+                      "sha256":  "bfce462a0fdf7c87c3dea6e2577e8ca782ed3a514595dfa497cc7a1deedfe727",
+                      "size":  1725
                   },
                   {
                       "path":  "kubejs/data/iceandfire/entity_existence/dread_lich.json",
