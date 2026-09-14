@@ -314,7 +314,8 @@ function ownerOf(entity) {
 }
 
 function dimensionOf(entity) {
-    return String(entity.level.dimension().location())
+    // KubeJS exposes level.dimension as a property (the dimension id), not the vanilla method.
+    return String(entity.level.dimension)
 }
 
 // Nearest live boss (optionally of one mod, optionally targeting the victim).

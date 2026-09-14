@@ -13624,8 +13624,8 @@
                   },
                   {
                       "path":  "mods/tensuramagicfilter-1.2.0.jar",
-                      "sha256":  "07b0e83dcf1c4c20c072f98b13f0f9629d98c4ea515afb808457f95d170368f8",
-                      "size":  37497
+                      "sha256":  "7991be7d81ef9f895e8f3f40f38a493395c54861ff97b9aae4709278e048ee9c",
+                      "size":  38932
                   },
                   {
                       "path":  "mods/tensuramoreskills-0.0.4.8iwanttobelikeyoufix+purifier.jar",
@@ -13713,9 +13713,9 @@
                       "size":  199468
                   },
                   {
-                      "path":  "mods/tno_subordinates-1.2.1.jar",
-                      "sha256":  "b56f0e9fd18b94d9db90c9c98d1102b7b1ce9b3edfc77ba6d9109406b01ea502",
-                      "size":  29297
+                      "path":  "mods/tno_subordinates-1.2.2.jar",
+                      "sha256":  "e942f49e048ba63bba3e52f38107db8845ca9905ecf178991581165166090138",
+                      "size":  29517
                   },
                   {
                       "path":  "mods/carryon-neoforge-1.21.1-2.2.6.13.jar",
@@ -13729,8 +13729,8 @@
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_boss_scaling.js",
-                      "sha256":  "d2576253e36d01327f9938d20937da654945f97f10375ce4d08734278b518cf3",
-                      "size":  16259
+                      "sha256":  "eff911fe692e50c38e3bef16336d710ce4849bf4f32ce78b8ab385ee6ea2325a",
+                      "size":  16342
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_bosses_rise_dragon_damage_fix.js",
