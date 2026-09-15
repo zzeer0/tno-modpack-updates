@@ -28,3 +28,15 @@ ServerEvents.tags('entity_type', event => {
         'tensura:shogo_taguchi'
     ])
 })
+
+// Blocos que nao podem ser carregados.
+// carryon:block_blacklist e a tag de blocos que o Carry On sempre consulta (ListHandler).
+ServerEvents.tags('block', event => {
+    event.add('carryon:block_blacklist', [
+        // Ponto de Teleporte (warp pad): e um multibloco, carregar uma parte quebra o pad
+        // e leva junto a configuracao de destino/luta de chefe do block entity.
+        // A tag do Tensura tem as 24 variantes; o 'tensura:warp_pad' base fica fora dela.
+        '#tensura:warp_pads',
+        'tensura:warp_pad'
+    ])
+})

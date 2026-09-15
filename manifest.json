@@ -13384,8 +13384,8 @@
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_carryon_blacklist.js",
-                      "sha256":  "a58aae911f32bc94950248a6cf96856c6424172638e8b2305c150c9b989baa19",
-                      "size":  1114
+                      "sha256":  "d9123115103b4aa8a58c84ca15a723ed088cc8c8441f8ac9594c5f82dda203e1",
+                      "size":  1657
                   },
                   {
                       "path":  "kubejs/server_scripts/tno_chosen_one_charisma.js",
